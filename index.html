@@ -1,86 +1,79 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anglumea Reader</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Serat Kancil — Buku Digital</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/theme.css">
-  <link rel="stylesheet" href="css/dualpage.css">
-  <link rel="stylesheet" href="css/accessibility.css">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter&display=swap" rel="stylesheet">
 
+<!-- CSS -->
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/theme.css">
+<link rel="stylesheet" href="css/dualpage.css">
+<link rel="stylesheet" href="css/accessibility.css">
 </head>
-<body>
 
-  <!-- HEADER -->
-  <header class="topbar">
-      <div class="logo">📘 Anglumea</div>
-      <div class="controls">
-          <button id="ttsBtn" title="Baca suara">🔊</button>
-          <button id="themeBtn" title="Tema">🌓</button>
-          <button id="fontBtn" title="Ukuran Font">Aa</button>
-          <button id="bookmarkBtn" title="Bookmark">🔖</button>
-          <button id="tocBtn" title="Daftar Isi">📑</button>
-          <button id="focusBtn" title="Mode Fokus">🎯</button>
-      </div>
-  </header>
+<body class="theme-sepia font-serif">
 
-  <!-- SIDEBAR TOC -->
-  <aside id="tocSidebar" class="sidebar hidden">
-      <h3>Daftar Isi</h3>
-      <ul id="tocList">
-          <!-- akan diisi otomatis -->
-      </ul>
-  </aside>
+<header class="topbar">
+  <h1>Serat Kancil</h1>
 
-  <!-- MAIN READING AREA -->
-  <main id="reader">
-      <article id="content">
+  <div class="controls">
+    <button id="focusBtn">📖</button>
+    <button id="ttsBtn">🔊</button>
 
-          <h1>Judul Posting / Buku</h1>
+    <select id="themeSelect">
+      <option value="light">Terang</option>
+      <option value="dark">Gelap</option>
+      <option value="sepia" selected>Sepia</option>
+      <option value="paper">Kertas</option>
+    </select>
 
-          <p>
-            Ini contoh paragraf dalam mode membaca buku. Template ini dibuat
-            untuk kenyamanan membaca jangka panjang dengan line height lapang,
-            margin seimbang, dan tata letak fokus.
-          </p>
+    <input type="range" id="fontSize" min="14" max="26" value="18">
+  </div>
+</header>
 
-          <h2>Bab 1</h2>
+<aside id="toc">
+  <h3>Daftar Isi</h3>
+  <ul>
+    <li data-target="bab1">Bab 1</li>
+    <li data-target="bab2">Bab 2</li>
+    <li data-target="bab3">Bab 3</li>
+  </ul>
+</aside>
 
-          <p>
-            Kamu bisa menulis artikel, postingan blog, atau ebook di sini. 
-            Text-to-speech dapat membaca otomatis dan memberi highlight. 
-            Bookmark akan menyimpan posisi terakhir kamu.
-          </p>
+<main id="reader">
 
-          <h2>Bab 2</h2>
+  <article class="chapter" id="bab1">
+    <h2>Bab 1</h2>
+    <p>Kancil berjalan di hutan dan bertemu buaya.</p>
+    <p>Kancil dikenal sebagai simbol kecerdikan.</p>
+  </article>
 
-          <p>
-            Sistem ini juga mendukung catatan, glosarium, mode malam, dan 
-            tool aksesibilitas seperti font disleksia-friendly.
-          </p>
+  <article class="chapter" id="bab2">
+    <h2>Bab 2</h2>
+    <p>Kancil menghadapi tantangan baru.</p>
+  </article>
 
-      </article>
-  </main>
+  <article class="chapter" id="bab3">
+    <h2>Bab 3</h2>
+    <p>Kancil memberi pelajaran moral.</p>
+  </article>
 
-  <!-- FOOTER -->
-  <footer>
-      <div id="progressBar"></div>
-      <small>© 2025 Anglumea Reader — Dibuat untuk pengalaman membaca terbaik.</small>
-  </footer>
+</main>
 
-  <!-- JS -->
-  <script src="js/tts.js"></script>
-  <script src="js/resume.js"></script>
-  <script src="js/glossary.js"></script>
-  <script src="js/translate.js"></script>
-  <script src="js/accessibility.js"></script>
-  <script src="js/progress.js"></script>
-  <script src="js/swipe.js"></script>
-  <script src="js/pageflip.js"></script>
-  <script src="js/podcast.js"></script>
-  <script src="js/summarize.js"></script>
+<footer>
+  <div id="progressText">0%</div>
+  <div id="progressBar"><span></span></div>
+</footer>
+
+<!-- JS -->
+<script src="js/progress.js"></script>
+<script src="js/tts.js"></script>
+<script src="js/resume.js"></script>
+<script src="js/accessibility.js"></script>
+<script src="js/swipe.js"></script>
 </body>
 </html>
