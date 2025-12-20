@@ -3,77 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Serat Kancil — Buku Digital</title>
-
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter&display=swap" rel="stylesheet">
-
-<!-- CSS -->
+<title>Perpustakaan Naskah Kuno</title>
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/theme.css">
-<link rel="stylesheet" href="css/dualpage.css">
-<link rel="stylesheet" href="css/accessibility.css">
 </head>
+<body>
 
-<body class="theme-sepia font-serif">
-
-<header class="topbar">
-  <h1>Serat Kancil</h1>
-
-  <div class="controls">
-    <button id="focusBtn">📖</button>
-    <button id="ttsBtn">🔊</button>
-
-    <select id="themeSelect">
-      <option value="light">Terang</option>
-      <option value="dark">Gelap</option>
-      <option value="sepia" selected>Sepia</option>
-      <option value="paper">Kertas</option>
-    </select>
-
-    <input type="range" id="fontSize" min="14" max="26" value="18">
-  </div>
+<header class="library-header">
+  <h1>Perpustakaan Naskah Kuno</h1>
 </header>
 
-<aside id="toc">
-  <h3>Daftar Isi</h3>
-  <ul>
-    <li data-target="bab1">Bab 1</li>
-    <li data-target="bab2">Bab 2</li>
-    <li data-target="bab3">Bab 3</li>
-  </ul>
-</aside>
-
-<main id="reader">
-
-  <article class="chapter" id="bab1">
-    <h2>Bab 1</h2>
-    <p>Kancil berjalan di hutan dan bertemu buaya.</p>
-    <p>Kancil dikenal sebagai simbol kecerdikan.</p>
-  </article>
-
-  <article class="chapter" id="bab2">
-    <h2>Bab 2</h2>
-    <p>Kancil menghadapi tantangan baru.</p>
-  </article>
-
-  <article class="chapter" id="bab3">
-    <h2>Bab 3</h2>
-    <p>Kancil memberi pelajaran moral.</p>
-  </article>
-
+<main id="bookList" class="book-list">
+  <!-- Buku akan di-load dari books.json -->
 </main>
 
-<footer>
-  <div id="progressText">0%</div>
-  <div id="progressBar"><span></span></div>
-</footer>
+<script>
+fetch('data/books.json')
+  .then(r=>r.json())
+  .then(books=>{
+    const list = document.getElementById('bookList');
+    books.forEach(book=>{
+      const el = document.createElement('div');
+      el.className = 'book-card';
+      el.innerHTML = `
+        <h2>${book.title}</h2>
+        <p>Penulis: ${book.author || '-'}</p>
+        <p>Bahasa: ${book.language || '-'}</p>
+        <button onclick="location.href='reader.html?book=${book.id}&chapter=1'">
+          Baca Buku
+        </button>
+      `;
+      list.appendChild(el);
+    });
+  });
+</script>
 
-<!-- JS -->
-<script src="js/progress.js"></script>
-<script src="js/tts.js"></script>
-<script src="js/resume.js"></script>
-<script src="js/accessibility.js"></script>
-<script src="js/swipe.js"></script>
 </body>
 </html>
