@@ -1,0 +1,120 @@
+/* ================================
+   THEME CSS — Light / Dark / Sepia / Paper
+   ================================ */
+
+/* Default: Light */
+:root {
+  --color-bg: #f9f7f3;
+  --color-text: #1a1a1a;
+  --color-accent: #0066cc;
+  --color-muted: #666;
+
+  --header-bg: rgba(255,255,255,0.85);
+  --sidebar-bg: #ffffff;
+  --highlight: yellow;
+  
+  transition: background 0.25s, color 0.25s;
+}
+
+/* =================================
+   DARK THEME
+   ================================= */
+body.dark {
+  --color-bg: #121212;
+  --color-text: #e0e0e0;
+  --color-accent: #4fa3ff;
+  --color-muted: #b5b5b5;
+
+  --header-bg: rgba(30,30,30,0.9);
+  --sidebar-bg: #1b1b1b;
+  --highlight: #4444ff;
+
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+body.dark #content blockquote {
+  border-left-color: var(--color-accent);
+  color: var(--color-muted);
+}
+
+body.dark .sidebar {
+  background: var(--sidebar-bg);
+  border-right-color: #333;
+}
+
+/* =================================
+   SEPIA THEME
+   ================================= */
+body.sepia {
+  --color-bg: #f4ecd8;
+  --color-text: #4b3a2a;
+  --color-accent: #a36d2f;
+  --color-muted: #6b5b4b;
+
+  --header-bg: rgba(248,240,227,0.9);
+  --sidebar-bg: #f8f1df;
+  --highlight: #ffe495;
+
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+body.sepia blockquote {
+  border-left-color: var(--color-accent);
+}
+
+/* =================================
+   PAPER THEME (E-ink style)
+   ================================= */
+body.paper {
+  --color-bg: #fcfcfa;
+  --color-text: #111;
+  --color-accent: #224488;
+  --color-muted: #666;
+  --highlight: #ffeb80;
+
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+body.paper img {
+  filter: grayscale(40%);
+}
+
+body.paper .sidebar {
+  background: #fafafa;
+}
+
+/* =================================
+   INTERACTIVE ELEMENTS
+   ================================= */
+
+.topbar {
+  background: var(--header-bg);
+}
+
+.sidebar {
+  background: var(--sidebar-bg);
+}
+
+#progressBar {
+  background: var(--color-accent);
+}
+
+a {
+  color: var(--color-accent);
+}
+
+.highlight-read {
+  background: var(--highlight);
+}
+
+/* smooth theme transition */
+body,
+.topbar,
+.sidebar,
+#content,
+footer {
+  transition: background 0.25s ease, color 0.25s ease;
+}
