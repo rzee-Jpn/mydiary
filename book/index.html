@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anglumea Reader</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/dualpage.css">
+  <link rel="stylesheet" href="css/accessibility.css">
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="topbar">
+      <div class="logo">📘 Anglumea</div>
+      <div class="controls">
+          <button id="ttsBtn" title="Baca suara">🔊</button>
+          <button id="themeBtn" title="Tema">🌓</button>
+          <button id="fontBtn" title="Ukuran Font">Aa</button>
+          <button id="bookmarkBtn" title="Bookmark">🔖</button>
+          <button id="tocBtn" title="Daftar Isi">📑</button>
+          <button id="focusBtn" title="Mode Fokus">🎯</button>
+      </div>
+  </header>
+
+  <!-- SIDEBAR TOC -->
+  <aside id="tocSidebar" class="sidebar hidden">
+      <h3>Daftar Isi</h3>
+      <ul id="tocList">
+          <!-- akan diisi otomatis -->
+      </ul>
+  </aside>
+
+  <!-- MAIN READING AREA -->
+  <main id="reader">
+      <article id="content">
+
+          <h1>Judul Posting / Buku</h1>
+
+          <p>
+            Ini contoh paragraf dalam mode membaca buku. Template ini dibuat
+            untuk kenyamanan membaca jangka panjang dengan line height lapang,
+            margin seimbang, dan tata letak fokus.
+          </p>
+
+          <h2>Bab 1</h2>
+
+          <p>
+            Kamu bisa menulis artikel, postingan blog, atau ebook di sini. 
+            Text-to-speech dapat membaca otomatis dan memberi highlight. 
+            Bookmark akan menyimpan posisi terakhir kamu.
+          </p>
+
+          <h2>Bab 2</h2>
+
+          <p>
+            Sistem ini juga mendukung catatan, glosarium, mode malam, dan 
+            tool aksesibilitas seperti font disleksia-friendly.
+          </p>
+
+      </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+      <div id="progressBar"></div>
+      <small>© 2025 Anglumea Reader — Dibuat untuk pengalaman membaca terbaik.</small>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/tts.js"></script>
+  <script src="js/resume.js"></script>
+  <script src="js/glossary.js"></script>
+  <script src="js/translate.js"></script>
+  <script src="js/accessibility.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/swipe.js"></script>
+  <script src="js/pageflip.js"></script>
+  <script src="js/podcast.js"></script>
+  <script src="js/summarize.js"></script>
+</body>
+</html>
