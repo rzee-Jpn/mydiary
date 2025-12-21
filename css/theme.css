@@ -1,18 +1,14 @@
-:root {
-  --bg: #fdf6e3;
+body.theme-light {
+  --bg: #ffffff;
   --text: #222;
 }
 
 body.theme-dark {
-  --bg: #1e1e1e;
-  --text: #eee;
+  --bg: #1c1b1a;
+  --text: #e6e1d8;
 }
 
-body.theme-paper {
-  --bg: #f7f3e9;
-}
-
-body {
-  background: var(--bg);
-  color: var(--text);
+body.theme-sepia {
+  --bg: #f4ecd8;
+  --text: #3a2f1c;
 }
