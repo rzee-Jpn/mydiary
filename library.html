@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Perpustakaan</title>
+<title>Perpustakaan Gen Z</title>
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/theme.css">
 <link rel="stylesheet" href="css/library.css">
@@ -14,13 +14,18 @@
   <h1>Perpustakaan Buku</h1>
 </header>
 
-<main id="library" class="library-grid">
-  <!-- Buku otomatis dirender di sini -->
+<main>
+  <!-- Search wrapper -->
+  <div class="search-wrapper">
+    <button id="searchToggle" class="search-icon">🔍</button>
+    <input type="text" id="bookSearch" placeholder="Cari buku...">
+  </div>
+
+  <div id="library" class="library-grid"></div>
 </main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
 <script src="js/library.js"></script>
 <script src="js/settings.js"></script>
-
 </body>
 </html>
