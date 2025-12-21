@@ -1,18 +1,15 @@
-const ttsBtn = document.getElementById('ttsBtn');
-let synth = speechSynthesis;
-let reading = false;
+const synth = speechSynthesis;
 
-ttsBtn.onclick = () => {
-  if (reading) {
+document.querySelectorAll('#reader p').forEach(p=>{
+  p.onclick = ()=>{
     synth.cancel();
-    reading = false;
-    return;
-  }
+    document.querySelectorAll('.highlight')
+      .forEach(x=>x.classList.remove('highlight'));
 
-  const text = document.getElementById('reader').innerText;
-  const utter = new SpeechSynthesisUtterance(text);
-  utter.lang = 'id-ID';
-  utter.onend = () => reading = false;
-  synth.speak(utter);
-  reading = true;
-};
+    const u = new SpeechSynthesisUtterance(p.innerText);
+    u.lang = 'id-ID';
+    p.classList.add('highlight');
+    u.onend = ()=>p.classList.remove('highlight');
+    synth.speak(u);
+  };
+});
