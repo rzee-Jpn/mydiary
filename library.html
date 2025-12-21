@@ -3,114 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reader</title>
+<title>Perpustakaan</title>
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/theme.css">
-<link rel="stylesheet" href="css/dualpage.css">
+<link rel="stylesheet" href="css/library.css">
 </head>
 <body class="theme-paper">
 
-<header class="reader-header">
-  <button id="tocBtn">☰</button>
-  <div class="book-title" id="bookTitle">Buku</div>
-  <div class="actions">
-    <button id="ttsBtn">🔊</button>
-    <select id="themeSelect">
-      <option value="light">Light</option>
-      <option value="dark">Dark</option>
-      <option value="sepia">Sepia</option>
-      <option value="paper">Paper</option>
-    </select>
-  </div>
+<header class="lib-header">
+  <h1>Perpustakaan Buku</h1>
 </header>
 
-<nav id="tocPanel">
-  <h3>Daftar Bab</h3>
-  <ul id="tocList"></ul>
-</nav>
+<main id="library" class="library-grid">
+  <!-- Buku otomatis dirender di sini -->
+</main>
 
-<main id="reader"></main>
-
-<footer class="progress">
-  <span id="progressText">0%</span>
-  <div class="bar"><div id="progressBar"></div></div>
-</footer>
-
-<script src="js/tts.js"></script>
-<script src="js/progress.js"></script>
-
-<script>
-// Ambil parameter URL
-const params = new URLSearchParams(location.search);
-const bookId = params.get('book');
-const chapterNum = params.get('chapter') || 1;
-
-const reader = document.getElementById('reader');
-const bookTitle = document.getElementById('bookTitle');
-const tocList = document.getElementById('tocList');
-const tocBtn = document.getElementById('tocBtn');
-const tocPanel = document.getElementById('tocPanel');
-const themeSelect = document.getElementById('themeSelect');
-
-let chapters = [];
-let currentPara = 0;
-
-// Load buku metadata
-fetch(`data/${bookId}/meta.json`)
-  .then(r=>r.json())
-  .then(meta=>{
-    bookTitle.textContent = meta.title;
-  });
-
-// Load daftar bab (otomatis)
-fetch(`data/books.json`)
-  .then(r=>r.json())
-  .then(books=>{
-    const book = books.find(b=>b.id===bookId);
-    for(let i=1;i<=book.chapters;i++){
-      const li = document.createElement('li');
-      li.textContent = 'Bab '+i;
-      li.onclick = ()=> loadChapter(i);
-      tocList.appendChild(li);
-    }
-  });
-
-// TOC toggle
-tocBtn.onclick = ()=> tocPanel.classList.toggle('show');
-
-// Theme toggle
-themeSelect.onchange = ()=>{
-  document.body.className = 'theme-'+themeSelect.value;
-};
-
-// Load bab
-function loadChapter(num){
-  fetch(`data/${bookId}/bab-${num}.json`)
-    .then(r=>r.json())
-    .then(ch=>{
-      reader.innerHTML = `<div class="chapter-title">${ch.title}</div>`;
-      ch.content.forEach(p=>{
-        const el = document.createElement('p');
-        el.textContent = p;
-        reader.appendChild(el);
-      });
-      reader.innerHTML += `<div class="chapter-divider">●</div>`;
-      currentPara = 0;
-      updateProgress();
-    });
-}
-
-// Update progress
-function updateProgress(){
-  const paras = reader.querySelectorAll('p');
-  const percent = paras.length? Math.round((currentPara+1)/paras.length*100) : 0;
-  document.getElementById('progressText').textContent = percent+'%';
-  document.getElementById('progressBar').style.width = percent+'%';
-}
-
-// Inisialisasi bab pertama
-loadChapter(chapterNum);
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="js/library.js"></script>
+<script src="js/settings.js"></script>
 
 </body>
 </html>
