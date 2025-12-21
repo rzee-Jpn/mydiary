@@ -6,9 +6,15 @@ let book = null;
 let currentPage = 0;
 
 /* =============================
+   DETEKSI BUKU DARI URL
+============================= */
+const params = new URLSearchParams(location.search);
+const BOOK_ID = params.get("book") || "naskah-kuno"; // default buku
+
+/* =============================
    LOAD BOOK.JSON
 ============================= */
-fetch("data/book.json")
+fetch(`data/books/${BOOK_ID}/book.json`)
   .then(res => res.json())
   .then(data => {
     book = data;
@@ -24,7 +30,7 @@ fetch("data/book.json")
 ============================= */
 function initBook() {
   document.title = book.title;
-  currentPage = parseInt(localStorage.getItem("page")) || 0;
+  currentPage = parseInt(localStorage.getItem(`page_${book.id}`)) || 0;
   buildTOC();
   renderPage(currentPage);
 }
@@ -43,7 +49,7 @@ function buildTOC() {
       li.onclick = () => {
         currentPage = i;
         renderPage(i);
-        localStorage.setItem("page", i);
+        localStorage.setItem(`page_${book.id}`, i);
         document.getElementById("toc").classList.remove("show");
       };
       tocList.appendChild(li);
@@ -81,7 +87,7 @@ document.getElementById("next").onclick = () => {
   if (currentPage < book.chapters.length - 1) {
     currentPage++;
     renderPage(currentPage);
-    localStorage.setItem("page", currentPage);
+    localStorage.setItem(`page_${book.id}`, currentPage);
   }
 };
 
@@ -89,7 +95,7 @@ document.getElementById("prev").onclick = () => {
   if (currentPage > 0) {
     currentPage--;
     renderPage(currentPage);
-    localStorage.setItem("page", currentPage);
+    localStorage.setItem(`page_${book.id}`, currentPage);
   }
 };
 
