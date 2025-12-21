@@ -12,7 +12,7 @@
 
 <header class="reader-header">
   <button id="tocBtn">☰</button>
-  <div class="book-title" id="bookTitle">Buku</div>
+  <div class="book-title" id="bookTitle">Memuat…</div>
   <div class="actions">
     <button id="ttsBtn">🔊</button>
     <select id="themeSelect">
@@ -36,83 +36,11 @@
   <div class="bar"><div id="progressBar"></div></div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
 <script src="js/tts.js"></script>
 <script src="js/progress.js"></script>
-
-<script>
-// Ambil parameter URL
-const params = new URLSearchParams(location.search);
-const BOOK_ID = params.get('book') || 'naskah-kuno';
-const chapterNum = params.get('chapter') || 1;
-
-const reader = document.getElementById('reader');
-const bookTitle = document.getElementById('bookTitle');
-const tocList = document.getElementById('tocList');
-const tocBtn = document.getElementById('tocBtn');
-const tocPanel = document.getElementById('tocPanel');
-const themeSelect = document.getElementById('themeSelect');
-
-let chapters = [];
-let currentPara = 0;
-
-// Load metadata buku
-fetch(`data/books/${BOOK_ID}/meta.json`)
-  .then(r => r.json())
-  .then(meta => { bookTitle.textContent = meta.title; });
-
-// Load daftar bab otomatis
-fetch(`data/books/${BOOK_ID}/book.json`)
-  .then(r => r.json())
-  .then(book => {
-    chapters = book.chapters;
-    buildTOC();
-    loadChapter(chapterNum);
-  })
-  .catch(err => {
-    reader.innerHTML = "<p>Gagal memuat buku.</p>";
-    console.error(err);
-  });
-
-// TOC toggle
-tocBtn.onclick = () => tocPanel.classList.toggle('show');
-
-// Theme toggle
-themeSelect.onchange = () => { document.body.className = 'theme-' + themeSelect.value; };
-
-// Build TOC
-function buildTOC() {
-  tocList.innerHTML = '';
-  chapters.forEach((ch, i) => {
-    const li = document.createElement('li');
-    li.textContent = ch.title;
-    li.onclick = () => { loadChapter(i+1); tocPanel.classList.remove('show'); };
-    tocList.appendChild(li);
-  });
-}
-
-// Load bab
-function loadChapter(num) {
-  const chapter = chapters[num-1];
-  if(!chapter) return;
-  reader.innerHTML = `<div class="chapter-title">${chapter.title}</div>`;
-  chapter.content.forEach(p => {
-    const el = document.createElement('p');
-    el.textContent = p;
-    reader.appendChild(el);
-  });
-  reader.innerHTML += `<div class="chapter-divider">●</div>`;
-  currentPara = 0;
-  updateProgress();
-}
-
-// Update progress
-function updateProgress() {
-  const paras = reader.querySelectorAll('p');
-  const percent = paras.length ? Math.round((currentPara+1)/paras.length*100) : 0;
-  document.getElementById('progressText').textContent = percent+'%';
-  document.getElementById('progressBar').style.width = percent+'%';
-}
-</script>
+<script src="js/book-loader.js"></script>
+<script src="js/settings.js"></script>
 
 </body>
 </html>
