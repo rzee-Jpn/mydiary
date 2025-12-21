@@ -1,14 +1,23 @@
-const toc = document.getElementById('toc');
-const settings = document.getElementById('settings');
+const themeSelect = document.getElementById("themeSelect");
 
-menuBtn.onclick = ()=> toc.classList.toggle('show');
-settingBtn.onclick = ()=> settings.classList.toggle('show');
+function applyTheme(theme) {
+  document.body.classList.remove(
+    "theme-light",
+    "theme-dark",
+    "theme-sepia",
+    "theme-paper"
+  );
+  document.body.classList.add(`theme-${theme}`);
+  localStorage.setItem("theme", theme);
+}
 
-fontSize.oninput = e=>{
-  document.documentElement.style
-    .setProperty('--font-size', e.target.value + 'px');
-};
+themeSelect.addEventListener("change", e => {
+  applyTheme(e.target.value);
+});
 
-themeSelect.onchange = e=>{
-  document.body.className = 'theme-' + e.target.value;
-};
+// load saved theme
+const saved = localStorage.getItem("theme");
+if (saved) {
+  themeSelect.value = saved;
+  applyTheme(saved);
+}
