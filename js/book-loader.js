@@ -1,113 +1,65 @@
-const reader = document.getElementById("reader");
-const tocList = document.querySelector("#toc ul");
-const pageInfo = document.getElementById("pageInfo");
-
-let book = null;
-let currentPage = 0;
-
-/* =============================
-   DETEKSI BUKU DARI URL
-============================= */
 const params = new URLSearchParams(location.search);
-const BOOK_ID = params.get("book") || "naskah-kuno"; // default buku
+const BOOK_ID = params.get('book') || 'naskah-kuno-demo';
+let chapters = [];
+let currentPara = 0;
 
-/* =============================
-   LOAD BOOK.JSON
-============================= */
+const reader = document.getElementById('reader');
+const bookTitle = document.getElementById('bookTitle');
+const tocList = document.getElementById('tocList');
+const tocBtn = document.getElementById('tocBtn');
+const tocPanel = document.getElementById('tocPanel');
+const themeSelect = document.getElementById('themeSelect');
+
 fetch(`data/books/${BOOK_ID}/book.json`)
-  .then(res => res.json())
-  .then(data => {
-    book = data;
-    initBook();
+  .then(r => r.json())
+  .then(book => {
+    bookTitle.textContent = book.title;
+    chapters = book.chapters;
+    buildTOC();
+    loadChapter(1);
   })
-  .catch(err => {
-    reader.innerHTML = "<p>Gagal memuat buku.</p>";
-    console.error(err);
-  });
+  .catch(err => { reader.innerHTML = "<p>Gagal memuat buku.</p>"; console.error(err); });
 
-/* =============================
-   INIT
-============================= */
-function initBook() {
-  document.title = book.title;
-  currentPage = parseInt(localStorage.getItem(`page_${book.id}`)) || 0;
-  buildTOC();
-  renderPage(currentPage);
-}
-
-/* =============================
-   BUILD TOC
-============================= */
-function buildTOC() {
-  tocList.innerHTML = "";
-
-  book.chapters
-    .sort((a, b) => a.order - b.order)
-    .forEach((ch, i) => {
-      const li = document.createElement("li");
-      li.textContent = ch.title;
-      li.onclick = () => {
-        currentPage = i;
-        renderPage(i);
-        localStorage.setItem(`page_${book.id}`, i);
-        document.getElementById("toc").classList.remove("show");
-      };
-      tocList.appendChild(li);
-    });
-}
-
-/* =============================
-   RENDER PAGE
-============================= */
-function renderPage(index) {
-  reader.innerHTML = "";
-
-  const chapter = book.chapters[index];
-  if (!chapter) return;
-
-  const h2 = document.createElement("h2");
-  h2.textContent = chapter.title;
-  reader.appendChild(h2);
-
-  chapter.content.forEach(text => {
-    const p = document.createElement("p");
-    p.textContent = text;
-    reader.appendChild(p);
-  });
-
-  pageInfo.textContent = `${index + 1}/${book.chapters.length}`;
-  estimateTime(chapter);
-  attachTTS();
-}
-
-/* =============================
-   NAVIGATION
-============================= */
-document.getElementById("next").onclick = () => {
-  if (currentPage < book.chapters.length - 1) {
-    currentPage++;
-    renderPage(currentPage);
-    localStorage.setItem(`page_${book.id}`, currentPage);
-  }
-};
-
-document.getElementById("prev").onclick = () => {
-  if (currentPage > 0) {
-    currentPage--;
-    renderPage(currentPage);
-    localStorage.setItem(`page_${book.id}`, currentPage);
-  }
-};
-
-/* =============================
-   ESTIMATED READING TIME
-============================= */
-function estimateTime(chapter) {
-  const timeBox = document.getElementById("timeLeft");
-  if (chapter.estimatedMinutes) {
-    timeBox.textContent = `± ${chapter.estimatedMinutes} menit`;
+// TOC toggle dengan GSAP
+tocBtn.onclick = ()=>{
+  if(tocPanel.classList.contains('show')){
+    gsap.to(tocPanel,{x:-280,duration:0.3});
+    tocPanel.classList.remove('show');
   } else {
-    const words = chapter.content.join(" ").split(/\s+/).length;
-    timeBox.textContent = `± ${Math.ceil(words / 200)} menit`;
+    gsap.to(tocPanel,{x:0,duration:0.3});
+    tocPanel.classList.add('show');
   }
+};
+
+themeSelect.onchange = ()=> document.body.className = 'theme-'+themeSelect.value;
+
+function buildTOC(){
+  tocList.innerHTML = '';
+  chapters.forEach((ch,i)=>{
+    const li = document.createElement('li');
+    li.textContent = ch.title;
+    li.onclick = ()=>{ loadChapter(i+1); tocPanel.classList.remove('show'); gsap.to(tocPanel,{x:-280,duration:0.3}); };
+    tocList.appendChild(li);
+  });
+}
+
+function loadChapter(num){
+  const chapter = chapters[num-1];
+  if(!chapter) return;
+  reader.innerHTML = `<div class="chapter-title">${chapter.title}</div>`;
+  chapter.content.forEach(p=>{
+    const el = document.createElement('p');
+    el.textContent = p;
+    reader.appendChild(el);
+  });
+  reader.innerHTML += `<div class="chapter-divider">●</div>`;
+  currentPara=0;
+  updateProgress();
+}
+
+function updateProgress(){
+  const paras = reader.querySelectorAll('p');
+  const percent = paras.length ? Math.round((currentPara+1)/paras.length*100) : 0;
+  document.getElementById('progressText').textContent = percent+'%';
+  document.getElementById('progressBar').style.width = percent+'%';
 }
