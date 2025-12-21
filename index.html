@@ -3,35 +3,35 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Perpustakaan Naskah Kuno</title>
+<title>Reader</title>
 
-<link rel="stylesheet" href="css/main.css" />
-<link rel="stylesheet" href="css/theme.css" />
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/theme.css">
 </head>
 
 <body class="theme-paper">
 
 <header class="topbar">
   <button id="menuBtn">☰</button>
-  <div class="title">Reader</div>
+  <div class="title" id="bookTitle">Memuat…</div>
   <button id="settingBtn">⚙️</button>
 </header>
 
+<!-- TOC -->
 <aside id="toc">
   <h3>Daftar Bab</h3>
-  <ul>
-    <li data-page="0">Pendahuluan</li>
-    <li data-page="1">Bab I</li>
-    <li data-page="2">Bab II</li>
-  </ul>
+  <ul id="tocList"></ul>
 </aside>
 
+<!-- SETTINGS -->
 <aside id="settings">
-  <label>Font Size
+  <label>
+    Font Size
     <input type="range" min="14" max="22" value="17" id="fontSize">
   </label>
 
-  <label>Tema
+  <label>
+    Tema
     <select id="themeSelect">
       <option value="paper">Paper</option>
       <option value="light">Light</option>
@@ -41,31 +41,15 @@
   </label>
 </aside>
 
+<!-- READER -->
 <main id="reader">
-
-<section class="page">
-  <h2>Pendahuluan</h2>
-  <p>Naskah kuno bukan sekadar teks tua, tetapi ingatan peradaban.</p>
-  <p>Setiap kata menyimpan konteks zaman dan nilai.</p>
-</section>
-
-<section class="page">
-  <h2>Bab I</h2>
-  <p>Pada masa awal, pengetahuan diwariskan secara lisan.</p>
-  <p>Tradisi ini kemudian dibakukan dalam tulisan.</p>
-</section>
-
-<section class="page">
-  <h2>Bab II</h2>
-  <p>Perpindahan medium membawa perubahan cara berpikir.</p>
-  <p>Namun esensi kebijaksanaan tetap sama.</p>
-</section>
-
+  <!-- diisi otomatis oleh book-loader.js -->
 </main>
 
+<!-- FOOTER -->
 <footer class="footer">
   <button id="prev">‹</button>
-  <span id="pageInfo"></span>
+  <span id="pageInfo">0/0</span>
   <button id="next">›</button>
 
   <div class="progress">
@@ -73,8 +57,10 @@
   </div>
 </footer>
 
+<!-- CORE SCRIPTS -->
 <script src="js/book-loader.js"></script>
 <script src="js/tts.js"></script>
 <script src="js/settings.js"></script>
+
 </body>
 </html>
