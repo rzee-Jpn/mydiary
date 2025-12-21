@@ -3,247 +3,116 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Perpustakaan / Reader</title>
-
+<title>Reader</title>
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/theme.css">
-<link rel="stylesheet" href="css/library.css">
-<style>
-/* Tambahan styling khusus library di reader view */
-.library-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 1.25rem;
-  padding: 1.5rem;
-}
-.book-card {
-  text-decoration: none;
-  color: inherit;
-  background: #fff;
-  border-radius: 10px;
-  padding: .75rem;
-  box-shadow: 0 6px 16px rgba(0,0,0,.08);
-  transition: transform .2s, box-shadow .2s;
-}
-.book-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0,0,0,.12);
-}
-.book-card img {
-  width: 100%;
-  aspect-ratio: 3/4;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: .5rem;
-}
-.book-card h3 { font-size: .95rem; margin: .25rem 0; }
-.book-card small { opacity: .7; }
-</style>
+<link rel="stylesheet" href="css/dualpage.css">
 </head>
 <body class="theme-paper">
 
-<header class="topbar">
-  <button id="menuBtn">☰</button>
-  <div class="title" id="bookTitle">Memuat…</div>
+<header class="reader-header">
+  <button id="tocBtn">☰</button>
+  <div class="book-title" id="bookTitle">Buku</div>
   <div class="actions">
     <button id="ttsBtn">🔊</button>
     <select id="themeSelect">
-      <option value="paper">Paper</option>
       <option value="light">Light</option>
       <option value="dark">Dark</option>
       <option value="sepia">Sepia</option>
+      <option value="paper">Paper</option>
     </select>
   </div>
 </header>
 
-<!-- TOC -->
-<aside id="toc">
+<nav id="tocPanel">
   <h3>Daftar Bab</h3>
   <ul id="tocList"></ul>
-</aside>
+</nav>
 
-<!-- READER / LIBRARY -->
 <main id="reader"></main>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <button id="prev">‹</button>
-  <span id="pageInfo">0/0</span>
-  <button id="next">›</button>
-  <div class="progress">
-    <span id="timeLeft">0%</span>
-    <div id="progressBar"></div>
-  </div>
+<footer class="progress">
+  <span id="progressText">0%</span>
+  <div class="bar"><div id="progressBar"></div></div>
 </footer>
 
 <script src="js/tts.js"></script>
 <script src="js/progress.js"></script>
-<script src="js/settings.js"></script>
+
 <script>
-const reader = document.getElementById("reader");
-const tocList = document.getElementById("tocList");
-const pageInfo = document.getElementById("pageInfo");
-const toc = document.getElementById("toc");
-const menuBtn = document.getElementById("menuBtn");
-const ttsBtn = document.getElementById("ttsBtn");
-const themeSelect = document.getElementById("themeSelect");
-const progressBar = document.getElementById("progressBar");
-const timeLeft = document.getElementById("timeLeft");
-
+// Ambil parameter URL
 const params = new URLSearchParams(location.search);
-const BOOK_ID = params.get("book");
+const BOOK_ID = params.get('book') || 'naskah-kuno';
+const chapterNum = params.get('chapter') || 1;
 
-let book = null;
-let currentPage = 0;
+const reader = document.getElementById('reader');
+const bookTitle = document.getElementById('bookTitle');
+const tocList = document.getElementById('tocList');
+const tocBtn = document.getElementById('tocBtn');
+const tocPanel = document.getElementById('tocPanel');
+const themeSelect = document.getElementById('themeSelect');
 
-// =============================
-// TOGGLE TOC
-// =============================
-menuBtn.onclick = ()=> toc.classList.toggle('show');
+let chapters = [];
+let currentPara = 0;
 
-// =============================
-// THEME
-// =============================
-themeSelect.onchange = ()=> {
-  document.body.className = 'theme-'+themeSelect.value;
-};
+// Load metadata buku
+fetch(`data/books/${BOOK_ID}/meta.json`)
+  .then(r => r.json())
+  .then(meta => { bookTitle.textContent = meta.title; });
 
-// =============================
-// LIBRARY VIEW
-// =============================
-if(!BOOK_ID){
-  fetch("data/library.json")
-    .then(res=>res.json())
-    .then(books=>{
-      document.getElementById("bookTitle").textContent="Perpustakaan";
-      reader.innerHTML="";
-      const libDiv = document.createElement("div");
-      libDiv.className="library-grid";
-      books.forEach(b=>{
-        const card = document.createElement("a");
-        card.href=`index.html?book=${b.id}`;
-        card.className="book-card";
-        card.innerHTML=`
-          <img src="data/books/${b.id}/${b.cover}" alt="${b.title}">
-          <h3>${b.title}</h3>
-          <small>${b.author} • ${b.year}</small>
-        `;
-        libDiv.appendChild(card);
-      });
-      reader.appendChild(libDiv);
-    })
-    .catch(()=> reader.innerHTML="<p>Gagal memuat perpustakaan.</p>");
+// Load daftar bab otomatis
+fetch(`data/books/${BOOK_ID}/book.json`)
+  .then(r => r.json())
+  .then(book => {
+    chapters = book.chapters;
+    buildTOC();
+    loadChapter(chapterNum);
+  })
+  .catch(err => {
+    reader.innerHTML = "<p>Gagal memuat buku.</p>";
+    console.error(err);
+  });
+
+// TOC toggle
+tocBtn.onclick = () => tocPanel.classList.toggle('show');
+
+// Theme toggle
+themeSelect.onchange = () => { document.body.className = 'theme-' + themeSelect.value; };
+
+// Build TOC
+function buildTOC() {
+  tocList.innerHTML = '';
+  chapters.forEach((ch, i) => {
+    const li = document.createElement('li');
+    li.textContent = ch.title;
+    li.onclick = () => { loadChapter(i+1); tocPanel.classList.remove('show'); };
+    tocList.appendChild(li);
+  });
 }
 
-// =============================
-// READER VIEW
-// =============================
-else{
-  fetch(`data/books/${BOOK_ID}/book.json`)
-    .then(res=>res.json())
-    .then(data=>{
-      book=data;
-      initBook();
-    })
-    .catch(err=>{
-      reader.innerHTML="<p>Gagal memuat buku.</p>";
-      console.error(err);
-    });
+// Load bab
+function loadChapter(num) {
+  const chapter = chapters[num-1];
+  if(!chapter) return;
+  reader.innerHTML = `<div class="chapter-title">${chapter.title}</div>`;
+  chapter.content.forEach(p => {
+    const el = document.createElement('p');
+    el.textContent = p;
+    reader.appendChild(el);
+  });
+  reader.innerHTML += `<div class="chapter-divider">●</div>`;
+  currentPara = 0;
+  updateProgress();
+}
 
-  function initBook(){
-    document.getElementById("bookTitle").textContent = book.title;
-    currentPage = parseInt(localStorage.getItem(`page_${book.id}`))||0;
-    buildTOC();
-    renderPage(currentPage);
-  }
-
-  function buildTOC(){
-    tocList.innerHTML="";
-    book.chapters.sort((a,b)=>a.order-b.order).forEach((ch,i)=>{
-      const li=document.createElement("li");
-      li.textContent=ch.title;
-      li.onclick=()=>{
-        currentPage=i;
-        renderPage(i);
-        localStorage.setItem(`page_${book.id}`,i);
-        toc.classList.remove('show');
-      };
-      tocList.appendChild(li);
-    });
-  }
-
-  function renderPage(index){
-    reader.innerHTML="";
-    const chapter=book.chapters[index];
-    if(!chapter) return;
-    const h2=document.createElement("h2");
-    h2.textContent=chapter.title;
-    reader.appendChild(h2);
-    chapter.content.forEach(p=>{
-      const el=document.createElement("p");
-      el.textContent=p;
-      reader.appendChild(el);
-    });
-    pageInfo.textContent=`${index+1}/${book.chapters.length}`;
-    updateProgress();
-    estimateTime(chapter);
-    attachTTS();
-  }
-
-  // =============================
-  // NAVIGATION
-  // =============================
-  document.getElementById("next").onclick=()=>{
-    if(currentPage<book.chapters.length-1){
-      currentPage++;
-      renderPage(currentPage);
-      localStorage.setItem(`page_${book.id}`,currentPage);
-    }
-  };
-
-  document.getElementById("prev").onclick=()=>{
-    if(currentPage>0){
-      currentPage--;
-      renderPage(currentPage);
-      localStorage.setItem(`page_${book.id}`,currentPage);
-    }
-  };
-
-  // =============================
-  // PROGRESS & ESTIMASI WAKTU
-  // =============================
-  function updateProgress(){
-    const paras=reader.querySelectorAll('p');
-    const percent=paras.length?Math.round((currentPage+1)/paras.length*100):0;
-    progressBar.style.width=percent+"%";
-    timeLeft.textContent=percent+"%";
-  }
-
-  function estimateTime(chapter){
-    if(chapter.estimatedMinutes){
-      timeLeft.textContent=`± ${chapter.estimatedMinutes} menit`;
-    } else {
-      const words = chapter.content.join(" ").split(/\s+/).length;
-      timeLeft.textContent=`± ${Math.ceil(words/200)} menit`;
-    }
-  }
-
-  // =============================
-  // TTS
-  // =============================
-  let synth=window.speechSynthesis;
-  let reading=false;
-  ttsBtn.onclick=()=>{
-    if(reading){ synth.cancel(); reading=false; return; }
-    const text=reader.innerText;
-    const utter=new SpeechSynthesisUtterance(text);
-    utter.lang="id-ID";
-    utter.onend=()=>reading=false;
-    synth.speak(utter);
-    reading=true;
-  };
-
+// Update progress
+function updateProgress() {
+  const paras = reader.querySelectorAll('p');
+  const percent = paras.length ? Math.round((currentPara+1)/paras.length*100) : 0;
+  document.getElementById('progressText').textContent = percent+'%';
+  document.getElementById('progressBar').style.width = percent+'%';
 }
 </script>
+
 </body>
 </html>
