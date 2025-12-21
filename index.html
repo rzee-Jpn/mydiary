@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MyDiary Reader</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyDiary Reader</title>
 
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/theme.css">
-  <link rel="stylesheet" href="css/sidebar.css">
+<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body class="theme-paper">
@@ -21,10 +18,8 @@
   <div class="logo">📖 MyDiary</div>
 </header>
 
-<!-- Pull Handle -->
 <div id="pullHandle">≡</div>
 
-<!-- Sidebar -->
 <aside id="sidebar">
   <section>
     <h4>Buku</h4>
@@ -62,10 +57,60 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
 
-<script src="js/ui.js"></script>
+<script>
+const sidebar = document.getElementById("sidebar");
+const handle = document.getElementById("pullHandle");
+const header = document.getElementById("header");
+
+let isOpen = false;
+gsap.set(sidebar, { x: "-100%" });
+
+handle.addEventListener("click", () => {
+  gsap.to(sidebar, {
+    x: isOpen ? "-100%" : 0,
+    duration: 0.5,
+    ease: "power3.out"
+  });
+  isOpen = !isOpen;
+});
+
+// auto hide header
+let lastScroll = 0;
+window.addEventListener("scroll", () => {
+  const now = window.scrollY;
+  header.style.transform = now > lastScroll ? "translateY(-100%)" : "translateY(0)";
+  lastScroll = now;
+});
+
+// ZEN MODE
+let zen = false;
+let lastTap = 0;
+
+function toggleZen() {
+  zen = !zen;
+  const footer = document.querySelector("footer.progress");
+
+  if (zen) {
+    gsap.to([header, sidebar, handle, footer], { opacity:0, display:"none", duration:.4 });
+    document.body.classList.add("zen-mode");
+  } else {
+    gsap.to([header, handle, footer], { opacity:1, display:"flex", duration:.4 });
+    gsap.to(sidebar, { x:"-100%", opacity:1, display:"block", duration:.4 });
+    document.body.classList.remove("zen-mode");
+    isOpen = false;
+  }
+}
+
+window.addEventListener("touchend", () => {
+  const now = Date.now();
+  if (now - lastTap < 300) toggleZen();        
+  lastTap = now;
+});
+</script>
+
 <script src="js/settings.js"></script>
-<script src="js/progress.js"></script>
 <script src="js/book-loader.js"></script>
+<script src="js/progress.js"></script>
 <script src="js/tts.js"></script>
 
 </body>
