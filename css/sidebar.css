@@ -1,28 +1,17 @@
-#pullHandle {
-  position: fixed;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background: var(--accent);
-  color: #fff;
-  padding: .5rem .6rem;
-  border-radius: 0 6px 6px 0;
-  cursor: pointer;
-  z-index: 150;
-  font-size: 18px;
-}
-
 #sidebar {
   position: fixed;
-  left: -280px;
   top: 0;
+  left: 0;
   width: 280px;
   height: 100%;
-  background: #fff;
+  background: var(--surface);
+  color: var(--surface-text);
   padding: 1.2rem;
   box-shadow: 4px 0 20px rgba(0,0,0,.2);
+  transform: translateX(-100%);
   z-index: 140;
   font-family: 'Inter', sans-serif;
+  transition: background .3s, color .3s;
 }
 
 #sidebar section {
@@ -34,7 +23,8 @@
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: .08em;
-  opacity: .6;
+  opacity: .7;
+  color: var(--surface-text);
 }
 
 #sidebar ul {
@@ -44,4 +34,5 @@
 #sidebar li {
   margin-bottom: .6rem;
   cursor: pointer;
+  color: var(--surface-text);
 }
