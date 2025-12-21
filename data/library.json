@@ -1,0 +1,16 @@
+[
+  {
+    "id": "naskah-kuno-demo",
+    "title": "Perpustakaan Naskah Kuno",
+    "author": "Anonim",
+    "year": "1920",
+    "cover": "cover.jpg"
+  },
+  {
+    "id": "sejarah-modern",
+    "title": "Sejarah Modern Dunia",
+    "author": "Anonim",
+    "year": "1985",
+    "cover": "cover.jpg"
+  }
+]
