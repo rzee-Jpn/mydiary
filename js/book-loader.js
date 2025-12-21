@@ -1,34 +1,107 @@
-const pages = document.querySelectorAll('.page');
-const pageInfo = document.getElementById('pageInfo');
+const reader = document.getElementById("reader");
+const tocList = document.querySelector("#toc ul");
+const pageInfo = document.getElementById("pageInfo");
 
-let page = parseInt(localStorage.getItem('page')) || 0;
+let book = null;
+let currentPage = 0;
 
-function showPage(n) {
-  pages.forEach((p,i)=>p.style.display = i===n?'block':'none');
-  pageInfo.textContent = `${n+1}/${pages.length}`;
-  localStorage.setItem('page', n);
-  estimateTime();
+/* =============================
+   LOAD BOOK.JSON
+============================= */
+fetch("data/book.json")
+  .then(res => res.json())
+  .then(data => {
+    book = data;
+    initBook();
+  })
+  .catch(err => {
+    reader.innerHTML = "<p>Gagal memuat buku.</p>";
+    console.error(err);
+  });
+
+/* =============================
+   INIT
+============================= */
+function initBook() {
+  document.title = book.title;
+  currentPage = parseInt(localStorage.getItem("page")) || 0;
+  buildTOC();
+  renderPage(currentPage);
 }
 
-document.getElementById('next').onclick = () =>
-  showPage(Math.min(page+1, pages.length-1));
+/* =============================
+   BUILD TOC
+============================= */
+function buildTOC() {
+  tocList.innerHTML = "";
 
-document.getElementById('prev').onclick = () =>
-  showPage(Math.max(page-1, 0));
+  book.chapters
+    .sort((a, b) => a.order - b.order)
+    .forEach((ch, i) => {
+      const li = document.createElement("li");
+      li.textContent = ch.title;
+      li.onclick = () => {
+        currentPage = i;
+        renderPage(i);
+        localStorage.setItem("page", i);
+        document.getElementById("toc").classList.remove("show");
+      };
+      tocList.appendChild(li);
+    });
+}
 
-document.querySelectorAll('#toc li').forEach(li=>{
-  li.onclick = ()=>{
-    page = parseInt(li.dataset.page);
-    showPage(page);
-    toc.classList.remove('show');
+/* =============================
+   RENDER PAGE
+============================= */
+function renderPage(index) {
+  reader.innerHTML = "";
+
+  const chapter = book.chapters[index];
+  if (!chapter) return;
+
+  const h2 = document.createElement("h2");
+  h2.textContent = chapter.title;
+  reader.appendChild(h2);
+
+  chapter.content.forEach(text => {
+    const p = document.createElement("p");
+    p.textContent = text;
+    reader.appendChild(p);
+  });
+
+  pageInfo.textContent = `${index + 1}/${book.chapters.length}`;
+  estimateTime(chapter);
+  attachTTS();
+}
+
+/* =============================
+   NAVIGATION
+============================= */
+document.getElementById("next").onclick = () => {
+  if (currentPage < book.chapters.length - 1) {
+    currentPage++;
+    renderPage(currentPage);
+    localStorage.setItem("page", currentPage);
   }
-});
+};
 
-function estimateTime() {
-  const words = pages[page].innerText.split(/\s+/).length;
-  const minutes = Math.ceil(words / 200);
-  document.getElementById('timeLeft').textContent =
-    `± ${minutes} menit`;
+document.getElementById("prev").onclick = () => {
+  if (currentPage > 0) {
+    currentPage--;
+    renderPage(currentPage);
+    localStorage.setItem("page", currentPage);
+  }
+};
+
+/* =============================
+   ESTIMATED READING TIME
+============================= */
+function estimateTime(chapter) {
+  const timeBox = document.getElementById("timeLeft");
+  if (chapter.estimatedMinutes) {
+    timeBox.textContent = `± ${chapter.estimatedMinutes} menit`;
+  } else {
+    const words = chapter.content.join(" ").split(/\s+/).length;
+    timeBox.textContent = `± ${Math.ceil(words / 200)} menit`;
+  }
 }
-
-showPage(page);
