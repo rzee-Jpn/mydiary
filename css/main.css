@@ -2,21 +2,12 @@
   --bg: #f6f1e7;
   --text: #2a2a2a;
   --accent: #8c6d3f;
-
-  --font-body: 'Merriweather', serif;
-  --font-ui: 'Inter', sans-serif;
-
   --font-size: 18px;
-}
-
-/* RESET RINGAN */
-* {
-  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: var(--font-body);
+  font-family: 'Merriweather', serif;
   background: var(--bg);
   color: var(--text);
   font-size: var(--font-size);
@@ -24,155 +15,62 @@ body {
   transition: background .3s, color .3s;
 }
 
-/* HEADER */
 .reader-header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  width: 100%;
   height: 56px;
-
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
   padding: 0 1rem;
-  background: color-mix(in srgb, var(--bg) 90%, transparent);
-  backdrop-filter: blur(6px);
-
-  border-bottom: 1px solid rgba(0,0,0,.05);
+  background: rgba(246,241,231,.85);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  transition: transform .4s ease;
 }
 
-.book-title {
-  font-family: var(--font-ui);
-  font-size: .9rem;
-  font-weight: 500;
-  opacity: .8;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.logo {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: .5px;
 }
 
-.actions {
-  display: flex;
-  gap: .5rem;
-}
-
-/* BUTTON */
-.icon-btn {
-  background: none;
-  border: none;
-  font-size: 1.1rem;
-  cursor: pointer;
-  opacity: .7;
-}
-
-.icon-btn:hover {
-  opacity: 1;
-}
-
-/* SELECT */
-select {
-  font-family: var(--font-ui);
-  font-size: .85rem;
-  padding: .25rem .5rem;
-  border-radius: 6px;
-  border: 1px solid rgba(0,0,0,.15);
-  background: transparent;
-  color: inherit;
-}
-
-/* READER */
 #reader {
   max-width: 680px;
-  margin: 3.5rem auto 7rem;
+  margin: 5rem auto 6rem;
   padding: 0 1.5rem;
 }
 
-/* JUDUL BAB */
-#reader h2 {
+.page h2 {
   text-align: center;
   margin: 3rem 0 2rem;
-  font-size: 1.4rem;
 }
 
-/* PARAGRAF */
-#reader p {
+p {
   margin-bottom: 1.6rem;
   cursor: pointer;
 }
 
-#reader p.highlight {
-  background: rgba(255,230,150,.5);
-  border-radius: 4px;
-  padding: .1rem .25rem;
+p:hover {
+  background: rgba(0,0,0,.03);
 }
 
-/* TOC */
-#tocPanel {
-  position: fixed;
-  top: 56px;
-  left: 0;
-  width: 260px;
-  height: calc(100% - 56px);
-
-  background: var(--bg);
-  padding: 1.25rem;
-
-  box-shadow: 2px 0 16px rgba(0,0,0,.12);
-  transform: translateX(-100%);
-  transition: .3s ease;
-  z-index: 200;
-}
-
-#tocPanel.show {
-  transform: translateX(0);
-}
-
-#tocPanel h3 {
-  font-family: var(--font-ui);
-  font-size: .9rem;
-  text-transform: uppercase;
-  letter-spacing: .05em;
-  opacity: .6;
-  margin-bottom: 1rem;
-}
-
-#tocPanel li {
-  list-style: none;
-  margin-bottom: .75rem;
-  cursor: pointer;
-  font-size: .95rem;
-}
-
-/* FOOTER PROGRESS */
 footer.progress {
   position: fixed;
   bottom: 0;
   width: 100%;
-
-  background: color-mix(in srgb, var(--bg) 90%, transparent);
-  backdrop-filter: blur(6px);
-
-  padding: .6rem 1rem;
+  background: rgba(246,241,231,.9);
+  padding: .5rem 1rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
-
-  border-top: 1px solid rgba(0,0,0,.05);
-}
-
-#progressText {
-  font-family: var(--font-ui);
-  font-size: .75rem;
-  opacity: .7;
-  min-width: 40px;
+  gap: .75rem;
 }
 
 .bar {
   flex: 1;
   height: 4px;
   background: rgba(0,0,0,.1);
-  border-radius: 99px;
+  border-radius: 4px;
   overflow: hidden;
 }
 
@@ -180,5 +78,4 @@ footer.progress {
   height: 100%;
   width: 0%;
   background: var(--accent);
-  transition: width .2s;
 }
