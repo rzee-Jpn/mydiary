@@ -4,17 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reader</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/theme.css">
 <link rel="stylesheet" href="css/dualpage.css">
 </head>
+
 <body class="theme-paper">
 
 <header class="reader-header">
-  <button id="tocBtn">☰</button>
+  <button id="tocBtn" class="icon-btn">☰</button>
+
   <div class="book-title" id="bookTitle">Memuat…</div>
+
   <div class="actions">
-    <button id="ttsBtn">🔊</button>
+    <button id="ttsBtn" class="icon-btn">🔊</button>
     <select id="themeSelect">
       <option value="light">Light</option>
       <option value="dark">Dark</option>
@@ -33,7 +41,9 @@
 
 <footer class="progress">
   <span id="progressText">0%</span>
-  <div class="bar"><div id="progressBar"></div></div>
+  <div class="bar">
+    <div id="progressBar"></div>
+  </div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
