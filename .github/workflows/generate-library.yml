@@ -1,0 +1,30 @@
+name: Auto Generate Library JSON
+
+on:
+  push:
+    paths:
+      - "data/books/**"
+      - "generate-library.js"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Generate library.json
+        run: node generate-library.js
+
+      - name: Commit result
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data/library.json
+          git commit -m "auto: update library.json" || echo "no changes"
+          git push
