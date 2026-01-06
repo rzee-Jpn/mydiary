@@ -1,4 +1,4 @@
-/* HEADER */
+7/* HEADER */
 .reader-header {
   position: fixed;
   top: 0;
@@ -110,6 +110,7 @@ body.zen-mode header,
 body.zen-mode footer,
 body.zen-mode #sidebar,
 body.zen-mode #pullHandle,
+body.zen-mode #translateBar
 body.zen-mode #floatingControls {
   display: none !important;
 }
