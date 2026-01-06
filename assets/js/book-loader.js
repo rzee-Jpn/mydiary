@@ -6,7 +6,6 @@
   const progressBar = document.getElementById("progressBar");
 
   const params = new URLSearchParams(location.search);
-  const bookId = params.get("book");
   const bookPath = params.get("path");
 
   if (!bookPath) {
@@ -18,36 +17,32 @@
   let currentChapter = 0;
 
   // ========================
-  // LOAD BOOK METADATA
+  // LOAD BOOK
   // ========================
   fetch(`${bookPath}/book.json`)
     .then(r => r.json())
     .then(book => {
       bookTitle.textContent = book.title || "Tanpa Judul";
       chapters = book.chapters || [];
-      buildTOC(chapters);
+      buildTOC();
       loadChapter(0);
-    })
-    .catch(err => {
-      console.error(err);
-      reader.innerHTML = "<p>📕 Gagal memuat buku.</p>";
     });
 
   // ========================
-  // BUILD TOC
+  // TOC
   // ========================
-  function buildTOC(chapters) {
+  function buildTOC() {
     tocList.innerHTML = "";
     chapters.forEach((ch, i) => {
       const li = document.createElement("li");
-      li.textContent = ch.title || `Bab ${i + 1}`;
-      li.addEventListener("click", () => loadChapter(i));
+      li.textContent = ch.title;
+      li.onclick = () => loadChapter(i);
       tocList.appendChild(li);
     });
   }
 
   // ========================
-  // LOAD CHAPTER
+  // LOAD HTML CHAPTER
   // ========================
   function loadChapter(index) {
     const ch = chapters[index];
@@ -56,27 +51,9 @@
     currentChapter = index;
 
     fetch(`${bookPath}/${ch.file}`)
-      .then(r => r.json())
-      .then(data => {
-        gsap.fromTo(
-          reader,
-          { x: index > currentChapter ? 300 : -300, opacity: 0 },
-          { x: 0, opacity: 1, duration: 0.4, ease: "power3.out" }
-        );
-
-        reader.innerHTML = `<h2>${data.title}</h2>`;
-
-        data.content.forEach(pText => {
-          const p = document.createElement("p");
-          p.textContent = pText;
-          reader.appendChild(p);
-        });
-
-        const divider = document.createElement("div");
-        divider.className = "chapter-divider";
-        divider.textContent = "●";
-        reader.appendChild(divider);
-
+      .then(r => r.text())
+      .then(html => {
+        reader.innerHTML = html;
         updateProgress();
       });
   }
@@ -85,37 +62,30 @@
   // PROGRESS
   // ========================
   function updateProgress() {
-    const paras = reader.querySelectorAll("p");
-    const percent = paras.length
-      ? Math.round(((currentChapter + 1) / chapters.length) * 100)
-      : 0;
-
-    if (progressText) progressText.textContent = percent + "%";
-    if (progressBar) progressBar.style.width = percent + "%";
+    const percent = Math.round(((currentChapter + 1) / chapters.length) * 100);
+    progressText.textContent = percent + "%";
+    progressBar.style.width = percent + "%";
   }
 
   // ========================
-  // SWIPE NAVIGATION
+  // SWIPE
   // ========================
-  let startX = 0, startY = 0;
+  let sx = 0, sy = 0;
 
   reader.addEventListener("touchstart", e => {
-    const t = e.touches[0];
-    startX = t.clientX;
-    startY = t.clientY;
+    sx = e.touches[0].clientX;
+    sy = e.touches[0].clientY;
   });
 
   reader.addEventListener("touchend", e => {
-    const t = e.changedTouches[0];
-    const dx = t.clientX - startX;
-    const dy = t.clientY - startY;
+    const dx = e.changedTouches[0].clientX - sx;
+    const dy = e.changedTouches[0].clientY - sy;
 
     if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
-      if (dx < 0 && currentChapter < chapters.length - 1) {
+      if (dx < 0 && currentChapter < chapters.length - 1)
         loadChapter(currentChapter + 1);
-      } else if (dx > 0 && currentChapter > 0) {
+      if (dx > 0 && currentChapter > 0)
         loadChapter(currentChapter - 1);
-      }
     }
   });
 })();
