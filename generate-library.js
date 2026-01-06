@@ -1,6 +1,6 @@
 /**
  * AUTO GENERATE LIBRARY.JSON
- * Folder = sumber data
+ * Sumber data: data/books/*
  * Cocok untuk GitHub Pages (tanpa backend)
  */
 
@@ -32,12 +32,19 @@ folders.forEach(folder => {
   try {
     const book = JSON.parse(fs.readFileSync(bookPath, "utf8"));
 
+    // === VALIDASI COVER ===
+    let cover = book.cover || "cover.jpg";
+    const coverPath = path.join(BOOKS_DIR, id, cover);
+    if (!fs.existsSync(coverPath)) {
+      cover = "cover.jpg";
+    }
+
     library.push({
       id,
       title: book.title || id,
       author: book.author || "",
       year: book.year || "",
-      cover: book.cover || "cover.jpg",
+      cover,
       language: book.language || "",
       tags: book.tags || []
     });
@@ -47,14 +54,10 @@ folders.forEach(folder => {
   }
 });
 
-/**
- * Sort otomatis A–Z (judul)
- */
+// Sort A–Z berdasarkan judul
 library.sort((a, b) => a.title.localeCompare(b.title));
 
-/**
- * Tulis output
- */
+// Tulis output
 fs.writeFileSync(
   OUTPUT_FILE,
   JSON.stringify(library, null, 2),
