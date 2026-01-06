@@ -15,7 +15,7 @@ LIBRARY_JSON = "data/library.json"
 STATE_FILE = "crawler/state.json"
 
 HEADERS = {
-    "User-Agent": "MyDiary-Gutenberg-Crawler/3.0"
+    "User-Agent": "MyDiary-Gutenberg-Crawler/FINAL"
 }
 
 os.makedirs(DATA_DIR, exist_ok=True)
@@ -42,10 +42,7 @@ def save_state(s):
 # ======================================================
 
 def get_books(page):
-    soup = BeautifulSoup(
-        requests.get(page, headers=HEADERS).text,
-        "lxml"
-    )
+    soup = BeautifulSoup(requests.get(page, headers=HEADERS).text, "lxml")
     books = [urljoin(BASE, a["href"]) for a in soup.select("li.booklink a.link")]
     next_page = next(
         (urljoin(BASE, a["href"]) for a in soup.select("a")
@@ -55,7 +52,6 @@ def get_books(page):
     return books, next_page
 
 def get_html_url(book_url):
-    # contoh: https://www.gutenberg.org/ebooks/66160
     book_id = book_url.rstrip("/").split("/")[-1]
     return f"https://www.gutenberg.org/ebooks/{book_id}.html.images"
 
@@ -66,7 +62,6 @@ def parse_html_book(html_url):
 
     soup = BeautifulSoup(r.text, "lxml")
 
-    # metadata
     title_tag = soup.find("h1")
     title = title_tag.get_text(strip=True) if title_tag else "Unknown"
 
@@ -142,29 +137,30 @@ def main():
 
         slug = slugify(title)
         book_dir = f"{DATA_DIR}/{slug}"
+        chapters_dir = f"{book_dir}/chapters"
 
         if os.path.exists(book_dir):
             continue
 
-        os.makedirs(book_dir, exist_ok=True)
+        os.makedirs(chapters_dir, exist_ok=True)
+
         chapter_meta = []
 
         for i, ch in enumerate(chapters, 1):
-            fname = f"chapter-{i:02d}.json"
-            json.dump(
-                {
-                    "title": ch["title"],
-                    "html": ch["html"].strip()
-                },
-                open(f"{book_dir}/{fname}", "w", encoding="utf-8"),
-                indent=2,
-                ensure_ascii=False
-            )
+            # skip TOC
+            if "contents" in ch["title"].lower():
+                continue
+
+            fname = f"ch{i:02d}.html"
+
+            with open(f"{chapters_dir}/{fname}", "w", encoding="utf-8") as f:
+                f.write(f"<h2>{ch['title']}</h2>\n")
+                f.write(ch["html"])
 
             chapter_meta.append({
-                "id": fname[:-5],
+                "id": f"ch{i:02d}",
                 "title": ch["title"],
-                "file": fname
+                "file": f"chapters/{fname}"
             })
 
         json.dump(
@@ -200,8 +196,6 @@ def main():
             state["done"] = True
 
     save_state(state)
-
-# ======================================================
 
 if __name__ == "__main__":
     main()
