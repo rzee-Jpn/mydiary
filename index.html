@@ -10,75 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="assets/css/main.css">
-
-<style>
-/* ===========================
-   FLOATING CONTROLS
-=========================== */
-#floatingControls {
-  position: fixed;
-  right: 16px;
-  bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  z-index: 9999;
-}
-
-#floatingControls button {
-  background: rgba(0,0,0,.7);
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  font-size: 18px;
-  cursor: pointer;
-}
-
-body.theme-paper #floatingControls button {
-  background: rgba(120,90,60,.85);
-}
-
-.zen-mode #floatingControls {
-  display: none;
-}
-
-/* ===========================
-   TRANSLATE (HEADER)
-=========================== */
-.translate-wrap {
-  position: absolute;
-  right: 1rem;
-}
-
-.translate-wrap select {
-  font-size: 12px;
-  padding: 5px 8px;
-  border-radius: 6px;
-  border: none;
-  background: rgba(0,0,0,.6);
-  color: #fff;
-}
-
-body.theme-paper .translate-wrap select {
-  background: rgba(120,90,60,.85);
-}
-
-/* ===========================
-   SIDEBAR CLOSE BUTTON
-=========================== */
-.close-sidebar {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  border: none;
-  background: transparent;
-  font-size: 22px;
-  cursor: pointer;
-  color: var(--text);
-}
-</style>
+<link rel="stylesheet" href="assets/css/sidebar.css">
 </head>
 
 <body class="theme-paper">
@@ -86,23 +18,12 @@ body.theme-paper .translate-wrap select {
 <header id="header" class="reader-header">
   <div class="back-btn" onclick="history.back()">←</div>
   <div class="logo">📖 MyDiary</div>
-
-  <!-- TRANSLATE PINDAH KE HEADER -->
-  <div class="translate-wrap">
-    <select id="translateLang">
-      <option value="">🌐 Original</option>
-      <option value="id">🇮🇩 ID</option>
-      <option value="en">🇬🇧 EN</option>
-      <option value="ja">🇯🇵 JP</option>
-      <option value="ar">🇸🇦 AR</option>
-    </select>
-  </div>
 </header>
 
-<aside id="sidebar">
-  <!-- CLOSE BUTTON -->
-  <button id="closeSidebar" class="close-sidebar">✕</button>
+<!-- SIDEBAR HANDLE -->
+<div id="pullHandle">≡</div>
 
+<aside id="sidebar">
   <section>
     <h4>Buku</h4>
     <div id="bookTitle">Memuat…</div>
@@ -128,94 +49,31 @@ body.theme-paper .translate-wrap select {
 
 <footer class="progress">
   <span id="progressText">0%</span>
-  <div class="bar">
-    <div id="progressBar"></div>
-  </div>
+  <div class="bar"><div id="progressBar"></div></div>
 </footer>
 
-<!-- FLOATING BUTTONS -->
+<!-- FLOATING CONTROLS -->
 <div id="floatingControls">
   <button id="zoomIn">A+</button>
   <button id="zoomOut">A−</button>
   <button id="ttsFloat">🔊</button>
 </div>
 
+<!-- TRANSLATE -->
+<div id="translateBar">
+  <select id="translateLang">
+    <option value="">🌐 Original</option>
+    <option value="id">🇮🇩 Indonesia</option>
+    <option value="en">🇬🇧 English</option>
+    <option value="ja">🇯🇵 日本語</option>
+    <option value="ar">🇸🇦 العربية</option>
+  </select>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
 
-<script>
-/* ===========================
-   SIDEBAR (STABLE)
-=========================== */
-const sidebar = document.getElementById("sidebar");
-const closeBtn = document.getElementById("closeSidebar");
-
-// sidebar default terbuka
-gsap.set(sidebar, { x: 0 });
-
-closeBtn.onclick = () => {
-  gsap.to(sidebar, {
-    x: "-100%",
-    duration: 0.3,
-    ease: "power2.out"
-  });
-};
-
-/* ===========================
-   AUTO HIDE HEADER
-=========================== */
-const header = document.getElementById("header");
-let lastScroll = 0;
-
-window.addEventListener("scroll", () => {
-  const now = window.scrollY;
-  header.style.transform =
-    now > lastScroll ? "translateY(-100%)" : "translateY(0)";
-  lastScroll = now;
-});
-
-/* ===========================
-   ZEN MODE
-=========================== */
-let zen = false;
-let lastTap = 0;
-
-function toggleZen() {
-  zen = !zen;
-  document.body.classList.toggle("zen-mode", zen);
-}
-
-window.addEventListener("touchend", (e) => {
-  if (e.target.closest("button, select, a")) return;
-  const now = Date.now();
-  if (now - lastTap < 300) toggleZen();
-  lastTap = now;
-});
-
-/* ===========================
-   FONT SIZE (ZOOM)
-=========================== */
-const reader = document.getElementById("reader");
-let fontSize = parseFloat(localStorage.getItem("readerFontSize")) || 1.05;
-
-function applyFont() {
-  reader.style.fontSize = fontSize + "rem";
-  localStorage.setItem("readerFontSize", fontSize);
-}
-
-document.getElementById("zoomIn").onclick = () => {
-  fontSize = Math.min(fontSize + 0.1, 1.8);
-  applyFont();
-};
-
-document.getElementById("zoomOut").onclick = () => {
-  fontSize = Math.max(fontSize - 0.1, 0.8);
-  applyFont();
-};
-
-applyFont();
-</script>
-
-<!-- CORE SCRIPTS -->
+<!-- CORE JS -->
+<script src="assets/js/sidebar.js"></script>
 <script src="assets/js/settings.js"></script>
 <script src="assets/js/book-loader.js"></script>
 <script src="assets/js/resume.js"></script>
