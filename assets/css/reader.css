@@ -90,11 +90,19 @@ footer .bar {
 }
 
 #translateBar select {
+  height: 36px;
+  min-width: 150px;
   padding: 6px 10px;
+
   border-radius: 8px;
   background: rgba(120,90,60,.85);
   color: #fff;
   border: none;
+
+  font-size: 14px;
+  line-height: 1.2;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 /* ZEN MODE */
