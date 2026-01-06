@@ -10,6 +10,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="assets/css/main.css">
+
+<style>
+/* ===========================
+   FLOATING CONTROLS
+=========================== */
+#floatingControls {
+  position: fixed;
+  right: 16px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+}
+
+#floatingControls button {
+  background: rgba(0,0,0,.7);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+body.theme-paper #floatingControls button {
+  background: rgba(120,90,60,.85);
+}
+
+.zen-mode #floatingControls {
+  display: none;
+}
+</style>
 </head>
 
 <body class="theme-paper">
@@ -38,10 +72,6 @@
   </section>
 
   <section>
-    <button id="ttsBtn">🔊 Bacakan</button>
-  </section>
-
-  <section>
     <h4>Daftar Bab</h4>
     <ul id="tocList"></ul>
   </section>
@@ -55,6 +85,13 @@
     <div id="progressBar"></div>
   </div>
 </footer>
+
+<!-- FLOATING BUTTONS -->
+<div id="floatingControls">
+  <button id="zoomIn">A+</button>
+  <button id="zoomOut">A−</button>
+  <button id="ttsFloat">🔊</button>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
 
@@ -90,7 +127,7 @@ window.addEventListener("scroll", () => {
 });
 
 /* ===========================
-   ZEN MODE (FIXED)
+   ZEN MODE
 =========================== */
 let zen = false;
 let lastTap = 0;
@@ -98,62 +135,58 @@ let lastTap = 0;
 function toggleZen() {
   zen = !zen;
 
-  if (zen) {
-    gsap.to([header, handle, footer], {
-      opacity: 0,
-      pointerEvents: "none",
-      duration: 0.3
-    });
+  gsap.to([header, handle, footer, sidebar], {
+    opacity: zen ? 0 : 1,
+    pointerEvents: zen ? "none" : "auto",
+    duration: 0.3
+  });
 
-    gsap.to(sidebar, {
-      x: "-100%",
-      opacity: 0,
-      pointerEvents: "none",
-      duration: 0.3
-    });
-
-    document.body.classList.add("zen-mode");
-    isOpen = false;
-
-  } else {
-    gsap.to([header, handle, footer], {
-      opacity: 1,
-      pointerEvents: "auto",
-      duration: 0.3
-    });
-
-    gsap.to(sidebar, {
-      x: "-100%",
-      opacity: 1,
-      pointerEvents: "auto",
-      duration: 0.3
-    });
-
-    document.body.classList.remove("zen-mode");
-  }
+  document.body.classList.toggle("zen-mode", zen);
+  isOpen = false;
 }
 
-/* double tap ONLY on empty area */
 window.addEventListener("touchend", (e) => {
-  if (e.target.closest("button, select, a, input")) return;
-
+  if (e.target.closest("button, select, a")) return;
   const now = Date.now();
   if (now - lastTap < 300) toggleZen();
   lastTap = now;
 });
 
 /* ===========================
-   TEXT TO SPEECH (FIXED)
+   FONT SIZE (ZOOM)
 =========================== */
-const ttsBtn = document.getElementById("ttsBtn");
+const reader = document.getElementById("reader");
+let fontSize = parseFloat(localStorage.getItem("readerFontSize")) || 1.05;
 
-if ("speechSynthesis" in window && ttsBtn) {
+function applyFont() {
+  reader.style.fontSize = fontSize + "rem";
+  localStorage.setItem("readerFontSize", fontSize);
+}
+
+document.getElementById("zoomIn").onclick = () => {
+  fontSize = Math.min(fontSize + 0.1, 1.8);
+  applyFont();
+};
+
+document.getElementById("zoomOut").onclick = () => {
+  fontSize = Math.max(fontSize - 0.1, 0.8);
+  applyFont();
+};
+
+applyFont();
+
+/* ===========================
+   TEXT TO SPEECH
+=========================== */
+const ttsBtn = document.getElementById("ttsFloat");
+
+if ("speechSynthesis" in window) {
   let utterance;
 
   ttsBtn.addEventListener("click", () => {
     speechSynthesis.cancel();
 
-    const text = document.getElementById("reader")?.innerText?.trim();
+    const text = reader.innerText.trim();
     if (!text) return;
 
     utterance = new SpeechSynthesisUtterance(text);
@@ -163,8 +196,7 @@ if ("speechSynthesis" in window && ttsBtn) {
 
     speechSynthesis.speak(utterance);
   });
-
-} else if (ttsBtn) {
+} else {
   ttsBtn.style.display = "none";
 }
 </script>
