@@ -48,7 +48,6 @@ body.theme-paper #floatingControls button {
 
 <body class="theme-paper">
 
-
 <header id="header" class="reader-header">
   <div class="back-btn" onclick="history.back()">←</div>
   <div class="logo">📖 MyDiary</div>
@@ -186,33 +185,9 @@ document.getElementById("zoomOut").onclick = () => {
 };
 
 applyFont();
-
-/* ===========================
-   TEXT TO SPEECH
-=========================== */
-const ttsBtn = document.getElementById("ttsFloat");
-
-if ("speechSynthesis" in window) {
-  let utterance;
-
-  ttsBtn.addEventListener("click", () => {
-    speechSynthesis.cancel();
-
-    const text = reader.innerText.trim();
-    if (!text) return;
-
-    utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "id-ID";
-    utterance.rate = 1;
-    utterance.pitch = 1;
-
-    speechSynthesis.speak(utterance);
-  });
-} else {
-  ttsBtn.style.display = "none";
-}
 </script>
 
+<!-- CORE SCRIPTS -->
 <script src="assets/js/settings.js"></script>
 <script src="assets/js/book-loader.js"></script>
 <script src="assets/js/resume.js"></script>
