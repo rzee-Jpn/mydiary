@@ -9,30 +9,19 @@
   padding: 1.2rem;
   box-shadow: 4px 0 20px rgba(0,0,0,.2);
   transform: translateX(-100%);
-  z-index: 140;
-  font-family: 'Inter', sans-serif;
-  transition: background .3s, color .3s;
+  z-index: 400;
+  overflow-y: auto;
 }
 
-#sidebar section {
-  margin-bottom: 1.5rem;
-}
-
-#sidebar h4 {
-  margin: 0 0 .5rem;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-  opacity: .7;
-  color: var(--surface-text);
-}
-
-#sidebar ul {
-  padding-left: 1rem;
-}
-
-#sidebar li {
-  margin-bottom: .6rem;
+#pullHandle {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: .5rem .6rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 0 6px 6px 0;
   cursor: pointer;
-  color: var(--surface-text);
+  z-index: 450;
 }
