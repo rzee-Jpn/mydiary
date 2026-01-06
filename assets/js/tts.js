@@ -7,84 +7,65 @@
     return;
   }
 
-  let utterance;
   let speaking = false;
+  let utterances = [];
+  let currentIndex = 0;
 
   function clearHighlight() {
-    reader.querySelectorAll(".tts-active").forEach(el => {
-      el.classList.remove("tts-active");
+    reader.querySelectorAll(".tts-active").forEach(p => {
+      p.classList.remove("tts-active");
     });
   }
 
-  function prepareText() {
+  function stopTTS() {
+    speechSynthesis.cancel();
+    clearHighlight();
+    speaking = false;
+    currentIndex = 0;
+  }
+
+  function prepareParagraphs() {
     clearHighlight();
 
-    const walker = document.createTreeWalker(
-      reader,
-      NodeFilter.SHOW_TEXT,
-      {
-        acceptNode(node) {
-          if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
-          if (node.parentElement.closest("button, a")) return NodeFilter.FILTER_REJECT;
-          return NodeFilter.FILTER_ACCEPT;
-        }
-      }
-    );
+    return [...reader.querySelectorAll("p")]
+      .filter(p => p.innerText.trim().length > 20); // skip noise
+  }
 
-    const fragments = [];
-    let node;
-
-    while ((node = walker.nextNode())) {
-      const span = document.createElement("span");
-      span.textContent = node.nodeValue;
-      node.parentNode.replaceChild(span, node);
-      fragments.push(span);
+  function speakNext(paragraphs) {
+    if (currentIndex >= paragraphs.length) {
+      speaking = false;
+      return;
     }
 
-    return fragments;
+    const p = paragraphs[currentIndex];
+    p.classList.add("tts-active");
+    p.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    const u = new SpeechSynthesisUtterance(p.innerText);
+    u.lang = "id-ID";
+    u.rate = 1;
+    u.pitch = 1;
+
+    u.onend = () => {
+      p.classList.remove("tts-active");
+      currentIndex++;
+      speakNext(paragraphs);
+    };
+
+    speechSynthesis.speak(u);
   }
 
   ttsBtn.addEventListener("click", () => {
     if (speaking) {
-      speechSynthesis.cancel();
-      speaking = false;
-      clearHighlight();
+      stopTTS();
       return;
     }
 
-    const spans = prepareText();
-    const text = spans.map(s => s.textContent).join("");
-
-    if (!text.trim()) return;
-
-    utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "id-ID";
-    utterance.rate = 1;
-    utterance.pitch = 1;
-
-    let charIndex = 0;
-
-    utterance.onboundary = e => {
-      if (e.name !== "word") return;
-
-      let count = 0;
-      for (const span of spans) {
-        count += span.textContent.length;
-        if (count >= e.charIndex) {
-          clearHighlight();
-          span.classList.add("tts-active");
-          span.scrollIntoView({ block: "center", behavior: "smooth" });
-          break;
-        }
-      }
-    };
-
-    utterance.onend = () => {
-      speaking = false;
-      clearHighlight();
-    };
+    const paragraphs = prepareParagraphs();
+    if (!paragraphs.length) return;
 
     speaking = true;
-    speechSynthesis.speak(utterance);
+    currentIndex = 0;
+    speakNext(paragraphs);
   });
 })();
