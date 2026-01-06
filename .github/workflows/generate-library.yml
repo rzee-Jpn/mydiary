@@ -1,30 +1,24 @@
-name: Auto Generate Library JSON
+name: Gutenberg Daily
 
 on:
-  push:
-    paths:
-      - "data/books/**"
-      - "generate-library.js"
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
 
 jobs:
-  build:
+  crawl:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-python@v5
         with:
-          node-version: 18
-
-      - name: Generate library.json
-        run: node generate-library.js
-
-      - name: Commit result
-        run: |
+          python-version: "3.11"
+      - run: pip install requests beautifulsoup4 lxml
+      - run: python crawler/crawler.py
+      - run: |
           git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git add data/library.json
-          git commit -m "auto: update library.json" || echo "no changes"
+          git config user.email "actions@github.com"
+          git add data crawler
+          git commit -m "Daily Gutenberg update" || exit 0
+          git pull --rebase
           git push
