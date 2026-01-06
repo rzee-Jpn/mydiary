@@ -59,9 +59,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
 
 <script>
+/* ===========================
+   SIDEBAR
+=========================== */
 const sidebar = document.getElementById("sidebar");
 const handle = document.getElementById("pullHandle");
 const header = document.getElementById("header");
+const footer = document.querySelector("footer.progress");
 
 let isOpen = false;
 gsap.set(sidebar, { x: "-100%" });
@@ -69,13 +73,15 @@ gsap.set(sidebar, { x: "-100%" });
 handle.addEventListener("click", () => {
   gsap.to(sidebar, {
     x: isOpen ? "-100%" : 0,
-    duration: 0.5,
+    duration: 0.4,
     ease: "power3.out"
   });
   isOpen = !isOpen;
 });
 
-// auto hide header
+/* ===========================
+   AUTO HIDE HEADER
+=========================== */
 let lastScroll = 0;
 window.addEventListener("scroll", () => {
   const now = window.scrollY;
@@ -83,36 +89,89 @@ window.addEventListener("scroll", () => {
   lastScroll = now;
 });
 
-// ZEN MODE
+/* ===========================
+   ZEN MODE (FIXED)
+=========================== */
 let zen = false;
 let lastTap = 0;
 
 function toggleZen() {
   zen = !zen;
-  const footer = document.querySelector("footer.progress");
 
   if (zen) {
-    gsap.to([header, sidebar, handle, footer], { opacity:0, display:"none", duration:.4 });
+    gsap.to([header, handle, footer], {
+      opacity: 0,
+      pointerEvents: "none",
+      duration: 0.3
+    });
+
+    gsap.to(sidebar, {
+      x: "-100%",
+      opacity: 0,
+      pointerEvents: "none",
+      duration: 0.3
+    });
+
     document.body.classList.add("zen-mode");
-  } else {
-    gsap.to([header, handle, footer], { opacity:1, display:"flex", duration:.4 });
-    gsap.to(sidebar, { x:"-100%", opacity:1, display:"block", duration:.4 });
-    document.body.classList.remove("zen-mode");
     isOpen = false;
+
+  } else {
+    gsap.to([header, handle, footer], {
+      opacity: 1,
+      pointerEvents: "auto",
+      duration: 0.3
+    });
+
+    gsap.to(sidebar, {
+      x: "-100%",
+      opacity: 1,
+      pointerEvents: "auto",
+      duration: 0.3
+    });
+
+    document.body.classList.remove("zen-mode");
   }
 }
 
-window.addEventListener("touchend", () => {
+/* double tap ONLY on empty area */
+window.addEventListener("touchend", (e) => {
+  if (e.target.closest("button, select, a, input")) return;
+
   const now = Date.now();
-  if (now - lastTap < 300) toggleZen();        
+  if (now - lastTap < 300) toggleZen();
   lastTap = now;
 });
+
+/* ===========================
+   TEXT TO SPEECH (FIXED)
+=========================== */
+const ttsBtn = document.getElementById("ttsBtn");
+
+if ("speechSynthesis" in window && ttsBtn) {
+  let utterance;
+
+  ttsBtn.addEventListener("click", () => {
+    speechSynthesis.cancel();
+
+    const text = document.getElementById("reader")?.innerText?.trim();
+    if (!text) return;
+
+    utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "id-ID";
+    utterance.rate = 1;
+    utterance.pitch = 1;
+
+    speechSynthesis.speak(utterance);
+  });
+
+} else if (ttsBtn) {
+  ttsBtn.style.display = "none";
+}
 </script>
 
 <script src="assets/js/settings.js"></script>
 <script src="assets/js/book-loader.js"></script>
 <script src="assets/js/progress.js"></script>
-<script src="assets/js/tts.js"></script>
 
 </body>
 </html>
