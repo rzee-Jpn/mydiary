@@ -2,6 +2,10 @@ import requests, json, os, re, time
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
+# ======================================================
+# KONFIGURASI
+# ======================================================
+
 BASE = "https://www.gutenberg.org"
 BOOKSHELF = "https://www.gutenberg.org/ebooks/bookshelf/696"
 LIMIT_PER_RUN = 3
@@ -10,15 +14,17 @@ DATA_DIR = "data/books/gutenberg"
 LIBRARY_JSON = "data/library.json"
 STATE_FILE = "crawler/state.json"
 
+HEADERS = {
+    "User-Agent": "MyDiary-Gutenberg-Crawler/3.0"
+}
+
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs("crawler", exist_ok=True)
 os.makedirs("data", exist_ok=True)
 
-HEADERS = {"User-Agent": "MyDiary-Gutenberg-Crawler/1.0"}
-
-CHAPTER_RE = re.compile(r'^(BOOK|PART|CHAPTER)\s+([IVXLCDM]+|\d+).*', re.I)
-
-# ------------------------
+# ======================================================
+# UTIL
+# ======================================================
 
 def slugify(t):
     return re.sub(r'[^a-z0-9]+', '-', t.lower()).strip('-')
@@ -26,71 +32,96 @@ def slugify(t):
 def load_state():
     if not os.path.exists(STATE_FILE):
         return {"page": BOOKSHELF, "index": 0, "done": False}
-    return json.load(open(STATE_FILE))
+    return json.load(open(STATE_FILE, encoding="utf-8"))
 
 def save_state(s):
-    json.dump(s, open(STATE_FILE, "w"), indent=2)
+    json.dump(s, open(STATE_FILE, "w", encoding="utf-8"), indent=2)
+
+# ======================================================
+# SCRAPER
+# ======================================================
 
 def get_books(page):
-    soup = BeautifulSoup(requests.get(page, headers=HEADERS).text, "lxml")
+    soup = BeautifulSoup(
+        requests.get(page, headers=HEADERS).text,
+        "lxml"
+    )
     books = [urljoin(BASE, a["href"]) for a in soup.select("li.booklink a.link")]
-    next_page = next((urljoin(BASE, a["href"]) for a in soup.select("a") if a.text.strip().lower()=="next"), None)
+    next_page = next(
+        (urljoin(BASE, a["href"]) for a in soup.select("a")
+         if a.text.strip().lower() == "next"),
+        None
+    )
     return books, next_page
 
-def get_txt(book_url):
-    soup = BeautifulSoup(requests.get(book_url, headers=HEADERS).text, "lxml")
-    for a in soup.select("a"):
-        if a.get("href","").endswith(".txt.utf-8"):
-            return urljoin(BASE, a["href"])
-    return None
+def get_html_url(book_url):
+    # contoh: https://www.gutenberg.org/ebooks/66160
+    book_id = book_url.rstrip("/").split("/")[-1]
+    return f"https://www.gutenberg.org/ebooks/{book_id}.html.images"
 
-def clean(text):
-    s = text.find("*** START OF THIS PROJECT GUTENBERG EBOOK")
-    e = text.find("*** END OF THIS PROJECT GUTENBERG EBOOK")
-    return text[s:e] if s!=-1 and e!=-1 else text
+def parse_html_book(html_url):
+    r = requests.get(html_url, headers=HEADERS)
+    if r.status_code != 200:
+        return None, None, []
 
-def extract_meta(text):
-    title, author, year = "Unknown", "Unknown", ""
-    for l in text.splitlines()[:200]:
-        if l.lower().startswith("title:"):
-            title = l.split(":",1)[1].strip()
-        if l.lower().startswith("author:"):
-            author = l.split(":",1)[1].strip()
-        if l.lower().startswith("release date:"):
-            year = re.findall(r'\d{4}', l)
-            year = year[0] if year else ""
-    return title, author, year
+    soup = BeautifulSoup(r.text, "lxml")
 
-def split_chapters(text):
-    lines = text.splitlines()
-    chapters, current = [], None
+    # metadata
+    title_tag = soup.find("h1")
+    title = title_tag.get_text(strip=True) if title_tag else "Unknown"
 
-    for line in lines:
-        if CHAPTER_RE.match(line.strip()):
-            if current:
+    author = "Unknown"
+    for meta in soup.select("meta"):
+        if meta.get("name", "").lower() == "author":
+            author = meta.get("content", "Unknown")
+
+    body = soup.find("body")
+    chapters = []
+    current = None
+
+    for el in body.children:
+        if not getattr(el, "name", None):
+            continue
+
+        if el.name in ["h2", "h3"]:
+            if current and current["html"].strip():
                 chapters.append(current)
-            current = {"title": line.strip(), "content": []}
-        elif current:
-            if line.strip():
-                current["content"].append(line.strip())
 
-    if current:
+            current = {
+                "title": el.get_text(strip=True),
+                "html": ""
+            }
+
+        elif current and el.name == "p":
+            current["html"] += f"<p>{el.decode_contents()}</p>\n"
+
+    if current and current["html"].strip():
         chapters.append(current)
-    return chapters
 
-# ------------------------
+    return title, author, chapters
+
+# ======================================================
+# LIBRARY
+# ======================================================
 
 def update_library(entry):
     data = []
     if os.path.exists(LIBRARY_JSON):
-        data = json.load(open(LIBRARY_JSON))
+        data = json.load(open(LIBRARY_JSON, encoding="utf-8"))
 
     if not any(b["id"] == entry["id"] for b in data):
         data.append(entry)
 
-    json.dump(sorted(data, key=lambda x: x["title"]), open(LIBRARY_JSON,"w"), indent=2)
+    json.dump(
+        sorted(data, key=lambda x: x["title"]),
+        open(LIBRARY_JSON, "w", encoding="utf-8"),
+        indent=2,
+        ensure_ascii=False
+    )
 
-# ------------------------
+# ======================================================
+# MAIN
+# ======================================================
 
 def main():
     state = load_state()
@@ -102,46 +133,56 @@ def main():
 
     for url in books[state["index"]:]:
         state["index"] += 1
-        txt_url = get_txt(url)
-        if not txt_url:
+
+        html_url = get_html_url(url)
+        title, author, chapters = parse_html_book(html_url)
+
+        if not chapters:
             continue
 
-        raw = requests.get(txt_url, headers=HEADERS).text
-        text = clean(raw)
-        title, author, year = extract_meta(text)
         slug = slugify(title)
-
         book_dir = f"{DATA_DIR}/{slug}"
+
         if os.path.exists(book_dir):
             continue
 
         os.makedirs(book_dir, exist_ok=True)
-
-        chapters = split_chapters(text)
         chapter_meta = []
 
         for i, ch in enumerate(chapters, 1):
             fname = f"chapter-{i:02d}.json"
             json.dump(
-                {"title": ch["title"], "content": ch["content"]},
+                {
+                    "title": ch["title"],
+                    "html": ch["html"].strip()
+                },
                 open(f"{book_dir}/{fname}", "w", encoding="utf-8"),
-                ensure_ascii=False,
-                indent=2
+                indent=2,
+                ensure_ascii=False
             )
-            chapter_meta.append({"id": fname[:-5], "title": ch["title"], "file": fname})
+
+            chapter_meta.append({
+                "id": fname[:-5],
+                "title": ch["title"],
+                "file": fname
+            })
 
         json.dump(
-            {"id": slug, "title": title, "author": author, "chapters": chapter_meta},
+            {
+                "id": slug,
+                "title": title,
+                "author": author,
+                "chapters": chapter_meta
+            },
             open(f"{book_dir}/book.json", "w", encoding="utf-8"),
-            ensure_ascii=False,
-            indent=2
+            indent=2,
+            ensure_ascii=False
         )
 
         update_library({
             "id": slug,
             "title": title,
             "author": author,
-            "year": year,
             "source": "Project Gutenberg",
             "path": f"data/books/gutenberg/{slug}"
         })
@@ -159,6 +200,8 @@ def main():
             state["done"] = True
 
     save_state(state)
+
+# ======================================================
 
 if __name__ == "__main__":
     main()
