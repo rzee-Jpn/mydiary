@@ -1,8 +1,5 @@
-window.addEventListener("scroll", () => {
-  const doc = document.documentElement;
-  const percent = Math.round(
-    (doc.scrollTop / (doc.scrollHeight - doc.clientHeight)) * 100
-  );
-  document.getElementById("progressText").textContent = percent + "%";
-  document.getElementById("progressBar").style.width = percent + "%";
-});
+window.updateProgress = (i, total) => {
+  const p = Math.round(((i + 1) / total) * 100);
+  document.getElementById("progressText").textContent = p + "%";
+  document.getElementById("progressBar").style.width = p + "%";
+};
