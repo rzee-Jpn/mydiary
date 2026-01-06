@@ -3,33 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Perpustakaan Gen Z</title>
-<link rel="stylesheet" href="assets/css/main.css">
+<title>Reader</title>
+
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/reader.css">
+<link rel="stylesheet" href="assets/css/sidebar.css">
 <link rel="stylesheet" href="assets/css/theme.css">
-<link rel="stylesheet" href="assets/css/library.css">
 </head>
+
 <body class="theme-paper">
 
-<header class="lib-header">
-  <div class="logo">
-    <img src="img/logo.png" alt="Logo Buku">
-  </div>
-  <div class="title">Pustaka</div>
-  <div class="byline">by Anglumea</div>
+<header id="header" class="reader-header">
+  <div class="back-btn" onclick="history.back()">←</div>
+  <div class="logo">📖 MyDiary</div>
 </header>
 
-<main>
-  <!-- Search wrapper -->
-  <div class="search-wrapper">
-    <button id="searchToggle" class="search-icon">🔍</button>
-    <input type="text" id="bookSearch" placeholder="Cari buku...">
-  </div>
+<div id="pullHandle">≡</div>
 
-  <div id="library" class="library-grid"></div>
-</main>
+<aside id="sidebar">
+  <div id="closeSidebar">✕</div>
+  <h4>Buku</h4>
+  <div id="bookTitle">...</div>
+
+  <h4>Tema</h4>
+  <select id="themeSelect">
+    <option value="light">Light</option>
+    <option value="dark">Dark</option>
+    <option value="sepia">Sepia</option>
+    <option value="paper" selected>Paper</option>
+  </select>
+
+  <h4>Daftar Bab</h4>
+  <ul id="tocList"></ul>
+</aside>
+
+<main id="reader"></main>
+
+<footer class="progress">
+  <span id="progressText">0%</span>
+  <div class="bar"><div id="progressBar"></div></div>
+</footer>
+
+<div id="floatingControls">
+  <button id="zoomIn">A+</button>
+  <button id="zoomOut">A−</button>
+  <button id="ttsFloat">🔊</button>
+</div>
+
+<div id="translateBar">
+  <select id="translateLang">
+    <option value="">🌐 Original</option>
+    <option value="id">🇮🇩</option>
+    <option value="en">🇬🇧</option>
+    <option value="ja">🇯🇵</option>
+    <option value="ar">🇸🇦</option>
+  </select>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-<script src="assets/js/library.js"></script>
+
+<script src="assets/js/state.js"></script>
+<script src="assets/js/reader-core.js"></script>
+<script src="assets/js/progress.js"></script>
+<script src="assets/js/resume.js"></script>
 <script src="assets/js/settings.js"></script>
+<script src="assets/js/translate.js"></script>
+<script src="assets/js/tts.js"></script>
+<script src="assets/js/ui.js"></script>
+
 </body>
 </html>
