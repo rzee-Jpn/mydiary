@@ -74,6 +74,8 @@
         // render langsung HTML (ringan & cepat)
         reader.innerHTML = html;
 
+document.dispatchEvent(new Event("chapter:loaded"));
+
         updateProgress();
       })
       .catch(err => {
