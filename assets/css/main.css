@@ -279,3 +279,9 @@ body.zen-mode #sidebar,
 body.zen-mode #pullHandle {
   display: none !important;
 }
+
+.tts-active {
+  background: rgba(255, 215, 0, 0.35);
+  border-radius: 4px;
+  padding: 0 2px;
+}
