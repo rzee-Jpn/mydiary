@@ -1,42 +1,27 @@
 const sidebar = document.getElementById("sidebar");
 const handle = document.getElementById("pullHandle");
+const closeBtn = document.getElementById("closeSidebar");
 const header = document.getElementById("header");
-const closeBtn = document.getElementById("sidebarClose");
+const footer = document.querySelector("footer.progress");
 
 let isOpen = false;
 
-/* posisi awal sidebar */
+/* INIT */
 gsap.set(sidebar, { x: "-100%" });
 
-function openSidebar() {
-  gsap.to(sidebar, {
-    x: 0,
-    duration: 0.55,
-    ease: "power3.out"
-  });
+handle.onclick = () => {
+  gsap.to(sidebar, { x: 0, duration: .5, ease: "power3.out" });
   isOpen = true;
-}
+};
+
+closeBtn.onclick = closeSidebar;
 
 function closeSidebar() {
-  gsap.to(sidebar, {
-    x: "-100%",
-    duration: 0.45,
-    ease: "power3.in"
-  });
+  gsap.to(sidebar, { x: "-100%", duration: .4, ease: "power3.in" });
   isOpen = false;
 }
 
-/* pull handle */
-handle.addEventListener("click", () => {
-  isOpen ? closeSidebar() : openSidebar();
-});
-
-/* tombol X di sidebar */
-if (closeBtn) {
-  closeBtn.addEventListener("click", closeSidebar);
-}
-
-/* auto hide header saat scroll */
+/* AUTO HIDE HEADER */
 let lastScroll = 0;
 window.addEventListener("scroll", () => {
   const now = window.scrollY;
@@ -45,41 +30,43 @@ window.addEventListener("scroll", () => {
   lastScroll = now;
 });
 
-// ===== ZEN MODE =====
+/* ZEN MODE */
 let zen = false;
+let lastTap = 0;
 
 function toggleZen() {
-  const footer = document.querySelector("footer.progress");
-
-  if (!zen) {
-    gsap.to([header, sidebar, handle, footer], {
-      opacity: 0,
-      duration: 0.4,
-      display: "none",
-      ease: "power2.out"
-    });
-    document.body.classList.add("zen-mode");
-    zen = true;
-  } else {
-    gsap.to(header, { opacity: 1, display: "flex", duration: 0.4 });
-    gsap.to(footer, { opacity: 1, display: "flex", duration: 0.4 });
-    gsap.to(handle, { opacity: 1, display: "block", duration: 0.4 });
-    gsap.set(sidebar, { x: "-100%", display: "block", opacity: 1 });
-    document.body.classList.remove("zen-mode");
-    zen = false;
-    isOpen = false;
-  }
+  zen = !zen;
+  document.body.classList.toggle("zen-mode", zen);
+  closeSidebar();
 }
 
-/* double tap / click */
-let lastTap = 0;
 window.addEventListener("click", () => {
   const now = Date.now();
-  if (now - lastTap < 400) toggleZen();
+  if (now - lastTap < 350) toggleZen();
   lastTap = now;
 });
 
-/* shortcut Z */
 window.addEventListener("keydown", e => {
   if (e.key.toLowerCase() === "z") toggleZen();
 });
+
+/* FONT ZOOM */
+const reader = document.getElementById("reader");
+let fontSize = parseFloat(localStorage.getItem("readerFontSize")) || 1.05;
+
+function applyFont() {
+  reader.style.fontSize = fontSize + "rem";
+  localStorage.setItem("readerFontSize", fontSize);
+}
+
+document.getElementById("zoomIn").onclick = () => {
+  fontSize = Math.min(fontSize + .1, 1.8);
+  applyFont();
+};
+
+document.getElementById("zoomOut").onclick = () => {
+  fontSize = Math.max(fontSize - .1, .8);
+  applyFont();
+};
+
+applyFont();
