@@ -99,9 +99,7 @@ zoomOut?.addEventListener("click", () => {
 
 applyFont();
 
-/* =========================
-   ZEN MODE (DOUBLE TAP)
-========================= */
+/* ========================= ZEN MODE (DOUBLE TAP) ========================= */
 (() => {
   if (!reader) return;
 
