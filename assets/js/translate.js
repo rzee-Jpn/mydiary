@@ -5,14 +5,20 @@
 
   const original = new Map();
 
-  sel.onchange = async () => {
-    const lang = sel.value;
-    const ps = reader.querySelectorAll("p");
+  // ambil bookId (samain dengan sistem kamu)
+  const params = new URLSearchParams(location.search);
+  const bookId = params.get("book") || "default";
 
+  const STORAGE_KEY = `reader_lang_${bookId}`;
+
+  async function applyTranslate(lang) {
+    const ps = reader.querySelectorAll("p");
     ReaderState.isTranslating = true;
 
     if (!lang) {
-      ps.forEach(p => p.innerText = original.get(p) || p.innerText);
+      ps.forEach(p => {
+        if (original.has(p)) p.innerText = original.get(p);
+      });
       ReaderState.isTranslating = false;
       return;
     }
@@ -20,7 +26,8 @@
     for (const p of ps) {
       const t = p.innerText.trim();
       if (t.length < 30) continue;
-      original.set(p, t);
+
+      if (!original.has(p)) original.set(p, t);
 
       const r = await fetch(
         `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${lang}&dt=t&q=${encodeURIComponent(t)}`
@@ -30,5 +37,20 @@
     }
 
     ReaderState.isTranslating = false;
-  };
+  }
+
+  // change handler
+  sel.addEventListener("change", async () => {
+    const lang = sel.value;
+    localStorage.setItem(STORAGE_KEY, lang);
+    await applyTranslate(lang);
+  });
+
+  // restore last language per book
+  const savedLang = localStorage.getItem(STORAGE_KEY);
+  if (savedLang) {
+    sel.value = savedLang;
+    // tunggu konten reader siap
+    setTimeout(() => applyTranslate(savedLang), 400);
+  }
 })();
