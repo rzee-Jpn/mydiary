@@ -78,3 +78,36 @@ zoomOut.onclick = () => {
 };
 
 applyFont();
+
+
+
+(() => {
+  const reader = document.getElementById("reader");
+  if (!reader) return;
+
+  const KEY = "reader_zen_mode";
+  let lastTap = 0;
+
+  function setZen(on) {
+    document.body.classList.toggle("zen-mode", on);
+    localStorage.setItem(KEY, on ? "1" : "0");
+  }
+
+  // restore state
+  if (localStorage.getItem(KEY) === "1") {
+    setZen(true);
+  }
+
+  reader.addEventListener("touchend", (e) => {
+    const now = Date.now();
+    const delta = now - lastTap;
+
+    if (delta > 80 && delta < 300) {
+      const active = document.body.classList.contains("zen-mode");
+      setZen(!active);
+      e.preventDefault();
+    }
+
+    lastTap = now;
+  });
+})();
