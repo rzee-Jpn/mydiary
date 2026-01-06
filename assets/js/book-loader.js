@@ -45,7 +45,12 @@
     chapters.forEach((ch, i) => {
       const li = document.createElement("li");
       li.textContent = ch.title || `Bab ${i + 1}`;
-      li.onclick = () => loadChapter(i);
+
+      li.onclick = () => {
+        loadChapter(i);
+        closeSidebar(); // UX wajib
+      };
+
       tocList.appendChild(li);
     });
   }
@@ -55,7 +60,6 @@
   ======================== */
   function loadChapter(index) {
     if (isLoading) return;
-
     const ch = chapters[index];
     if (!ch) return;
 
@@ -68,16 +72,15 @@
         return r.text();
       })
       .then(html => {
-        // reset scroll
         window.scrollTo({ top: 0, behavior: "instant" });
-
-        // render langsung HTML (ringan & cepat)
         reader.innerHTML = html;
 
-document.dispatchEvent(new Event("chapter:loaded"));
+        document.dispatchEvent(new Event("chapter:loaded"));
 
-document.querySelectorAll("#tocList li").forEach(li => li.classList.remove("active"));
-tocList.children[index]?.classList.add("active");
+        // ACTIVE STATE TOC
+        document.querySelectorAll("#tocList li")
+          .forEach(li => li.classList.remove("active"));
+        tocList.children[index]?.classList.add("active");
 
         updateProgress();
       })
@@ -85,9 +88,7 @@ tocList.children[index]?.classList.add("active");
         console.error(err);
         reader.innerHTML = "<p>⚠️ Gagal memuat bab.</p>";
       })
-      .finally(() => {
-        isLoading = false;
-      });
+      .finally(() => isLoading = false);
   }
 
   /* ========================
@@ -95,11 +96,7 @@ tocList.children[index]?.classList.add("active");
   ======================== */
   function updateProgress() {
     if (!chapters.length) return;
-
-    const percent = Math.round(
-      ((currentChapter + 1) / chapters.length) * 100
-    );
-
+    const percent = Math.round(((currentChapter + 1) / chapters.length) * 100);
     if (progressText) progressText.textContent = percent + "%";
     if (progressBar) progressBar.style.width = percent + "%";
   }
@@ -107,8 +104,7 @@ tocList.children[index]?.classList.add("active");
   /* ========================
      SWIPE NAVIGATION
   ======================== */
-  let startX = 0;
-  let startY = 0;
+  let startX = 0, startY = 0;
 
   reader.addEventListener("touchstart", e => {
     const t = e.touches[0];
@@ -121,7 +117,6 @@ tocList.children[index]?.classList.add("active");
     const dx = t.clientX - startX;
     const dy = t.clientY - startY;
 
-    // horizontal swipe only
     if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy)) {
       if (dx < 0 && currentChapter < chapters.length - 1) {
         loadChapter(currentChapter + 1);
@@ -130,4 +125,5 @@ tocList.children[index]?.classList.add("active");
       }
     }
   });
+
 })();
