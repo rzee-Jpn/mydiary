@@ -11,8 +11,9 @@
   let currentIndex = 0;
   let speaking = false;
   let voices = [];
+  let currentUtterance = null;
 
-  // 🔑 FLAG GLOBAL (dipakai translate-tts.js)
+  // 🔑 dipakai translate.js
   window.isTranslating = false;
 
   /* =========================
@@ -25,34 +26,36 @@
   loadVoices();
 
   /* =========================
-     LANGUAGE DETECTION (SIMPLE & FAST)
+     LANGUAGE DETECTION
   ========================= */
   function detectLang(text) {
     const t = text.toLowerCase();
 
-    if (/[ぁ-ゔァ-ヴー々〆〤]/.test(t)) return "ja";
-    if (/[؀-ۿ]/.test(t)) return "ar";
-    if (/\b(the|and|is|are|with|from|that)\b/.test(t)) return "en";
-    if (/\b(yang|dan|dari|ke|di|adalah)\b/.test(t)) return "id";
+    if (/[ぁ-ゔァ-ヴー々〆〤]/.test(t)) return "ja-JP";
+    if (/[؀-ۿ]/.test(t)) return "ar-SA";
+    if (/\b(the|and|is|are|with|from|that)\b/.test(t)) return "en-US";
+    if (/\b(yang|dan|dari|ke|di|adalah)\b/.test(t)) return "id-ID";
 
-    return "id";
+    return "id-ID";
   }
 
   /* =========================
-     PICK BEST VOICE PER LANG
+     PICK VOICE (BCP-47 SAFE)
   ========================= */
   function pickVoice(lang) {
     if (!voices.length) return null;
 
+    const base = lang.split("-")[0];
+
     const candidates = voices.filter(v =>
-      v.lang.toLowerCase().startsWith(lang)
+      v.lang.toLowerCase().startsWith(base)
     );
 
-    const preferred = candidates.find(v =>
-      /google|natural|neural/i.test(v.name)
+    return (
+      candidates.find(v => /google|natural|neural/i.test(v.name)) ||
+      candidates[0] ||
+      null
     );
-
-    return preferred || candidates[0] || voices[0];
   }
 
   /* =========================
@@ -65,9 +68,14 @@
   }
 
   function stopTTS() {
+    speaking = false;
+    if (currentUtterance) {
+      currentUtterance.onend = null;
+      currentUtterance.onerror = null;
+    }
     speechSynthesis.cancel();
     clearHighlight();
-    speaking = false;
+    currentUtterance = null;
   }
 
   function prepareParagraphs() {
@@ -81,22 +89,18 @@
   }
 
   /* =========================
-     CORE TTS (CHAIN SAFE)
+     CORE SPEAK (ANTI DOBEL)
   ========================= */
   function speak(index) {
     if (!speaking || index >= paragraphs.length) {
-      speaking = false;
+      stopTTS();
       return;
     }
 
     currentIndex = index;
     const p = paragraphs[index];
     const text = p.innerText.trim();
-
-    if (!text) {
-      speak(index + 1);
-      return;
-    }
+    if (!text) return speak(index + 1);
 
     const lang = detectLang(text);
     const voice = pickVoice(lang);
@@ -106,10 +110,13 @@
     p.scrollIntoView({ behavior: "smooth", block: "center" });
 
     const utter = new SpeechSynthesisUtterance(text);
-    utter.lang = voice?.lang || lang;
-    utter.voice = voice || null;
+    utter.lang = lang;
+    if (voice) utter.voice = voice;
+
     utter.rate = 1;
     utter.pitch = 1;
+
+    currentUtterance = utter;
 
     utter.onend = () => {
       if (speaking) speak(index + 1);
@@ -119,6 +126,7 @@
       if (speaking) speak(index + 1);
     };
 
+    speechSynthesis.cancel(); // 🔥 CLEAR QUEUE SEBELUM SPEAK
     speechSynthesis.speak(utter);
   }
 
@@ -130,9 +138,9 @@
   }
 
   /* =========================
-     BUTTON (PLAY / STOP)
+     BUTTON
   ========================= */
-  ttsBtn.addEventListener("click", () => {
+  ttsBtn.onclick = () => {
     if (speaking) {
       stopTTS();
       return;
@@ -143,11 +151,10 @@
 
     speaking = true;
     speak(0);
-  });
+  };
 
   /* =========================
-     OBSERVER (ONLY FOR CHAPTER LOAD)
-     ❌ TIDAK MATI SAAT TRANSLATE
+     OBSERVER (TRANSLATE SAFE)
   ========================= */
   const observer = new MutationObserver(() => {
     if (window.isTranslating) return;
