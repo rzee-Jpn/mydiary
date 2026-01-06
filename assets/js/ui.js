@@ -1,61 +1,85 @@
-const sidebar = document.getElementById("sidebar");  
-const handle = document.getElementById("pullHandle");  
-const header = document.getElementById("header");  
+const sidebar = document.getElementById("sidebar");
+const handle = document.getElementById("pullHandle");
+const header = document.getElementById("header");
+const closeBtn = document.getElementById("sidebarClose");
 
 let isOpen = false;
 
-// pastikan posisi awal  
-gsap.set(sidebar, { x: "-100%" });  
+/* posisi awal sidebar */
+gsap.set(sidebar, { x: "-100%" });
 
-handle.addEventListener("click", () => {  
-  if (!isOpen) {  
-    gsap.to(sidebar, { x: 0, duration: 0.55, ease: "power3.out" });  
-  } else {  
-    gsap.to(sidebar, { x: "-100%", duration: 0.45, ease: "power3.in" });  
-  }  
-  isOpen = !isOpen;  
-});  
+function openSidebar() {
+  gsap.to(sidebar, {
+    x: 0,
+    duration: 0.55,
+    ease: "power3.out"
+  });
+  isOpen = true;
+}
 
-/* auto-hide header */  
-let lastScroll = 0;  
-window.addEventListener("scroll", () => {  
-  const now = window.scrollY;  
-  header.style.transform = now > lastScroll ? "translateY(-100%)" : "translateY(0)";  
-  lastScroll = now;  
+function closeSidebar() {
+  gsap.to(sidebar, {
+    x: "-100%",
+    duration: 0.45,
+    ease: "power3.in"
+  });
+  isOpen = false;
+}
+
+/* pull handle */
+handle.addEventListener("click", () => {
+  isOpen ? closeSidebar() : openSidebar();
+});
+
+/* tombol X di sidebar */
+if (closeBtn) {
+  closeBtn.addEventListener("click", closeSidebar);
+}
+
+/* auto hide header saat scroll */
+let lastScroll = 0;
+window.addEventListener("scroll", () => {
+  const now = window.scrollY;
+  header.style.transform =
+    now > lastScroll ? "translateY(-100%)" : "translateY(0)";
+  lastScroll = now;
 });
 
 // ===== ZEN MODE =====
 let zen = false;
 
-// toggle Zen Mode
 function toggleZen() {
   const footer = document.querySelector("footer.progress");
+
   if (!zen) {
-    gsap.to([header, sidebar, handle, footer], { opacity:0, duration:0.5, display:"none", ease:"power2.out" });
+    gsap.to([header, sidebar, handle, footer], {
+      opacity: 0,
+      duration: 0.4,
+      display: "none",
+      ease: "power2.out"
+    });
     document.body.classList.add("zen-mode");
     zen = true;
   } else {
-    gsap.to(header, { opacity:1, duration:0.5, display:"flex", ease:"power2.out" });
-    gsap.to(footer, { opacity:1, duration:0.5, display:"flex", ease:"power2.out" });
-    gsap.to(handle, { opacity:1, duration:0.5, display:"block", ease:"power2.out" });
-    gsap.to(sidebar, { x: "-100%", opacity:1, duration:0.5, display:"block", ease:"power2.out" });
+    gsap.to(header, { opacity: 1, display: "flex", duration: 0.4 });
+    gsap.to(footer, { opacity: 1, display: "flex", duration: 0.4 });
+    gsap.to(handle, { opacity: 1, display: "block", duration: 0.4 });
+    gsap.set(sidebar, { x: "-100%", display: "block", opacity: 1 });
     document.body.classList.remove("zen-mode");
     zen = false;
+    isOpen = false;
   }
 }
 
-// double-tap / double-click for Zen Mode
+/* double tap / click */
 let lastTap = 0;
-window.addEventListener("click", (e) => {
-  const currentTime = new Date().getTime();
-  const tapLength = currentTime - lastTap;
-  if (tapLength < 400 && tapLength > 0) {
-    toggleZen();
-  }
-  lastTap = currentTime;
+window.addEventListener("click", () => {
+  const now = Date.now();
+  if (now - lastTap < 400) toggleZen();
+  lastTap = now;
 });
 
-// shortcut key Z
+/* shortcut Z */
 window.addEventListener("keydown", e => {
-  if(e.key.toLowerCase() === "z") toggleZen();
+  if (e.key.toLowerCase() === "z") toggleZen();
 });
