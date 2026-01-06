@@ -1,52 +1,34 @@
 (() => {
-  const select = document.getElementById("translateLang");
+  const sel = document.getElementById("translateLang");
   const reader = document.getElementById("reader");
+  if (!sel || !reader) return;
 
-  if (!select || !reader) return;
+  const original = new Map();
 
-  const originalMap = new Map();
+  sel.onchange = async () => {
+    const lang = sel.value;
+    const ps = reader.querySelectorAll("p");
 
-  async function translateText(text, target) {
-    const res = await fetch(
-      "https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=" +
-        target +
-        "&dt=t&q=" +
-        encodeURIComponent(text)
-    );
-    const data = await res.json();
-    return data[0].map(x => x[0]).join("");
-  }
-
-  select.addEventListener("change", async () => {
-    const lang = select.value;
-    const ps = [...reader.querySelectorAll("p")];
-
-    window.isTranslating = true;
+    ReaderState.isTranslating = true;
 
     if (!lang) {
-      ps.forEach(p => {
-        if (originalMap.has(p)) p.innerText = originalMap.get(p);
-      });
-      window.isTranslating = false;
+      ps.forEach(p => p.innerText = original.get(p) || p.innerText);
+      ReaderState.isTranslating = false;
       return;
     }
 
     for (const p of ps) {
-      const text = p.innerText.trim();
-      if (text.length < 20) continue;
+      const t = p.innerText.trim();
+      if (t.length < 30) continue;
+      original.set(p, t);
 
-      if (!originalMap.has(p)) {
-        originalMap.set(p, text);
-      }
-
-      try {
-        const translated = await translateText(text, lang);
-        p.innerText = translated;
-      } catch (e) {
-        console.warn("Translate failed", e);
-      }
+      const r = await fetch(
+        `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${lang}&dt=t&q=${encodeURIComponent(t)}`
+      );
+      const j = await r.json();
+      p.innerText = j[0].map(x => x[0]).join("");
     }
 
-    window.isTranslating = false;
-  });
+    ReaderState.isTranslating = false;
+  };
 })();
