@@ -16,6 +16,22 @@
   font-size: 13px;
   letter-spacing: .08em;
   opacity: .7;
+  margin-top: 1rem;
+}
+
+/* BOOK TITLE – FIX 1 */
+#bookTitle {
+  margin: .4rem 0 1rem;
+  padding: .6rem .7rem;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  background: rgba(0,0,0,.05);
+  border-radius: 8px;
+}
+
+.theme-dark #bookTitle {
+  background: rgba(255,255,255,.08);
 }
 
 #sidebar select {
@@ -29,6 +45,37 @@
   top: 12px;
   right: 12px;
   cursor: pointer;
+}
+
+/* TOC – FIX 2 */
+#tocList {
+  padding-left: 0;
+  margin-top: .5rem;
+}
+
+#tocList li {
+  list-style: none;
+  padding: .55rem .6rem;
+  margin-bottom: .3rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background .2s ease, transform .1s ease;
+}
+
+#tocList li:hover {
+  background: rgba(0,0,0,.06);
+}
+
+#tocList li.active {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 500;
+}
+
+.theme-paper #tocList li.active {
+  background: rgba(0,0,0,.08);
+  color: inherit;
+  font-weight: 600;
 }
 
 /* HANDLE */
