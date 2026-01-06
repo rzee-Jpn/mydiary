@@ -1,44 +1,70 @@
-/* =========================
-   SIDEBAR
-========================= */
-#sidebar {
+:root {
+  --bg: #f6f1e7;
+  --text: #2a2a2a;
+  --accent: #8c6d3f;
+  --surface: rgba(246,241,231,.92);
+  --surface-text: #2a2a2a;
+  --border-soft: rgba(0,0,0,.08);
+  --font-size: 18px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: var(--font-size);
+  line-height: 1.9;
+}
+
+/* HEADER */
+.reader-header {
   position: fixed;
   top: 0;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border-soft);
+  z-index: 300;
+  transition: transform .4s ease;
+}
+
+.reader-header .back-btn {
+  position: absolute;
+  left: 1rem;
+  cursor: pointer;
+}
+
+/* SIDEBAR */
+#sidebar {
+  position: fixed;
   left: 0;
+  top: 0;
   width: 260px;
   height: 100%;
   background: var(--surface);
-  padding: 1rem 1rem 2rem;
+  padding: 1rem;
   z-index: 350;
   overflow-y: auto;
-  backdrop-filter: blur(12px);
-  box-shadow: 2px 0 12px rgba(0,0,0,.12);
 }
 
-/* tombol close */
-#sidebarClose {
+#sidebar .close-btn {
   position: absolute;
-  top: 10px;
+  top: 12px;
   right: 12px;
-  font-size: 1.4rem;
   cursor: pointer;
-  opacity: .7;
-}
-
-#sidebarClose:hover {
-  opacity: 1;
-}
-
-#sidebar section {
-  margin-top: 2.5rem;
-  margin-bottom: 1.25rem;
+  font-size: 18px;
+  opacity: .6;
 }
 
 #sidebar h4 {
-  margin: 1rem 0 .5rem;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-size: 13px;
-  text-transform: uppercase;
   letter-spacing: .08em;
   opacity: .7;
 }
@@ -47,38 +73,10 @@
 #sidebar button {
   width: 100%;
   padding: .55rem;
-  font-size: 14px;
   border-radius: 6px;
-  border: 1px solid var(--border-soft);
-  background: #fff;
 }
 
-#sidebar button {
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-#sidebar ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#sidebar li {
-  padding: .45rem 0;
-  cursor: pointer;
-  border-bottom: 1px dashed var(--border-soft);
-}
-
-#sidebar li:hover {
-  opacity: .7;
-}
-
-/* =========================
-   PULL HANDLE (TENGAH KIRI)
-========================= */
+/* HANDLE */
 #pullHandle {
   position: fixed;
   left: 0;
@@ -86,43 +84,80 @@
   transform: translateY(-50%);
   background: var(--accent);
   color: #fff;
-  padding: .55rem .65rem;
+  padding: .6rem .7rem;
   border-radius: 0 8px 8px 0;
   cursor: pointer;
   z-index: 360;
-  user-select: none;
-  box-shadow: 2px 2px 8px rgba(0,0,0,.25);
 }
 
-#pullHandle:hover {
-  opacity: .9;
+/* READER */
+#reader {
+  max-width: 680px;
+  margin: 5rem auto 6rem;
+  padding: 0 1.5rem;
 }
 
-/* =========================
-   TRANSLATE BAR (TIDAK NUTUP HEADER)
-========================= */
+#reader p {
+  cursor: pointer;
+}
+
+.tts-active {
+  background: rgba(255,230,150,.4);
+  border-radius: 4px;
+}
+
+/* FOOTER */
+footer.progress {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: var(--surface);
+  border-top: 1px solid var(--border-soft);
+  padding: .5rem 1rem;
+  display: flex;
+  gap: .75rem;
+}
+
+/* FLOATING */
+#floatingControls {
+  position: fixed;
+  right: 16px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#floatingControls button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,.7);
+  color: #fff;
+}
+
+/* TRANSLATE */
 #translateBar {
   position: fixed;
-  top: 68px; /* turun dari header */
+  top: 68px;
   right: 14px;
-  z-index: 400;
+  z-index: 500;
 }
 
 #translateBar select {
   padding: 6px 10px;
-  font-size: 13px;
   border-radius: 8px;
-  border: none;
-  background: rgba(0,0,0,.75);
+  background: rgba(120,90,60,.85);
   color: #fff;
+  border: none;
 }
 
-/* =========================
-   ZEN MODE
-========================= */
+/* ZEN MODE */
 body.zen-mode header,
 body.zen-mode footer,
 body.zen-mode #sidebar,
-body.zen-mode #pullHandle {
+body.zen-mode #pullHandle,
+body.zen-mode #floatingControls {
   display: none !important;
 }
