@@ -1,23 +1,11 @@
-const themeSelect = document.getElementById("themeSelect");
+const select = document.getElementById("themeSelect");
+if (select) {
+  const saved = localStorage.getItem("theme") || "paper";
+  document.body.className = "theme-" + saved;
+  select.value = saved;
 
-function applyTheme(theme) {
-  document.body.classList.remove(
-    "theme-light",
-    "theme-dark",
-    "theme-sepia",
-    "theme-paper"
-  );
-  document.body.classList.add(`theme-${theme}`);
-  localStorage.setItem("theme", theme);
-}
-
-themeSelect.addEventListener("change", e => {
-  applyTheme(e.target.value);
-});
-
-// load saved theme
-const saved = localStorage.getItem("theme");
-if (saved) {
-  themeSelect.value = saved;
-  applyTheme(saved);
+  select.onchange = e => {
+    document.body.className = "theme-" + e.target.value;
+    localStorage.setItem("theme", e.target.value);
+  };
 }
