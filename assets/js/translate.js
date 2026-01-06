@@ -5,10 +5,8 @@
 
   const original = new Map();
 
-  // ambil bookId (samain dengan sistem kamu)
   const params = new URLSearchParams(location.search);
   const bookId = params.get("book") || "default";
-
   const STORAGE_KEY = `reader_lang_${bookId}`;
 
   async function applyTranslate(lang) {
@@ -16,9 +14,7 @@
     ReaderState.isTranslating = true;
 
     if (!lang) {
-      ps.forEach(p => {
-        if (original.has(p)) p.innerText = original.get(p);
-      });
+      ps.forEach(p => original.has(p) && (p.innerText = original.get(p)));
       ReaderState.isTranslating = false;
       return;
     }
@@ -39,18 +35,15 @@
     ReaderState.isTranslating = false;
   }
 
-  // change handler
   sel.addEventListener("change", async () => {
     const lang = sel.value;
     localStorage.setItem(STORAGE_KEY, lang);
     await applyTranslate(lang);
   });
 
-  // restore last language per book
   const savedLang = localStorage.getItem(STORAGE_KEY);
   if (savedLang) {
     sel.value = savedLang;
-    // tunggu konten reader siap
     setTimeout(() => applyTranslate(savedLang), 400);
   }
 })();
