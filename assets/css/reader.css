@@ -1,0 +1,107 @@
+/* HEADER */
+.reader-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border-soft);
+  z-index: 300;
+  transition: transform .4s ease;
+}
+
+.reader-header .back-btn {
+  position: absolute;
+  left: 1rem;
+  cursor: pointer;
+}
+
+/* READER */
+#reader {
+  max-width: 680px;
+  margin: 5rem auto 6rem;
+  padding: 0 1.5rem;
+}
+
+#reader p {
+  cursor: pointer;
+}
+
+/* TTS */
+.tts-active {
+  background: rgba(255,230,150,.4);
+  border-radius: 4px;
+}
+
+/* FOOTER */
+footer.progress {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: var(--surface);
+  border-top: 1px solid var(--border-soft);
+  padding: .5rem 1rem;
+  display: flex;
+  gap: .75rem;
+}
+
+footer .bar {
+  flex: 1;
+  background: rgba(0,0,0,.08);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#progressBar {
+  height: 6px;
+  width: 0;
+  background: var(--accent);
+}
+
+/* FLOATING */
+#floatingControls {
+  position: fixed;
+  right: 16px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#floatingControls button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,.7);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* TRANSLATE */
+#translateBar {
+  position: fixed;
+  top: 68px;
+  right: 14px;
+  z-index: 500;
+}
+
+#translateBar select {
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(120,90,60,.85);
+  color: #fff;
+  border: none;
+}
+
+/* ZEN MODE */
+body.zen-mode header,
+body.zen-mode footer,
+body.zen-mode #sidebar,
+body.zen-mode #pullHandle,
+body.zen-mode #floatingControls {
+  display: none !important;
+}
