@@ -12,8 +12,11 @@
   let speaking = false;
   let voices = [];
 
+  // 🔑 FLAG GLOBAL (dipakai translate-tts.js)
+  window.isTranslating = false;
+
   /* =========================
-     LOAD VOICES
+     LOAD VOICES (ASYNC SAFE)
   ========================= */
   function loadVoices() {
     voices = speechSynthesis.getVoices();
@@ -22,12 +25,13 @@
   loadVoices();
 
   /* =========================
-     LANGUAGE DETECTION
+     LANGUAGE DETECTION (SIMPLE & FAST)
   ========================= */
   function detectLang(text) {
     const t = text.toLowerCase();
 
     if (/[ぁ-ゔァ-ヴー々〆〤]/.test(t)) return "ja";
+    if (/[؀-ۿ]/.test(t)) return "ar";
     if (/\b(the|and|is|are|with|from|that)\b/.test(t)) return "en";
     if (/\b(yang|dan|dari|ke|di|adalah)\b/.test(t)) return "id";
 
@@ -35,23 +39,20 @@
   }
 
   /* =========================
-     PICK BEST VOICE
+     PICK BEST VOICE PER LANG
   ========================= */
   function pickVoice(lang) {
     if (!voices.length) return null;
 
-    // 1️⃣ Exact language match
-    let candidates = voices.filter(v =>
+    const candidates = voices.filter(v =>
       v.lang.toLowerCase().startsWith(lang)
     );
 
-    // 2️⃣ Prefer Google / Natural
-    let best = candidates.find(v =>
-      /google|natural/i.test(v.name)
+    const preferred = candidates.find(v =>
+      /google|natural|neural/i.test(v.name)
     );
 
-    // 3️⃣ Fallback
-    return best || candidates[0] || voices[0];
+    return preferred || candidates[0] || voices[0];
   }
 
   /* =========================
@@ -80,10 +81,10 @@
   }
 
   /* =========================
-     CORE TTS
+     CORE TTS (CHAIN SAFE)
   ========================= */
   function speak(index) {
-    if (index >= paragraphs.length) {
+    if (!speaking || index >= paragraphs.length) {
       speaking = false;
       return;
     }
@@ -91,6 +92,12 @@
     currentIndex = index;
     const p = paragraphs[index];
     const text = p.innerText.trim();
+
+    if (!text) {
+      speak(index + 1);
+      return;
+    }
+
     const lang = detectLang(text);
     const voice = pickVoice(lang);
 
@@ -99,24 +106,31 @@
     p.scrollIntoView({ behavior: "smooth", block: "center" });
 
     const utter = new SpeechSynthesisUtterance(text);
-    utter.lang = voice?.lang || "id-ID";
+    utter.lang = voice?.lang || lang;
     utter.voice = voice || null;
     utter.rate = 1;
     utter.pitch = 1;
 
-    utter.onend = () => speak(index + 1);
+    utter.onend = () => {
+      if (speaking) speak(index + 1);
+    };
+
+    utter.onerror = () => {
+      if (speaking) speak(index + 1);
+    };
 
     speechSynthesis.speak(utter);
   }
 
   function startFrom(index) {
     stopTTS();
+    prepareParagraphs();
     speaking = true;
     speak(index);
   }
 
   /* =========================
-     BUTTON
+     BUTTON (PLAY / STOP)
   ========================= */
   ttsBtn.addEventListener("click", () => {
     if (speaking) {
@@ -132,12 +146,17 @@
   });
 
   /* =========================
-     OBSERVE CHAPTER CHANGE
+     OBSERVER (ONLY FOR CHAPTER LOAD)
+     ❌ TIDAK MATI SAAT TRANSLATE
   ========================= */
   const observer = new MutationObserver(() => {
+    if (window.isTranslating) return;
     stopTTS();
     prepareParagraphs();
   });
 
-  observer.observe(reader, { childList: true, subtree: true });
+  observer.observe(reader, {
+    childList: true,
+    subtree: true
+  });
 })();
