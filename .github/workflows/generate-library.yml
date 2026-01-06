@@ -1,12 +1,8 @@
 name: Gutenberg Daily
 
 on:
-  # Jalan otomatis setiap hari
   schedule:
-    # 01:00 UTC = 08:00 WIB
     - cron: "0 1 * * *"
-
-  # Bisa dijalankan manual dari GitHub UI
   workflow_dispatch:
 
 jobs:
@@ -14,28 +10,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      # Setup Python
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # Install dependencies
       - name: Install dependencies
         run: |
           pip install --upgrade pip
           pip install requests beautifulsoup4 lxml
 
-      # Run crawler
       - name: Run Gutenberg crawler
         run: |
           python crawler/crawler.py
 
-      # Commit & push changes
       - name: Commit and push changes
         run: |
           git config user.name "github-actions"
@@ -43,7 +36,7 @@ jobs:
 
           git add data crawler
 
-          git commit -m "Daily Gutenberg update" || echo "No changes to commit"
+          git diff --cached --quiet && echo "No changes" && exit 0
 
-          git pull --rebase
+          git commit -m "Daily Gutenberg update"
           git push
