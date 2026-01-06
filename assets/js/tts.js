@@ -13,13 +13,13 @@
   let voices = [];
   let currentUtterance = null;
   let sessionVoice = null;
-  let observerTimer = null;
+  let readyToSpeak = true;
 
   // dipakai translate.js
   window.isTranslating = false;
 
   /* =========================
-     LOAD VOICES (ASYNC SAFE)
+     LOAD VOICES (STABLE)
   ========================= */
   function loadVoices() {
     voices = speechSynthesis.getVoices();
@@ -28,31 +28,26 @@
   loadVoices();
 
   /* =========================
-     LANGUAGE DETECTION (BCP-47)
+     LANGUAGE DETECT
   ========================= */
   function detectLang(text) {
     const t = text.toLowerCase();
-
     if (/[ぁ-ゔァ-ヴー々〆〤]/.test(t)) return "ja-JP";
     if (/[؀-ۿ]/.test(t)) return "ar-SA";
     if (/\b(the|and|is|are|with|from|that)\b/.test(t)) return "en-US";
     if (/\b(yang|dan|dari|ke|di|adalah)\b/.test(t)) return "id-ID";
-
     return "id-ID";
   }
 
   /* =========================
-     PICK VOICE (STABLE)
+     PICK VOICE (LOCKABLE)
   ========================= */
   function pickVoice(lang) {
     if (!voices.length) return null;
-
     const base = lang.split("-")[0];
-
     const candidates = voices.filter(v =>
       v.lang.toLowerCase().startsWith(base)
     );
-
     return (
       candidates.find(v => /google|natural|neural/i.test(v.name)) ||
       candidates[0] ||
@@ -69,17 +64,14 @@
     );
   }
 
-  function stopTTS() {
+  function stopTTS(force = true) {
     speaking = false;
-
     if (currentUtterance) {
       currentUtterance.onend = null;
       currentUtterance.onerror = null;
     }
-
-    speechSynthesis.cancel();
+    if (force) speechSynthesis.cancel();
     clearHighlight();
-
     currentUtterance = null;
     sessionVoice = null;
   }
@@ -95,7 +87,7 @@
   }
 
   /* =========================
-     CORE SPEAK (LOCKED & SAFE)
+     CORE SPEAK (ANTI MATI)
   ========================= */
   function speak(index) {
     if (!speaking || index >= paragraphs.length) {
@@ -106,10 +98,13 @@
     currentIndex = index;
     const p = paragraphs[index];
     const text = p.innerText.trim();
+    if (!text) return speak(index + 1);
 
-    if (!text) {
-      speak(index + 1);
-      return;
+    const lang = detectLang(text);
+
+    // 🔒 lock voice sekali per session
+    if (!sessionVoice) {
+      sessionVoice = pickVoice(lang);
     }
 
     clearHighlight();
@@ -117,14 +112,8 @@
     p.scrollIntoView({ behavior: "smooth", block: "center" });
 
     const utter = new SpeechSynthesisUtterance(text);
-
-    // LANG & VOICE DIKUNCI
-    const lang = detectLang(text);
     utter.lang = lang;
     if (sessionVoice) utter.voice = sessionVoice;
-
-    utter.rate = 1;
-    utter.pitch = 1;
 
     currentUtterance = utter;
 
@@ -136,29 +125,24 @@
       if (speaking) speak(index + 1);
     };
 
-    // ❗ JANGAN CANCEL SAAT TRANSLATE
-    if (!window.isTranslating) {
+    // 🧠 micro-delay = Chrome Android lifesaver
+    setTimeout(() => {
+      if (!readyToSpeak) return;
       speechSynthesis.cancel();
-    }
-
-    speechSynthesis.speak(utter);
+      speechSynthesis.speak(utter);
+    }, 80);
   }
 
   function startFrom(index) {
     stopTTS();
     prepareParagraphs();
-
-    // 🔒 LOCK VOICE SEKALI PER SESI
-    const firstText = paragraphs[index]?.innerText || "";
-    const lang = detectLang(firstText);
-    sessionVoice = pickVoice(lang);
-
     speaking = true;
+    readyToSpeak = true;
     speak(index);
   }
 
   /* =========================
-     BUTTON
+     BUTTON (USER GESTURE)
   ========================= */
   ttsBtn.onclick = () => {
     if (speaking) {
@@ -169,18 +153,31 @@
     prepareParagraphs();
     if (!paragraphs.length) return;
 
-    startFrom(0);
+    speaking = true;
+    readyToSpeak = true;
+    speak(0);
   };
+
+  /* =========================
+     VISIBILITY FIX (INI KUNCI)
+  ========================= */
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden && speaking) {
+      readyToSpeak = true;
+      speechSynthesis.cancel();
+      setTimeout(() => speak(currentIndex), 150);
+    }
+  });
 
   /* =========================
      OBSERVER (DEBOUNCED)
   ========================= */
+  let obsTimer = null;
   const observer = new MutationObserver(() => {
     if (window.isTranslating) return;
-
-    clearTimeout(observerTimer);
-    observerTimer = setTimeout(() => {
-      stopTTS();
+    clearTimeout(obsTimer);
+    obsTimer = setTimeout(() => {
+      stopTTS(false);
       prepareParagraphs();
     }, 300);
   });
