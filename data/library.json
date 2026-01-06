@@ -1,5 +1,13 @@
 [
   {
+    "id": "an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations",
+    "title": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+    "author": "Adam Smith",
+    "year": "2002",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/an-inquiry-into-the-nature-and-causes-of-the-wealth-of-nations"
+  },
+  {
     "id": "naskah-kuno-demo",
     "title": "Perpustakaan Naskah Kuno",
     "author": "Anonim",
@@ -7,17 +15,33 @@
     "cover": "cover.jpg"
   },
   {
-    "id": "sejarah-modern",
-    "title": "Sejarah Modern Dunia",
-    "author": "Anonim",
-    "year": "1985",
-    "cover": "cover.jpg"
+    "id": "principles-of-political-economy-vol-1",
+    "title": "Principles of Political Economy, Vol. 1",
+    "author": "Wilhelm Roscher",
+    "year": "2009",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/principles-of-political-economy-vol-1"
   },
-    {
+  {
     "id": "Quran",
     "title": "Quran",
     "author": "Anonim",
     "year": "1920",
+    "cover": "cover.jpg"
+  },
+  {
+    "id": "reminiscences-of-a-stock-operator",
+    "title": "Reminiscences of a Stock Operator",
+    "author": "Edwin Lefevre",
+    "year": "2019",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/reminiscences-of-a-stock-operator"
+  },
+  {
+    "id": "sejarah-modern",
+    "title": "Sejarah Modern Dunia",
+    "author": "Anonim",
+    "year": "1985",
     "cover": "cover.jpg"
   }
 ]
