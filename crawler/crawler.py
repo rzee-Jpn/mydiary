@@ -18,6 +18,10 @@ HEADERS = {
     "User-Agent": "MyDiary-Gutenberg-Crawler/FINAL"
 }
 
+REQUEST_TIMEOUT = 20
+MIN_CHAPTERS = 3
+SLEEP_BETWEEN_BOOKS = 2
+
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs("crawler", exist_ok=True)
 os.makedirs("data", exist_ok=True)
@@ -26,51 +30,82 @@ os.makedirs("data", exist_ok=True)
 # UTIL
 # ======================================================
 
-def slugify(t):
-    return re.sub(r'[^a-z0-9]+', '-', t.lower()).strip('-')
+def slugify(text):
+    return re.sub(r'[^a-z0-9]+', '-', text.lower()).strip('-')
 
 def load_state():
     if not os.path.exists(STATE_FILE):
-        return {"page": BOOKSHELF, "index": 0, "done": False}
-    return json.load(open(STATE_FILE, encoding="utf-8"))
+        return {
+            "page": BOOKSHELF,
+            "index": 0,
+            "done": False
+        }
+    with open(STATE_FILE, encoding="utf-8") as f:
+        return json.load(f)
 
-def save_state(s):
-    json.dump(s, open(STATE_FILE, "w", encoding="utf-8"), indent=2)
+def save_state(state):
+    with open(STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, indent=2)
 
 # ======================================================
 # SCRAPER
 # ======================================================
 
+def safe_get(url):
+    try:
+        r = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
+        if r.status_code != 200:
+            return None
+        return r
+    except requests.RequestException:
+        return None
+
 def get_books(page):
-    soup = BeautifulSoup(requests.get(page, headers=HEADERS).text, "lxml")
-    books = [urljoin(BASE, a["href"]) for a in soup.select("li.booklink a.link")]
-    next_page = next(
-        (urljoin(BASE, a["href"]) for a in soup.select("a")
-         if a.text.strip().lower() == "next"),
-        None
-    )
+    r = safe_get(page)
+    if not r:
+        return [], None
+
+    soup = BeautifulSoup(r.text, "lxml")
+
+    books = [
+        urljoin(BASE, a["href"])
+        for a in soup.select("li.booklink a.link")
+        if a.get("href")
+    ]
+
+    next_page = None
+    for a in soup.select("a"):
+        if a.text.strip().lower() == "next":
+            next_page = urljoin(BASE, a.get("href"))
+            break
+
     return books, next_page
 
 def get_html_url(book_url):
     book_id = book_url.rstrip("/").split("/")[-1]
-    return f"https://www.gutenberg.org/ebooks/{book_id}.html.images"
+    return f"{BASE}/ebooks/{book_id}.html.images"
 
 def parse_html_book(html_url):
-    r = requests.get(html_url, headers=HEADERS)
-    if r.status_code != 200:
+    r = safe_get(html_url)
+    if not r:
         return None, None, []
 
     soup = BeautifulSoup(r.text, "lxml")
 
+    # ===== Title =====
     title_tag = soup.find("h1")
     title = title_tag.get_text(strip=True) if title_tag else "Unknown"
 
+    # ===== Author =====
     author = "Unknown"
     for meta in soup.select("meta"):
         if meta.get("name", "").lower() == "author":
             author = meta.get("content", "Unknown")
 
     body = soup.find("body")
+    if not body:
+        return title, author, []
+
     chapters = []
     current = None
 
@@ -78,7 +113,7 @@ def parse_html_book(html_url):
         if not getattr(el, "name", None):
             continue
 
-        if el.name in ["h2", "h3"]:
+        if el.name in ("h2", "h3"):
             if current and current["html"].strip():
                 chapters.append(current)
 
@@ -93,6 +128,9 @@ def parse_html_book(html_url):
     if current and current["html"].strip():
         chapters.append(current)
 
+    if len(chapters) < MIN_CHAPTERS:
+        return title, author, []
+
     return title, author, chapters
 
 # ======================================================
@@ -102,17 +140,19 @@ def parse_html_book(html_url):
 def update_library(entry):
     data = []
     if os.path.exists(LIBRARY_JSON):
-        data = json.load(open(LIBRARY_JSON, encoding="utf-8"))
+        with open(LIBRARY_JSON, encoding="utf-8") as f:
+            data = json.load(f)
 
     if not any(b["id"] == entry["id"] for b in data):
         data.append(entry)
 
-    json.dump(
-        sorted(data, key=lambda x: x["title"]),
-        open(LIBRARY_JSON, "w", encoding="utf-8"),
-        indent=2,
-        ensure_ascii=False
-    )
+    with open(LIBRARY_JSON, "w", encoding="utf-8") as f:
+        json.dump(
+            sorted(data, key=lambda x: x["title"]),
+            f,
+            indent=2,
+            ensure_ascii=False
+        )
 
 # ======================================================
 # MAIN
@@ -120,7 +160,7 @@ def update_library(entry):
 
 def main():
     state = load_state()
-    if state["done"]:
+    if state.get("done"):
         return
 
     books, next_page = get_books(state["page"])
@@ -147,13 +187,13 @@ def main():
         chapter_meta = []
 
         for i, ch in enumerate(chapters, 1):
-            # skip TOC
             if "contents" in ch["title"].lower():
                 continue
 
             fname = f"ch{i:02d}.html"
+            file_path = f"{chapters_dir}/{fname}"
 
-            with open(f"{chapters_dir}/{fname}", "w", encoding="utf-8") as f:
+            with open(file_path, "w", encoding="utf-8") as f:
                 f.write(f"<h2>{ch['title']}</h2>\n")
                 f.write(ch["html"])
 
@@ -163,17 +203,18 @@ def main():
                 "file": f"chapters/{fname}"
             })
 
-        json.dump(
-            {
-                "id": slug,
-                "title": title,
-                "author": author,
-                "chapters": chapter_meta
-            },
-            open(f"{book_dir}/book.json", "w", encoding="utf-8"),
-            indent=2,
-            ensure_ascii=False
-        )
+        with open(f"{book_dir}/book.json", "w", encoding="utf-8") as f:
+            json.dump(
+                {
+                    "id": slug,
+                    "title": title,
+                    "author": author,
+                    "chapters": chapter_meta
+                },
+                f,
+                indent=2,
+                ensure_ascii=False
+            )
 
         update_library({
             "id": slug,
@@ -184,7 +225,8 @@ def main():
         })
 
         count += 1
-        time.sleep(2)
+        time.sleep(SLEEP_BETWEEN_BOOKS)
+
         if count >= LIMIT_PER_RUN:
             break
 
@@ -196,6 +238,10 @@ def main():
             state["done"] = True
 
     save_state(state)
+
+# ======================================================
+# ENTRY
+# ======================================================
 
 if __name__ == "__main__":
     main()
