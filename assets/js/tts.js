@@ -12,8 +12,10 @@
   let speaking = false;
   let voices = [];
   let currentUtterance = null;
+  let sessionVoice = null;
+  let observerTimer = null;
 
-  // 🔑 dipakai translate.js
+  // dipakai translate.js
   window.isTranslating = false;
 
   /* =========================
@@ -26,7 +28,7 @@
   loadVoices();
 
   /* =========================
-     LANGUAGE DETECTION
+     LANGUAGE DETECTION (BCP-47)
   ========================= */
   function detectLang(text) {
     const t = text.toLowerCase();
@@ -40,7 +42,7 @@
   }
 
   /* =========================
-     PICK VOICE (BCP-47 SAFE)
+     PICK VOICE (STABLE)
   ========================= */
   function pickVoice(lang) {
     if (!voices.length) return null;
@@ -69,13 +71,17 @@
 
   function stopTTS() {
     speaking = false;
+
     if (currentUtterance) {
       currentUtterance.onend = null;
       currentUtterance.onerror = null;
     }
+
     speechSynthesis.cancel();
     clearHighlight();
+
     currentUtterance = null;
+    sessionVoice = null;
   }
 
   function prepareParagraphs() {
@@ -89,7 +95,7 @@
   }
 
   /* =========================
-     CORE SPEAK (ANTI DOBEL)
+     CORE SPEAK (LOCKED & SAFE)
   ========================= */
   function speak(index) {
     if (!speaking || index >= paragraphs.length) {
@@ -100,18 +106,22 @@
     currentIndex = index;
     const p = paragraphs[index];
     const text = p.innerText.trim();
-    if (!text) return speak(index + 1);
 
-    const lang = detectLang(text);
-    const voice = pickVoice(lang);
+    if (!text) {
+      speak(index + 1);
+      return;
+    }
 
     clearHighlight();
     p.classList.add("tts-active");
     p.scrollIntoView({ behavior: "smooth", block: "center" });
 
     const utter = new SpeechSynthesisUtterance(text);
+
+    // LANG & VOICE DIKUNCI
+    const lang = detectLang(text);
     utter.lang = lang;
-    if (voice) utter.voice = voice;
+    if (sessionVoice) utter.voice = sessionVoice;
 
     utter.rate = 1;
     utter.pitch = 1;
@@ -126,13 +136,23 @@
       if (speaking) speak(index + 1);
     };
 
-    speechSynthesis.cancel(); // 🔥 CLEAR QUEUE SEBELUM SPEAK
+    // ❗ JANGAN CANCEL SAAT TRANSLATE
+    if (!window.isTranslating) {
+      speechSynthesis.cancel();
+    }
+
     speechSynthesis.speak(utter);
   }
 
   function startFrom(index) {
     stopTTS();
     prepareParagraphs();
+
+    // 🔒 LOCK VOICE SEKALI PER SESI
+    const firstText = paragraphs[index]?.innerText || "";
+    const lang = detectLang(firstText);
+    sessionVoice = pickVoice(lang);
+
     speaking = true;
     speak(index);
   }
@@ -149,17 +169,20 @@
     prepareParagraphs();
     if (!paragraphs.length) return;
 
-    speaking = true;
-    speak(0);
+    startFrom(0);
   };
 
   /* =========================
-     OBSERVER (TRANSLATE SAFE)
+     OBSERVER (DEBOUNCED)
   ========================= */
   const observer = new MutationObserver(() => {
     if (window.isTranslating) return;
-    stopTTS();
-    prepareParagraphs();
+
+    clearTimeout(observerTimer);
+    observerTimer = setTimeout(() => {
+      stopTTS();
+      prepareParagraphs();
+    }, 300);
   });
 
   observer.observe(reader, {
