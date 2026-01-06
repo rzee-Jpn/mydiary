@@ -1,0 +1,297 @@
+{
+  "id": "financial-crime-and-corruption",
+  "title": "Financial Crime and Corruption",
+  "author": "Unknown",
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "Editing and Design: Lidija Rangelovska",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "I. Slush Funds",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "II. Corruption and Transparency",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "III.Money Laundering in A Changed World",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "IV. Hawala, or The Bank that Never Was",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "V. Straf - Corruption in Central and Eastern Europe",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "VI. The Kleptocracies of the East",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "VII. FIMACO - Russia's Missing Billions",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "VIII. The Enrons of the East",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "IX. The Typology of Financial Scandals",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "X. The Shadowy World of International Finance",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "XI. Treasure Island Revisited On Maritime Piracy",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "XII.  Legalizing Crime",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "APPENDIX - Should Drugs be Legalized?",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "XIII. Begging Your Trust in Africa",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "XIV. Organ Trafficking in Eastern Europe",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "XV. Selling Arms to Rogue States",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "XVI.   The Industrious Spies",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "XVII.  Russia's Idled Spies",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "XVIII. The Business of Torture",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "XIX.  The Criminality of Transition",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "XX. The Economics of Conspiracy Theories",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "XXI. The Demise of the Work Ethic",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "XXII. The Morality of Child Labor",
+      "file": "chapters/ch24.html"
+    },
+    {
+      "id": "ch25",
+      "title": "XXIII. The Myth of the Earnings Yield",
+      "file": "chapters/ch25.html"
+    },
+    {
+      "id": "ch26",
+      "title": "Interview with Gary Goodenow",
+      "file": "chapters/ch26.html"
+    },
+    {
+      "id": "ch27",
+      "title": "Section 3 of the Act, titled \"Commission Rules and",
+      "file": "chapters/ch27.html"
+    },
+    {
+      "id": "ch28",
+      "title": "XXV. Trading from a Suitcase. The Case of Shuttle Trade",
+      "file": "chapters/ch28.html"
+    },
+    {
+      "id": "ch29",
+      "title": "XXVI. The Blessings of the Black Economy",
+      "file": "chapters/ch29.html"
+    },
+    {
+      "id": "ch30",
+      "title": "XXVII. Public Procurement and Very Private Benefits",
+      "file": "chapters/ch30.html"
+    },
+    {
+      "id": "ch31",
+      "title": "XXVIII.  Crisis of the Bookkeepers",
+      "file": "chapters/ch31.html"
+    },
+    {
+      "id": "ch32",
+      "title": "XXIX. Competition Laws",
+      "file": "chapters/ch32.html"
+    },
+    {
+      "id": "ch33",
+      "title": "XXX.  The Benefits of Oligopolies",
+      "file": "chapters/ch33.html"
+    },
+    {
+      "id": "ch34",
+      "title": "XXXI. Anarchy as an Organizing Principle",
+      "file": "chapters/ch34.html"
+    },
+    {
+      "id": "ch35",
+      "title": "XXXII. Narcissism in the Boardroom",
+      "file": "chapters/ch35.html"
+    },
+    {
+      "id": "ch36",
+      "title": "The Demise of Intellectual Property?",
+      "file": "chapters/ch36.html"
+    },
+    {
+      "id": "ch37",
+      "title": "http://www.plagiarism.org and http://www.Turnitin.com",
+      "file": "chapters/ch37.html"
+    },
+    {
+      "id": "ch38",
+      "title": "XXXV. The Economics of Spam",
+      "file": "chapters/ch38.html"
+    },
+    {
+      "id": "ch39",
+      "title": "XXXVII. The Fabric of Economic Trust",
+      "file": "chapters/ch39.html"
+    },
+    {
+      "id": "ch40",
+      "title": "XXXVIII. The Distributive Justice of the Market",
+      "file": "chapters/ch40.html"
+    },
+    {
+      "id": "ch41",
+      "title": "XXXIX.  The Agent-Principal Conundrum",
+      "file": "chapters/ch41.html"
+    },
+    {
+      "id": "ch42",
+      "title": "XL.  The Green-Eyed Capitalist",
+      "file": "chapters/ch42.html"
+    },
+    {
+      "id": "ch43",
+      "title": "Notes on the Economics of",
+      "file": "chapters/ch43.html"
+    },
+    {
+      "id": "ch44",
+      "title": "XLII.  Market Impeders and Market Inefficiencies",
+      "file": "chapters/ch44.html"
+    },
+    {
+      "id": "ch45",
+      "title": "Diplomats in Post-Communist Countries",
+      "file": "chapters/ch45.html"
+    },
+    {
+      "id": "ch46",
+      "title": "The Intellectual Property Wars",
+      "file": "chapters/ch46.html"
+    },
+    {
+      "id": "ch47",
+      "title": "XLV. NGOs - The Self-Appointed Altruists",
+      "file": "chapters/ch47.html"
+    },
+    {
+      "id": "ch48",
+      "title": "Who is Guarding the Guards in Countries in Transition from Communism?",
+      "file": "chapters/ch48.html"
+    },
+    {
+      "id": "ch49",
+      "title": "In Countries in Transition from Communism",
+      "file": "chapters/ch49.html"
+    },
+    {
+      "id": "ch50",
+      "title": "Frauds and Con-men in Countries in Transition from Communism",
+      "file": "chapters/ch50.html"
+    },
+    {
+      "id": "ch51",
+      "title": "How East and Central Europeans Defraud the Gullible West",
+      "file": "chapters/ch51.html"
+    },
+    {
+      "id": "ch52",
+      "title": "L.  The Treasure Trove of Kosovo",
+      "file": "chapters/ch52.html"
+    },
+    {
+      "id": "ch53",
+      "title": "LI.  Milosevic's Treasure Island",
+      "file": "chapters/ch53.html"
+    },
+    {
+      "id": "ch54",
+      "title": "or: Don't Hurry to Invest in Macedonia",
+      "file": "chapters/ch54.html"
+    },
+    {
+      "id": "ch55",
+      "title": "LIII. The Macedonian Lottery",
+      "file": "chapters/ch55.html"
+    },
+    {
+      "id": "ch56",
+      "title": "LIV.  Crime Fighting Computer Systems and Databases",
+      "file": "chapters/ch56.html"
+    },
+    {
+      "id": "ch57",
+      "title": "After the Rain",
+      "file": "chapters/ch57.html"
+    },
+    {
+      "id": "ch58",
+      "title": "LV.  The Author",
+      "file": "chapters/ch58.html"
+    }
+  ]
+}

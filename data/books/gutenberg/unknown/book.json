@@ -1,0 +1,12 @@
+{
+  "id": "unknown",
+  "title": "Unknown",
+  "author": "Unknown",
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "ELECTRONIC VERSION",
+      "file": "chapters/ch01.html"
+    }
+  ]
+}

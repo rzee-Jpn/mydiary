@@ -1,0 +1,12 @@
+{
+  "id": "the-communist-manifesto",
+  "title": "The Communist Manifesto",
+  "author": "Unknown",
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "by Karl Marx and Friedrich Engels",
+      "file": "chapters/ch01.html"
+    }
+  ]
+}
