@@ -1,3 +1,7 @@
+/* =========================
+   SIDEBAR + UI CONTROLS
+========================= */
+
 const sidebar = document.getElementById("sidebar");
 const handle = document.getElementById("pullHandle");
 const closeBtn = document.getElementById("closeSidebar");
@@ -9,11 +13,16 @@ const zoomOut = document.getElementById("zoomOut");
 
 const SIDEBAR_DURATION = 0.35;
 
-/* INIT */
+/* =========================
+   INIT
+========================= */
 gsap.set(sidebar, { x: "-100%" });
 gsap.set(overlay, { autoAlpha: 0 });
+gsap.set(handle, { autoAlpha: 1 });
 
-/* SIDEBAR OPEN */
+/* =========================
+   SIDEBAR OPEN
+========================= */
 function openSidebar() {
   gsap.to(sidebar, {
     x: 0,
@@ -33,7 +42,10 @@ function openSidebar() {
   });
 }
 
-/* SIDEBAR CLOSE */
+/* =========================
+   SIDEBAR CLOSE
+   (EXPOSED GLOBAL)
+========================= */
 function closeSidebar() {
   gsap.to(sidebar, {
     x: "-100%",
@@ -54,35 +66,43 @@ function closeSidebar() {
   });
 }
 
-/* EVENTS */
+/* ⬅️ PENTING: bikin global */
+window.closeSidebar = closeSidebar;
+
+/* =========================
+   EVENTS
+========================= */
 handle.addEventListener("click", openSidebar);
 closeBtn.addEventListener("click", closeSidebar);
 overlay.addEventListener("click", closeSidebar);
 
-/* FONT SIZE */
+/* =========================
+   FONT SIZE CONTROL
+========================= */
 let size = parseFloat(localStorage.getItem("fontSize")) || 1.05;
 
 function applyFont() {
+  if (!reader) return;
   reader.style.fontSize = size + "rem";
   localStorage.setItem("fontSize", size);
 }
 
-zoomIn.onclick = () => {
+zoomIn?.addEventListener("click", () => {
   size = Math.min(size + 0.1, 1.8);
   applyFont();
-};
+});
 
-zoomOut.onclick = () => {
+zoomOut?.addEventListener("click", () => {
   size = Math.max(size - 0.1, 0.8);
   applyFont();
-};
+});
 
 applyFont();
 
-
-
+/* =========================
+   ZEN MODE (DOUBLE TAP)
+========================= */
 (() => {
-  const reader = document.getElementById("reader");
   if (!reader) return;
 
   const KEY = "reader_zen_mode";
@@ -103,8 +123,7 @@ applyFont();
     const delta = now - lastTap;
 
     if (delta > 80 && delta < 300) {
-      const active = document.body.classList.contains("zen-mode");
-      setZen(!active);
+      setZen(!document.body.classList.contains("zen-mode"));
       e.preventDefault();
     }
 
