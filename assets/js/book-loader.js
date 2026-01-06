@@ -76,6 +76,9 @@
 
 document.dispatchEvent(new Event("chapter:loaded"));
 
+document.querySelectorAll("#tocList li").forEach(li => li.classList.remove("active"));
+tocList.children[index]?.classList.add("active");
+
         updateProgress();
       })
       .catch(err => {
