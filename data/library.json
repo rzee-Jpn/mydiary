@@ -1,2 +1,23 @@
 [
+  {
+    "id": "financial-crime-and-corruption",
+    "title": "Financial Crime and Corruption",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/financial-crime-and-corruption"
+  },
+  {
+    "id": "the-communist-manifesto",
+    "title": "The Communist Manifesto",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/the-communist-manifesto"
+  },
+  {
+    "id": "unknown",
+    "title": "Unknown",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/unknown"
+  }
 ]
