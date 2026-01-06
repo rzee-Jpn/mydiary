@@ -243,3 +243,39 @@ body.theme-paper {
   --surface: rgba(246,241,231,.92);
   --surface-text: #2a2a2a;
 }
+
+/* ===========================
+   READER TEXT (ZOOM SUPPORT)
+=========================== */
+#reader {
+  font-family: 'Merriweather', serif;
+  line-height: 1.75;
+  font-size: 1.05rem; /* default, nanti di-override JS */
+  max-width: 680px;
+  margin: auto;
+  padding: 1.5rem 1.2rem 4rem;
+}
+
+#reader p {
+  margin-bottom: 1.1em;
+}
+
+/* judul bab */
+#reader h2 {
+  margin: 2rem 0 1.5rem;
+  font-size: 1.6em;
+}
+
+/* ===========================
+   ZEN MODE
+=========================== */
+body.zen-mode {
+  background: var(--bg);
+}
+
+body.zen-mode header,
+body.zen-mode footer,
+body.zen-mode #sidebar,
+body.zen-mode #pullHandle {
+  display: none !important;
+}
