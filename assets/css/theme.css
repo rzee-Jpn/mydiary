@@ -1,4 +1,3 @@
-/* LIGHT */
 body.theme-light {
   --bg: #ffffff;
   --text: #1f1f1f;
@@ -8,7 +7,6 @@ body.theme-light {
   --accent: #8c6d3f;
 }
 
-/* DARK */
 body.theme-dark {
   --bg: #121212;
   --text: #eaeaea;
@@ -18,7 +16,6 @@ body.theme-dark {
   --accent: #c9a96a;
 }
 
-/* PAPER */
 body.theme-paper {
   --bg: #f3ecd9;
   --text: #2b2418;
@@ -28,7 +25,6 @@ body.theme-paper {
   --accent: #9a7b4f;
 }
 
-/* SEPIA */
 body.theme-sepia {
   --bg: #f1e7cf;
   --text: #3b2f1e;
