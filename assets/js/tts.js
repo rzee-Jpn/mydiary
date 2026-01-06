@@ -1,9 +1,11 @@
 (() => {
   const reader = document.getElementById("reader");
-  const ttsBtn = document.getElementById("ttsFloat");
+  const playBtn = document.getElementById("ttsFloat");
+  const stopBtn = document.getElementById("ttsStop");
 
-  if (!reader || !ttsBtn || !("speechSynthesis" in window)) {
-    if (ttsBtn) ttsBtn.style.display = "none";
+  if (!reader || !playBtn || !stopBtn || !("speechSynthesis" in window)) {
+    if (playBtn) playBtn.style.display = "none";
+    if (stopBtn) stopBtn.style.display = "none";
     return;
   }
 
@@ -40,7 +42,7 @@
   }
 
   /* =========================
-     PICK VOICE (LOCKABLE)
+     PICK VOICE (LOCKED)
   ========================= */
   function pickVoice(lang) {
     if (!voices.length) return null;
@@ -64,14 +66,18 @@
     );
   }
 
-  function stopTTS(force = true) {
+  function killTTS() {
     speaking = false;
+    readyToSpeak = false;
+
     if (currentUtterance) {
       currentUtterance.onend = null;
       currentUtterance.onerror = null;
     }
-    if (force) speechSynthesis.cancel();
+
+    speechSynthesis.cancel();
     clearHighlight();
+
     currentUtterance = null;
     sessionVoice = null;
   }
@@ -87,11 +93,11 @@
   }
 
   /* =========================
-     CORE SPEAK (ANTI MATI)
+     CORE SPEAK (ANDROID SAFE)
   ========================= */
   function speak(index) {
     if (!speaking || index >= paragraphs.length) {
-      stopTTS();
+      killTTS();
       return;
     }
 
@@ -102,7 +108,6 @@
 
     const lang = detectLang(text);
 
-    // 🔒 lock voice sekali per session
     if (!sessionVoice) {
       sessionVoice = pickVoice(lang);
     }
@@ -125,7 +130,6 @@
       if (speaking) speak(index + 1);
     };
 
-    // 🧠 micro-delay = Chrome Android lifesaver
     setTimeout(() => {
       if (!readyToSpeak) return;
       speechSynthesis.cancel();
@@ -134,7 +138,7 @@
   }
 
   function startFrom(index) {
-    stopTTS();
+    killTTS();
     prepareParagraphs();
     speaking = true;
     readyToSpeak = true;
@@ -142,14 +146,10 @@
   }
 
   /* =========================
-     BUTTON (USER GESTURE)
+     PLAY BUTTON
   ========================= */
-  ttsBtn.onclick = () => {
-    if (speaking) {
-      stopTTS();
-      return;
-    }
-
+  playBtn.onclick = () => {
+    if (speaking) return;
     prepareParagraphs();
     if (!paragraphs.length) return;
 
@@ -159,25 +159,31 @@
   };
 
   /* =========================
-     VISIBILITY FIX (INI KUNCI)
+     STOP BUTTON (ABSOLUTE)
+  ========================= */
+  stopBtn.onclick = () => {
+    killTTS();
+  };
+
+  /* =========================
+     VISIBILITY FIX
   ========================= */
   document.addEventListener("visibilitychange", () => {
-    if (!document.hidden && speaking) {
-      readyToSpeak = true;
+    if (!document.hidden && speaking && readyToSpeak) {
       speechSynthesis.cancel();
       setTimeout(() => speak(currentIndex), 150);
     }
   });
 
   /* =========================
-     OBSERVER (DEBOUNCED)
+     OBSERVER (TRANSLATE SAFE)
   ========================= */
   let obsTimer = null;
   const observer = new MutationObserver(() => {
     if (window.isTranslating) return;
     clearTimeout(obsTimer);
     obsTimer = setTimeout(() => {
-      stopTTS(false);
+      killTTS();
       prepareParagraphs();
     }, 300);
   });
