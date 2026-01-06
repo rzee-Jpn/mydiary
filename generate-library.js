@@ -22,7 +22,8 @@ const folders = fs.readdirSync(BOOKS_DIR, { withFileTypes: true })
 
 folders.forEach(folder => {
   const id = folder.name;
-  const bookPath = path.join(BOOKS_DIR, id, "book.json");
+  const bookDir = path.join(BOOKS_DIR, id);
+  const bookPath = path.join(bookDir, "book.json");
 
   if (!fs.existsSync(bookPath)) {
     console.warn(`⚠️  book.json tidak ditemukan: ${id}`);
@@ -32,9 +33,8 @@ folders.forEach(folder => {
   try {
     const book = JSON.parse(fs.readFileSync(bookPath, "utf8"));
 
-    // === VALIDASI COVER ===
     let cover = book.cover || "cover.jpg";
-    const coverPath = path.join(BOOKS_DIR, id, cover);
+    const coverPath = path.join(bookDir, cover);
     if (!fs.existsSync(coverPath)) {
       cover = "cover.jpg";
     }
@@ -44,7 +44,7 @@ folders.forEach(folder => {
       title: book.title || id,
       author: book.author || "",
       year: book.year || "",
-      cover,
+      cover: `data/books/${id}/${cover}`,
       language: book.language || "",
       tags: book.tags || []
     });
@@ -54,10 +54,8 @@ folders.forEach(folder => {
   }
 });
 
-// Sort A–Z berdasarkan judul
 library.sort((a, b) => a.title.localeCompare(b.title));
 
-// Tulis output
 fs.writeFileSync(
   OUTPUT_FILE,
   JSON.stringify(library, null, 2),
