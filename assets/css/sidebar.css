@@ -1,3 +1,4 @@
+/* SIDEBAR */
 #sidebar {
   position: fixed;
   top: 0;
@@ -42,4 +43,16 @@
   border-radius: 0 8px 8px 0;
   cursor: pointer;
   z-index: 360;
+}
+
+/* OVERLAY */
+#sidebarOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.35);
+  backdrop-filter: blur(2px);
+  z-index: 340;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
