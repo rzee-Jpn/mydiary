@@ -1,5 +1,5 @@
 /* ============================= */
-/*  ELEMENT REFERENCES (NEW)     */
+/*  ELEMENT REFERENCES           */
 /* ============================= */
 
 const catalogEl = document.getElementById("catalog");
@@ -14,8 +14,8 @@ let CATALOG_ITEMS = [];
 /* ============================= */
 
 function generateSVGCover(title) {
-  const MAX_CHARS = 28; // 🔒 batas aman visual
-  let text = title.trim();
+  const MAX_CHARS = 28;
+  let text = (title || "").trim();
 
   if (text.length > MAX_CHARS) {
     text = text.substring(0, MAX_CHARS - 1) + "…";
@@ -40,7 +40,7 @@ function generateSVGCover(title) {
       y="300"
       fill="#f2f2f2"
       font-size="30"
-      font-family="serif"
+      font-family="Georgia, serif"
       text-anchor="middle"
       dominant-baseline="middle"
       letter-spacing=".04em">
@@ -66,7 +66,8 @@ async function detectCatalogCover(book) {
     } catch (_) {}
   }
 
-  return generateCatalogSVG(book.title);
+  // ✅ FIX: fungsi yang benar
+  return generateSVGCover(book.title);
 }
 
 /* ============================= */
