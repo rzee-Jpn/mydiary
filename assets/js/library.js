@@ -5,43 +5,26 @@ const wrapper = document.querySelector(".search-wrapper");
 
 let ALL_BOOKS = [];
 
-/* ================= SVG COVER GENERATOR ================= */
+/* ===== SVG COVER GENERATOR ===== */
 function generateSVGCover(title) {
-  const words = title.split(" ");
-  let lines = [];
-  let current = "";
-
-  words.forEach(word => {
-    if ((current + " " + word).length > 18) {
-      lines.push(current);
-      current = word;
-    } else {
-      current += (current ? " " : "") + word;
-    }
-  });
-  if (current) lines.push(current);
-
-  const textSVG = lines.slice(0, 5).map((line, i) => `
-    <tspan x="50%" dy="${i === 0 ? 0 : 32}">${line}</tspan>
-  `).join("");
+  const safeText = title.substring(0, 80);
 
   const svg = `
   <svg xmlns="http://www.w3.org/2000/svg" width="400" height="600">
     <defs>
       <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#2b2b2b"/>
-        <stop offset="100%" stop-color="#3f3f3f"/>
+        <stop offset="0%" stop-color="#2c2c2c"/>
+        <stop offset="100%" stop-color="#4a4a4a"/>
       </linearGradient>
     </defs>
-
     <rect width="100%" height="100%" fill="url(#g)"/>
-
-    <text x="50%" y="42%"
-      fill="#f1f1f1"
-      font-size="26"
+    <text x="50%" y="50%"
+      fill="#f2f2f2"
+      font-size="28"
       font-family="serif"
-      text-anchor="middle">
-      ${textSVG}
+      text-anchor="middle"
+      dominant-baseline="middle">
+      ${safeText}
     </text>
   </svg>`;
 
@@ -49,21 +32,21 @@ function generateSVGCover(title) {
     btoa(unescape(encodeURIComponent(svg)));
 }
 
-/* ================= AUTO COVER DETECT ================= */
+/* ===== AUTO COVER DETECT ===== */
 async function detectCover(book) {
-  const candidates = ["cover.jpg", "cover.png", "thumbnail.jpg", "thumbnail.png"];
+  const files = ["cover.jpg", "cover.png", "thumbnail.jpg", "thumbnail.png"];
 
-  for (const file of candidates) {
+  for (const f of files) {
     try {
-      const res = await fetch(`${book.path}/${file}`, { method: "HEAD" });
-      if (res.ok) return `${book.path}/${file}`;
-    } catch {}
+      const res = await fetch(`${book.path}/${f}`, { method: "HEAD" });
+      if (res.ok) return `${book.path}/${f}`;
+    } catch (_) {}
   }
 
   return generateSVGCover(book.title);
 }
 
-/* ================= LOAD DATA ================= */
+/* ===== LOAD DATA ===== */
 fetch("data/library.json")
   .then(r => r.json())
   .then(data => {
@@ -71,7 +54,7 @@ fetch("data/library.json")
     render(data);
   });
 
-/* ================= SEARCH ================= */
+/* ===== SEARCH ===== */
 searchToggle.onclick = () => {
   wrapper.classList.toggle("active");
   if (!wrapper.classList.contains("active")) {
@@ -90,7 +73,7 @@ searchInput.oninput = e => {
   );
 };
 
-/* ================= RENDER ================= */
+/* ===== RENDER ===== */
 async function render(books) {
   library.innerHTML = "";
 
@@ -115,8 +98,8 @@ async function render(books) {
     gsap.from(a, {
       opacity: 0,
       y: 20,
-      duration: 0.4,
-      delay: i * 0.04
+      duration: 0.35,
+      delay: i * 0.03
     });
   }
 }
