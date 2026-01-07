@@ -93,6 +93,7 @@ async function render(books) {
         <img src="${cover}" alt="${b.title}">
       </div>
       <div class="book-meta">
+        <span class="book-tag">BOOK</span>
         <h3 title="${b.title}">${b.title}</h3>
         <small>${b.author || "Anonim"}</small>
       </div>
@@ -102,9 +103,9 @@ async function render(books) {
 
     gsap.from(a, {
       opacity: 0,
-      y: 16,
-      duration: 0.3,
-      delay: i * 0.02
+      y: 20,
+      duration: 0.35,
+      delay: i * 0.03
     });
   }
 }
