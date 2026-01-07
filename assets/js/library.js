@@ -5,9 +5,28 @@ const wrapper = document.querySelector(".search-wrapper");
 
 let ALL_BOOKS = [];
 
-/* ===== SVG COVER GENERATOR ===== */
+/* ===== SVG COVER GENERATOR (AUTO WRAP) ===== */
 function generateSVGCover(title) {
-  const safeText = title.substring(0, 80);
+  const words = title.split(" ");
+  let lines = [];
+  let current = "";
+
+  for (const w of words) {
+    if ((current + w).length > 14) {
+      lines.push(current.trim());
+      current = w + " ";
+    } else {
+      current += w + " ";
+    }
+  }
+  lines.push(current.trim());
+
+  const lineHeight = 36;
+  const startY = 300 - (lines.length * lineHeight) / 2;
+
+  const textLines = lines.map((l, i) =>
+    `<tspan x="200" y="${startY + i * lineHeight}">${l}</tspan>`
+  ).join("");
 
   const svg = `
   <svg xmlns="http://www.w3.org/2000/svg" width="400" height="600">
@@ -18,13 +37,12 @@ function generateSVGCover(title) {
       </linearGradient>
     </defs>
     <rect width="100%" height="100%" fill="url(#g)"/>
-    <text x="50%" y="50%"
+    <text
       fill="#f2f2f2"
       font-size="28"
       font-family="serif"
-      text-anchor="middle"
-      dominant-baseline="middle">
-      ${safeText}
+      text-anchor="middle">
+      ${textLines}
     </text>
   </svg>`;
 
