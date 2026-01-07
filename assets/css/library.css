@@ -1,12 +1,16 @@
-/* ===== HEADER ===== */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f5f1e6;
+}
+
+/* HEADER */
 .lib-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: .5rem 1rem;
+  padding: 10px;
   background: #6f4e37;
   color: #fff;
-  height: 60px;
 }
 
 .lib-header img {
@@ -18,35 +22,26 @@
 .lib-header .title {
   flex: 1;
   text-align: center;
-  font-size: 1.25rem;
   font-weight: 600;
 }
 
-.lib-header .byline {
-  font-size: .75rem;
-  opacity: .6;
-}
-
-/* ===== SEARCH ===== */
+/* SEARCH */
 .search-wrapper {
   position: relative;
   width: 44px;
-  height: 44px;
-  margin: 1rem auto;
-  transition: width .3s ease;
+  margin: 16px auto;
+  transition: width .3s;
+}
+
+.search-wrapper.active {
+  width: 240px;
 }
 
 .search-wrapper input {
   width: 100%;
   height: 44px;
+  padding-left: 44px;
   opacity: 0;
-  padding: .45rem .75rem .45rem 3rem;
-  border-radius: 25px;
-  border: 1px solid var(--border-soft);
-}
-
-.search-wrapper.active {
-  width: 240px;
 }
 
 .search-wrapper.active input {
@@ -55,84 +50,58 @@
 
 .search-icon {
   position: absolute;
-  left: 2px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: none;
-  background: var(--accent);
+  background: #6f4e37;
   color: #fff;
-  cursor: pointer;
 }
 
-/* ===== GRID ===== */
+/* GRID */
 .library-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
-  gap: 1rem;
-  padding: 1.5rem;
-  max-width: 1000px;
-  margin: auto;
+  gap: 16px;
+  padding: 16px;
 }
 
-/* ===== CARD ===== */
+/* CARD */
 .book-card {
-  background: var(--surface);
+  background: #fff;
   border-radius: 12px;
-  padding: .5rem;
+  padding: 8px;
   text-align: center;
   text-decoration: none;
-  color: var(--surface-text);
-  box-shadow: 0 6px 15px rgba(0,0,0,.08);
-  transition: transform .25s ease, box-shadow .25s ease;
+  color: #000;
 }
 
-/* ===== COVER ===== */
+/* COVER — INI FIX SEBENARNYA */
 .book-cover {
   width: 100%;
-  aspect-ratio: 2 / 3;
+  height: 220px;          /* PAKSA TINGGI */
   background: #111;
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
 }
 
 .book-cover img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;      /* KUNCI */
   display: block;
 }
 
-/* ===== TITLE ===== */
+/* TITLE */
 .book-card h3 {
   font-size: .9rem;
-  margin: .45rem 0 .15rem;
-  line-height: 1.25;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 6px 0 2px;
 }
 
-/* ===== AUTHOR ===== */
 .book-card small {
-  font-size: .7rem;
+  font-size: .75rem;
   opacity: .7;
-}
-
-/* ===== HOVER ===== */
-.book-card:hover {
-  transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12);
-}
-
-/* MOBILE */
-@media (max-width:480px) {
-  .library-grid {
-    grid-template-columns: repeat(2,1fr);
-  }
 }
