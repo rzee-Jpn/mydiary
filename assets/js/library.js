@@ -5,45 +5,43 @@ const wrapper = document.querySelector(".search-wrapper");
 
 let ALL_BOOKS = [];
 
-/* ===== SVG COVER GENERATOR (AUTO WRAP) ===== */
+/* ===== SVG COVER GENERATOR (PALING AMAN) ===== */
 function generateSVGCover(title) {
-  const words = title.split(" ");
-  let lines = [];
-  let current = "";
+  const safeText = title.substring(0, 150);
 
-  for (const w of words) {
-    if ((current + w).length > 14) {
-      lines.push(current.trim());
-      current = w + " ";
-    } else {
-      current += w + " ";
-    }
-  }
-  lines.push(current.trim());
-
-  const lineHeight = 36;
-  const startY = 300 - (lines.length * lineHeight) / 2;
-
-  const textLines = lines.map((l, i) =>
-    `<tspan x="200" y="${startY + i * lineHeight}">${l}</tspan>`
-  ).join("");
+  let fontSize = 28;
+  if (safeText.length > 40) fontSize = 22;
+  if (safeText.length > 80) fontSize = 18;
 
   const svg = `
-  <svg xmlns="http://www.w3.org/2000/svg" width="400" height="600">
+  <svg xmlns="http://www.w3.org/2000/svg"
+       width="400" height="600"
+       viewBox="0 0 400 600"
+       preserveAspectRatio="xMidYMid meet">
+
     <defs>
       <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#2c2c2c"/>
-        <stop offset="100%" stop-color="#4a4a4a"/>
+        <stop offset="0%" stop-color="#111"/>
+        <stop offset="100%" stop-color="#333"/>
       </linearGradient>
     </defs>
-    <rect width="100%" height="100%" fill="url(#g)"/>
-    <text
-      fill="#f2f2f2"
-      font-size="28"
-      font-family="serif"
-      text-anchor="middle">
-      ${textLines}
-    </text>
+
+    <rect width="400" height="600" fill="url(#g)"/>
+
+    <foreignObject x="40" y="160" width="320" height="280">
+      <div xmlns="http://www.w3.org/1999/xhtml"
+        style="
+          color:#f2f2f2;
+          font-family:serif;
+          font-size:${fontSize}px;
+          line-height:1.3;
+          text-align:center;
+          word-wrap:break-word;
+          overflow-wrap:break-word;
+        ">
+        ${safeText}
+      </div>
+    </foreignObject>
   </svg>`;
 
   return "data:image/svg+xml;base64," +
