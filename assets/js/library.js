@@ -5,44 +5,26 @@ const wrapper = document.querySelector(".search-wrapper");
 
 let ALL_BOOKS = [];
 
-/* ===== SVG DEFAULT COVER (SAFE) ===== */
+/* ===== SVG COVER GENERATOR ===== */
 function generateSVGCover(title) {
-  const maxChars = 18;
-  const words = title.split(" ");
-  let lines = [];
-  let line = "";
-
-  for (const w of words) {
-    if ((line + w).length <= maxChars) {
-      line += (line ? " " : "") + w;
-    } else {
-      lines.push(line);
-      line = w;
-    }
-  }
-  if (line) lines.push(line);
-
-  lines = lines.slice(0, 4);
-
-  const tspans = lines
-    .map((l, i) => `<tspan x="50%" dy="${i === 0 ? 0 : 32}">${l}</tspan>`)
-    .join("");
+  const text = title.slice(0, 60);
 
   const svg = `
   <svg xmlns="http://www.w3.org/2000/svg" width="400" height="600">
     <defs>
       <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#2b2b2b"/>
-        <stop offset="100%" stop-color="#444"/>
+        <stop offset="0%" stop-color="#2c2c2c"/>
+        <stop offset="100%" stop-color="#4a4a4a"/>
       </linearGradient>
     </defs>
-    <rect width="100%" height="100%" rx="18" fill="url(#g)"/>
-    <text x="50%" y="42%"
-      fill="#f5f5f5"
-      font-size="26"
+    <rect width="100%" height="100%" fill="url(#g)"/>
+    <text x="50%" y="50%"
+      fill="#f2f2f2"
+      font-size="28"
       font-family="serif"
-      text-anchor="middle">
-      ${tspans}
+      text-anchor="middle"
+      dominant-baseline="middle">
+      ${text}
     </text>
   </svg>`;
 
@@ -52,20 +34,27 @@ function generateSVGCover(title) {
 
 /* ===== AUTO COVER DETECT ===== */
 async function detectCover(book) {
-  const files = ["cover.jpg", "cover.png", "thumbnail.jpg", "thumbnail.png"];
-  for (const f of files) {
+  const candidates = [
+    "cover.jpg",
+    "cover.png",
+    "thumbnail.jpg",
+    "thumbnail.png"
+  ];
+
+  for (const file of candidates) {
     try {
-      const r = await fetch(`${book.path}/${f}`, { method: "HEAD" });
-      if (r.ok) return `${book.path}/${f}`;
-    } catch {}
+      const res = await fetch(`${book.path}/${file}`, { method: "HEAD" });
+      if (res.ok) return `${book.path}/${file}`;
+    } catch (e) {}
   }
+
   return generateSVGCover(book.title);
 }
 
 /* ===== LOAD DATA ===== */
 fetch("data/library.json")
   .then(r => r.json())
-  .then(data => {
+  .then(async data => {
     ALL_BOOKS = data;
     render(data);
   });
@@ -98,18 +87,15 @@ async function render(books) {
     const cover = await detectCover(b);
 
     const a = document.createElement("a");
-    a.className = "book-card";
     a.href = `reader.html?path=${encodeURIComponent(b.path)}`;
+    a.className = "book-card";
 
     a.innerHTML = `
       <div class="book-cover">
         <img src="${cover}" alt="${b.title}">
       </div>
-
-      <div class="book-info">
-        <h3 title="${b.title}">${b.title}</h3>
-        <small>${b.author || "Anonim"}</small>
-      </div>
+      <h3>${b.title}</h3>
+      <small>${b.author || "Anonim"}</small>
     `;
 
     library.appendChild(a);
