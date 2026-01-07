@@ -67,9 +67,8 @@
   cursor: pointer;
 }
 
-
 /* ============================= */
-/*  CATALOG GRID (NEW SYSTEM)    */
+/*  CATALOG GRID                */
 /* ============================= */
 
 .catalog-grid {
@@ -88,7 +87,7 @@
 }
 
 /* ============================= */
-/*  ITEM CARD                    */
+/*  ITEM                         */
 /* ============================= */
 
 .catalog-item {
@@ -97,12 +96,12 @@
 }
 
 /* ============================= */
-/*  COVER / THUMB                */
+/*  THUMB                        */
 /* ============================= */
 
 .catalog-thumb {
   width: 100%;
-  aspect-ratio: 1 / 1;       /* 🔒 FIX UTAMA */
+  aspect-ratio: 1 / 1;
   background: #222;
   border-radius: 6px;
   overflow: hidden;
@@ -112,12 +111,12 @@
 .catalog-thumb img {
   width: 100%;
   height: 100%;
-  object-fit: cover;         /* IMG & SVG AMAN */
+  object-fit: cover;
   display: block;
 }
 
 /* ============================= */
-/*  META INFO                    */
+/*  META                         */
 /* ============================= */
 
 .catalog-info {
@@ -139,9 +138,8 @@
   font-weight: 500;
   line-height: 1.3;
   margin: .15rem 0 .2rem;
-
   display: -webkit-box;
-  -webkit-line-clamp: 2;     /* MAX 2 BARIS */
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -149,33 +147,4 @@
 .catalog-info small {
   font-size: .75rem;
   opacity: .6;
-}
-
-/* ===== TITLE ===== */
-.book-card h3 {
-  font-size: .9rem;
-  margin: .45rem 0 .15rem;
-  line-height: 1.25;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* ===== AUTHOR ===== */
-.book-card small {
-  font-size: .7rem;
-  opacity: .7;
-}
-
-/* ===== HOVER ===== */
-.book-card:hover {
-  transform: translateY(-4px) scale(1.03);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12);
-}
-
-/* ===== MOBILE ===== */
-@media (max-width:480px) {
-  .library-grid {
-    grid-template-columns: repeat(2,1fr);
-  }
 }
