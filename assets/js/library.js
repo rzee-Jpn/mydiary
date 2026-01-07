@@ -13,34 +13,43 @@ let CATALOG_ITEMS = [];
 /*  SVG PLACEHOLDER COVER        */
 /* ============================= */
 
-function generateCatalogSVG(title) {
-  const safeText = title.substring(0, 40);
+function generateSVGCover(title) {
+  const MAX_CHARS = 28; // 🔒 batas aman visual
+  let text = title.trim();
+
+  if (text.length > MAX_CHARS) {
+    text = text.substring(0, MAX_CHARS - 1) + "…";
+  }
 
   const svg = `
   <svg xmlns="http://www.w3.org/2000/svg"
-       viewBox="0 0 400 400"
+       width="400" height="600"
+       viewBox="0 0 400 600"
        preserveAspectRatio="xMidYMid slice">
     <defs>
-      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
         <stop offset="0%" stop-color="#2b2b2b"/>
         <stop offset="100%" stop-color="#444"/>
       </linearGradient>
     </defs>
-    <rect width="400" height="400" fill="url(#bg)"/>
-    <text x="200" y="200"
-      fill="#f1f1f1"
-      font-size="22"
+
+    <rect width="400" height="600" fill="url(#g)"/>
+
+    <text
+      x="200"
+      y="300"
+      fill="#f2f2f2"
+      font-size="30"
       font-family="serif"
       text-anchor="middle"
-      dominant-baseline="middle">
-      ${safeText}
+      dominant-baseline="middle"
+      letter-spacing=".04em">
+      ${text}
     </text>
   </svg>`;
 
-  return (
-    "data:image/svg+xml;base64," +
-    btoa(unescape(encodeURIComponent(svg)))
-  );
+  return "data:image/svg+xml;base64," +
+    btoa(unescape(encodeURIComponent(svg)));
 }
 
 /* ============================= */
