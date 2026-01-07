@@ -1,14 +1,14 @@
 /* ===== GRID ===== */
 .library-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 1rem;
   padding: 1.5rem;
   max-width: 1000px;
   margin: auto;
 }
 
-/* ===== CARD (HEIGHT LOCKED) ===== */
+/* ===== CARD (LOCKED HEIGHT) ===== */
 .book-card {
   display: flex;
   flex-direction: column;
@@ -28,18 +28,17 @@
   aspect-ratio: 2 / 3;
   background: #111;
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
 }
 
 .book-cover img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-/* ===== INFO (HEIGHT LOCK) ===== */
+/* ===== INFO LOCK ===== */
 .book-info {
   min-height: 56px;
   display: flex;
@@ -70,9 +69,9 @@
   box-shadow: 0 10px 20px rgba(0,0,0,.12);
 }
 
-/* MOBILE */
+/* ===== MOBILE ===== */
 @media (max-width:480px) {
   .library-grid {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
