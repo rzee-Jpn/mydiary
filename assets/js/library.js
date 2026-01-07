@@ -5,7 +5,7 @@ const wrapper = document.querySelector(".search-wrapper");
 
 let ALL_BOOKS = [];
 
-/* ===== SVG DEFAULT COVER ===== */
+/* ===== SVG DEFAULT COVER (SAFE) ===== */
 function generateSVGCover(title) {
   const maxChars = 18;
   const words = title.split(" ");
@@ -50,9 +50,9 @@ function generateSVGCover(title) {
     btoa(unescape(encodeURIComponent(svg)));
 }
 
-/* ===== AUTO COVER ===== */
+/* ===== AUTO COVER DETECT ===== */
 async function detectCover(book) {
-  const files = ["cover.jpg","cover.png","thumbnail.jpg","thumbnail.png"];
+  const files = ["cover.jpg", "cover.png", "thumbnail.jpg", "thumbnail.png"];
   for (const f of files) {
     try {
       const r = await fetch(`${book.path}/${f}`, { method: "HEAD" });
@@ -114,6 +114,11 @@ async function render(books) {
 
     library.appendChild(a);
 
-    gsap.from(a, { opacity: 0, y: 20, delay: i * 0.04 });
+    gsap.from(a, {
+      opacity: 0,
+      y: 20,
+      duration: 0.4,
+      delay: i * 0.04
+    });
   }
 }
