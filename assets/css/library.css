@@ -1,70 +1,169 @@
-/* ===== LIST CONTAINER ===== */
-.library-list {
+/* ===== HEADER ===== */
+.lib-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  background: #6f4e37;
+  color: #fff;
+  height: 60px;
+}
+
+.lib-header img {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+}
+
+.lib-header .title {
+  flex: 1;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.lib-header .byline {
+  font-size: .75rem;
+  opacity: .6;
+}
+
+/* ===== SEARCH ===== */
+.search-wrapper {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  margin: 1rem auto;
+  transition: width .3s ease;
+}
+
+.search-wrapper input {
+  width: 100%;
+  height: 44px;
+  opacity: 0;
+  padding: .45rem .75rem .45rem 3rem;
+  border-radius: 25px;
+  border: 1px solid var(--border-soft);
+}
+
+.search-wrapper.active {
+  width: 240px;
+}
+
+.search-wrapper.active input {
+  opacity: 1;
+}
+
+.search-icon {
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ===== GRID ===== */
+.library-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
   padding: 1.5rem;
   max-width: 1100px;
   margin: auto;
 }
 
-/* ===== BOOK CARD ===== */
+/* DESKTOP */
+@media (min-width: 768px) {
+  .library-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+/* ===== CARD ===== */
 .book-card {
-  background: var(--surface);
-  border-radius: 14px;
-  overflow: hidden;
   text-decoration: none;
   color: var(--surface-text);
-  box-shadow: 0 8px 20px rgba(0,0,0,.08);
-  transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.book-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(0,0,0,.12);
-}
-
-/* ===== COVER (LANDSCAPE, AMAN) ===== */
+/* ===== COVER ===== */
 .book-cover {
   width: 100%;
-  height: 140px;                 /* 🔒 FIX */
-  background: #1c1c1c;
+  aspect-ratio: 1 / 1;        /* 🔒 KUNCI UTAMA */
+  background: #222;
+  border-radius: 6px;
   overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
 }
 
 .book-cover img {
   width: 100%;
   height: 100%;
-  object-fit: cover;             /* 🔒 NO DRAMA */
+  object-fit: cover;          /* SVG / IMG AMAN */
   display: block;
 }
 
 /* ===== META ===== */
 .book-meta {
-  padding: .75rem .85rem 1rem;
-  text-align: left;
+  margin-top: .6rem;
+}
+
+.book-tag {
+  display: inline-block;
+  font-size: .65rem;
+  letter-spacing: .08em;
+  border: 1px solid var(--border-soft);
+  padding: .15rem .45rem;
+  margin-bottom: .25rem;
+  opacity: .7;
 }
 
 .book-meta h3 {
-  font-size: .95rem;
-  font-weight: 600;
+  font-size: .9rem;
+  font-weight: 500;
   line-height: 1.3;
-  margin: 0 0 .25rem;
+  margin: .15rem 0 .2rem;
 
   display: -webkit-box;
-  -webkit-line-clamp: 2;         /* 🔥 2 BARIS MAX */
+  -webkit-line-clamp: 2;      /* 2 BARIS MAX */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
 .book-meta small {
   font-size: .75rem;
-  opacity: .65;
+  opacity: .6;
+}
+
+/* ===== TITLE ===== */
+.book-card h3 {
+  font-size: .9rem;
+  margin: .45rem 0 .15rem;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ===== AUTHOR ===== */
+.book-card small {
+  font-size: .7rem;
+  opacity: .7;
+}
+
+/* ===== HOVER ===== */
+.book-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12);
 }
 
 /* ===== MOBILE ===== */
 @media (max-width:480px) {
-  .library-list {
-    grid-template-columns: 1fr;
+  .library-grid {
+    grid-template-columns: repeat(2,1fr);
   }
 }
