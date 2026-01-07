@@ -1,9 +1,30 @@
 [
   {
+    "id": "beer-its-history-and-its-economic-valueas-anational-beverage",
+    "title": "BEER,ITS HISTORY AND ITS ECONOMIC VALUEAS ANATIONAL BEVERAGE.",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/beer-its-history-and-its-economic-valueas-anational-beverage"
+  },
+  {
     "id": "financial-crime-and-corruption",
     "title": "Financial Crime and Corruption",
     "author": "Samuel Vaknin",
     "source": "Project Gutenberg",
     "path": "data/books/gutenberg/financial-crime-and-corruption"
+  },
+  {
+    "id": "the-commercial-productsof-thevegetable-kingdom",
+    "title": "THE COMMERCIAL PRODUCTSOF THEVEGETABLE KINGDOM,",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/the-commercial-productsof-thevegetable-kingdom"
+  },
+  {
+    "id": "the-economicconsequences-ofthe-peace",
+    "title": "THE ECONOMICCONSEQUENCES OFTHE PEACE",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/the-economicconsequences-ofthe-peace"
   }
 ]

@@ -1,0 +1,37 @@
+{
+  "id": "beer-its-history-and-its-economic-valueas-anational-beverage",
+  "title": "BEER,ITS HISTORY AND ITS ECONOMIC VALUEAS ANATIONAL BEVERAGE.",
+  "author": "Unknown",
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "REPORT OF THE COMMITTEE ON TEMPERANCE, OF THE\nFIFTY-EIGHTH LEGISLATURE OF MAINE, 1879.",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "TABLE B.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "HISTORICAL SKETCH OF HON. FREDERICK LAUER OF READING,\nPA.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "THE JOSEPH SCHLITZ BREWING CO., MILWAUKEE, WIS.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "THE BREWERY OF MR. GOTTFRIED KRUEGER, NEWARK,\nN. J.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "List of Brewers in the United States, with the\nProduct for the Years Ending May, 1878, and\nMay, 1879.",
+      "file": "chapters/ch06.html"
+    }
+  ]
+}
