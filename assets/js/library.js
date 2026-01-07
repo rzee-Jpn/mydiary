@@ -1,28 +1,35 @@
-const library = document.getElementById("library");
+/* ============================= */
+/*  ELEMENT REFERENCES (NEW)     */
+/* ============================= */
+
+const catalogEl = document.getElementById("catalog");
 const searchInput = document.getElementById("bookSearch");
 const searchToggle = document.getElementById("searchToggle");
-const wrapper = document.querySelector(".search-wrapper");
+const searchWrapper = document.querySelector(".search-wrapper");
 
-let ALL_BOOKS = [];
+let CATALOG_ITEMS = [];
 
-/* ===== SVG COVER (STABIL & TIDAK MERUSAK LAYOUT) ===== */
-function generateSVGCover(title) {
+/* ============================= */
+/*  SVG PLACEHOLDER COVER        */
+/* ============================= */
+
+function generateCatalogSVG(title) {
   const safeText = title.substring(0, 40);
 
   const svg = `
   <svg xmlns="http://www.w3.org/2000/svg"
-       viewBox="0 0 400 600"
+       viewBox="0 0 400 400"
        preserveAspectRatio="xMidYMid slice">
     <defs>
-      <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#2c2c2c"/>
-        <stop offset="100%" stop-color="#4a4a4a"/>
+      <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#2b2b2b"/>
+        <stop offset="100%" stop-color="#444"/>
       </linearGradient>
     </defs>
-    <rect width="400" height="600" fill="url(#g)"/>
-    <text x="200" y="300"
-      fill="#f2f2f2"
-      font-size="28"
+    <rect width="400" height="400" fill="url(#bg)"/>
+    <text x="200" y="200"
+      fill="#f1f1f1"
+      font-size="22"
       font-family="serif"
       text-anchor="middle"
       dominant-baseline="middle">
@@ -30,12 +37,17 @@ function generateSVGCover(title) {
     </text>
   </svg>`;
 
-  return "data:image/svg+xml;base64," +
-    btoa(unescape(encodeURIComponent(svg)));
+  return (
+    "data:image/svg+xml;base64," +
+    btoa(unescape(encodeURIComponent(svg)))
+  );
 }
 
-/* ===== AUTO COVER DETECT ===== */
-async function detectCover(book) {
+/* ============================= */
+/*  AUTO COVER DETECTION         */
+/* ============================= */
+
+async function detectCatalogCover(book) {
   const files = ["cover.jpg", "cover.png", "thumbnail.jpg", "thumbnail.png"];
 
   for (const f of files) {
@@ -45,67 +57,88 @@ async function detectCover(book) {
     } catch (_) {}
   }
 
-  return generateSVGCover(book.title);
+  return generateCatalogSVG(book.title);
 }
 
-/* ===== LOAD DATA ===== */
+/* ============================= */
+/*  LOAD DATA                    */
+/* ============================= */
+
 fetch("data/library.json")
-  .then(r => r.json())
+  .then(res => res.json())
   .then(data => {
-    ALL_BOOKS = data;
-    render(data);
+    CATALOG_ITEMS = data;
+    renderCatalog(data);
   });
 
-/* ===== SEARCH ===== */
-searchToggle.onclick = () => {
-  wrapper.classList.toggle("active");
-  if (!wrapper.classList.contains("active")) {
-    searchInput.value = "";
-    render(ALL_BOOKS);
-  }
-};
+/* ============================= */
+/*  SEARCH TOGGLE                */
+/* ============================= */
 
-searchInput.oninput = e => {
-  const q = e.target.value.toLowerCase();
-  render(
-    ALL_BOOKS.filter(b =>
-      b.title.toLowerCase().includes(q) ||
-      (b.author || "").toLowerCase().includes(q)
-    )
-  );
-};
+if (searchToggle) {
+  searchToggle.onclick = () => {
+    searchWrapper.classList.toggle("active");
 
-/* ===== RENDER ===== */
+    if (!searchWrapper.classList.contains("active")) {
+      searchInput.value = "";
+      renderCatalog(CATALOG_ITEMS);
+    }
+  };
+}
 
-async function render(books) {
-  library.innerHTML = "";
+/* ============================= */
+/*  SEARCH FILTER                */
+/* ============================= */
 
-  for (let i = 0; i < books.length; i++) {
-    const b = books[i];
-    const cover = await detectCover(b);
+if (searchInput) {
+  searchInput.oninput = e => {
+    const q = e.target.value.toLowerCase();
 
-    const a = document.createElement("a");
-    a.href = `reader.html?path=${encodeURIComponent(b.path)}`;
-    a.className = "book-card";
+    renderCatalog(
+      CATALOG_ITEMS.filter(item =>
+        item.title.toLowerCase().includes(q) ||
+        (item.author || "").toLowerCase().includes(q)
+      )
+    );
+  };
+}
 
-    a.innerHTML = `
-      <div class="book-cover">
-        <img src="${cover}" alt="${b.title}">
+/* ============================= */
+/*  RENDER CATALOG               */
+/* ============================= */
+
+async function renderCatalog(items) {
+  catalogEl.innerHTML = "";
+
+  for (let i = 0; i < items.length; i++) {
+    const book = items[i];
+    const cover = await detectCatalogCover(book);
+
+    const link = document.createElement("a");
+    link.href = `reader.html?path=${encodeURIComponent(book.path)}`;
+    link.className = "catalog-item";
+
+    link.innerHTML = `
+      <div class="catalog-thumb">
+        <img src="${cover}" alt="${book.title}">
       </div>
-      <div class="book-meta">
-        <span class="book-tag">BOOK</span>
-        <h3 title="${b.title}">${b.title}</h3>
-        <small>${b.author || "Anonim"}</small>
+      <div class="catalog-info">
+        <span class="catalog-tag">BOOK</span>
+        <h3 title="${book.title}">${book.title}</h3>
+        <small>${book.author || "Anonim"}</small>
       </div>
     `;
 
-    library.appendChild(a);
+    catalogEl.appendChild(link);
 
-    gsap.from(a, {
-      opacity: 0,
-      y: 20,
-      duration: 0.35,
-      delay: i * 0.03
-    });
+    if (window.gsap) {
+      gsap.from(link, {
+        opacity: 0,
+        y: 18,
+        duration: 0.35,
+        delay: i * 0.03,
+        ease: "power2.out"
+      });
+    }
   }
 }
