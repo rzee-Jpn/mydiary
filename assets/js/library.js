@@ -5,7 +5,7 @@ const wrapper = document.querySelector(".search-wrapper");
 
 let ALL_BOOKS = [];
 
-/* ===== SVG COVER (STABIL) ===== */
+/* ===== SVG COVER (STABIL & TIDAK MERUSAK LAYOUT) ===== */
 function generateSVGCover(title) {
   const safeText = title.substring(0, 40);
 
