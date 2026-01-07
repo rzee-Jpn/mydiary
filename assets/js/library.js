@@ -76,6 +76,7 @@ searchInput.oninput = e => {
 };
 
 /* ===== RENDER ===== */
+
 async function render(books) {
   library.innerHTML = "";
 
@@ -91,17 +92,19 @@ async function render(books) {
       <div class="book-cover">
         <img src="${cover}" alt="${b.title}">
       </div>
-      <h3 title="${b.title}">${b.title}</h3>
-      <small>${b.author || "Anonim"}</small>
+      <div class="book-meta">
+        <h3 title="${b.title}">${b.title}</h3>
+        <small>${b.author || "Anonim"}</small>
+      </div>
     `;
 
     library.appendChild(a);
 
     gsap.from(a, {
       opacity: 0,
-      y: 20,
-      duration: 0.35,
-      delay: i * 0.03
+      y: 16,
+      duration: 0.3,
+      delay: i * 0.02
     });
   }
 }
