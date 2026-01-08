@@ -64,17 +64,26 @@ html,body{
   align-items:center;
   justify-content:center;
 }
+
+/* Fullscreen soft blur when active */
 .viewport.active::before {
-  content:"";
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,0.35);
-  backdrop-filter:blur(4px);
-  z-index:-1;
-  transition:opacity .4s ease;
+  content: "";
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(20px);
+  background: rgba(11, 15, 25, 0.4);
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity .4s ease;
 }
 
-.track{display:flex;width:100%;opacity:0;}
+.track{
+  display:flex;
+  width:100%;
+  opacity:0;
+  position:relative;
+  z-index:2;
+}
 .panel{flex:0 0 100%;display:none;flex-direction:column;align-items:center;}
 .panel-header h2{
   font-family:"JetBrains Mono",monospace;
@@ -111,17 +120,30 @@ html,body{
   pointer-events:auto;
 }
 
-/* ARROWS */
+/* ARROWS (updated version) */
 .arrow{
   position:absolute;top:50%;
   transform:translateY(-50%);
-  font-size:28px;color:var(--accent);
-  opacity:.6;cursor:pointer;
-  display:none;user-select:none;
+  font-size:22px;
+  color:var(--accent);
+  opacity:.8;
+  cursor:pointer;
+  display:none;
+  user-select:none;
+  z-index:3;
+  width:42px;height:42px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(124,124,255,0.08);
+  transition:background .3s ease, transform .2s ease, opacity .3s;
 }
-.arrow:hover{opacity:1;}
-.arrow-left{left:40px;}   /* ← lebih ke tengah */
-.arrow-right{right:40px;} /* → lebih ke tengah */
+.arrow:hover{
+  background:rgba(124,124,255,0.18);
+  transform:translateY(-50%) scale(1.08);
+  opacity:1;
+}
+.arrow-left{left:36px;}
+.arrow-right{right:36px;}
 
 /* FOOTER */
 .status{
@@ -155,12 +177,10 @@ html,body{
 /* MOBILE ADJUSTMENT */
 @media(max-width:767px){
   #app{padding:24px;}
-
   .core-nav{
     left:48px;
     top:45%;
   }
-
   .viewport{
     left:0;
     width:100%;
@@ -169,14 +189,8 @@ html,body{
     min-height:220px;
     justify-content:center;
   }
-
-  .arrow{
-    font-size:24px;
-  }
+  .arrow{font-size:20px;width:36px;height:36px;}
   .arrow-left{left:20px;}
   .arrow-right{right:20px;}
-
-  .status, .peripheral{
-    bottom:16px;
-  }
+  .status, .peripheral{bottom:16px;}
 }
