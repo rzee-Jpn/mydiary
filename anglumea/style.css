@@ -1,0 +1,182 @@
+:root {
+  --bg:#0b0f14;
+  --text:#e6e8ee;
+  --muted:#8b91a2;
+  --accent:#7c7cff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{
+  height:100%;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter,sans-serif;
+  overflow:hidden;
+}
+
+#bg-parallax{
+  position:fixed;inset:0;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(124,124,255,.08), transparent 40%),
+    radial-gradient(circle at 70% 80%, rgba(255,255,255,.03), transparent 50%);
+  pointer-events:none;
+  z-index:-1;
+}
+
+#app{position:relative;height:100%;padding:48px;}
+
+.brand h1{font-size:28px;font-weight:400;letter-spacing:.5em;}
+.brand span{display:block;margin-top:6px;font-size:12px;opacity:.5;}
+
+/* NAVIGATION */
+.core-nav{
+  position:absolute;
+  top:50%;
+  left:80px;
+  transform:translateY(-50%);
+  display:flex;flex-direction:column;gap:24px;
+  transition:opacity .3s ease, left .3s ease;
+}
+.core-nav.hidden {
+  opacity:0;
+  pointer-events:none;
+}
+.core-nav button{
+  background:none;border:none;color:var(--muted);
+  font-family:"JetBrains Mono",monospace;
+  cursor:pointer;font-size:13px;
+  padding:4px 8px;border-radius:6px;
+  transition:color .3s;
+}
+.core-nav button:hover{color:var(--accent);}
+
+/* VIEWPORT / PANELS */
+.viewport{
+  position:absolute;
+  top:50%;left:180px;
+  transform:translateY(-50%);
+  width:calc(100% - 260px);
+  min-height:280px;
+  overflow:hidden;
+  pointer-events:none;
+  transition:all .3s ease;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.viewport.active::before {
+  content:"";
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.35);
+  backdrop-filter:blur(4px);
+  z-index:-1;
+  transition:opacity .4s ease;
+}
+
+.track{display:flex;width:100%;opacity:0;}
+.panel{flex:0 0 100%;display:none;flex-direction:column;align-items:center;}
+.panel-header h2{
+  font-family:"JetBrains Mono",monospace;
+  font-size:12px;text-transform:uppercase;
+  opacity:.6;letter-spacing:.15em;margin-bottom:12px;
+}
+
+.slider{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  width:100%;
+  height:250px;
+}
+
+.card{
+  position:absolute;
+  opacity:0;
+  transform:scale(0.85);
+  transition:all .5s ease;
+  width:220px;height:250px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:"JetBrains Mono",monospace;
+  background:rgba(255,255,255,0.03);
+  border-radius:12px;
+  border:1px solid rgba(124,124,255,0.2);
+  pointer-events:none;
+}
+.card.active{
+  opacity:1;
+  transform:scale(1);
+  box-shadow:0 8px 24px rgba(124,124,255,0.25);
+  pointer-events:auto;
+}
+
+/* ARROWS */
+.arrow{
+  position:absolute;top:50%;
+  transform:translateY(-50%);
+  font-size:28px;color:var(--accent);
+  opacity:.6;cursor:pointer;
+  display:none;user-select:none;
+}
+.arrow:hover{opacity:1;}
+.arrow-left{left:40px;}   /* ← lebih ke tengah */
+.arrow-right{right:40px;} /* → lebih ke tengah */
+
+/* FOOTER */
+.status{
+  position:absolute;bottom:32px;left:48px;
+  font-family:"JetBrains Mono",monospace;
+  font-size:11px;opacity:.4;
+}
+.peripheral{
+  position:absolute;bottom:32px;right:48px;
+  display:flex;gap:16px;
+  font-family:"JetBrains Mono",monospace;
+  font-size:11px;
+}
+.peripheral span{opacity:.4;cursor:pointer;}
+.peripheral span:hover{opacity:.8;}
+
+/* MODAL */
+.modal{
+  position:fixed;inset:0;
+  background:rgba(11,15,20,.75);
+  backdrop-filter:blur(8px);
+  display:none;
+  align-items:center;justify-content:center;
+}
+.modal-box{
+  max-width:320px;font-size:13px;line-height:1.6;opacity:.9;
+  padding:16px;background:rgba(11,15,20,.85);
+  border-radius:8px;backdrop-filter:blur(6px);
+}
+
+/* MOBILE ADJUSTMENT */
+@media(max-width:767px){
+  #app{padding:24px;}
+
+  .core-nav{
+    left:48px;
+    top:45%;
+  }
+
+  .viewport{
+    left:0;
+    width:100%;
+    top:50%;
+    transform:translateY(-50%);
+    min-height:220px;
+    justify-content:center;
+  }
+
+  .arrow{
+    font-size:24px;
+  }
+  .arrow-left{left:20px;}
+  .arrow-right{right:20px;}
+
+  .status, .peripheral{
+    bottom:16px;
+  }
+}
