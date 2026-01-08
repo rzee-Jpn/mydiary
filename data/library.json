@@ -1,5 +1,12 @@
 [
   {
+    "id": "a-contribution-tothe-critique-ofpolitical-economy",
+    "title": "A CONTRIBUTION TOTHE CRITIQUE OFPOLITICAL ECONOMY",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/a-contribution-tothe-critique-ofpolitical-economy"
+  },
+  {
     "id": "beer-its-history-and-its-economic-valueas-anational-beverage",
     "title": "BEER,ITS HISTORY AND ITS ECONOMIC VALUEAS ANATIONAL BEVERAGE.",
     "author": "Unknown",
@@ -7,11 +14,25 @@
     "path": "data/books/gutenberg/beer-its-history-and-its-economic-valueas-anational-beverage"
   },
   {
+    "id": "fifty-years-inwall-street",
+    "title": "FIFTY YEARS INWALL STREET",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/fifty-years-inwall-street"
+  },
+  {
     "id": "financial-crime-and-corruption",
     "title": "Financial Crime and Corruption",
     "author": "Samuel Vaknin",
     "source": "Project Gutenberg",
     "path": "data/books/gutenberg/financial-crime-and-corruption"
+  },
+  {
+    "id": "illustrationsofpolitical-economy",
+    "title": "ILLUSTRATIONSOFPOLITICAL ECONOMY.",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/illustrationsofpolitical-economy"
   },
   {
     "id": "the-commercial-productsof-thevegetable-kingdom",
