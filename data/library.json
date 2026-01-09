@@ -35,6 +35,13 @@
     "path": "data/books/gutenberg/illustrationsofpolitical-economy"
   },
   {
+    "id": "monopolies-and-the-peoplebycharles-whiting-baker-c-e-associate-editor-of-the-engineering-news",
+    "title": "MONOPOLIES AND THE PEOPLEBYCHARLES WHITING BAKER, C. E.ASSOCIATE EDITOR OF \"THE ENGINEERING NEWS\"",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/monopolies-and-the-peoplebycharles-whiting-baker-c-e-associate-editor-of-the-engineering-news"
+  },
+  {
     "id": "the-commercial-productsof-thevegetable-kingdom",
     "title": "THE COMMERCIAL PRODUCTSOF THEVEGETABLE KINGDOM,",
     "author": "Unknown",
@@ -47,5 +54,19 @@
     "author": "Unknown",
     "source": "Project Gutenberg",
     "path": "data/books/gutenberg/the-economicconsequences-ofthe-peace"
+  },
+  {
+    "id": "the-theory-of-the-leisure-class",
+    "title": "THE THEORY OF THE LEISURE CLASS",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/the-theory-of-the-leisure-class"
+  },
+  {
+    "id": "the-great-illusion",
+    "title": "The Great Illusion",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/the-great-illusion"
   }
 ]
