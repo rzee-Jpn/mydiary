@@ -42,6 +42,13 @@
     "path": "data/books/gutenberg/monopolies-and-the-peoplebycharles-whiting-baker-c-e-associate-editor-of-the-engineering-news"
   },
   {
+    "id": "random-reminiscences",
+    "title": "Random Reminiscences",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/random-reminiscences"
+  },
+  {
     "id": "the-commercial-productsof-thevegetable-kingdom",
     "title": "THE COMMERCIAL PRODUCTSOF THEVEGETABLE KINGDOM,",
     "author": "Unknown",
@@ -56,6 +63,13 @@
     "path": "data/books/gutenberg/the-economicconsequences-ofthe-peace"
   },
   {
+    "id": "the-history-of-currency",
+    "title": "THE HISTORY OF CURRENCY",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/the-history-of-currency"
+  },
+  {
     "id": "the-theory-of-the-leisure-class",
     "title": "THE THEORY OF THE LEISURE CLASS",
     "author": "Unknown",
@@ -68,5 +82,12 @@
     "author": "Unknown",
     "source": "Project Gutenberg",
     "path": "data/books/gutenberg/the-great-illusion"
+  },
+  {
+    "id": "wealth-of-nations",
+    "title": "WEALTH OF NATIONS.",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/wealth-of-nations"
   }
 ]
