@@ -1,6 +1,7 @@
 import requests, json, os, re, time
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
+from datetime import datetime
 
 # ======================================================
 # KONFIGURASI
@@ -21,6 +22,8 @@ HEADERS = {
 REQUEST_TIMEOUT = 20
 MIN_CHAPTERS = 3
 SLEEP_BETWEEN_BOOKS = 2
+
+TODAY_ISO = datetime.utcnow().strftime("%Y-%m-%d")
 
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs("crawler", exist_ok=True)
@@ -90,18 +93,19 @@ def get_html_url(book_url):
     return f"{BASE}/ebooks/{book_id}.html.images"
 
 # ======================================================
-# CATEGORY EXTRACTION (NEW)
+# CATEGORY + DATE EXTRACTION
 # ======================================================
 
-def get_categories(book_url):
+def get_metadata(book_url):
     r = safe_get(book_url)
     if not r:
-        return [], []
+        return [], [], None
 
     soup = BeautifulSoup(r.text, "lxml")
 
     subjects = []
     bookshelves = []
+    release_date = None
 
     for tr in soup.select("table.bibrec tr"):
         th = tr.find("th")
@@ -116,8 +120,14 @@ def get_categories(book_url):
             subjects.append(value)
         elif label == "bookshelf":
             bookshelves.append(value)
+        elif label == "release date":
+            # contoh: "March 1, 2004"
+            try:
+                release_date = datetime.strptime(value, "%B %d, %Y").strftime("%Y-%m-%d")
+            except:
+                release_date = value
 
-    return sorted(set(subjects)), sorted(set(bookshelves))
+    return sorted(set(subjects)), sorted(set(bookshelves)), release_date
 
 # ======================================================
 # HTML BOOK PARSER
@@ -205,7 +215,7 @@ def main():
     for url in books[state["index"]:]:
         state["index"] += 1
 
-        subjects, bookshelves = get_categories(url)
+        subjects, bookshelves, release_date = get_metadata(url)
 
         html_url = get_html_url(url)
         title, author, chapters = parse_html_book(html_url)
@@ -248,6 +258,8 @@ def main():
                     "author": author,
                     "subjects": subjects,
                     "bookshelves": bookshelves,
+                    "release_date": release_date,
+                    "crawl_date": TODAY_ISO,
                     "chapters": chapter_meta
                 },
                 f,
@@ -261,6 +273,8 @@ def main():
             "author": author,
             "subjects": subjects,
             "bookshelves": bookshelves,
+            "release_date": release_date,
+            "crawl_date": TODAY_ISO,
             "source": "Project Gutenberg",
             "path": f"data/books/gutenberg/{slug}"
         })
