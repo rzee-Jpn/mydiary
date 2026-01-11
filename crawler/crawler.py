@@ -36,23 +36,21 @@ os.makedirs("data", exist_ok=True)
 def slugify(text):
     return re.sub(r'[^a-z0-9]+', '-', text.lower()).strip('-')
 
+
 def load_state():
     if not os.path.exists(STATE_FILE):
-        return {
-            "page": BOOKSHELF,
-            "index": 0,
-            "done": False
-        }
+        return {"page": BOOKSHELF, "index": 0, "done": False}
     with open(STATE_FILE, encoding="utf-8") as f:
         return json.load(f)
+
 
 def save_state(state):
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2)
 
+
 def normalize_categories(subjects, bookshelves):
     cats = set()
-
     for s in subjects + bookshelves:
         s = s.lower()
         if "philosophy" in s:
@@ -69,8 +67,59 @@ def normalize_categories(subjects, bookshelves):
             cats.add("Science")
         else:
             cats.add("General")
-
     return sorted(cats)
+
+
+# ================= AUTO TAG ENGINE =================
+
+def normalize_tags(subjects, bookshelves):
+    tags = set()
+    for s in subjects + bookshelves:
+        s = s.lower()
+        if "philosophy" in s:
+            tags.add("philosophy")
+        if "politic" in s:
+            tags.add("politics")
+        if "econom" in s:
+            tags.add("economics")
+        if "history" in s:
+            tags.add("history")
+        if "religion" in s or "theology" in s:
+            tags.add("religion")
+        if "poetry" in s:
+            tags.add("poetry")
+        if "fiction" in s or "novel" in s:
+            tags.add("fiction")
+        if "science" in s:
+            tags.add("science")
+        if "education" in s:
+            tags.add("education")
+    return sorted(tags)
+
+
+def infer_reading_level(word_count):
+    if word_count < 15000:
+        return "light"
+    elif word_count < 50000:
+        return "medium"
+    return "heavy"
+
+
+def infer_length(word_count):
+    if word_count < 20000:
+        return "short"
+    elif word_count < 80000:
+        return "medium"
+    return "long"
+
+
+def infer_audience(categories, reading_level):
+    if reading_level == "heavy":
+        return ["academic"]
+    if "Philosophy" in categories or "Science" in categories:
+        return ["academic", "general"]
+    return ["general"]
+
 
 def count_words(chapters):
     text = ""
@@ -101,7 +150,6 @@ def get_books(page):
         return [], None
 
     soup = BeautifulSoup(r.text, "lxml")
-
     books = [
         urljoin(BASE, a["href"])
         for a in soup.select("li.booklink a.link")
@@ -115,6 +163,7 @@ def get_books(page):
             break
 
     return books, next_page
+
 
 def get_html_url(book_url):
     book_id = book_url.rstrip("/").split("/")[-1]
@@ -130,14 +179,10 @@ def get_metadata(book_url):
         return [], [], None
 
     soup = BeautifulSoup(r.text, "lxml")
-
-    subjects = []
-    bookshelves = []
-    release_date = None
+    subjects, bookshelves, release_date = [], [], None
 
     for tr in soup.select("table.bibrec tr"):
-        th = tr.find("th")
-        td = tr.find("td")
+        th, td = tr.find("th"), tr.find("td")
         if not th or not td:
             continue
 
@@ -157,7 +202,7 @@ def get_metadata(book_url):
     return subjects, bookshelves, release_date
 
 # ======================================================
-# HTML BOOK PARSER
+# HTML PARSER
 # ======================================================
 
 def parse_html_book(html_url):
@@ -166,9 +211,7 @@ def parse_html_book(html_url):
         return None, None, []
 
     soup = BeautifulSoup(r.text, "lxml")
-
-    title_tag = soup.find("h1")
-    title = title_tag.get_text(strip=True) if title_tag else "Unknown"
+    title = soup.find("h1").get_text(strip=True) if soup.find("h1") else "Unknown"
 
     author = "Unknown"
     for meta in soup.select("meta"):
@@ -179,8 +222,7 @@ def parse_html_book(html_url):
     if not body:
         return title, author, []
 
-    chapters = []
-    current = None
+    chapters, current = [], None
 
     for el in body.children:
         if not getattr(el, "name", None):
@@ -189,12 +231,7 @@ def parse_html_book(html_url):
         if el.name in ("h2", "h3"):
             if current and current["html"].strip():
                 chapters.append(current)
-
-            current = {
-                "title": el.get_text(strip=True),
-                "html": ""
-            }
-
+            current = {"title": el.get_text(strip=True), "html": ""}
         elif current and el.name == "p":
             current["html"] += f"<p>{el.decode_contents()}</p>\n"
 
@@ -212,41 +249,13 @@ def parse_html_book(html_url):
 
 def update_library(entry):
     data = []
-
     if os.path.exists(LIBRARY_JSON):
         with open(LIBRARY_JSON, encoding="utf-8") as f:
             data = json.load(f)
 
-    # --- MIGRATION: pastikan semua entry punya 'created' ---
-    for b in data:
-        if "created" not in b:
-            if b.get("release_date"):
-                b["created"] = b["release_date"]
-            elif b.get("crawl_date"):
-                b["created"] = b["crawl_date"]
-            else:
-                b["created"] = "1970-01-01"
-
-        if "updated" not in b:
-            b["updated"] = b["created"]
-
-        if "views" not in b:
-            b["views"] = 0
-
-        if "categories" not in b:
-            b["categories"] = b.get("bookshelves", []) or ["General"]
-
-        if "status" not in b:
-            b["status"] = "published"
-
-        if "visibility" not in b:
-            b["visibility"] = "public"
-
-    # --- tambahkan entry baru jika belum ada ---
     if not any(b["id"] == entry["id"] for b in data):
         data.append(entry)
 
-    # --- SORT TERBARU ---
     data = sorted(data, key=lambda x: x.get("created", "1970-01-01"), reverse=True)
 
     with open(LIBRARY_JSON, "w", encoding="utf-8") as f:
@@ -268,8 +277,7 @@ def main():
         state["index"] += 1
 
         subjects, bookshelves, release_date = get_metadata(url)
-        html_url = get_html_url(url)
-        title, author, chapters = parse_html_book(html_url)
+        title, author, chapters = parse_html_book(get_html_url(url))
 
         if not chapters:
             continue
@@ -277,7 +285,6 @@ def main():
         slug = slugify(title)
         book_dir = f"{DATA_DIR}/{slug}"
         chapters_dir = f"{book_dir}/chapters"
-
         if os.path.exists(book_dir):
             continue
 
@@ -285,22 +292,18 @@ def main():
 
         chapter_meta = []
         for i, ch in enumerate(chapters, 1):
-            if "contents" in ch["title"].lower():
-                continue
-
             fname = f"ch{i:02d}.html"
             with open(f"{chapters_dir}/{fname}", "w", encoding="utf-8") as f:
-                f.write(f"<h2>{ch['title']}</h2>\n")
-                f.write(ch["html"])
-
-            chapter_meta.append({
-                "id": f"ch{i:02d}",
-                "title": ch["title"],
-                "file": f"chapters/{fname}"
-            })
+                f.write(f"<h2>{ch['title']}</h2>\n{ch['html']}")
+            chapter_meta.append({"id": f"ch{i:02d}", "title": ch["title"], "file": f"chapters/{fname}"})
 
         categories = normalize_categories(subjects, bookshelves)
+        tags = normalize_tags(subjects, bookshelves)
         word_count = count_words(chapters)
+
+        reading_level = infer_reading_level(word_count)
+        length = infer_length(word_count)
+        audience = infer_audience(categories, reading_level)
 
         with open(f"{book_dir}/book.json", "w", encoding="utf-8") as f:
             json.dump({
@@ -308,6 +311,10 @@ def main():
                 "title": title,
                 "author": author,
                 "categories": categories,
+                "tags": tags,
+                "reading_level": reading_level,
+                "length": length,
+                "audience": audience,
                 "release_date": release_date,
                 "chapters": chapter_meta,
                 "word_count": word_count
@@ -318,37 +325,29 @@ def main():
             "title": title,
             "author": author,
             "path": f"data/books/gutenberg/{slug}",
-
             "created": release_date or TODAY_ISO,
             "updated": TODAY_ISO,
-
             "categories": categories,
+            "tags": tags,
+            "reading_level": reading_level,
+            "length": length,
+            "audience": audience,
             "language": "en",
-
-            "status": "published",
-            "visibility": "public",
-
-            "featured": False,
-            "editor_pick": False,
-
             "views": 0,
             "word_count": word_count,
             "chapter_count": len(chapters),
-
             "source": "Project Gutenberg",
             "license": "Public Domain"
         })
 
         count += 1
         time.sleep(SLEEP_BETWEEN_BOOKS)
-
         if count >= LIMIT_PER_RUN:
             break
 
     if state["index"] >= len(books):
         if next_page:
-            state["page"] = next_page
-            state["index"] = 0
+            state["page"], state["index"] = next_page, 0
         else:
             state["done"] = True
 
