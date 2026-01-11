@@ -2,12 +2,17 @@ name: Gutenberg Daily
 
 on:
   schedule:
+    # Jalan tiap hari jam 01:00 UTC (≈ 08:00 WIB)
     - cron: "0 1 * * *"
   workflow_dispatch:
 
 jobs:
   crawl:
     runs-on: ubuntu-latest
+
+    concurrency:
+      group: gutenberg-crawler
+      cancel-in-progress: false
 
     steps:
       - name: Checkout repository
@@ -22,7 +27,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install --upgrade pip
+          python -m pip install --upgrade pip
           pip install requests beautifulsoup4 lxml
 
       - name: Run Gutenberg crawler
@@ -36,7 +41,8 @@ jobs:
 
           git add data crawler
 
-          git diff --cached --quiet && echo "No changes" && exit 0
+          # Stop kalau tidak ada perubahan
+          git diff --cached --quiet && echo "No changes detected" && exit 0
 
-          git commit -m "Daily Gutenberg update"
+          git commit -m "crawler: add up to 3 Gutenberg books ($(date -u +%Y-%m-%d))"
           git push
