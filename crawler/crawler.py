@@ -212,14 +212,42 @@ def parse_html_book(html_url):
 
 def update_library(entry):
     data = []
+
     if os.path.exists(LIBRARY_JSON):
         with open(LIBRARY_JSON, encoding="utf-8") as f:
             data = json.load(f)
 
+    # --- MIGRATION: pastikan semua entry punya 'created' ---
+    for b in data:
+        if "created" not in b:
+            if b.get("release_date"):
+                b["created"] = b["release_date"]
+            elif b.get("crawl_date"):
+                b["created"] = b["crawl_date"]
+            else:
+                b["created"] = "1970-01-01"
+
+        if "updated" not in b:
+            b["updated"] = b["created"]
+
+        if "views" not in b:
+            b["views"] = 0
+
+        if "categories" not in b:
+            b["categories"] = b.get("bookshelves", []) or ["General"]
+
+        if "status" not in b:
+            b["status"] = "published"
+
+        if "visibility" not in b:
+            b["visibility"] = "public"
+
+    # --- tambahkan entry baru jika belum ada ---
     if not any(b["id"] == entry["id"] for b in data):
         data.append(entry)
 
-    data = sorted(data, key=lambda x: x["created"], reverse=True)
+    # --- SORT TERBARU ---
+    data = sorted(data, key=lambda x: x.get("created", "1970-01-01"), reverse=True)
 
     with open(LIBRARY_JSON, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
