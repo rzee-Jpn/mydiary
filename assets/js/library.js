@@ -24,26 +24,20 @@ function generateSVGCover(title) {
   const svg = `
   <svg xmlns="http://www.w3.org/2000/svg"
        width="400" height="600"
-       viewBox="0 0 400 600"
-       preserveAspectRatio="xMidYMid slice">
+       viewBox="0 0 400 600">
     <defs>
       <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
         <stop offset="0%" stop-color="#2b2b2b"/>
         <stop offset="100%" stop-color="#444"/>
       </linearGradient>
     </defs>
-
     <rect width="400" height="600" fill="url(#g)"/>
-
-    <text
-      x="200"
-      y="300"
+    <text x="200" y="300"
       fill="#f2f2f2"
       font-size="30"
       font-family="Georgia, serif"
       text-anchor="middle"
-      dominant-baseline="middle"
-      letter-spacing=".04em">
+      dominant-baseline="middle">
       ${text}
     </text>
   </svg>`;
@@ -65,8 +59,6 @@ async function detectCatalogCover(book) {
       if (res.ok) return `${book.path}/${f}`;
     } catch (_) {}
   }
-
-  // ✅ FIX: fungsi yang benar
   return generateSVGCover(book.title);
 }
 
@@ -86,13 +78,12 @@ fetch("data/library.json")
   });
 
 /* ============================= */
-/*  SEARCH TOGGLE                */
+/*  SEARCH                       */
 /* ============================= */
 
 if (searchToggle) {
   searchToggle.onclick = () => {
     searchWrapper.classList.toggle("active");
-
     if (!searchWrapper.classList.contains("active")) {
       searchInput.value = "";
       renderCatalog(CATALOG_ITEMS);
@@ -100,25 +91,20 @@ if (searchToggle) {
   };
 }
 
-/* ============================= */
-/*  SEARCH FILTER                */
-/* ============================= */
-
 if (searchInput) {
   searchInput.oninput = e => {
     const q = e.target.value.toLowerCase();
-
     renderCatalog(
-      CATALOG_ITEMS.filter(item =>
-        item.title.toLowerCase().includes(q) ||
-        (item.author || "").toLowerCase().includes(q)
+      CATALOG_ITEMS.filter(b =>
+        b.title.toLowerCase().includes(q) ||
+        (b.author || "").toLowerCase().includes(q)
       )
     );
   };
 }
 
 /* ============================= */
-/*  RENDER CATALOG               */
+/*  RENDER CATALOG (BOTTOM)      */
 /* ============================= */
 
 async function renderCatalog(items) {
@@ -132,13 +118,17 @@ async function renderCatalog(items) {
     link.href = `reader.html?path=${encodeURIComponent(book.path)}`;
     link.className = "catalog-item";
 
+    link.addEventListener("click", () => {
+      countBookView(book.id);
+    });
+
     link.innerHTML = `
       <div class="catalog-thumb">
-        <img src="${cover}" alt="${book.title}">
+        <img src="${cover}">
       </div>
       <div class="catalog-info">
         <span class="catalog-tag">BOOK</span>
-        <h3 title="${book.title}">${book.title}</h3>
+        <h3>${book.title}</h3>
         <small>${book.author || "Anonim"}</small>
       </div>
     `;
@@ -157,13 +147,11 @@ async function renderCatalog(items) {
   }
 }
 
-
-
 /* ============================= */
-/*  baru.                        */
+/*  🔥 TOP WEEKLY SLIDER         */
 /* ============================= */
 
-function renderWeeklyTop() {
+async function renderWeeklyTop() {
   const slider = document.getElementById("weeklySlider");
   if (!slider) return;
 
@@ -173,64 +161,76 @@ function renderWeeklyTop() {
 
   slider.innerHTML = "";
 
-  top.forEach(book => {
+  for (const book of top) {
+    const cover = await detectCatalogCover(book);
+
     const item = document.createElement("div");
     item.className = "weekly-item";
     item.innerHTML = `
-      <img src="${generateSVGCover(book.title)}">
+      <img src="${cover}">
       <h4>${book.title}</h4>
     `;
+
     item.onclick = () => {
       countBookView(book.id);
       location.href = `reader.html?path=${encodeURIComponent(book.path)}`;
     };
+
     slider.appendChild(item);
-  });
+  }
 
   let x = 0;
+
   document.querySelector(".weekly-nav.next").onclick = () => {
     x -= 260;
-    gsap.to(slider, { x, duration: 0.6, ease: "power2.out" });
+    if (window.gsap) gsap.to(slider, { x, duration: 0.6 });
   };
+
   document.querySelector(".weekly-nav.prev").onclick = () => {
     x += 260;
-    gsap.to(slider, { x, duration: 0.6, ease: "power2.out" });
+    if (window.gsap) gsap.to(slider, { x, duration: 0.6 });
   };
 }
 
-
+/* ============================= */
+/*  📚 LATEST BOOKS              */
+/* ============================= */
 
 let latestPage = 1;
 const LATEST_PER_PAGE = 8;
 
-function renderLatestBooks() {
+async function renderLatestBooks() {
   const grid = document.getElementById("latestCatalog");
   if (!grid) return;
 
-  const sorted = [...CATALOG_ITEMS].reverse(); // asumsi terbaru di bawah
+  const sorted = [...CATALOG_ITEMS].reverse();
   const start = (latestPage - 1) * LATEST_PER_PAGE;
   const pageItems = sorted.slice(start, start + LATEST_PER_PAGE);
 
   grid.innerHTML = "";
 
-  pageItems.forEach(book => {
+  for (const book of pageItems) {
+    const cover = await detectCatalogCover(book);
+
     const el = document.createElement("div");
     el.className = "catalog-item";
     el.innerHTML = `
       <div class="catalog-thumb">
-        <img src="${generateSVGCover(book.title)}">
+        <img src="${cover}">
       </div>
       <div class="catalog-info">
         <h3>${book.title}</h3>
         <small>${book.author || "Anonim"}</small>
       </div>
     `;
+
     el.onclick = () => {
       countBookView(book.id);
       location.href = `reader.html?path=${encodeURIComponent(book.path)}`;
     };
+
     grid.appendChild(el);
-  });
+  }
 
   document.getElementById("pageInfo").textContent = `Page ${latestPage}`;
 }
@@ -245,6 +245,9 @@ document.getElementById("prevPage").onclick = () => {
   renderLatestBooks();
 };
 
+/* ============================= */
+/*  📂 CATEGORY FILTER           */
+/* ============================= */
 
 function renderCategories() {
   const wrap = document.getElementById("categoryTabs");
