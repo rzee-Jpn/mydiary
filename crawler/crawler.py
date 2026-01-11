@@ -16,7 +16,7 @@ LIBRARY_JSON = "data/library.json"
 STATE_FILE = "crawler/state.json"
 
 HEADERS = {
-    "User-Agent": "MyDiary-Gutenberg-Crawler/FINAL"
+    "User-Agent": "Pustaka-Gutenberg-Crawler/1.0"
 }
 
 REQUEST_TIMEOUT = 20
@@ -49,6 +49,34 @@ def load_state():
 def save_state(state):
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2)
+
+def normalize_categories(subjects, bookshelves):
+    cats = set()
+
+    for s in subjects + bookshelves:
+        s = s.lower()
+        if "philosophy" in s:
+            cats.add("Philosophy")
+        elif "history" in s:
+            cats.add("History")
+        elif "poetry" in s:
+            cats.add("Poetry")
+        elif "romance" in s:
+            cats.add("Romance")
+        elif "fiction" in s or "novel" in s:
+            cats.add("Classic")
+        elif "science" in s:
+            cats.add("Science")
+        else:
+            cats.add("General")
+
+    return sorted(cats)
+
+def count_words(chapters):
+    text = ""
+    for ch in chapters:
+        text += BeautifulSoup(ch["html"], "lxml").get_text(" ")
+    return len(text.split())
 
 # ======================================================
 # REQUEST
@@ -93,7 +121,7 @@ def get_html_url(book_url):
     return f"{BASE}/ebooks/{book_id}.html.images"
 
 # ======================================================
-# CATEGORY + DATE EXTRACTION
+# METADATA
 # ======================================================
 
 def get_metadata(book_url):
@@ -121,13 +149,12 @@ def get_metadata(book_url):
         elif label == "bookshelf":
             bookshelves.append(value)
         elif label == "release date":
-            # contoh: "March 1, 2004"
             try:
                 release_date = datetime.strptime(value, "%B %d, %Y").strftime("%Y-%m-%d")
             except:
-                release_date = value
+                release_date = None
 
-    return sorted(set(subjects)), sorted(set(bookshelves)), release_date
+    return subjects, bookshelves, release_date
 
 # ======================================================
 # HTML BOOK PARSER
@@ -192,13 +219,10 @@ def update_library(entry):
     if not any(b["id"] == entry["id"] for b in data):
         data.append(entry)
 
+    data = sorted(data, key=lambda x: x["created"], reverse=True)
+
     with open(LIBRARY_JSON, "w", encoding="utf-8") as f:
-        json.dump(
-            sorted(data, key=lambda x: x["title"]),
-            f,
-            indent=2,
-            ensure_ascii=False
-        )
+        json.dump(data, f, indent=2, ensure_ascii=False)
 
 # ======================================================
 # MAIN
@@ -216,7 +240,6 @@ def main():
         state["index"] += 1
 
         subjects, bookshelves, release_date = get_metadata(url)
-
         html_url = get_html_url(url)
         title, author, chapters = parse_html_book(html_url)
 
@@ -233,13 +256,11 @@ def main():
         os.makedirs(chapters_dir, exist_ok=True)
 
         chapter_meta = []
-
         for i, ch in enumerate(chapters, 1):
             if "contents" in ch["title"].lower():
                 continue
 
             fname = f"ch{i:02d}.html"
-
             with open(f"{chapters_dir}/{fname}", "w", encoding="utf-8") as f:
                 f.write(f"<h2>{ch['title']}</h2>\n")
                 f.write(ch["html"])
@@ -250,33 +271,44 @@ def main():
                 "file": f"chapters/{fname}"
             })
 
+        categories = normalize_categories(subjects, bookshelves)
+        word_count = count_words(chapters)
+
         with open(f"{book_dir}/book.json", "w", encoding="utf-8") as f:
-            json.dump(
-                {
-                    "id": slug,
-                    "title": title,
-                    "author": author,
-                    "subjects": subjects,
-                    "bookshelves": bookshelves,
-                    "release_date": release_date,
-                    "crawl_date": TODAY_ISO,
-                    "chapters": chapter_meta
-                },
-                f,
-                indent=2,
-                ensure_ascii=False
-            )
+            json.dump({
+                "id": slug,
+                "title": title,
+                "author": author,
+                "categories": categories,
+                "release_date": release_date,
+                "chapters": chapter_meta,
+                "word_count": word_count
+            }, f, indent=2, ensure_ascii=False)
 
         update_library({
             "id": slug,
             "title": title,
             "author": author,
-            "subjects": subjects,
-            "bookshelves": bookshelves,
-            "release_date": release_date,
-            "crawl_date": TODAY_ISO,
+            "path": f"data/books/gutenberg/{slug}",
+
+            "created": release_date or TODAY_ISO,
+            "updated": TODAY_ISO,
+
+            "categories": categories,
+            "language": "en",
+
+            "status": "published",
+            "visibility": "public",
+
+            "featured": False,
+            "editor_pick": False,
+
+            "views": 0,
+            "word_count": word_count,
+            "chapter_count": len(chapters),
+
             "source": "Project Gutenberg",
-            "path": f"data/books/gutenberg/{slug}"
+            "license": "Public Domain"
         })
 
         count += 1
