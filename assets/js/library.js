@@ -78,6 +78,10 @@ fetch("data/library.json")
   .then(res => res.json())
   .then(data => {
     CATALOG_ITEMS = data;
+
+    renderWeeklyTop();
+    renderLatestBooks();
+    renderCategories();
     renderCatalog(data);
   });
 
@@ -151,4 +155,115 @@ async function renderCatalog(items) {
       });
     }
   }
+}
+
+
+
+/* ============================= */
+/*  baru.                        */
+/* ============================= */
+
+function renderWeeklyTop() {
+  const slider = document.getElementById("weeklySlider");
+  if (!slider) return;
+
+  const top = [...CATALOG_ITEMS]
+    .sort((a, b) => getBookWeeklyViews(b.id) - getBookWeeklyViews(a.id))
+    .slice(0, 5);
+
+  slider.innerHTML = "";
+
+  top.forEach(book => {
+    const item = document.createElement("div");
+    item.className = "weekly-item";
+    item.innerHTML = `
+      <img src="${generateSVGCover(book.title)}">
+      <h4>${book.title}</h4>
+    `;
+    item.onclick = () => {
+      countBookView(book.id);
+      location.href = `reader.html?path=${encodeURIComponent(book.path)}`;
+    };
+    slider.appendChild(item);
+  });
+
+  let x = 0;
+  document.querySelector(".weekly-nav.next").onclick = () => {
+    x -= 260;
+    gsap.to(slider, { x, duration: 0.6, ease: "power2.out" });
+  };
+  document.querySelector(".weekly-nav.prev").onclick = () => {
+    x += 260;
+    gsap.to(slider, { x, duration: 0.6, ease: "power2.out" });
+  };
+}
+
+
+
+let latestPage = 1;
+const LATEST_PER_PAGE = 8;
+
+function renderLatestBooks() {
+  const grid = document.getElementById("latestCatalog");
+  if (!grid) return;
+
+  const sorted = [...CATALOG_ITEMS].reverse(); // asumsi terbaru di bawah
+  const start = (latestPage - 1) * LATEST_PER_PAGE;
+  const pageItems = sorted.slice(start, start + LATEST_PER_PAGE);
+
+  grid.innerHTML = "";
+
+  pageItems.forEach(book => {
+    const el = document.createElement("div");
+    el.className = "catalog-item";
+    el.innerHTML = `
+      <div class="catalog-thumb">
+        <img src="${generateSVGCover(book.title)}">
+      </div>
+      <div class="catalog-info">
+        <h3>${book.title}</h3>
+        <small>${book.author || "Anonim"}</small>
+      </div>
+    `;
+    el.onclick = () => {
+      countBookView(book.id);
+      location.href = `reader.html?path=${encodeURIComponent(book.path)}`;
+    };
+    grid.appendChild(el);
+  });
+
+  document.getElementById("pageInfo").textContent = `Page ${latestPage}`;
+}
+
+document.getElementById("nextPage").onclick = () => {
+  latestPage++;
+  renderLatestBooks();
+};
+
+document.getElementById("prevPage").onclick = () => {
+  if (latestPage > 1) latestPage--;
+  renderLatestBooks();
+};
+
+
+function renderCategories() {
+  const wrap = document.getElementById("categoryTabs");
+  if (!wrap) return;
+
+  const categories = [...new Set(
+    CATALOG_ITEMS.map(b => b.source || "Lainnya")
+  )];
+
+  wrap.innerHTML = "";
+
+  categories.forEach(cat => {
+    const btn = document.createElement("button");
+    btn.textContent = cat;
+    btn.onclick = () => {
+      renderCatalog(
+        CATALOG_ITEMS.filter(b => (b.source || "Lainnya") === cat)
+      );
+    };
+    wrap.appendChild(btn);
+  });
 }
