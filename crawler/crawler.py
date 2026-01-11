@@ -48,7 +48,7 @@ def save_state(state):
         json.dump(state, f, indent=2)
 
 # ======================================================
-# SCRAPER
+# REQUEST
 # ======================================================
 
 def safe_get(url):
@@ -59,6 +59,10 @@ def safe_get(url):
         return r
     except requests.RequestException:
         return None
+
+# ======================================================
+# BOOK LIST
+# ======================================================
 
 def get_books(page):
     r = safe_get(page)
@@ -85,6 +89,40 @@ def get_html_url(book_url):
     book_id = book_url.rstrip("/").split("/")[-1]
     return f"{BASE}/ebooks/{book_id}.html.images"
 
+# ======================================================
+# CATEGORY EXTRACTION (NEW)
+# ======================================================
+
+def get_categories(book_url):
+    r = safe_get(book_url)
+    if not r:
+        return [], []
+
+    soup = BeautifulSoup(r.text, "lxml")
+
+    subjects = []
+    bookshelves = []
+
+    for tr in soup.select("table.bibrec tr"):
+        th = tr.find("th")
+        td = tr.find("td")
+        if not th or not td:
+            continue
+
+        label = th.get_text(strip=True).lower()
+        value = td.get_text(" ", strip=True)
+
+        if label == "subject":
+            subjects.append(value)
+        elif label == "bookshelf":
+            bookshelves.append(value)
+
+    return sorted(set(subjects)), sorted(set(bookshelves))
+
+# ======================================================
+# HTML BOOK PARSER
+# ======================================================
+
 def parse_html_book(html_url):
     r = safe_get(html_url)
     if not r:
@@ -92,11 +130,9 @@ def parse_html_book(html_url):
 
     soup = BeautifulSoup(r.text, "lxml")
 
-    # ===== Title =====
     title_tag = soup.find("h1")
     title = title_tag.get_text(strip=True) if title_tag else "Unknown"
 
-    # ===== Author =====
     author = "Unknown"
     for meta in soup.select("meta"):
         if meta.get("name", "").lower() == "author":
@@ -169,6 +205,8 @@ def main():
     for url in books[state["index"]:]:
         state["index"] += 1
 
+        subjects, bookshelves = get_categories(url)
+
         html_url = get_html_url(url)
         title, author, chapters = parse_html_book(html_url)
 
@@ -191,9 +229,8 @@ def main():
                 continue
 
             fname = f"ch{i:02d}.html"
-            file_path = f"{chapters_dir}/{fname}"
 
-            with open(file_path, "w", encoding="utf-8") as f:
+            with open(f"{chapters_dir}/{fname}", "w", encoding="utf-8") as f:
                 f.write(f"<h2>{ch['title']}</h2>\n")
                 f.write(ch["html"])
 
@@ -209,6 +246,8 @@ def main():
                     "id": slug,
                     "title": title,
                     "author": author,
+                    "subjects": subjects,
+                    "bookshelves": bookshelves,
                     "chapters": chapter_meta
                 },
                 f,
@@ -220,6 +259,8 @@ def main():
             "id": slug,
             "title": title,
             "author": author,
+            "subjects": subjects,
+            "bookshelves": bookshelves,
             "source": "Project Gutenberg",
             "path": f"data/books/gutenberg/{slug}"
         })
