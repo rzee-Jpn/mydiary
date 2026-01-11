@@ -7,32 +7,59 @@ let BOOKS = [];
 const HOME_LIMIT = 8;
 
 /* =============================
-   UTIL
-============================= */
-const byDateDesc = (a, b) => new Date(b.created) - new Date(a.created);
-const byViewsDesc = (a, b) => (b.views || 0) - (a.views || 0);
-
-/* =============================
-   COVER
+   SVG COVER (AUTO WRAP)
 ============================= */
 function generateSVGCover(title) {
-  const text = title.slice(0, 28);
-  return `data:image/svg+xml;base64,${btoa(`
-    <svg xmlns="http://www.w3.org/2000/svg" width="400" height="600">
-      <rect width="100%" height="100%" fill="#2b2b2b"/>
-      <text x="50%" y="50%" fill="#eee" font-size="28"
-        text-anchor="middle" dominant-baseline="middle"
-        font-family="Georgia">${text}</text>
-    </svg>
-  `)}`;
+  const words = (title || "").split(" ");
+  const lines = [];
+  let line = "";
+
+  words.forEach(w => {
+    if ((line + " " + w).length > 16) {
+      lines.push(line);
+      line = w;
+    } else {
+      line += (line ? " " : "") + w;
+    }
+  });
+  if (line) lines.push(line);
+
+  const text = lines.slice(0, 4)
+    .map((l, i) =>
+      `<tspan x="200" dy="${i === 0 ? 0 : 36}">${l}</tspan>`
+    ).join("");
+
+  const svg = `
+  <svg xmlns="http://www.w3.org/2000/svg" width="400" height="600">
+    <defs>
+      <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#2a2a2a"/>
+        <stop offset="100%" stop-color="#111"/>
+      </linearGradient>
+    </defs>
+    <rect width="400" height="600" rx="24" fill="url(#g)"/>
+    <text x="200" y="240"
+      fill="#f5f5f5"
+      font-size="30"
+      font-family="Georgia, serif"
+      text-anchor="middle">
+      ${text}
+    </text>
+  </svg>`;
+
+  return "data:image/svg+xml;base64," +
+    btoa(unescape(encodeURIComponent(svg)));
 }
 
+/* =============================
+   COVER DETECTION
+============================= */
 async function detectCover(book) {
-  const files = ["cover.jpg", "cover.png"];
+  const files = ["cover.jpg", "cover.png", "thumbnail.jpg"];
   for (const f of files) {
     try {
-      const r = await fetch(`${book.path}/${f}`, { method: "HEAD" });
-      if (r.ok) return `${book.path}/${f}`;
+      const res = await fetch(`${book.path}/${f}`, { method: "HEAD" });
+      if (res.ok) return `${book.path}/${f}`;
     } catch {}
   }
   return generateSVGCover(book.title);
@@ -44,11 +71,11 @@ async function detectCover(book) {
 fetch("data/library.json")
   .then(r => r.json())
   .then(data => {
-    BOOKS = data.filter(b => b.status === "published");
+    BOOKS = data
+      .filter(b => b.status === "published")
+      .sort((a, b) => new Date(b.created) - new Date(a.created));
 
-    renderCatalog(BOOKS.sort(byDateDesc).slice(0, HOME_LIMIT));
-    renderWeeklyTop();
-    renderCategories();
+    renderCatalog(BOOKS.slice(0, HOME_LIMIT));
   });
 
 /* =============================
@@ -58,30 +85,33 @@ searchToggle.onclick = () => {
   searchWrapper.classList.toggle("active");
   if (!searchWrapper.classList.contains("active")) {
     searchInput.value = "";
-    renderCatalog(BOOKS.sort(byDateDesc).slice(0, HOME_LIMIT));
+    renderCatalog(BOOKS.slice(0, HOME_LIMIT));
   }
 };
 
 searchInput.oninput = e => {
   const q = e.target.value.toLowerCase();
-  const res = BOOKS.filter(b =>
+  const result = BOOKS.filter(b =>
     b.title.toLowerCase().includes(q) ||
     (b.author || "").toLowerCase().includes(q)
   );
-  renderCatalog(res.slice(0, HOME_LIMIT));
+  renderCatalog(result.slice(0, HOME_LIMIT));
 };
 
 /* =============================
-   RENDER GRID
+   RENDER
 ============================= */
 async function renderCatalog(items) {
   catalogEl.innerHTML = "";
+
   for (const book of items) {
     const cover = await detectCover(book);
-    const el = document.createElement("a");
-    el.href = `reader.html?path=${encodeURIComponent(book.path)}`;
-    el.className = "catalog-item";
-    el.innerHTML = `
+
+    const a = document.createElement("a");
+    a.href = `reader.html?path=${encodeURIComponent(book.path)}`;
+    a.className = "catalog-item";
+
+    a.innerHTML = `
       <div class="catalog-thumb">
         <img src="${cover}">
       </div>
@@ -89,54 +119,12 @@ async function renderCatalog(items) {
         <span class="catalog-tag">BOOK</span>
         <h3>${book.title}</h3>
         <small>${book.author || "Anonim"}</small>
-        <div class="catalog-meta">${(book.categories || []).join(", ")}</div>
+        <div class="catalog-meta">
+          ${(book.categories || []).join(", ")}
+        </div>
       </div>
     `;
-    catalogEl.appendChild(el);
+
+    catalogEl.appendChild(a);
   }
-}
-
-/* =============================
-   🔥 POPULAR
-============================= */
-function renderWeeklyTop() {
-  const slider = document.getElementById("weeklySlider");
-  if (!slider) return;
-
-  const top = [...BOOKS].sort(byViewsDesc).slice(0, 5);
-  slider.innerHTML = "";
-
-  top.forEach(b => {
-    const el = document.createElement("div");
-    el.className = "weekly-item";
-    el.innerHTML = `<h4>${b.title}</h4>`;
-    el.onclick = () =>
-      location.href = `reader.html?path=${encodeURIComponent(b.path)}`;
-    slider.appendChild(el);
-  });
-}
-
-/* =============================
-   📂 CATEGORIES
-============================= */
-function renderCategories() {
-  const wrap = document.getElementById("categoryTabs");
-  if (!wrap) return;
-
-  const cats = new Set();
-  BOOKS.forEach(b => (b.categories || []).forEach(c => cats.add(c)));
-
-  wrap.innerHTML = `<button>Semua</button>`;
-  wrap.firstChild.onclick = () =>
-    renderCatalog(BOOKS.sort(byDateDesc).slice(0, HOME_LIMIT));
-
-  [...cats].sort().forEach(cat => {
-    const btn = document.createElement("button");
-    btn.textContent = cat;
-    btn.onclick = () =>
-      renderCatalog(
-        BOOKS.filter(b => (b.categories || []).includes(cat)).slice(0, HOME_LIMIT)
-      );
-    wrap.appendChild(btn);
-  });
 }
