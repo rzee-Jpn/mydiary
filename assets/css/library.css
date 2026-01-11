@@ -1,10 +1,21 @@
-/* ===== HEADER ===== */
+/* =============================
+   BASE SAFE VARS
+============================= */
+:root {
+  --accent: #6f4e37;
+  --border-soft: rgba(0,0,0,.15);
+  --surface-text: #222;
+}
+
+/* =============================
+   HEADER
+============================= */
 .lib-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: .75rem;
   padding: .5rem 1rem;
-  background: #6f4e37;
+  background: var(--accent);
   color: #fff;
   height: 60px;
 }
@@ -13,21 +24,26 @@
   width: 36px;
   height: 36px;
   border-radius: 6px;
+  flex-shrink: 0;
 }
 
 .lib-header .title {
   flex: 1;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
+  line-height: 1.2;
 }
 
 .lib-header .byline {
-  font-size: .75rem;
-  opacity: .6;
+  font-size: .7rem;
+  opacity: .65;
+  white-space: nowrap;
 }
 
-/* ===== SEARCH ===== */
+/* =============================
+   SEARCH
+============================= */
 .search-wrapper {
   position: relative;
   width: 44px;
@@ -41,8 +57,11 @@
   height: 44px;
   opacity: 0;
   padding: .45rem .75rem .45rem 3rem;
-  border-radius: 25px;
+  border-radius: 999px;
   border: 1px solid var(--border-soft);
+  outline: none;
+  pointer-events: none;
+  background: #fff;
 }
 
 .search-wrapper.active {
@@ -51,6 +70,7 @@
 
 .search-wrapper.active input {
   opacity: 1;
+  pointer-events: auto;
 }
 
 .search-icon {
@@ -65,17 +85,18 @@
   background: var(--accent);
   color: #fff;
   cursor: pointer;
+  display: grid;
+  place-items: center;
 }
 
-/* ============================= */
-/*  CATALOG GRID                */
-/* ============================= */
-
+/* =============================
+   CATALOG GRID
+============================= */
 .catalog-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  padding: 1.5rem;
+  gap: 1.25rem;
+  padding: 1.25rem;
   max-width: 1100px;
   margin: auto;
 }
@@ -86,26 +107,24 @@
   }
 }
 
-/* ============================= */
-/*  ITEM                         */
-/* ============================= */
-
+/* =============================
+   ITEM
+============================= */
 .catalog-item {
   text-decoration: none;
   color: var(--surface-text);
 }
 
-/* ============================= */
-/*  THUMB                        */
-/* ============================= */
-
+/* =============================
+   THUMB
+============================= */
 .catalog-thumb {
   width: 100%;
   aspect-ratio: 1 / 1;
   background: #222;
-  border-radius: 6px;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  box-shadow: 0 6px 16px rgba(0,0,0,.15);
 }
 
 .catalog-thumb img {
@@ -115,10 +134,9 @@
   display: block;
 }
 
-/* ============================= */
-/*  META                         */
-/* ============================= */
-
+/* =============================
+   META
+============================= */
 .catalog-info {
   margin-top: .6rem;
 }
@@ -131,12 +149,13 @@
   padding: .15rem .45rem;
   margin-bottom: .25rem;
   opacity: .7;
+  border-radius: 4px;
 }
 
 .catalog-info h3 {
   font-size: .9rem;
   font-weight: 500;
-  line-height: 1.3;
+  line-height: 1.35;
   margin: .15rem 0 .2rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
