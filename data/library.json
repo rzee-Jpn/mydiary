@@ -1,107 +1,291 @@
 [
   {
+    "id": "socialism",
+    "title": "SOCIALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/socialism",
+    "created": "2026-01-11",
+    "updated": "2026-01-11",
+    "categories": [
+      "General"
+    ],
+    "language": "en",
+    "status": "published",
+    "visibility": "public",
+    "featured": false,
+    "editor_pick": false,
+    "views": 0,
+    "word_count": 75027,
+    "chapter_count": 74,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
+    "id": "tobacco-itshistory-varieties-culture-manufacture-and-commerce",
+    "title": "TOBACCO:ITSHISTORY, VARIETIES, CULTURE,MANUFACTURE AND COMMERCE,",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/tobacco-itshistory-varieties-culture-manufacture-and-commerce",
+    "created": "2026-01-11",
+    "updated": "2026-01-11",
+    "categories": [
+      "General",
+      "History"
+    ],
+    "language": "en",
+    "status": "published",
+    "visibility": "public",
+    "featured": false,
+    "editor_pick": false,
+    "views": 0,
+    "word_count": 100232,
+    "chapter_count": 17,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
+    "id": "political-economy",
+    "title": "POLITICAL ECONOMY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/political-economy",
+    "created": "2026-01-11",
+    "updated": "2026-01-11",
+    "categories": [
+      "General"
+    ],
+    "language": "en",
+    "status": "published",
+    "visibility": "public",
+    "featured": false,
+    "editor_pick": false,
+    "views": 0,
+    "word_count": 189835,
+    "chapter_count": 22,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
     "id": "a-contribution-tothe-critique-ofpolitical-economy",
     "title": "A CONTRIBUTION TO THE CRITIQUE OFPOLITICAL ECONOMY",
     "author": "Unknown",
     "source": "Project Gutenberg",
-    "path": "data/books/gutenberg/a-contribution-tothe-critique-ofpolitical-economy"
+    "path": "data/books/gutenberg/a-contribution-tothe-critique-ofpolitical-economy",
+    "created": "1970-01-01",
+    "updated": "1970-01-01",
+    "views": 0,
+    "categories": [
+      "General"
+    ],
+    "status": "published",
+    "visibility": "public"
   },
   {
     "id": "beer-its-history-and-its-economic-valueas-anational-beverage",
     "title": "BEER,ITS HISTORY AND ITS ECONOMIC VALUEAS ANATIONAL BEVERAGE.",
     "author": "Unknown",
     "source": "Project Gutenberg",
-    "path": "data/books/gutenberg/beer-its-history-and-its-economic-valueas-anational-beverage"
+    "path": "data/books/gutenberg/beer-its-history-and-its-economic-valueas-anational-beverage",
+    "created": "1970-01-01",
+    "updated": "1970-01-01",
+    "views": 0,
+    "categories": [
+      "General"
+    ],
+    "status": "published",
+    "visibility": "public"
   },
   {
     "id": "fifty-years-inwall-street",
     "title": "FIFTY YEARS IN WALL STREET",
     "author": "Unknown",
     "source": "Project Gutenberg",
-    "path": "data/books/gutenberg/fifty-years-inwall-street"
+    "path": "data/books/gutenberg/fifty-years-inwall-street",
+    "created": "1970-01-01",
+    "updated": "1970-01-01",
+    "views": 0,
+    "categories": [
+      "General"
+    ],
+    "status": "published",
+    "visibility": "public"
   },
   {
     "id": "frenzied-finance",
     "title": "FRENZIED FINANCE",
     "author": "Unknown",
     "source": "Project Gutenberg",
-    "path": "data/books/gutenberg/frenzied-finance"
+    "path": "data/books/gutenberg/frenzied-finance",
+    "created": "1970-01-01",
+    "updated": "1970-01-01",
+    "views": 0,
+    "categories": [
+      "General"
+    ],
+    "status": "published",
+    "visibility": "public"
   },
   {
     "id": "financial-crime-and-corruption",
     "title": "Financial Crime and Corruption",
     "author": "Samuel Vaknin",
     "source": "Project Gutenberg",
-    "path": "data/books/gutenberg/financial-crime-and-corruption"
+    "path": "data/books/gutenberg/financial-crime-and-corruption",
+    "created": "1970-01-01",
+    "updated": "1970-01-01",
+    "views": 0,
+    "categories": [
+      "General"
+    ],
+    "status": "published",
+    "visibility": "public"
   },
   {
     "id": "harper-s-pictorial-library-of-the-world-war",
     "title": "HARPER'S PICTORIAL LIBRARY OF THE WORLD WAR",
     "author": "Unknown",
     "source": "Project Gutenberg",
-    "path": "data/books/gutenberg/harper-s-pictorial-library-of-the-world-war"
+    "path": "data/books/gutenberg/harper-s-pictorial-library-of-the-world-war",
+    "created": "1970-01-01",
+    "updated": "1970-01-01",
+    "views": 0,
+    "categories": [
+      "General"
+    ],
+    "status": "published",
+    "visibility": "public"
   },
   {
     "id": "illustrationsofpolitical-economy",
     "title": "ILLUSTRATIONS OF POLITICAL ECONOMY.",
     "author": "Unknown",
     "source": "Project Gutenberg",
-    "path": "data/books/gutenberg/illustrationsofpolitical-economy"
+    "path": "data/books/gutenberg/illustrationsofpolitical-economy",
+    "created": "1970-01-01",
+    "updated": "1970-01-01",
+    "views": 0,
+    "categories": [
+      "General"
+    ],
+    "status": "published",
+    "visibility": "public"
   },
   {
     "id": "monopolies-and-the-peoplebycharles-whiting-baker-c-e-associate-editor-of-the-engineering-news",
     "title": "MONOPOLIES AND THE PEOPLEBYCHARLES WHITING BAKER, C. E.ASSOCIATE EDITOR OF \"THE ENGINEERING NEWS\"",
     "author": "Unknown",
     "source": "Project Gutenberg",
-    "path": "data/books/gutenberg/monopolies-and-the-peoplebycharles-whiting-baker-c-e-associate-editor-of-the-engineering-news"
+    "path": "data/books/gutenberg/monopolies-and-the-peoplebycharles-whiting-baker-c-e-associate-editor-of-the-engineering-news",
+    "created": "1970-01-01",
+    "updated": "1970-01-01",
+    "views": 0,
+    "categories": [
+      "General"
+    ],
+    "status": "published",
+    "visibility": "public"
   },
   {
     "id": "random-reminiscences",
     "title": "Random Reminiscences",
     "author": "Unknown",
     "source": "Project Gutenberg",
-    "path": "data/books/gutenberg/random-reminiscences"
+    "path": "data/books/gutenberg/random-reminiscences",
+    "created": "1970-01-01",
+    "updated": "1970-01-01",
+    "views": 0,
+    "categories": [
+      "General"
+    ],
+    "status": "published",
+    "visibility": "public"
   },
   {
     "id": "the-commercial-productsof-thevegetable-kingdom",
     "title": "THE COMMERCIAL PRODUCTSOF THEVEGETABLE KINGDOM,",
     "author": "Unknown",
     "source": "Project Gutenberg",
-    "path": "data/books/gutenberg/the-commercial-productsof-thevegetable-kingdom"
+    "path": "data/books/gutenberg/the-commercial-productsof-thevegetable-kingdom",
+    "created": "1970-01-01",
+    "updated": "1970-01-01",
+    "views": 0,
+    "categories": [
+      "General"
+    ],
+    "status": "published",
+    "visibility": "public"
   },
   {
     "id": "the-economicconsequences-ofthe-peace",
     "title": "THE ECONOMIC CONSEQUENCES OF THE PEACE",
     "author": "Unknown",
     "source": "Project Gutenberg",
-    "path": "data/books/gutenberg/the-economicconsequences-ofthe-peace"
+    "path": "data/books/gutenberg/the-economicconsequences-ofthe-peace",
+    "created": "1970-01-01",
+    "updated": "1970-01-01",
+    "views": 0,
+    "categories": [
+      "General"
+    ],
+    "status": "published",
+    "visibility": "public"
   },
   {
     "id": "the-history-of-currency",
     "title": "THE HISTORY OF CURRENCY",
     "author": "Unknown",
     "source": "Project Gutenberg",
-    "path": "data/books/gutenberg/the-history-of-currency"
+    "path": "data/books/gutenberg/the-history-of-currency",
+    "created": "1970-01-01",
+    "updated": "1970-01-01",
+    "views": 0,
+    "categories": [
+      "General"
+    ],
+    "status": "published",
+    "visibility": "public"
   },
   {
     "id": "the-theory-of-the-leisure-class",
     "title": "THE THEORY OF THE LEISURE CLASS",
     "author": "Unknown",
     "source": "Project Gutenberg",
-    "path": "data/books/gutenberg/the-theory-of-the-leisure-class"
+    "path": "data/books/gutenberg/the-theory-of-the-leisure-class",
+    "created": "1970-01-01",
+    "updated": "1970-01-01",
+    "views": 0,
+    "categories": [
+      "General"
+    ],
+    "status": "published",
+    "visibility": "public"
   },
   {
     "id": "the-great-illusion",
     "title": "The Great Illusion",
     "author": "Unknown",
     "source": "Project Gutenberg",
-    "path": "data/books/gutenberg/the-great-illusion"
+    "path": "data/books/gutenberg/the-great-illusion",
+    "created": "1970-01-01",
+    "updated": "1970-01-01",
+    "views": 0,
+    "categories": [
+      "General"
+    ],
+    "status": "published",
+    "visibility": "public"
   },
   {
     "id": "wealth-of-nations",
     "title": "WEALTH OF NATIONS.",
     "author": "Unknown",
     "source": "Project Gutenberg",
-    "path": "data/books/gutenberg/wealth-of-nations"
+    "path": "data/books/gutenberg/wealth-of-nations",
+    "created": "1970-01-01",
+    "updated": "1970-01-01",
+    "views": 0,
+    "categories": [
+      "General"
+    ],
+    "status": "published",
+    "visibility": "public"
   }
 ]

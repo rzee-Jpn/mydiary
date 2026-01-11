@@ -1,0 +1,122 @@
+{
+  "id": "political-economy",
+  "title": "POLITICAL ECONOMY",
+  "author": "Unknown",
+  "categories": [
+    "General"
+  ],
+  "release_date": null,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "PAPER MONEY, INTERNATIONAL TRADE, AND THE PROTECTIVE SYSTEM;",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "HENRY HOLT & CO.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "CHAPTER 1.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "THE RENT OF LAND.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "WAGES.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "INTEREST ON CAPITAL.",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "THE UNDERTAKER'S PROFIT.(UNTERNEHMERLOHN.)",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "CONCLUDING REMARKS ONTHE THREE BRANCHES OF INCOME.",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "DISTRIBUTION OF NATIONAL INCOME.",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "CONSUMPTION OF GOODS.",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "CONSUMPTION OF GOODS IN GENERAL.",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "LUXURY.",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "INSURANCE IN GENERAL.",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "ON POPULATION.",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "THEORY OF POPULATION.",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "HISTORY OF POPULATION.",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "POPULATION-POLICY.",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "INTERNATIONAL TRADE.",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "INTERNATIONAL TRADE.",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "THE INDUSTRIAL PROTECTIVE SYSTEM AND INTERNATIONAL FREE TRADE.",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "THE INDUSTRIAL PROTECTIVE SYSTEM AND INTERNATIONAL FREE\nTRADE.",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "INDEX TO NAMES OF AUTHORS",
+      "file": "chapters/ch22.html"
+    }
+  ],
+  "word_count": 189835
+}
