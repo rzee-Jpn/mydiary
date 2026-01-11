@@ -250,3 +250,30 @@
 
 .weekly-nav.prev { left: .5rem; }
 .weekly-nav.next { right: .5rem; }
+
+
+body {
+  background: #f7f3eb;
+}
+
+.catalog-item {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.catalog-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,.15);
+}
+
+.catalog-thumb {
+  border-radius: 14px;
+}
+
+.catalog-info h3 {
+  font-weight: 600;
+}
+
+button {
+  border-radius: 999px;
+  padding: .4rem .9rem;
+}
