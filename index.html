@@ -3,30 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pustaka</title>
+  <title>Pustaka — Private Archive</title>
 
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/library.css">
-  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/theme-archive.css">
 </head>
 
-<body class="theme-paper">
+<body class="theme-archive">
 
 <header class="lib-header">
   <div class="logo">
     <img src="img/logo.png" alt="Logo">
   </div>
-  <div class="title">Pustaka</div>
+  <div class="title">
+    Pustaka
+    <small>Private Knowledge Archive</small>
+  </div>
   <div class="byline">by Anglumea</div>
 </header>
 
 <main>
+
+  <section class="library-intro">
+    <h1>Knowledge compounds.</h1>
+    <p>
+      Arsip bacaan strategis.  
+      Dipilih, dikurasi, dan disusun untuk dibaca berulang.
+    </p>
+  </section>
+
   <div class="search-wrapper">
     <button id="searchToggle" class="search-icon">🔍</button>
-    <input id="bookSearch" placeholder="Cari buku...">
+    <input id="bookSearch" placeholder="Cari judul, penulis, tag…">
   </div>
 
   <div id="catalog" class="catalog-grid"></div>
+
 </main>
 
 <script src="assets/js/library.js"></script>
