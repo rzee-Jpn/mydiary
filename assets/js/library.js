@@ -22,9 +22,7 @@ function generateSVGCover(title) {
   }
 
   const svg = `
-  <svg xmlns="http://www.w3.org/2000/svg"
-       width="400" height="600"
-       viewBox="0 0 400 600">
+  <svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
     <defs>
       <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
         <stop offset="0%" stop-color="#2b2b2b"/>
@@ -32,12 +30,9 @@ function generateSVGCover(title) {
       </linearGradient>
     </defs>
     <rect width="400" height="600" fill="url(#g)"/>
-    <text x="200" y="300"
-      fill="#f2f2f2"
-      font-size="30"
-      font-family="Georgia, serif"
-      text-anchor="middle"
-      dominant-baseline="middle">
+    <text x="200" y="300" fill="#f2f2f2"
+      font-size="30" font-family="Georgia, serif"
+      text-anchor="middle" dominant-baseline="middle">
       ${text}
     </text>
   </svg>`;
@@ -71,10 +66,17 @@ fetch("data/library.json")
   .then(data => {
     CATALOG_ITEMS = data;
 
+    // sort terbaru
+    CATALOG_ITEMS.sort(
+      (a, b) => new Date(b.created) - new Date(a.created)
+    );
+
     renderWeeklyTop();
     renderLatestBooks();
     renderCategories();
-    renderCatalog(data);
+
+    // default tampil 8 terbaru
+    renderCatalog(CATALOG_ITEMS.slice(0, 8));
   });
 
 /* ============================= */
@@ -86,7 +88,7 @@ if (searchToggle) {
     searchWrapper.classList.toggle("active");
     if (!searchWrapper.classList.contains("active")) {
       searchInput.value = "";
-      renderCatalog(CATALOG_ITEMS);
+      renderCatalog(CATALOG_ITEMS.slice(0, 8));
     }
   };
 }
@@ -94,12 +96,13 @@ if (searchToggle) {
 if (searchInput) {
   searchInput.oninput = e => {
     const q = e.target.value.toLowerCase();
-    renderCatalog(
-      CATALOG_ITEMS.filter(b =>
-        b.title.toLowerCase().includes(q) ||
-        (b.author || "").toLowerCase().includes(q)
-      )
+
+    const result = CATALOG_ITEMS.filter(b =>
+      b.title.toLowerCase().includes(q) ||
+      (b.author || "").toLowerCase().includes(q)
     );
+
+    renderCatalog(result.slice(0, 8));
   };
 }
 
@@ -118,9 +121,7 @@ async function renderCatalog(items) {
     link.href = `reader.html?path=${encodeURIComponent(book.path)}`;
     link.className = "catalog-item";
 
-    link.addEventListener("click", () => {
-      countBookView(book.id);
-    });
+    link.onclick = () => countBookView(book.id);
 
     link.innerHTML = `
       <div class="catalog-thumb">
@@ -130,6 +131,9 @@ async function renderCatalog(items) {
         <span class="catalog-tag">BOOK</span>
         <h3>${book.title}</h3>
         <small>${book.author || "Anonim"}</small>
+        <div class="catalog-meta">
+          ${(book.bookshelves || []).slice(0, 2).join(", ")}
+        </div>
       </div>
     `;
 
@@ -150,6 +154,17 @@ async function renderCatalog(items) {
 /* ============================= */
 /*  🔥 TOP WEEKLY SLIDER         */
 /* ============================= */
+
+function getBookWeeklyViews(id) {
+  const data = JSON.parse(localStorage.getItem("bookViews") || "{}");
+  return data[id] || 0;
+}
+
+function countBookView(id) {
+  const data = JSON.parse(localStorage.getItem("bookViews") || "{}");
+  data[id] = (data[id] || 0) + 1;
+  localStorage.setItem("bookViews", JSON.stringify(data));
+}
 
 async function renderWeeklyTop() {
   const slider = document.getElementById("weeklySlider");
@@ -178,18 +193,6 @@ async function renderWeeklyTop() {
 
     slider.appendChild(item);
   }
-
-  let x = 0;
-
-  document.querySelector(".weekly-nav.next").onclick = () => {
-    x -= 260;
-    if (window.gsap) gsap.to(slider, { x, duration: 0.6 });
-  };
-
-  document.querySelector(".weekly-nav.prev").onclick = () => {
-    x += 260;
-    if (window.gsap) gsap.to(slider, { x, duration: 0.6 });
-  };
 }
 
 /* ============================= */
@@ -203,9 +206,8 @@ async function renderLatestBooks() {
   const grid = document.getElementById("latestCatalog");
   if (!grid) return;
 
-  const sorted = [...CATALOG_ITEMS].reverse();
   const start = (latestPage - 1) * LATEST_PER_PAGE;
-  const pageItems = sorted.slice(start, start + LATEST_PER_PAGE);
+  const pageItems = CATALOG_ITEMS.slice(start, start + LATEST_PER_PAGE);
 
   grid.innerHTML = "";
 
@@ -232,41 +234,42 @@ async function renderLatestBooks() {
     grid.appendChild(el);
   }
 
-  document.getElementById("pageInfo").textContent = `Page ${latestPage}`;
+  const pageInfo = document.getElementById("pageInfo");
+  if (pageInfo) pageInfo.textContent = `Page ${latestPage}`;
 }
 
-document.getElementById("nextPage").onclick = () => {
-  latestPage++;
-  renderLatestBooks();
-};
-
-document.getElementById("prevPage").onclick = () => {
-  if (latestPage > 1) latestPage--;
-  renderLatestBooks();
-};
-
 /* ============================= */
-/*  📂 CATEGORY FILTER           */
+/*  📂 CATEGORY TABS             */
 /* ============================= */
 
 function renderCategories() {
   const wrap = document.getElementById("categoryTabs");
   if (!wrap) return;
 
-  const categories = [...new Set(
-    CATALOG_ITEMS.map(b => b.source || "Lainnya")
-  )];
+  const set = new Set();
+  CATALOG_ITEMS.forEach(b => {
+    (b.bookshelves || []).forEach(cat => set.add(cat));
+  });
 
+  const categories = ["Semua", ...Array.from(set).sort()];
   wrap.innerHTML = "";
 
   categories.forEach(cat => {
     const btn = document.createElement("button");
     btn.textContent = cat;
+
     btn.onclick = () => {
-      renderCatalog(
-        CATALOG_ITEMS.filter(b => (b.source || "Lainnya") === cat)
-      );
+      let items = [...CATALOG_ITEMS];
+
+      if (cat !== "Semua") {
+        items = items.filter(b =>
+          (b.bookshelves || []).includes(cat)
+        );
+      }
+
+      renderCatalog(items.slice(0, 8));
     };
+
     wrap.appendChild(btn);
   });
 }
