@@ -21,11 +21,25 @@
     "path": "data/books/gutenberg/fifty-years-inwall-street"
   },
   {
+    "id": "frenzied-finance",
+    "title": "FRENZIED FINANCE",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/frenzied-finance"
+  },
+  {
     "id": "financial-crime-and-corruption",
     "title": "Financial Crime and Corruption",
     "author": "Samuel Vaknin",
     "source": "Project Gutenberg",
     "path": "data/books/gutenberg/financial-crime-and-corruption"
+  },
+  {
+    "id": "harper-s-pictorial-library-of-the-world-war",
+    "title": "HARPER'S PICTORIAL LIBRARY OF THE WORLD WAR",
+    "author": "Unknown",
+    "source": "Project Gutenberg",
+    "path": "data/books/gutenberg/harper-s-pictorial-library-of-the-world-war"
   },
   {
     "id": "illustrationsofpolitical-economy",
