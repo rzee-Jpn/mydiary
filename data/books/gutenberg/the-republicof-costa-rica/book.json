@@ -1,0 +1,128 @@
+{
+  "id": "the-republicof-costa-rica",
+  "title": "THE REPUBLICOF COSTA RICA",
+  "author": "Unknown",
+  "categories": [
+    "General"
+  ],
+  "tags": [],
+  "reading_level": "medium",
+  "length": "medium",
+  "audience": [
+    "general"
+  ],
+  "release_date": "2023-05-09",
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "CONTENTS",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "Introduction.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "I.TOPOGRAPHY, GEOLOGY AND MINERAL WEALTH.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "II.CLIMATE OF COSTA RICA.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "III.CHARACTER OF VEGETATION.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "IV.FAUNA.",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "V.THE ABORIGINAL INHABITANTS.",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "VI.POPULATION.",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "VII.IMMIGRATION AND COLONIES.",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "VIII.PUBLIC INSTRUCTION.",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "IX.TRANSPORTATION, POST AND TELEGRAPH.",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "X.AGRICULTURE AND LIVE STOCK.",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "XI.COMMERCE AND INDUSTRY.",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "XII.FINANCE AND BANKING.",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "XIII.POLITICAL ORGANIZATION.",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "XIV.HISTORY.",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "COSTA RICA.—Provinces, Lakes, Mountains, Rivers, and Towns.",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "GUATEMALA.—Departments, Lakes, Mountains, Rivers, and Towns.",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "HONDURAS.—Departments, Creeks, Lakes and Lagoons, Mountains, Rivers, and Towns.",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "NICARAGUA.—Departments, Creeks, Lakes, Mountains, Rivers, and Towns.",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "SALVADOR.—Departments, Lakes, Rivers, and Towns.",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "BRITISH HONDURAS.—Creeks, Lakes and Lagoons, Mountains, Rivers, and Towns.",
+      "file": "chapters/ch22.html"
+    }
+  ],
+  "word_count": 23039
+}

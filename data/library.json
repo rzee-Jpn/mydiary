@@ -64,6 +64,79 @@
     "license": "Public Domain"
   },
   {
+    "id": "the-argentinein-thetwentieth-century",
+    "title": "THE ARGENTINEIN THETWENTIETH CENTURY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-argentinein-thetwentieth-century",
+    "created": "2026-01-11",
+    "updated": "2026-01-11",
+    "categories": [
+      "General"
+    ],
+    "tags": [
+      "economics"
+    ],
+    "reading_level": "heavy",
+    "length": "long",
+    "audience": [
+      "academic"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 107221,
+    "chapter_count": 30,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
+    "id": "unto-thislast",
+    "title": "UNTO THISLAST",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/unto-thislast",
+    "created": "2026-01-11",
+    "updated": "2026-01-11",
+    "categories": [
+      "General"
+    ],
+    "tags": [
+      "economics"
+    ],
+    "reading_level": "heavy",
+    "length": "long",
+    "audience": [
+      "academic"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 99181,
+    "chapter_count": 19,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
+    "id": "the-republicof-costa-rica",
+    "title": "THE REPUBLICOF COSTA RICA",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-republicof-costa-rica",
+    "created": "2023-05-09",
+    "updated": "2026-01-11",
+    "categories": [
+      "General"
+    ],
+    "tags": [],
+    "reading_level": "medium",
+    "length": "medium",
+    "audience": [
+      "general"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 23039,
+    "chapter_count": 22,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
     "id": "a-contribution-tothe-critique-ofpolitical-economy",
     "title": "A CONTRIBUTION TO THE CRITIQUE OFPOLITICAL ECONOMY",
     "author": "Unknown",
