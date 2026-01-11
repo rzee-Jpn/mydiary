@@ -29,9 +29,9 @@
     <h2>🔥 Terbanyak Dibaca Minggu Ini</h2>
 
     <div class="weekly-wrapper">
-      <button class="weekly-nav prev">‹</button>
+      <button class="weekly-nav prev" type="button">‹</button>
       <div id="weeklySlider" class="weekly-track"></div>
-      <button class="weekly-nav next">›</button>
+      <button class="weekly-nav next" type="button">›</button>
     </div>
   </section>
 
@@ -39,8 +39,8 @@
   <!-- 🔍 SEARCH                 -->
   <!-- ========================= -->
   <div class="search-wrapper">
-    <button id="searchToggle" class="search-icon">🔍</button>
-    <input id="bookSearch" placeholder="Cari buku...">
+    <button id="searchToggle" class="search-icon" type="button">🔍</button>
+    <input id="bookSearch" type="search" placeholder="Cari buku...">
   </div>
 
   <!-- ========================= -->
@@ -52,9 +52,9 @@
     <div id="latestCatalog" class="catalog-grid"></div>
 
     <div class="pager">
-      <button id="prevPage">Prev</button>
+      <button id="prevPage" type="button">Prev</button>
       <span id="pageInfo"></span>
-      <button id="nextPage">Next</button>
+      <button id="nextPage" type="button">Next</button>
     </div>
   </section>
 
@@ -63,15 +63,24 @@
   <!-- ========================= -->
   <section class="category-section">
     <h2>📂 Kategori</h2>
+
+    <!-- TAB KATEGORI -->
     <div id="categoryTabs" class="category-tabs"></div>
 
+    <!-- HASIL FILTER -->
     <div id="catalog" class="catalog-grid"></div>
   </section>
 
 </main>
 
+<!-- HARUS views.js dulu -->
 <script src="assets/js/views.js"></script>
+
+<!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
+<!-- library.js TERAKHIR -->
 <script src="assets/js/library.js"></script>
+
 </body>
 </html>
