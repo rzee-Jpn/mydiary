@@ -1,0 +1,123 @@
+body.theme-archive {
+  background: #f4f1ec;
+  color: #1f1f1f;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* HEADER */
+.lib-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .75rem 1.25rem;
+  background: #2b2418;
+  color: #f5f1ea;
+}
+
+.lib-header .title {
+  flex: 1;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: .5px;
+}
+
+.lib-header .title small {
+  display: block;
+  font-size: .65rem;
+  opacity: .6;
+  margin-top: 2px;
+}
+
+.lib-header .byline {
+  font-size: .65rem;
+  opacity: .5;
+}
+
+/* INTRO */
+.library-intro {
+  max-width: 720px;
+  margin: 2rem auto 1.5rem;
+  padding: 0 1.25rem;
+}
+
+.library-intro h1 {
+  font-size: 1.35rem;
+  margin-bottom: .4rem;
+}
+
+.library-intro p {
+  font-size: .9rem;
+  opacity: .7;
+}
+
+/* SEARCH */
+.search-wrapper {
+  margin: 1.5rem auto;
+}
+
+/* GRID */
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.75rem;
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ITEM */
+.catalog-item {
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s ease;
+}
+
+.catalog-item:hover {
+  transform: translateY(-2px);
+}
+
+/* COVER */
+.catalog-thumb {
+  aspect-ratio: 2 / 3;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0,0,0,.18);
+  background: #ddd;
+}
+
+/* INFO */
+.catalog-info {
+  margin-top: .65rem;
+}
+
+.catalog-info h3 {
+  font-size: .95rem;
+  line-height: 1.35;
+  margin: .25rem 0;
+}
+
+.catalog-info small {
+  font-size: .7rem;
+  opacity: .6;
+}
+
+.catalog-meta {
+  font-size: .65rem;
+  margin-top: .35rem;
+  opacity: .55;
+}
+
+/* BADGES */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin-top: .35rem;
+}
+
+.badge {
+  font-size: .6rem;
+  padding: .15rem .4rem;
+  border-radius: 4px;
+  background: rgba(0,0,0,.06);
+}
