@@ -1,5 +1,82 @@
 [
   {
+    "id": "the-principles-of-economics",
+    "title": "THE PRINCIPLES OF ECONOMICS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-principles-of-economics",
+    "created": "2026-01-12",
+    "updated": "2026-01-12",
+    "categories": [
+      "General"
+    ],
+    "tags": [
+      "economics"
+    ],
+    "reading_level": "heavy",
+    "length": "long",
+    "audience": [
+      "academic"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 195268,
+    "chapter_count": 64,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
+    "id": "the-writings-ofhenry-george",
+    "title": "THE WRITINGS OFHENRY GEORGE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-writings-ofhenry-george",
+    "created": "2026-01-12",
+    "updated": "2026-01-12",
+    "categories": [
+      "General"
+    ],
+    "tags": [
+      "economics"
+    ],
+    "reading_level": "heavy",
+    "length": "long",
+    "audience": [
+      "academic"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 165495,
+    "chapter_count": 56,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
+    "id": "the-world-sgreatestbooks",
+    "title": "THE WORLD'SGREATESTBOOKS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-world-sgreatestbooks",
+    "created": "2026-01-12",
+    "updated": "2026-01-12",
+    "categories": [
+      "General",
+      "Philosophy"
+    ],
+    "tags": [
+      "economics",
+      "philosophy"
+    ],
+    "reading_level": "heavy",
+    "length": "long",
+    "audience": [
+      "academic"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 107036,
+    "chapter_count": 30,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
     "id": "socialism",
     "title": "SOCIALISM",
     "author": "Unknown",

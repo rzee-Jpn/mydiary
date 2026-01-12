@@ -1,0 +1,300 @@
+{
+  "id": "the-writings-ofhenry-george",
+  "title": "THE WRITINGS OFHENRY GEORGE",
+  "author": "Unknown",
+  "categories": [
+    "General"
+  ],
+  "tags": [
+    "economics"
+  ],
+  "reading_level": "heavy",
+  "length": "long",
+  "audience": [
+    "academic"
+  ],
+  "release_date": null,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "PREFACE TO FOURTH EDITION.",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "INTRODUCTORY.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "BOOK I.WAGES AND CAPITAL.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "CHAPTER I.THE CURRENT DOCTRINE OF WAGES—ITS INSUFFICIENCY.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "CHAPTER II.THE MEANING OF THE TERMS.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "CHAPTER III.WAGES NOT DRAWN FROM CAPITAL, BUT PRODUCED BY THE LABOR.",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "CHAPTER IV.THE MAINTENANCE OF LABORERS NOT DRAWN FROM\nCAPITAL.",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "CHAPTER V.THE REAL FUNCTIONS OF CAPITAL.",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "BOOK II.POPULATION AND SUBSISTENCE.",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "CHAPTER I.THE MALTHUSIAN THEORY, ITS GENESIS AND SUPPORT.",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "CHAPTER II.INFERENCES FROM FACTS.",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "CHAPTER III.INFERENCES FROM ANALOGY.",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "CHAPTER IV.DISPROOF OF THE MALTHUSIAN THEORY.",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "BOOK III.THE LAWS OF DISTRIBUTION.",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "CHAPTER I.THE INQUIRY NARROWED TO THE LAWS OF DISTRIBUTION—THE\nNECESSARY RELATION OF THESE LAWS.",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "CHAPTER II.RENT AND THE LAW OF RENT.",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "CHAPTER III.OF INTEREST AND THE CAUSE OF INTEREST.",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "CHAPTER IV.OF SPURIOUS CAPITAL AND OF PROFITS OFTEN MISTAKEN\nFOR INTEREST.",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "CHAPTER V.THE LAW OF INTEREST.",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "CHAPTER VI.WAGES AND THE LAW OF WAGES.",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "CHAPTER VII.THE CORRELATION AND CO-ORDINATION OF THESE LAWS.",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "CHAPTER VIII.THE STATICS OF THE PROBLEM THUS EXPLAINED.",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "BOOK IV.EFFECT OF MATERIAL PROGRESS UPON THE\nDISTRIBUTION OF WEALTH.",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "CHAPTER I.THE DYNAMICS OF THE PROBLEM YET TO SEEK.",
+      "file": "chapters/ch24.html"
+    },
+    {
+      "id": "ch25",
+      "title": "CHAPTER II.THE EFFECT OF INCREASE OF POPULATION UPON THE\nDISTRIBUTION OF WEALTH.",
+      "file": "chapters/ch25.html"
+    },
+    {
+      "id": "ch26",
+      "title": "CHAPTER III.THE EFFECT OF IMPROVEMENTS IN THE ARTS UPON THE\nDISTRIBUTION OF WEALTH.",
+      "file": "chapters/ch26.html"
+    },
+    {
+      "id": "ch27",
+      "title": "CHAPTER IV.EFFECT OF THE EXPECTATION RAISED BY MATERIAL\nPROGRESS.",
+      "file": "chapters/ch27.html"
+    },
+    {
+      "id": "ch28",
+      "title": "BOOK V.THE PROBLEM SOLVED.",
+      "file": "chapters/ch28.html"
+    },
+    {
+      "id": "ch29",
+      "title": "CHAPTER I.THE PRIMARY CAUSE OF RECURRING PAROXYSMS OF\nINDUSTRIAL DEPRESSION.",
+      "file": "chapters/ch29.html"
+    },
+    {
+      "id": "ch30",
+      "title": "CHAPTER II.THE PERSISTENCE OF POVERTY AMID ADVANCING WEALTH.",
+      "file": "chapters/ch30.html"
+    },
+    {
+      "id": "ch31",
+      "title": "BOOK VI.THE REMEDY.",
+      "file": "chapters/ch31.html"
+    },
+    {
+      "id": "ch32",
+      "title": "CHAPTER I.INSUFFICIENCY OF REMEDIES CURRENTLY ADVOCATED.",
+      "file": "chapters/ch32.html"
+    },
+    {
+      "id": "ch33",
+      "title": "CHAPTER II.THE TRUE REMEDY.",
+      "file": "chapters/ch33.html"
+    },
+    {
+      "id": "ch34",
+      "title": "BOOK VII.JUSTICE OF THE REMEDY.",
+      "file": "chapters/ch34.html"
+    },
+    {
+      "id": "ch35",
+      "title": "CHAPTER I.THE INJUSTICE OF PRIVATE PROPERTY IN LAND.",
+      "file": "chapters/ch35.html"
+    },
+    {
+      "id": "ch36",
+      "title": "CHAPTER II.THE ENSLAVEMENT OF LABORERS THE ULTIMATE RESULT\nOF PRIVATE PROPERTY IN LAND.",
+      "file": "chapters/ch36.html"
+    },
+    {
+      "id": "ch37",
+      "title": "CHAPTER III.CLAIM OF LAND OWNERS TO COMPENSATION.",
+      "file": "chapters/ch37.html"
+    },
+    {
+      "id": "ch38",
+      "title": "CHAPTER IV.PRIVATE PROPERTY IN LAND HISTORICALLY CONSIDERED.",
+      "file": "chapters/ch38.html"
+    },
+    {
+      "id": "ch39",
+      "title": "CHAPTER V.OF PROPERTY IN LAND IN THE UNITED STATES.",
+      "file": "chapters/ch39.html"
+    },
+    {
+      "id": "ch40",
+      "title": "BOOK VIII.APPLICATION OF THE REMEDY.",
+      "file": "chapters/ch40.html"
+    },
+    {
+      "id": "ch41",
+      "title": "CHAPTER I.PRIVATE PROPERTY IN LAND INCONSISTENT WITH THE\nBEST USE OF LAND.",
+      "file": "chapters/ch41.html"
+    },
+    {
+      "id": "ch42",
+      "title": "CHAPTER II.HOW EQUAL RIGHTS TO THE LAND MAY BE ASSERTED\nAND SECURED.",
+      "file": "chapters/ch42.html"
+    },
+    {
+      "id": "ch43",
+      "title": "CHAPTER III.THE PROPOSITION TRIED BY THE CANONS OF TAXATION.",
+      "file": "chapters/ch43.html"
+    },
+    {
+      "id": "ch44",
+      "title": "CHAPTER IV.INDORSEMENTS AND OBJECTIONS.",
+      "file": "chapters/ch44.html"
+    },
+    {
+      "id": "ch45",
+      "title": "BOOK IX.EFFECTS OF THE REMEDY.",
+      "file": "chapters/ch45.html"
+    },
+    {
+      "id": "ch46",
+      "title": "CHAPTER I.OF THE EFFECT UPON THE PRODUCTION OF WEALTH.",
+      "file": "chapters/ch46.html"
+    },
+    {
+      "id": "ch47",
+      "title": "CHAPTER II.OF THE EFFECT UPON DISTRIBUTION AND THENCE UPON\nPRODUCTION.",
+      "file": "chapters/ch47.html"
+    },
+    {
+      "id": "ch48",
+      "title": "CHAPTER III.OF THE EFFECT UPON INDIVIDUALS AND CLASSES.",
+      "file": "chapters/ch48.html"
+    },
+    {
+      "id": "ch49",
+      "title": "CHAPTER IV.OF THE CHANGES THAT WOULD BE WROUGHT IN SOCIAL\nORGANIZATION AND SOCIAL LIFE.",
+      "file": "chapters/ch49.html"
+    },
+    {
+      "id": "ch50",
+      "title": "BOOK X.THE LAW OF HUMAN PROGRESS.",
+      "file": "chapters/ch50.html"
+    },
+    {
+      "id": "ch51",
+      "title": "CHAPTER I.THE CURRENT THEORY OF HUMAN PROGRESS—ITS INSUFFICIENCY.",
+      "file": "chapters/ch51.html"
+    },
+    {
+      "id": "ch52",
+      "title": "CHAPTER II.DIFFERENCES IN CIVILIZATION—TO WHAT DUE.",
+      "file": "chapters/ch52.html"
+    },
+    {
+      "id": "ch53",
+      "title": "CHAPTER III.THE LAW OF HUMAN PROGRESS.",
+      "file": "chapters/ch53.html"
+    },
+    {
+      "id": "ch54",
+      "title": "CHAPTER IV.HOW MODERN CIVILIZATION MAY DECLINE.",
+      "file": "chapters/ch54.html"
+    },
+    {
+      "id": "ch55",
+      "title": "CHAPTER V.THE CENTRAL TRUTH.",
+      "file": "chapters/ch55.html"
+    },
+    {
+      "id": "ch56",
+      "title": "CONCLUSION.THE PROBLEM OF INDIVIDUAL LIFE.",
+      "file": "chapters/ch56.html"
+    }
+  ],
+  "word_count": 165495
+}
