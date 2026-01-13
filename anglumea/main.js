@@ -35,51 +35,52 @@ const copy = {
   about: "Anglumea is a quiet archive of independent systems.",
   support: "Support keeps the systems alive.",
   follow: `
-  <div class="pen-slider">
+    <div class="pen-slider">
+      <div class="pen-card active">
+        <div class="hologram"></div>
+        <div class="pen-header">
+          <span>PEN IDENTITY</span>
+          <span>ID-ZH01</span>
+        </div>
+        <div class="pen-body">
+          <div class="row"><span>Name</span><span>Zhie</span></div>
+          <div class="row"><span>Gender</span><span>Male</span></div>
+          <div class="row"><span>Occupation</span><span>Transportation</span></div>
+          <div class="row"><span>Hobby</span><span>Sports</span></div>
+          <div class="row"><span>Interest</span><span>Technology</span></div>
+          <div class="row"><span>Location</span><span>Indonesia</span></div>
+        </div>
+        <div class="pen-footer">∴ active identity</div>
+      </div>
 
-    <div class="pen-card active">
-      <div class="hologram"></div>
-      <div class="pen-header">
-        <span>PEN IDENTITY</span>
-        <span>ID-ZH01</span>
+      <div class="pen-card">
+        <div class="hologram"></div>
+        <div class="pen-header">
+          <span>PEN IDENTITY</span>
+          <span>ID-ANG02</span>
+        </div>
+        <div class="pen-body">
+          <div class="row"><span>Name</span><span>Angyta</span></div>
+          <div class="row"><span>Gender</span><span>Female</span></div>
+          <div class="row"><span>Occupation</span><span>Accountant</span></div>
+          <div class="row"><span>Hobby</span><span>Writing</span></div>
+          <div class="row"><span>Interest</span><span>Artificial Intelligence</span></div>
+          <div class="row"><span>Location</span><span>Indonesia</span></div>
+        </div>
+        <div class="pen-footer">∴ active identity</div>
       </div>
-      <div class="pen-body">
-        <div class="row"><span>Name</span><span>Zhie</span></div>
-        <div class="row"><span>Gender</span><span>Male</span></div>
-        <div class="row"><span>Occupation</span><span>Transportation</span></div>
-        <div class="row"><span>Hobby</span><span>Sports</span></div>
-        <div class="row"><span>Interest</span><span>Technology</span></div>
-        <div class="row"><span>Location</span><span>Indonesia</span></div>
-      </div>
-      <div class="pen-footer">∴ active identity</div>
     </div>
 
-    <div class="pen-card">
-      <div class="hologram"></div>
-      <div class="pen-header">
-        <span>PEN IDENTITY</span>
-        <span>ID-ANG02</span>
-      </div>
-      <div class="pen-body">
-        <div class="row"><span>Name</span><span>Angyta</span></div>
-        <div class="row"><span>Gender</span><span>Female</span></div>
-        <div class="row"><span>Occupation</span><span>Accountant</span></div>
-        <div class="row"><span>Hobby</span><span>Writing</span></div>
-        <div class="row"><span>Interest</span><span>Artificial Intelligence</span></div>
-        <div class="row"><span>Location</span><span>Indonesia</span></div>
-      </div>
-      <div class="pen-footer">∴ active identity</div>
+    <div class="pen-nav">
+      <span class="pen-dot active"></span>
+      <span class="pen-dot"></span>
     </div>
-
-  </div>
-
-  <div class="pen-nav">
-    <span class="pen-dot active"></span>
-    <span class="pen-dot"></span>
-  </div>
   `
 };
 
+/* ===============================
+   ARROWS
+================================ */
 function updateArrows() {
   const show = active;
   arrowLeft.style.display = show ? "flex" : "none";
@@ -97,12 +98,10 @@ function showPanel(index) {
 
   panels.forEach((p, i) => p.style.display = i === index ? "flex" : "none");
 
-  if (!active) {
-    active = true;
-    viewport.classList.add("active");
-    gsap.to(track, { opacity: 1, duration: 0.5, ease: "power2.out" });
-    viewport.style.pointerEvents = "auto";
-  }
+  active = true;
+  viewport.classList.add("active");
+  gsap.to(track, { opacity: 1, duration: 0.5 });
+  viewport.style.pointerEvents = "auto";
 
   currentSlide = 0;
   updateSlide();
@@ -110,28 +109,20 @@ function showPanel(index) {
 }
 
 /* ===============================
-   UPDATE SLIDE
+   SLIDE
 ================================ */
 function updateSlide() {
   const panel = panels[currentIndex];
+  if (!panel) return;
+
   const cards = panel.querySelectorAll(".card");
-
   cards.forEach((c, i) => {
-    const isActive = i === currentSlide;
-    c.classList.toggle("active", isActive);
-
-    gsap.to(c, {
-      opacity: isActive ? 1 : 0,
-      scale: isActive ? 1 : 0.9,
-      duration: 0.4,
-      ease: "power2.out"
-    });
+    const on = i === currentSlide;
+    c.classList.toggle("active", on);
+    gsap.to(c, { opacity: on ? 1 : 0, scale: on ? 1 : 0.9, duration: 0.4 });
   });
 }
 
-/* ===============================
-   MOVE SLIDE
-================================ */
 function moveSlide(dir) {
   if (currentIndex === null) return;
   const cards = panels[currentIndex].querySelectorAll(".card");
@@ -173,63 +164,53 @@ document.addEventListener("click", () => {
 panels.forEach(p => p.addEventListener("click", e => e.stopPropagation()));
 
 /* ===============================
-   ARROWS
+   ARROW EVENTS
 ================================ */
-arrowLeft.addEventListener("click", e => {
-  e.stopPropagation();
-  moveSlide(-1);
-});
-arrowRight.addEventListener("click", e => {
-  e.stopPropagation();
-  moveSlide(1);
-});
+arrowLeft.addEventListener("click", e => { e.stopPropagation(); moveSlide(-1); });
+arrowRight.addEventListener("click", e => { e.stopPropagation(); moveSlide(1); });
 
 /* ===============================
-   CARD CLICK → JSON ROUTER
+   MODAL OPEN
 ================================ */
-document.querySelectorAll(".card").forEach(card => {
-  card.addEventListener("click", e => {
+document.querySelectorAll(".peripheral span").forEach(el => {
+  el.addEventListener("click", e => {
     e.stopPropagation();
-    if (!card.classList.contains("active")) return;
-
-    const key = card.textContent.trim();
-    const config = CARD_CONFIG[key];
-
-    if (!config) return;
-
-    config.target === "_blank"
-      ? window.open(config.url, "_blank")
-      : window.location.href = config.url;
+    modalBox.innerHTML = copy[el.dataset.modal] || "";
+    modal.style.display = "flex";
   });
 });
 
 /* ===============================
-   MODAL
+   MODAL CLOSE (SAFE)
 ================================ */
-document.querySelectorAll(".peripheral span").forEach(el => {
-  el.onclick = e => {
-    e.stopPropagation();
-    modalBox.innerHTML = copy[el.dataset.modal] || "";
-    modal.style.display = "flex";
-  };
+modal.addEventListener("pointerdown", e => {
+  if (e.target === modal) modal.style.display = "none";
 });
-modal.onclick = () => modal.style.display = "none";
+
+modalBox.addEventListener("pointerdown", e => {
+  e.stopPropagation();
+});
 
 /* ===============================
-   PEN CARD SWITCH
+   PEN CARD SWITCH (FINAL FIX)
 ================================ */
-document.addEventListener("click", e => {
-  if (!e.target.classList.contains("pen-dot")) return;
+modalBox.addEventListener("pointerdown", e => {
+  const dot = e.target.closest(".pen-dot");
+  if (!dot) return;
 
-  const dots = document.querySelectorAll(".pen-dot");
-  const cards = document.querySelectorAll(".pen-card");
-  const index = [...dots].indexOf(e.target);
+  e.stopPropagation();
+
+  const dots = modalBox.querySelectorAll(".pen-dot");
+  const cards = modalBox.querySelectorAll(".pen-card");
+  const index = [...dots].indexOf(dot);
 
   dots.forEach(d => d.classList.remove("active"));
   cards.forEach(c => c.classList.remove("active"));
 
-  dots[index].classList.add("active");
-  cards[index].classList.add("active");
+  if (cards[index]) {
+    dots[index].classList.add("active");
+    cards[index].classList.add("active");
+  }
 });
 
 /* ===============================
