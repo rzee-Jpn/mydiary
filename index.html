@@ -3,18 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Pustaka — Private Archive</title>
 
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Pustaka adalah arsip pengetahuan pribadi. Temukan buku, artikel, dan informasi terbaru dengan mudah.">
+  <meta name="keywords" content="arsip buku, pustaka, private archive, knowledge, pengetahuan, library">
+  <meta name="author" content="Zhie">
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/library.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Pustaka",
+    "url": "https://books.anglumea.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://books.anglumea.com/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
 </head>
 
 <body>
 
 <header class="lib-header">
-  <img src="img/logo.png" alt="Logo">
+  <img src="img/logo.png" alt="Logo Pustaka — Private Knowledge Archive" loading="lazy">
   <div class="title">
-    Pustaka
+    <h1>Pustaka</h1>
     <small>Private Knowledge Archive</small>
   </div>
 </header>
@@ -34,7 +59,7 @@
 
   <!-- LATEST -->
   <section class="reveal">
-  <h2 id="latestTitle">Post Terbaru</h2>
+    <h2 id="latestTitle">Post Terbaru</h2>
 
     <div id="catalog" class="embed-list"></div>
 
