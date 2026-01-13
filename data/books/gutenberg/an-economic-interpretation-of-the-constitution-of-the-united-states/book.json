@@ -1,0 +1,67 @@
+{
+  "id": "an-economic-interpretation-of-the-constitution-of-the-united-states",
+  "title": "AN ECONOMIC INTERPRETATION OF THE CONSTITUTION OF THE UNITED STATES",
+  "author": "Unknown",
+  "categories": [
+    "General",
+    "History"
+  ],
+  "tags": [
+    "economics",
+    "history"
+  ],
+  "reading_level": "heavy",
+  "length": "long",
+  "audience": [
+    "academic"
+  ],
+  "release_date": null,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "THE DISFRANCHISED",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "GROUPS OF REAL PROPERTY HOLDERS",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "THE UNDERLYING POLITICAL SCIENCE OF THE CONSTITUTION[387]",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "THE ECONOMICS OF INTERNATIONAL POLITICS",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "FEDERALIST",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "MEMBERS WHO VOTED IN FAVOR OF RATIFICATION",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "OPPONENTS OF RATIFICATION",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "MARSHALL’S ANALYSIS OF THE CONFLICT",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "CONCLUSIONS",
+      "file": "chapters/ch09.html"
+    }
+  ],
+  "word_count": 80610
+}

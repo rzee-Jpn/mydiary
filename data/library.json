@@ -1,5 +1,78 @@
 [
   {
+    "id": "the-development-of-rates-of-postage",
+    "title": "THE DEVELOPMENT OF\n                          RATES OF POSTAGE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-development-of-rates-of-postage",
+    "created": "2026-01-13",
+    "updated": "2026-01-13",
+    "categories": [
+      "General"
+    ],
+    "tags": [],
+    "reading_level": "heavy",
+    "length": "long",
+    "audience": [
+      "academic"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 118594,
+    "chapter_count": 36,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
+    "id": "an-economic-interpretation-of-the-constitution-of-the-united-states",
+    "title": "AN ECONOMIC INTERPRETATION OF THE CONSTITUTION OF THE UNITED STATES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/an-economic-interpretation-of-the-constitution-of-the-united-states",
+    "created": "2026-01-13",
+    "updated": "2026-01-13",
+    "categories": [
+      "General",
+      "History"
+    ],
+    "tags": [
+      "economics",
+      "history"
+    ],
+    "reading_level": "heavy",
+    "length": "long",
+    "audience": [
+      "academic"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 80610,
+    "chapter_count": 9,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
+    "id": "how-to-investmoney",
+    "title": "HOW TO INVESTMONEY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/how-to-investmoney",
+    "created": "2026-01-13",
+    "updated": "2026-01-13",
+    "categories": [
+      "General"
+    ],
+    "tags": [],
+    "reading_level": "medium",
+    "length": "medium",
+    "audience": [
+      "general"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 21049,
+    "chapter_count": 13,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
     "id": "the-principles-of-economics",
     "title": "THE PRINCIPLES OF ECONOMICS",
     "author": "Unknown",

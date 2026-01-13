@@ -1,0 +1,83 @@
+{
+  "id": "how-to-investmoney",
+  "title": "HOW TO INVESTMONEY",
+  "author": "Unknown",
+  "categories": [
+    "General"
+  ],
+  "tags": [],
+  "reading_level": "medium",
+  "length": "medium",
+  "audience": [
+    "general"
+  ],
+  "release_date": null,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "GEORGE GARR HENRY",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "FUNK & WAGNALLS COMPANY",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "CONTENTS",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "PREFACE",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "GENERAL PRINCIPLES OF INVESTMENT",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "RAILROAD MORTGAGE BONDS",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "RAILROAD EQUIPMENT BONDS",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "REAL-ESTATE MORTGAGES",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "INDUSTRIAL BONDS",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "PUBLIC-UTILITY BONDS",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "MUNICIPAL BONDS",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "STOCKS",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "MARKET MOVEMENTS OF SECURITIES",
+      "file": "chapters/ch13.html"
+    }
+  ],
+  "word_count": 21049
+}
