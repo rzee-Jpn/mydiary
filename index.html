@@ -11,33 +11,26 @@
   <meta name="keywords" content="arsip buku, pustaka, private archive, knowledge, pengetahuan, library">
   <meta name="author" content="Zhie">
 
-  <!-- Google Fonts -->
+  <!-- Fonts & CSS -->
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/library.css">
 
-  <!-- JSON-LD Structured Data -->
+  <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Pustaka",
     "url": "https://books.anglumea.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://books.anglumea.com/?s={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "description": "Pustaka adalah arsip pengetahuan pribadi. Temukan buku, artikel, dan informasi terbaru dengan mudah."
   }
   </script>
-
 </head>
 
 <body>
 
 <header class="lib-header">
-  <img src="img/logo.png" alt="Logo Pustaka — Private Knowledge Archive" loading="lazy">
+  <img src="img/logo.png" alt="Logo Pustaka">
   <div class="title">
     <h1>Pustaka</h1>
     <small>Private Knowledge Archive</small>
@@ -77,6 +70,15 @@
   </section>
 
 </main>
+
+<!-- Structured Data for books (dynamic content can fill this via JS) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": []
+}
+</script>
 
 <script src="assets/js/library.js"></script>
 </body>
