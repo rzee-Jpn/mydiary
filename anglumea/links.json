@@ -1,0 +1,44 @@
+{
+  "Generator Aksara Jawa": {
+    "url": "https://tools.anglumea.com/aksara",
+    "target": "_blank"
+  },
+  "Kalkulator Dana Pensiun": {
+    "url": "https://tools.anglumea.com/pensiun",
+    "target": "_self"
+  },
+  "Text Transformer": {
+    "url": "/tools/text-transformer",
+    "target": "_self"
+  },
+  "Crypto Tracker": {
+    "url": "https://crypto.anglumea.com",
+    "target": "_blank"
+  },
+
+  "Anglumea Website": {
+    "url": "https://anglumea.com",
+    "target": "_self"
+  },
+  "Korean Study": {
+    "url": "play.anglumea.com/korean",
+    "target": "_self"
+  },
+  "Learn Kanji": {
+    "url": "play.anglumea.com/kanji",
+    "target": "_self"
+  },
+
+  "Game 001": {
+    "url": "/games/001",
+    "target": "_self"
+  },
+  "Game002e": {
+    "url": "/games/002",
+    "target": "_self"
+  },
+  "Game Demo": {
+    "url": "/games/demo",
+    "target": "_self"
+  }
+}
