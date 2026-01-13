@@ -194,3 +194,111 @@ html,body{
   .arrow-right{right:20px;}
   .status, .peripheral{bottom:16px;}
 }
+
+
+
+/* ===============================
+   PEN IDENTITY CARD
+================================ */
+.pen-slider {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  height: 360px;
+}
+
+.pen-card {
+  position: absolute;
+  inset: 0;
+  padding: 18px;
+  background: rgba(15, 18, 30, 0.85);
+  border-radius: 14px;
+  border: 1px solid rgba(124,124,255,0.25);
+  font-family: "JetBrains Mono", monospace;
+  opacity: 0;
+  transform: scale(0.92);
+  transition: all .5s ease;
+  overflow: hidden;
+}
+
+.pen-card.active {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 0 20px 50px rgba(124,124,255,.35);
+}
+
+/* HEADER */
+.pen-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  opacity: .7;
+  margin-bottom: 14px;
+}
+
+/* BODY */
+.pen-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+}
+.pen-body .row {
+  display: flex;
+  justify-content: space-between;
+}
+.pen-body .row span:first-child {
+  opacity: .5;
+}
+
+/* FOOTER */
+.pen-footer {
+  margin-top: 14px;
+  font-size: 11px;
+  opacity: .4;
+  text-align: right;
+}
+
+/* ===============================
+   HOLOGRAM EFFECT
+================================ */
+.hologram {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      120deg,
+      transparent 30%,
+      rgba(124,124,255,.15),
+      rgba(0,255,255,.12),
+      rgba(255,0,255,.12),
+      transparent 70%
+    );
+  opacity: .25;
+  animation: holoMove 6s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes holoMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* ===============================
+   DOT NAV
+================================ */
+.pen-nav {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+.pen-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.25);
+}
+.pen-dot.active {
+  background: var(--accent);
+}
