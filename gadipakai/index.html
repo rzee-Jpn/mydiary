@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anglumea Ultra</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="bg-parallax"></div>
+
+  <main id="app">
+    <div class="brand">
+      <h1>ANGLUMEA</h1>
+      <span>quiet systems archive</span>
+    </div>
+
+    <nav class="core-nav">
+      <button data-index="0">tools</button>
+      <button data-index="1">projects</button>
+      <button data-index="2">games</button>
+    </nav>
+
+    <section class="viewport">
+      <div class="track">
+
+        <!-- TOOLS -->
+        <div class="panel">
+          <div class="panel-header"><h2>Tools</h2></div>
+          <div class="slider">
+            <div class="card active">Generator Aksara</div>
+            <div class="card">Kalkulator Dana Pensiun</div>
+            <div class="card">Text Transformer</div>
+            <div class="card">Crypto Tracker</div>
+          </div>
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="panel">
+          <div class="panel-header"><h2>Projects</h2></div>
+          <div class="slider">
+            <div class="card active">Anglumea Core</div>
+            <div class="card">Utility System</div>
+            <div class="card">Project Alpha</div>
+          </div>
+        </div>
+
+        <!-- GAMES -->
+        <div class="panel">
+          <div class="panel-header"><h2>Games</h2></div>
+          <div class="slider">
+            <div class="card active">Silent Loop</div>
+            <div class="card">Prototype One</div>
+            <div class="card">Game Demo</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="arrow arrow-left">&#10094;</div>
+      <div class="arrow arrow-right">&#10095;</div>
+    </section>
+
+    <div class="status">status · active</div>
+
+    <div class="peripheral">
+      <span data-modal="about">about</span>
+      <span data-modal="support">support</span>
+      <span data-modal="follow">follow</span>
+    </div>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-box" id="modal-box"></div>
+  </div>
+
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
