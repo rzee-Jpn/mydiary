@@ -1,0 +1,528 @@
+{
+  "id": "the-profits-of-religion",
+  "title": "THE PROFITS OF RELIGION",
+  "author": "Unknown",
+  "categories": [
+    "General"
+  ],
+  "tags": [],
+  "reading_level": "heavy",
+  "length": "long",
+  "audience": [
+    "academic"
+  ],
+  "release_date": null,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "An Essay in Economic Interpretation",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "By Upton Sinclair",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "THE PROFITS OF RELIGION",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "OFFERTORY",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "INTRODUCTORY",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "Bootstrap-lifting? says the reader.",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "BOOK ONE — The Church of the Conquerors",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "The Priestly Lie",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "The Great Fear",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "Salve Regina!",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "Fresh Meat",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "Priestly Empires",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "Prayer-wheels",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "The Butcher-Gods",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "The Holy Inquisition",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "Hell-Fire",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "BOOK TWO — The Church of Good Society",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "The Babylonian Fire-god",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "The Medicine-men",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "The Canonization of Incompetence",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "Gibson's Preservative",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "The Elders",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "Church History",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "Land and Livings",
+      "file": "chapters/ch24.html"
+    },
+    {
+      "id": "ch25",
+      "title": "Graft in Tail",
+      "file": "chapters/ch25.html"
+    },
+    {
+      "id": "ch26",
+      "title": "Bishops and Beer",
+      "file": "chapters/ch26.html"
+    },
+    {
+      "id": "ch27",
+      "title": "Anglicanism and Alcohol",
+      "file": "chapters/ch27.html"
+    },
+    {
+      "id": "ch28",
+      "title": "Dead Cats",
+      "file": "chapters/ch28.html"
+    },
+    {
+      "id": "ch29",
+      "title": "Suffer Little Children",
+      "file": "chapters/ch29.html"
+    },
+    {
+      "id": "ch30",
+      "title": "The Court Circular",
+      "file": "chapters/ch30.html"
+    },
+    {
+      "id": "ch31",
+      "title": "Horn-blowing",
+      "file": "chapters/ch31.html"
+    },
+    {
+      "id": "ch32",
+      "title": "Trinity Corporation",
+      "file": "chapters/ch32.html"
+    },
+    {
+      "id": "ch33",
+      "title": "Spiritual Interpretation",
+      "file": "chapters/ch33.html"
+    },
+    {
+      "id": "ch34",
+      "title": "BOOK THREE — The Church of the Servant-girls",
+      "file": "chapters/ch34.html"
+    },
+    {
+      "id": "ch35",
+      "title": "Charity",
+      "file": "chapters/ch35.html"
+    },
+    {
+      "id": "ch36",
+      "title": "God's Armor",
+      "file": "chapters/ch36.html"
+    },
+    {
+      "id": "ch37",
+      "title": "Thanksgivings",
+      "file": "chapters/ch37.html"
+    },
+    {
+      "id": "ch38",
+      "title": "The Holy Roman Empire",
+      "file": "chapters/ch38.html"
+    },
+    {
+      "id": "ch39",
+      "title": "Temporal Power",
+      "file": "chapters/ch39.html"
+    },
+    {
+      "id": "ch40",
+      "title": "Knights of Slavery",
+      "file": "chapters/ch40.html"
+    },
+    {
+      "id": "ch41",
+      "title": "Priests and Police",
+      "file": "chapters/ch41.html"
+    },
+    {
+      "id": "ch42",
+      "title": "The Church Militant",
+      "file": "chapters/ch42.html"
+    },
+    {
+      "id": "ch43",
+      "title": "The Church Triumphant",
+      "file": "chapters/ch43.html"
+    },
+    {
+      "id": "ch44",
+      "title": "God in the Schools",
+      "file": "chapters/ch44.html"
+    },
+    {
+      "id": "ch45",
+      "title": "The Menace",
+      "file": "chapters/ch45.html"
+    },
+    {
+      "id": "ch46",
+      "title": "King Coal",
+      "file": "chapters/ch46.html"
+    },
+    {
+      "id": "ch47",
+      "title": "The Unholy Alliance",
+      "file": "chapters/ch47.html"
+    },
+    {
+      "id": "ch48",
+      "title": "Secret Service",
+      "file": "chapters/ch48.html"
+    },
+    {
+      "id": "ch49",
+      "title": "Tax Exemption",
+      "file": "chapters/ch49.html"
+    },
+    {
+      "id": "ch50",
+      "title": "\"Holy History\"",
+      "file": "chapters/ch50.html"
+    },
+    {
+      "id": "ch51",
+      "title": "Das Centrum",
+      "file": "chapters/ch51.html"
+    },
+    {
+      "id": "ch52",
+      "title": "BOOK FOUR — The Church of the Slavers",
+      "file": "chapters/ch52.html"
+    },
+    {
+      "id": "ch53",
+      "title": "Face of Caesar",
+      "file": "chapters/ch53.html"
+    },
+    {
+      "id": "ch54",
+      "title": "Deutschland ueber Alles",
+      "file": "chapters/ch54.html"
+    },
+    {
+      "id": "ch55",
+      "title": "Der Tag.",
+      "file": "chapters/ch55.html"
+    },
+    {
+      "id": "ch56",
+      "title": "King Cotton",
+      "file": "chapters/ch56.html"
+    },
+    {
+      "id": "ch57",
+      "title": "Witches and Women",
+      "file": "chapters/ch57.html"
+    },
+    {
+      "id": "ch58",
+      "title": "Moth and Rust",
+      "file": "chapters/ch58.html"
+    },
+    {
+      "id": "ch59",
+      "title": "The Octopus",
+      "file": "chapters/ch59.html"
+    },
+    {
+      "id": "ch60",
+      "title": "The Industrial Shelley",
+      "file": "chapters/ch60.html"
+    },
+    {
+      "id": "ch61",
+      "title": "The Outlook for Graft",
+      "file": "chapters/ch61.html"
+    },
+    {
+      "id": "ch62",
+      "title": "Clerical Camouflage",
+      "file": "chapters/ch62.html"
+    },
+    {
+      "id": "ch63",
+      "title": "The Jungle",
+      "file": "chapters/ch63.html"
+    },
+    {
+      "id": "ch64",
+      "title": "BOOK FIVE — The Church of the Merchants",
+      "file": "chapters/ch64.html"
+    },
+    {
+      "id": "ch65",
+      "title": "The Head Merchant",
+      "file": "chapters/ch65.html"
+    },
+    {
+      "id": "ch66",
+      "title": "\"Herr Beeble\"",
+      "file": "chapters/ch66.html"
+    },
+    {
+      "id": "ch67",
+      "title": "Holy Oil",
+      "file": "chapters/ch67.html"
+    },
+    {
+      "id": "ch68",
+      "title": "Rhetorical Black-hanging",
+      "file": "chapters/ch68.html"
+    },
+    {
+      "id": "ch69",
+      "title": "The Great American Fraud",
+      "file": "chapters/ch69.html"
+    },
+    {
+      "id": "ch70",
+      "title": "Riches in Glory",
+      "file": "chapters/ch70.html"
+    },
+    {
+      "id": "ch71",
+      "title": "Captivating Ideals",
+      "file": "chapters/ch71.html"
+    },
+    {
+      "id": "ch72",
+      "title": "Spook Hunting",
+      "file": "chapters/ch72.html"
+    },
+    {
+      "id": "ch73",
+      "title": "Running the Rapids",
+      "file": "chapters/ch73.html"
+    },
+    {
+      "id": "ch74",
+      "title": "Birth Control",
+      "file": "chapters/ch74.html"
+    },
+    {
+      "id": "ch75",
+      "title": "Sheep",
+      "file": "chapters/ch75.html"
+    },
+    {
+      "id": "ch76",
+      "title": "BOOK SIX — The Church of the Quacks",
+      "file": "chapters/ch76.html"
+    },
+    {
+      "id": "ch77",
+      "title": "Tabula Rasa",
+      "file": "chapters/ch77.html"
+    },
+    {
+      "id": "ch78",
+      "title": "The Book of Mormon",
+      "file": "chapters/ch78.html"
+    },
+    {
+      "id": "ch79",
+      "title": "Holy Rolling",
+      "file": "chapters/ch79.html"
+    },
+    {
+      "id": "ch80",
+      "title": "Bible Prophecy",
+      "file": "chapters/ch80.html"
+    },
+    {
+      "id": "ch81",
+      "title": "Koreshanity",
+      "file": "chapters/ch81.html"
+    },
+    {
+      "id": "ch82",
+      "title": "Mazdaznan",
+      "file": "chapters/ch82.html"
+    },
+    {
+      "id": "ch83",
+      "title": "Black Magic",
+      "file": "chapters/ch83.html"
+    },
+    {
+      "id": "ch84",
+      "title": "Mental Malpractice",
+      "file": "chapters/ch84.html"
+    },
+    {
+      "id": "ch85",
+      "title": "Science and Wealth",
+      "file": "chapters/ch85.html"
+    },
+    {
+      "id": "ch86",
+      "title": "New Nonsense",
+      "file": "chapters/ch86.html"
+    },
+    {
+      "id": "ch87",
+      "title": "\"Dollars Want Me\"",
+      "file": "chapters/ch87.html"
+    },
+    {
+      "id": "ch88",
+      "title": "Spiritual Financiering",
+      "file": "chapters/ch88.html"
+    },
+    {
+      "id": "ch89",
+      "title": "The Graft of Grace",
+      "file": "chapters/ch89.html"
+    },
+    {
+      "id": "ch90",
+      "title": "BOOK SEVEN — The Church of the Social Revolution",
+      "file": "chapters/ch90.html"
+    },
+    {
+      "id": "ch91",
+      "title": "Christ and Caesar",
+      "file": "chapters/ch91.html"
+    },
+    {
+      "id": "ch92",
+      "title": "Locusts and Wild Honey",
+      "file": "chapters/ch92.html"
+    },
+    {
+      "id": "ch93",
+      "title": "Mother Earth",
+      "file": "chapters/ch93.html"
+    },
+    {
+      "id": "ch94",
+      "title": "The Soap Box",
+      "file": "chapters/ch94.html"
+    },
+    {
+      "id": "ch95",
+      "title": "The Church Machine",
+      "file": "chapters/ch95.html"
+    },
+    {
+      "id": "ch96",
+      "title": "The Church Redeemed",
+      "file": "chapters/ch96.html"
+    },
+    {
+      "id": "ch97",
+      "title": "The Desire of Nations",
+      "file": "chapters/ch97.html"
+    },
+    {
+      "id": "ch98",
+      "title": "The Knowable",
+      "file": "chapters/ch98.html"
+    },
+    {
+      "id": "ch99",
+      "title": "Nature's Insurgent Son",
+      "file": "chapters/ch99.html"
+    },
+    {
+      "id": "ch100",
+      "title": "The New Morality",
+      "file": "chapters/ch100.html"
+    },
+    {
+      "id": "ch101",
+      "title": "Envoi",
+      "file": "chapters/ch101.html"
+    },
+    {
+      "id": "ch102",
+      "title": "Reader:",
+      "file": "chapters/ch102.html"
+    }
+  ],
+  "word_count": 83043
+}

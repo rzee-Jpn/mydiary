@@ -1,5 +1,77 @@
 [
   {
+    "id": "the-railroad-question",
+    "title": "The Railroad Question.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-railroad-question",
+    "created": "2026-01-14",
+    "updated": "2026-01-14",
+    "categories": [
+      "General"
+    ],
+    "tags": [],
+    "reading_level": "heavy",
+    "length": "long",
+    "audience": [
+      "academic"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 114263,
+    "chapter_count": 19,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
+    "id": "appletons-popular-sciencemonthly",
+    "title": "APPLETONS'POPULAR SCIENCEMONTHLY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/appletons-popular-sciencemonthly",
+    "created": "2026-01-14",
+    "updated": "2026-01-14",
+    "categories": [
+      "General",
+      "Science"
+    ],
+    "tags": [
+      "science"
+    ],
+    "reading_level": "heavy",
+    "length": "medium",
+    "audience": [
+      "academic"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 67645,
+    "chapter_count": 20,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
+    "id": "the-profits-of-religion",
+    "title": "THE PROFITS OF RELIGION",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-profits-of-religion",
+    "created": "2026-01-14",
+    "updated": "2026-01-14",
+    "categories": [
+      "General"
+    ],
+    "tags": [],
+    "reading_level": "heavy",
+    "length": "long",
+    "audience": [
+      "academic"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 83043,
+    "chapter_count": 102,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
     "id": "the-development-of-rates-of-postage",
     "title": "THE DEVELOPMENT OF\n                          RATES OF POSTAGE",
     "author": "Unknown",
