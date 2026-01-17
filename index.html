@@ -6,23 +6,24 @@
 
   <title>Pustaka — Private Archive</title>
 
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Pustaka adalah arsip pengetahuan pribadi. Temukan buku, artikel, dan informasi terbaru dengan mudah.">
-  <meta name="keywords" content="arsip buku, pustaka, private archive, knowledge, pengetahuan, library">
+  <!-- SEO -->
+  <meta name="description" content="Pustaka adalah arsip pengetahuan pribadi.">
+  <meta name="keywords" content="pustaka, arsip, buku, knowledge">
   <meta name="author" content="Zhie">
 
-  <!-- Fonts & CSS -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/library.css">
 
-  <!-- Structured Data JSON-LD -->
+  <!-- WebSite Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Pustaka",
-    "url": "https://books.anglumea.com",
-    "description": "Pustaka adalah arsip pengetahuan pribadi. Temukan buku, artikel, dan informasi terbaru dengan mudah."
+    "url": "https://books.anglumea.com"
   }
   </script>
 </head>
@@ -41,10 +42,16 @@
 
   <!-- SEARCH -->
   <div class="search-bar">
-    <input id="bookSearch" placeholder="Cari judul, penulis, atau tag…">
+    <label for="bookSearch" class="sr-only">Cari arsip</label>
+    <input id="bookSearch" placeholder="Cari judul, penulis, atau tag…" autocomplete="off">
   </div>
+  
+    <div class="daily-quote reveal" id="dailyQuote">
+  <p id="quoteText"></p>
+  <span id="quoteAuthor"></span>
+</div>
 
-  <!-- TOP WEEKLY -->
+  <!-- TOP -->
   <section class="reveal">
     <h2>Top Mingguan</h2>
     <div id="topList" class="embed-list"></div>
@@ -53,26 +60,25 @@
   <!-- LATEST -->
   <section class="reveal">
     <h2 id="latestTitle">Post Terbaru</h2>
-
     <div id="catalog" class="embed-list"></div>
 
     <div class="latest-nav">
-      <button id="latestPrev" disabled>←</button>
+      <button id="latestPrev" aria-label="Sebelumnya" disabled>←</button>
       <span id="latestIndicator"></span>
-      <button id="latestNext">→</button>
+      <button id="latestNext" aria-label="Berikutnya">→</button>
     </div>
   </section>
 
   <!-- CATEGORY -->
   <section class="reveal">
-    <h2>Category</h2>
+    <h2>Kategori</h2>
     <div id="categoryList" class="category-list"></div>
   </section>
 
 </main>
 
-<!-- Structured Data for books (dynamic content can fill this via JS) -->
-<script type="application/ld+json">
+<!-- ItemList Schema (filled by JS) -->
+<script id="schema-books" type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
