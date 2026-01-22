@@ -2,7 +2,7 @@
   {
     "id": "the-railroad-question",
     "title": "The Railroad Question.",
-    "author": "Unknown",
+    "author": "Various",
     "path": "data/books/gutenberg/the-railroad-question",
     "created": "2026-01-14",
     "updated": "2026-01-14",
@@ -24,8 +24,8 @@
   },
   {
     "id": "appletons-popular-sciencemonthly",
-    "title": "APPLETONS'POPULAR SCIENCEMONTHLY",
-    "author": "Unknown",
+    "title": "APPLETONS'POPULAR SCIENCE MONTHLY",
+    "author": "Various",
     "path": "data/books/gutenberg/appletons-popular-sciencemonthly",
     "created": "2026-01-14",
     "updated": "2026-01-14",
