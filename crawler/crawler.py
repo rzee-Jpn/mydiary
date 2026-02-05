@@ -20,10 +20,11 @@ HEADERS = {
 }
 
 REQUEST_TIMEOUT = 20
-MIN_CHAPTERS = 1   # ← jangan bunuh buku
+MIN_CHAPTERS = 3
 SLEEP_BETWEEN_BOOKS = 2
 
 TODAY_ISO = datetime.utcnow().strftime("%Y-%m-%d")
+IS_CI = os.getenv("GITHUB_ACTIONS") == "true"
 
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs("crawler", exist_ok=True)
@@ -38,6 +39,8 @@ def slugify(text):
 
 
 def load_state():
+    if IS_CI:
+        return {"page": BOOKSHELF, "index": 0, "done": False}
     if not os.path.exists(STATE_FILE):
         return {"page": BOOKSHELF, "index": 0, "done": False}
     with open(STATE_FILE, encoding="utf-8") as f:
@@ -45,6 +48,8 @@ def load_state():
 
 
 def save_state(state):
+    if IS_CI:
+        return
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2)
 
@@ -132,7 +137,9 @@ def count_words(chapters):
 def safe_get(url):
     try:
         r = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-        return r if r.status_code == 200 else None
+        if r.status_code != 200:
+            return None
+        return r
     except requests.RequestException:
         return None
 
@@ -161,9 +168,12 @@ def get_books(page):
     return books, next_page
 
 
-def get_html_url(book_url):
-    book_id = book_url.rstrip("/").split("/")[-1]
-    return f"{BASE}/files/{book_id}/{book_id}-h/{book_id}-h.htm"
+def get_book_id(book_url):
+    return book_url.rstrip("/").split("/")[-1]
+
+
+def get_html_url(book_id):
+    return f"{BASE}/ebooks/{book_id}.html.images"
 
 # ======================================================
 # METADATA
@@ -193,12 +203,12 @@ def get_metadata(book_url):
             try:
                 release_date = datetime.strptime(value, "%B %d, %Y").strftime("%Y-%m-%d")
             except:
-                pass
+                release_date = None
 
     return subjects, bookshelves, release_date
 
 # ======================================================
-# HTML PARSER (ANTI KOSONG)
+# HTML PARSER
 # ======================================================
 
 def parse_html_book(html_url):
@@ -207,37 +217,35 @@ def parse_html_book(html_url):
         return None, None, []
 
     soup = BeautifulSoup(r.text, "lxml")
-
-    title = soup.find("h1")
-    title = title.get_text(strip=True) if title else "Unknown"
+    title = soup.find("h1").get_text(strip=True) if soup.find("h1") else "Unknown"
 
     author = "Unknown"
     for meta in soup.select("meta"):
         if meta.get("name", "").lower() == "author":
             author = meta.get("content", "Unknown")
 
-    chapters = []
-    current = None
+    body = soup.find("body")
+    if not body:
+        return title, author, []
 
-    for el in soup.select("h2, h3, p"):
+    chapters, current = [], None
+
+    for el in body.children:
+        if not getattr(el, "name", None):
+            continue
+
         if el.name in ("h2", "h3"):
             if current and current["html"].strip():
                 chapters.append(current)
             current = {"title": el.get_text(strip=True), "html": ""}
-        elif el.name == "p":
-            if not current:
-                current = {"title": "Introduction", "html": ""}
+        elif current and el.name == "p":
             current["html"] += f"<p>{el.decode_contents()}</p>\n"
 
     if current and current["html"].strip():
         chapters.append(current)
 
-    # fallback: 1 chapter full text
-    if not chapters:
-        body = soup.find("body")
-        if body:
-            html = "".join(str(p) for p in body.find_all("p"))
-            chapters = [{"title": "Full Text", "html": html}]
+    if len(chapters) < MIN_CHAPTERS:
+        return title, author, []
 
     return title, author, chapters
 
@@ -265,21 +273,17 @@ def update_library(entry):
 
 def main():
     state = load_state()
-    if state.get("done"):
-        return
-
     books, next_page = get_books(state["page"])
     count = 0
 
     for url in books[state["index"]:]:
         state["index"] += 1
-        print("📘 Processing:", url)
 
+        book_id = get_book_id(url)
         subjects, bookshelves, release_date = get_metadata(url)
-        title, author, chapters = parse_html_book(get_html_url(url))
+        title, author, chapters = parse_html_book(get_html_url(book_id))
 
         if not chapters:
-            print("❌ Empty:", title)
             continue
 
         slug = slugify(title)
@@ -350,13 +354,13 @@ def main():
         if count >= LIMIT_PER_RUN:
             break
 
-    if state["index"] >= len(books):
-        if next_page:
-            state["page"], state["index"] = next_page, 0
-        else:
-            state["done"] = True
-
-    save_state(state)
+    if not IS_CI:
+        if state["index"] >= len(books):
+            if next_page:
+                state["page"], state["index"] = next_page, 0
+            else:
+                state["done"] = True
+        save_state(state)
 
 # ======================================================
 # ENTRY
