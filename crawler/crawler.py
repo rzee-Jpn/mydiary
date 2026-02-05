@@ -20,7 +20,7 @@ HEADERS = {
 }
 
 REQUEST_TIMEOUT = 20
-MIN_CHAPTERS = 3
+MIN_CHAPTERS = 1   # ← jangan bunuh buku
 SLEEP_BETWEEN_BOOKS = 2
 
 TODAY_ISO = datetime.utcnow().strftime("%Y-%m-%d")
@@ -69,8 +69,6 @@ def normalize_categories(subjects, bookshelves):
             cats.add("General")
     return sorted(cats)
 
-
-# ================= AUTO TAG ENGINE =================
 
 def normalize_tags(subjects, bookshelves):
     tags = set()
@@ -134,9 +132,7 @@ def count_words(chapters):
 def safe_get(url):
     try:
         r = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-        if r.status_code != 200:
-            return None
-        return r
+        return r if r.status_code == 200 else None
     except requests.RequestException:
         return None
 
@@ -167,7 +163,7 @@ def get_books(page):
 
 def get_html_url(book_url):
     book_id = book_url.rstrip("/").split("/")[-1]
-    return f"{BASE}/ebooks/{book_id}.html.images"
+    return f"{BASE}/files/{book_id}/{book_id}-h/{book_id}-h.htm"
 
 # ======================================================
 # METADATA
@@ -197,12 +193,12 @@ def get_metadata(book_url):
             try:
                 release_date = datetime.strptime(value, "%B %d, %Y").strftime("%Y-%m-%d")
             except:
-                release_date = None
+                pass
 
     return subjects, bookshelves, release_date
 
 # ======================================================
-# HTML PARSER
+# HTML PARSER (ANTI KOSONG)
 # ======================================================
 
 def parse_html_book(html_url):
@@ -211,35 +207,37 @@ def parse_html_book(html_url):
         return None, None, []
 
     soup = BeautifulSoup(r.text, "lxml")
-    title = soup.find("h1").get_text(strip=True) if soup.find("h1") else "Unknown"
+
+    title = soup.find("h1")
+    title = title.get_text(strip=True) if title else "Unknown"
 
     author = "Unknown"
     for meta in soup.select("meta"):
         if meta.get("name", "").lower() == "author":
             author = meta.get("content", "Unknown")
 
-    body = soup.find("body")
-    if not body:
-        return title, author, []
+    chapters = []
+    current = None
 
-    chapters, current = [], None
-
-    for el in body.children:
-        if not getattr(el, "name", None):
-            continue
-
+    for el in soup.select("h2, h3, p"):
         if el.name in ("h2", "h3"):
             if current and current["html"].strip():
                 chapters.append(current)
             current = {"title": el.get_text(strip=True), "html": ""}
-        elif current and el.name == "p":
+        elif el.name == "p":
+            if not current:
+                current = {"title": "Introduction", "html": ""}
             current["html"] += f"<p>{el.decode_contents()}</p>\n"
 
     if current and current["html"].strip():
         chapters.append(current)
 
-    if len(chapters) < MIN_CHAPTERS:
-        return title, author, []
+    # fallback: 1 chapter full text
+    if not chapters:
+        body = soup.find("body")
+        if body:
+            html = "".join(str(p) for p in body.find_all("p"))
+            chapters = [{"title": "Full Text", "html": html}]
 
     return title, author, chapters
 
@@ -275,16 +273,19 @@ def main():
 
     for url in books[state["index"]:]:
         state["index"] += 1
+        print("📘 Processing:", url)
 
         subjects, bookshelves, release_date = get_metadata(url)
         title, author, chapters = parse_html_book(get_html_url(url))
 
         if not chapters:
+            print("❌ Empty:", title)
             continue
 
         slug = slugify(title)
         book_dir = f"{DATA_DIR}/{slug}"
         chapters_dir = f"{book_dir}/chapters"
+
         if os.path.exists(book_dir):
             continue
 
@@ -295,7 +296,11 @@ def main():
             fname = f"ch{i:02d}.html"
             with open(f"{chapters_dir}/{fname}", "w", encoding="utf-8") as f:
                 f.write(f"<h2>{ch['title']}</h2>\n{ch['html']}")
-            chapter_meta.append({"id": f"ch{i:02d}", "title": ch["title"], "file": f"chapters/{fname}"})
+            chapter_meta.append({
+                "id": f"ch{i:02d}",
+                "title": ch["title"],
+                "file": f"chapters/{fname}"
+            })
 
         categories = normalize_categories(subjects, bookshelves)
         tags = normalize_tags(subjects, bookshelves)
