@@ -1,5 +1,31 @@
 [
   {
+    "id": "the-origin-ofmetallic-currency-andweight-standards",
+    "title": "THE ORIGIN OFMETALLIC CURRENCY ANDWEIGHT STANDARDS.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-origin-ofmetallic-currency-andweight-standards",
+    "created": "2026-02-05",
+    "updated": "2026-02-05",
+    "categories": [
+      "General",
+      "History"
+    ],
+    "tags": [
+      "history"
+    ],
+    "reading_level": "heavy",
+    "length": "long",
+    "audience": [
+      "academic"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 138655,
+    "chapter_count": 23,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
     "id": "the-railroad-question",
     "title": "The Railroad Question.",
     "author": "Various",
