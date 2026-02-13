@@ -1,5 +1,30 @@
 [
   {
+    "id": "life-of-adam-smith",
+    "title": "Life of Adam Smith",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/life-of-adam-smith",
+    "created": "2026-02-13",
+    "updated": "2026-02-13",
+    "categories": [
+      "General"
+    ],
+    "tags": [
+      "economics"
+    ],
+    "reading_level": "heavy",
+    "length": "long",
+    "audience": [
+      "academic"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 120652,
+    "chapter_count": 35,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
     "id": "the-origin-ofmetallic-currency-andweight-standards",
     "title": "THE ORIGIN OFMETALLIC CURRENCY ANDWEIGHT STANDARDS.",
     "author": "Unknown",
