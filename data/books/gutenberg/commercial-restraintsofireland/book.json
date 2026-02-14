@@ -1,0 +1,45 @@
+{
+  "id": "commercial-restraintsofireland",
+  "title": "COMMERCIAL RESTRAINTSOFIRELAND.",
+  "author": "Unknown",
+  "categories": [
+    "General"
+  ],
+  "tags": [
+    "economics"
+  ],
+  "reading_level": "heavy",
+  "length": "medium",
+  "audience": [
+    "academic"
+  ],
+  "release_date": null,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "LIFE OF PROVOST HELY HUTCHINSON.",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "NOTES.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "INTRODUCTION.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "THE COMMERCIAL RESTRAINTSOFIRELAND CONSIDERED.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "POSTSCRIPT.",
+      "file": "chapters/ch05.html"
+    }
+  ],
+  "word_count": 72867
+}

@@ -1,5 +1,30 @@
 [
   {
+    "id": "commercial-restraintsofireland",
+    "title": "COMMERCIAL RESTRAINTSOFIRELAND.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/commercial-restraintsofireland",
+    "created": "2026-02-14",
+    "updated": "2026-02-14",
+    "categories": [
+      "General"
+    ],
+    "tags": [
+      "economics"
+    ],
+    "reading_level": "heavy",
+    "length": "medium",
+    "audience": [
+      "academic"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 72867,
+    "chapter_count": 5,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
     "id": "life-of-adam-smith",
     "title": "Life of Adam Smith",
     "author": "Unknown",
