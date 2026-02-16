@@ -1,5 +1,28 @@
 [
   {
+    "id": "thevalue-of-money",
+    "title": "THEVALUE OF MONEY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/thevalue-of-money",
+    "created": "2026-02-16",
+    "updated": "2026-02-16",
+    "categories": [
+      "General"
+    ],
+    "tags": [],
+    "reading_level": "heavy",
+    "length": "long",
+    "audience": [
+      "academic"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 173683,
+    "chapter_count": 35,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
     "id": "commercial-restraintsofireland",
     "title": "COMMERCIAL RESTRAINTSOFIRELAND.",
     "author": "Unknown",
