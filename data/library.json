@@ -1,5 +1,31 @@
 [
   {
+    "id": "die-frauenfrage",
+    "title": "Die Frauenfrage",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/die-frauenfrage",
+    "created": "2026-02-19",
+    "updated": "2026-02-19",
+    "categories": [
+      "General",
+      "History"
+    ],
+    "tags": [
+      "history"
+    ],
+    "reading_level": "heavy",
+    "length": "long",
+    "audience": [
+      "academic"
+    ],
+    "language": "en",
+    "views": 0,
+    "word_count": 157466,
+    "chapter_count": 24,
+    "source": "Project Gutenberg",
+    "license": "Public Domain"
+  },
+  {
     "id": "thevalue-of-money",
     "title": "THEVALUE OF MONEY",
     "author": "Unknown",

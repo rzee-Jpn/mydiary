@@ -1,0 +1,141 @@
+{
+  "id": "die-frauenfrage",
+  "title": "Die Frauenfrage",
+  "author": "Unknown",
+  "categories": [
+    "General",
+    "History"
+  ],
+  "tags": [
+    "history"
+  ],
+  "reading_level": "heavy",
+  "length": "long",
+  "audience": [
+    "academic"
+  ],
+  "release_date": null,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "Vorwort.",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "Inhalt.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "Erster Abschnitt.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "1. Die Frauenfrage im\nAltertum.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "2. Das Christentum\nund die Frauen.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "3. Die\nwirtschaftliche Lage der Frauen.",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "4. Die\nStellung der Frauen im Geistesleben.",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "5. Die\nFrauen im Zeitalter der Revolution.",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "Zweiter Abschnitt.",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "1. Der\nKampf um Arbeit in der bürgerlichen Frauenwelt.",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "2. Die\ntreibenden Kräfte der bürgerlichen Frauenbewegung.",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "3.\nDie bürgerliche Berufsthätigkeit von prinzipiellen\nGesichtspunkten.",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "4. Die\nEntwicklung der proletarischen Frauenarbeit.",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "5.\nDie Statistik der proletarischen Frauenarbeit nach den letzten\nZählungen.",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "Die Großindustrie.",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "Hausindustrie und Heimarbeit",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "Der Handel.",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "Die Landwirtschaft.",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "Der häusliche und der persönliche Dienst.",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "7. Die\nArbeiterinnenbewegung.",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "8. Die\nbürgerliche Frauenbewegung in ihrer Stellung zur\nArbeiterinnenfrage.",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "Der Arbeiterinnenschutz.",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "Die Arbeiterinnenversicherung.",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "Die Grenzen der Gesetzgebung.",
+      "file": "chapters/ch24.html"
+    }
+  ],
+  "word_count": 157466
+}
