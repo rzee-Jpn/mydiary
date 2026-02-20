@@ -185,31 +185,39 @@ def update_library(entry):
 # ENGINE
 # ======================================================
 
+def slugify(text):
+    return re.sub(r'[^a-z0-9]+', '-', text.lower()).strip('-')
+
+
 def process_book(book_url):
+
     book_id = get_book_id(book_url)
-    engine_id = f"gutenberg-{book_id}"
 
-    book_dir = f"{DATA_DIR}/{engine_id}"
-    chap_dir = f"{book_dir}/chapters"
-    os.makedirs(chap_dir, exist_ok=True)
-
+    # ambil isi dulu supaya dapat title
     title, author, chapters = parse_html_book(
         get_html_url(book_id)
     )
 
     if not chapters:
-        log("SKIP (bad html)", engine_id)
+        log("SKIP (bad html)", book_id)
         return
+
+    # ✅ ID BARU (judul + id)
+    engine_id = f"{slugify(title)}-{book_id}"
+
+    book_dir = f"{DATA_DIR}/{engine_id}"
+    chap_dir = f"{book_dir}/chapters"
+    os.makedirs(chap_dir, exist_ok=True)
 
     chapter_meta = []
 
-    for i,ch in enumerate(chapters,1):
+    for i, ch in enumerate(chapters, 1):
         fname = f"ch{i:02d}.html"
         path = f"{chap_dir}/{fname}"
 
-        # 🔥 SELF HEAL: skip kalau chapter sudah ada
+        # self-heal
         if not os.path.exists(path):
-            with open(path,"w",encoding="utf-8") as f:
+            with open(path, "w", encoding="utf-8") as f:
                 f.write(f"<h2>{ch['title']}</h2>\n{ch['html']}")
 
         chapter_meta.append({
@@ -220,7 +228,7 @@ def process_book(book_url):
 
     word_count = count_words(chapters)
 
-    save_json_atomic(f"{book_dir}/book.json",{
+    save_json_atomic(f"{book_dir}/book.json", {
         "id": engine_id,
         "title": title,
         "author": author,
@@ -236,11 +244,10 @@ def process_book(book_url):
         "path": book_dir,
         "chapter_count": len(chapters),
         "updated": TODAY,
-        "source":"Project Gutenberg"
+        "source": "Project Gutenberg"
     })
 
-    log("DONE", title)
-
+    log("DONE", engine_id)
 # ======================================================
 # MAIN
 # ======================================================
