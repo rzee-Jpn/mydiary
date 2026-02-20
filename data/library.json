@@ -707,5 +707,32 @@
     ],
     "status": "published",
     "visibility": "public"
+  },
+  {
+    "id": "gutenberg-24884",
+    "title": "COMMERCIALGEOGRAPHY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/gutenberg-24884",
+    "chapter_count": 40,
+    "updated": "2026-02-20",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "gutenberg-34463",
+    "title": "HOW TO INVESTMONEY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/gutenberg-34463",
+    "chapter_count": 14,
+    "updated": "2026-02-20",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "gutenberg-46545",
+    "title": "Cyclopedia",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/gutenberg-46545",
+    "chapter_count": 16,
+    "updated": "2026-02-20",
+    "source": "Project Gutenberg"
   }
 ]
