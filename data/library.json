@@ -743,5 +743,32 @@
     "chapter_count": 49,
     "updated": "2026-02-21",
     "source": "Project Gutenberg"
+  },
+  {
+    "id": "french-and-german-socialisminmodern-times-59815",
+    "title": "FRENCH AND GERMAN SOCIALISMINMODERN TIMES.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/french-and-german-socialisminmodern-times-59815",
+    "chapter_count": 21,
+    "updated": "2026-02-22",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "are-we-ruined-by-thegermans-31163",
+    "title": "ARE WE RUINED BY THEGERMANS?",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/are-we-ruined-by-thegermans-31163",
+    "chapter_count": 76,
+    "updated": "2026-02-22",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "political-and-commercialgeologyand-theworld-s-mineral-resources-71082",
+    "title": "POLITICAL AND COMMERCIALGEOLOGYAND THEWORLD’S MINERAL RESOURCES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/political-and-commercialgeologyand-theworld-s-mineral-resources-71082",
+    "chapter_count": 236,
+    "updated": "2026-02-22",
+    "source": "Project Gutenberg"
   }
 ]
