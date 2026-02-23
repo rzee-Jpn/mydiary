@@ -770,5 +770,32 @@
     "chapter_count": 236,
     "updated": "2026-02-22",
     "source": "Project Gutenberg"
+  },
+  {
+    "id": "definition-realityin-thegeneral-theory-of-political-economy-15939",
+    "title": "Definition & Realityin theGeneral Theory of Political Economy",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/definition-realityin-thegeneral-theory-of-political-economy-15939",
+    "chapter_count": 75,
+    "updated": "2026-02-23",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "a-history-ofeconomic-doctrines-57500",
+    "title": "A HISTORY OFECONOMIC DOCTRINES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/a-history-ofeconomic-doctrines-57500",
+    "chapter_count": 29,
+    "updated": "2026-02-23",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "illustrationsofpolitical-economy-70716",
+    "title": "ILLUSTRATIONSOFPOLITICAL ECONOMY.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/illustrationsofpolitical-economy-70716",
+    "chapter_count": 35,
+    "updated": "2026-02-23",
+    "source": "Project Gutenberg"
   }
 ]
