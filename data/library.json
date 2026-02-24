@@ -768,7 +768,7 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/political-and-commercialgeologyand-theworld-s-mineral-resources-71082",
     "chapter_count": 236,
-    "updated": "2026-02-22",
+    "updated": "2026-02-24",
     "source": "Project Gutenberg"
   },
   {
@@ -786,7 +786,7 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/a-history-ofeconomic-doctrines-57500",
     "chapter_count": 29,
-    "updated": "2026-02-23",
+    "updated": "2026-02-24",
     "source": "Project Gutenberg"
   },
   {
@@ -796,6 +796,15 @@
     "path": "data/books/gutenberg/illustrationsofpolitical-economy-70716",
     "chapter_count": 35,
     "updated": "2026-02-23",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "socialism-38138",
+    "title": "SOCIALISM.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/socialism-38138",
+    "chapter_count": 3,
+    "updated": "2026-02-24",
     "source": "Project Gutenberg"
   }
 ]
