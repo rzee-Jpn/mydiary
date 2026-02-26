@@ -824,5 +824,32 @@
     "chapter_count": 23,
     "updated": "2026-02-25",
     "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-accumulation-of-capital-41405",
+    "title": "THE ACCUMULATION\r\nOF CAPITAL",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-accumulation-of-capital-41405",
+    "chapter_count": 51,
+    "updated": "2026-02-26",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "watson-s-magazine-67796",
+    "title": "WATSON’S MAGAZINE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/watson-s-magazine-67796",
+    "chapter_count": 56,
+    "updated": "2026-02-26",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-tariff-in-our-times-59763",
+    "title": "THE TARIFF IN OUR TIMES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-tariff-in-our-times-59763",
+    "chapter_count": 16,
+    "updated": "2026-02-26",
+    "source": "Project Gutenberg"
   }
 ]
