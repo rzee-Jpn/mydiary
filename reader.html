@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reader</title>
-
+<title>Reader — Pustaka</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/reader.css">
 <link rel="stylesheet" href="assets/css/sidebar.css">
@@ -13,54 +14,75 @@
 
 <body class="theme-paper">
 
+<!-- HEADER -->
 <header id="header" class="reader-header">
-  <div class="back-btn" onclick="history.back()">←</div>
-  <div class="logo">📖 MyDiary</div>
+  <button class="hdr-btn back-btn" onclick="history.back()" aria-label="Kembali">
+    <span>←</span>
+  </button>
+  <div class="hdr-title">
+    <span class="hdr-brand">❧</span>
+    <span id="headerBookTitle" class="hdr-book-name"></span>
+  </div>
+  <button class="hdr-btn menu-btn" id="openSidebarBtn" aria-label="Menu buku">
+    <span class="menu-icon">
+      <span></span><span></span><span></span>
+    </span>
+  </button>
 </header>
 
-<!-- HANDLE -->
-<div id="pullHandle">≡</div>
-
-<!-- OVERLAY (klik luar = close) -->
+<!-- OVERLAY -->
 <div id="sidebarOverlay"></div>
 
 <!-- SIDEBAR -->
-<aside id="sidebar">
-  <div id="closeSidebar">✕</div>
+<aside id="sidebar" aria-label="Menu buku">
+  <div class="sidebar-head">
+    <button id="closeSidebar" class="close-btn" aria-label="Tutup sidebar">✕</button>
+    <div class="sidebar-brand">❧ Pustaka</div>
+  </div>
 
-  <h4>Buku</h4>
-  <div id="bookTitle">...</div>
+  <div class="sidebar-block">
+    <div class="sidebar-label">Buku</div>
+    <div id="bookTitle" class="sidebar-book-title">…</div>
+  </div>
 
-  <h4>Tema</h4>
-  <select id="themeSelect">
-    <option value="light">Light</option>
-    <option value="dark">Dark</option>
-    <option value="sepia">Sepia</option>
-    <option value="paper" selected>Paper</option>
-  </select>
+  <div class="sidebar-block">
+    <div class="sidebar-label">Tema Baca</div>
+    <div class="theme-grid" id="themeGrid">
+      <button class="theme-chip" data-theme="paper">Paper</button>
+      <button class="theme-chip" data-theme="light">Light</button>
+      <button class="theme-chip" data-theme="sepia">Sepia</button>
+      <button class="theme-chip" data-theme="dark">Dark</button>
+    </div>
+  </div>
 
-  <h4>Daftar Bab</h4>
-  <ul id="tocList"></ul>
+  <div class="sidebar-block">
+    <div class="sidebar-label">Daftar Bab</div>
+    <ul id="tocList" role="list"></ul>
+  </div>
 </aside>
 
-<main id="reader"></main>
+<!-- READER AREA -->
+<main id="reader" role="main"></main>
 
-<footer class="progress">
-  <span id="progressText">0%</span>
-  <div class="bar"><div id="progressBar"></div></div>
-</footer>
-
-<!-- FLOATING CONTROLS -->
-<div id="floatingControls">
-  <button id="zoomIn">A+</button>
-  <button id="zoomOut">A−</button>
-  <button id="ttsFloat" title="Play TTS">🔊</button>
-  <button id="ttsStop" title="Stop TTS">⏹</button>
+<!-- PROGRESS BAR -->
+<div class="reader-progress" id="progressWrap">
+  <div id="progressBar"></div>
 </div>
 
+<!-- FLOATING TOOLBAR -->
+<button id="nextChapterBtn" aria-label="Bab berikutnya" title="Bab berikutnya"></button>
+
+<div id="floatingControls" role="toolbar" aria-label="Kontrol baca">
+  <button id="zoomOut" aria-label="Perkecil teks">A−</button>
+  <button id="zoomIn" aria-label="Perbesar teks">A+</button>
+  <button id="ttsFloat" title="Baca otomatis">🔊</button>
+  <button id="ttsStop" title="Hentikan">⏹</button>
+</div>
+
+<!-- TRANSLATE -->
 <div id="translateBar">
-  <select id="translateLang">
-    <option value="">🌐 Original</option>
+  <select id="translateLang" aria-label="Pilih bahasa terjemahan">
+    <option value="">🌐 Asli</option>
     <option value="id">🇮🇩 Indonesia</option>
     <option value="en">🇬🇧 English</option>
     <option value="ja">🇯🇵 日本語</option>
@@ -69,7 +91,6 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-
 <script src="assets/js/state.js"></script>
 <script src="assets/js/reader-core.js"></script>
 <script src="assets/js/progress.js"></script>
@@ -78,6 +99,5 @@
 <script src="assets/js/translate.js"></script>
 <script src="assets/js/tts.js"></script>
 <script src="assets/js/ui.js"></script>
-
 </body>
 </html>
