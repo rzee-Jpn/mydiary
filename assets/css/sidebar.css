@@ -1,105 +1,148 @@
-/* SIDEBAR */
+/* ─── SIDEBAR CSS ─── */
+
 #sidebar {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 260px;
+  right: 0;
+  width: 300px;
   height: 100%;
   background: var(--surface);
-  padding: 1rem;
+  border-left: 1px solid var(--border-soft);
+  padding: 0;
   z-index: 350;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
-#sidebar h4 {
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  letter-spacing: .08em;
-  opacity: .7;
-  margin-top: 1rem;
+.sidebar-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .85rem 1rem;
+  border-bottom: 1px solid var(--border-soft);
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+  z-index: 1;
 }
 
-/* BOOK TITLE – FIX 1 */
-#bookTitle {
-  margin: .4rem 0 1rem;
-  padding: .6rem .7rem;
-  font-size: 15px;
+.sidebar-brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
   font-weight: 600;
-  line-height: 1.4;
-  background: rgba(0,0,0,.05);
-  border-radius: 8px;
+  color: var(--accent);
 }
 
-.theme-dark #bookTitle {
-  background: rgba(255,255,255,.08);
-}
-
-#sidebar select {
-  width: 100%;
-  padding: .55rem;
-  border-radius: 6px;
-}
-
-#closeSidebar {
-  position: absolute;
-  top: 12px;
-  right: 12px;
+.close-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+  color: var(--text);
   cursor: pointer;
+  font-size: .85rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .6;
+  transition: opacity .15s, background .15s;
+}
+.close-btn:hover { opacity: 1; background: var(--border-soft); }
+
+.sidebar-block {
+  padding: 1rem 1rem .5rem;
+  border-bottom: 1px solid var(--border-soft);
 }
 
-/* TOC – FIX 2 */
+.sidebar-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: .68rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  opacity: .5;
+  margin-bottom: .6rem;
+}
+
+.sidebar-book-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+/* THEME GRID */
+.theme-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .4rem;
+}
+
+.theme-chip {
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid var(--border-soft);
+  background: transparent;
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: .8rem;
+  cursor: pointer;
+  transition: all .15s;
+}
+.theme-chip:hover { border-color: var(--accent); color: var(--accent); }
+.theme-chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* TOC */
 #tocList {
-  padding-left: 0;
-  margin-top: .5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
 }
 
 #tocList li {
-  list-style: none;
-  padding: .55rem .6rem;
-  margin-bottom: .3rem;
-  border-radius: 6px;
+  padding: .6rem .7rem;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background .2s ease, transform .1s ease;
+  font-family: 'DM Sans', sans-serif;
+  font-size: .85rem;
+  line-height: 1.35;
+  color: var(--text);
+  transition: background .15s;
+  opacity: .8;
 }
 
 #tocList li:hover {
-  background: rgba(0,0,0,.06);
+  background: var(--border-soft);
+  opacity: 1;
 }
 
 #tocList li.active {
   background: var(--accent);
   color: #fff;
+  opacity: 1;
   font-weight: 500;
-}
-
-.theme-paper #tocList li.active {
-  background: rgba(0,0,0,.08);
-  color: inherit;
-  font-weight: 600;
-}
-
-/* HANDLE */
-#pullHandle {
-  position: fixed;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background: var(--accent);
-  color: #fff;
-  padding: .6rem .7rem;
-  border-radius: 0 8px 8px 0;
-  cursor: pointer;
-  z-index: 360;
 }
 
 /* OVERLAY */
 #sidebarOverlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,.35);
-  backdrop-filter: blur(2px);
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   z-index: 340;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: opacity .25s, visibility .25s;
 }
