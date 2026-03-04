@@ -822,7 +822,7 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/the-republicof-costa-rica-70725",
     "chapter_count": 23,
-    "updated": "2026-03-01",
+    "updated": "2026-03-04",
     "source": "Project Gutenberg"
   },
   {
@@ -849,7 +849,7 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/the-tariff-in-our-times-59763",
     "chapter_count": 16,
-    "updated": "2026-02-26",
+    "updated": "2026-03-04",
     "source": "Project Gutenberg"
   },
   {
@@ -868,6 +868,15 @@
     "path": "data/books/gutenberg/frenzied-finance-26330",
     "chapter_count": 88,
     "updated": "2026-03-02",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-argentinein-thetwentieth-century-45261",
+    "title": "THE ARGENTINEIN THETWENTIETH CENTURY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-argentinein-thetwentieth-century-45261",
+    "chapter_count": 31,
+    "updated": "2026-03-04",
     "source": "Project Gutenberg"
   }
 ]
