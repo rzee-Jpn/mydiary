@@ -1,215 +1,221 @@
-/* ===========================
-   STATE
-=========================== */
-const latestTitle = document.getElementById("latestTitle");
-const catalogEl = document.getElementById("catalog");
-const topListEl = document.getElementById("topList");
-const searchInput = document.getElementById("bookSearch");
-const categoryEl = document.getElementById("categoryList");
+/* ============================================================
+   PUSTAKA — LIBRARY JS
+   Clean browsing: search + category pills + single grid
+   ============================================================ */
 
-const prevBtn = document.getElementById("latestPrev");
-const nextBtn = document.getElementById("latestNext");
-const indicator = document.getElementById("latestIndicator");
+const catalogEl      = document.getElementById('catalog');
+const searchInput    = document.getElementById('bookSearch');
+const searchClear    = document.getElementById('searchClear');
+const categoryEl     = document.getElementById('categoryList');
+const sectionTitle   = document.getElementById('sectionTitle');
+const bookCountEl    = document.getElementById('bookCount');
+const emptyState     = document.getElementById('emptyState');
+const pagination     = document.getElementById('pagination');
+const prevBtn        = document.getElementById('latestPrev');
+const nextBtn        = document.getElementById('latestNext');
+const indicator      = document.getElementById('latestIndicator');
 
-let BOOKS = [];
+let BOOKS   = [];
 let current = [];
-let index = 0;
-const LIMIT = 6;
+let page    = 0;
+const PER_PAGE = 12;
 
-/* ===========================
-   REVEAL (smooth, OS-like)
-=========================== */
-const observer = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.classList.add("show");
-      observer.unobserve(e.target);
-    }
-  });
-},{threshold:0.12});
-
-function reveal(){
-  document.querySelectorAll(".reveal:not(.obs)").forEach(el=>{
-    el.classList.add("obs");
-    observer.observe(el);
-  });
-}
-
-/* ===========================
-   COVER CACHE
-=========================== */
+/* ─── COVER ─── */
 const coverCache = new Map();
 
-function svgCover(title){
-  return `data:image/svg+xml;base64,${btoa(`
-<svg xmlns='http://www.w3.org/2000/svg' width='300' height='450'>
-<rect width='100%' height='100%' rx='24' fill='#2b2418'/>
-<text x='50%' y='50%' fill='#f5f1ea' font-size='22'
- text-anchor='middle' dominant-baseline='middle'
- font-family='IBM Plex Serif, serif'>${title}</text>
-</svg>`)}`;
+function svgCover(title) {
+  const short = title.length > 28 ? title.slice(0, 28) + '…' : title;
+  const words = short.split(' ');
+  // wrap into ~2 lines for the SVG
+  const line1 = words.slice(0, Math.ceil(words.length / 2)).join(' ');
+  const line2 = words.slice(Math.ceil(words.length / 2)).join(' ');
+  const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='120' height='174'>
+    <defs>
+      <linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
+        <stop offset='0%' stop-color='#1e1a14'/>
+        <stop offset='100%' stop-color='#2a2318'/>
+      </linearGradient>
+    </defs>
+    <rect width='120' height='174' rx='6' fill='url(#g)'/>
+    <rect x='8' y='8' width='104' height='158' rx='4' fill='none' stroke='rgba(201,169,106,.3)' stroke-width='.8'/>
+    <text x='60' y='72' fill='rgba(201,169,106,.7)' font-size='22' text-anchor='middle' font-family='serif'>❧</text>
+    <text x='60' y='100' fill='rgba(240,235,224,.8)' font-size='9' text-anchor='middle' font-family='serif'>${line1}</text>
+    <text x='60' y='113' fill='rgba(240,235,224,.8)' font-size='9' text-anchor='middle' font-family='serif'>${line2}</text>
+  </svg>`;
+  return `data:image/svg+xml;base64,${btoa(unescape(encodeURIComponent(svg)))}`;
 }
 
-async function cover(book){
-  if(coverCache.has(book.path)) return coverCache.get(book.path);
-  try{
-    const r = await fetch(`${book.path}/cover.jpg`,{method:"HEAD"});
-    if(r.ok){
+async function getCover(book) {
+  if (coverCache.has(book.path)) return coverCache.get(book.path);
+  try {
+    const r = await fetch(`${book.path}/cover.jpg`, { method: 'HEAD' });
+    if (r.ok) {
       coverCache.set(book.path, `${book.path}/cover.jpg`);
       return `${book.path}/cover.jpg`;
     }
-  }catch{}
+  } catch { /* no cover.jpg */ }
   const fallback = svgCover(book.title);
   coverCache.set(book.path, fallback);
   return fallback;
 }
 
-/* ===========================
-   LOAD DATA
-=========================== */
-fetch("data/library.json")
-.then(r=>r.json())
-.then(data=>{
-  BOOKS = data.sort((a,b)=>new Date(b.created)-new Date(a.created));
-  current = BOOKS;
-  renderTop();
-  renderLatest();
-  renderCategories();
-  renderSchema();
+/* ─── LOAD DATA ─── */
+fetch('data/library.json')
+  .then(r => r.json())
+  .then(data => {
+    // Support single object, array, or {books:[...]} wrapper
+    const raw = Array.isArray(data) ? data : data.books ? data.books : [data];
+    BOOKS = raw.sort((a, b) => new Date(b.created) - new Date(a.created));
+    current = BOOKS;
+    renderCategories();
+    renderGrid();
+    renderSchema();
+  })
+  .catch(() => {
+    emptyState.style.display = '';
+    emptyState.querySelector('p:last-child').textContent = 'Gagal memuat data perpustakaan.';
+  });
+
+/* ─── SEARCH ─── */
+searchInput.addEventListener('input', e => {
+  const q = e.target.value.trim().toLowerCase();
+  searchClear.classList.toggle('visible', q.length > 0);
+  applyFilter(q, activeCategory());
 });
 
-/* ===========================
-   SEARCH
-=========================== */
-searchInput.addEventListener("input", e=>{
-  const q = e.target.value.toLowerCase();
-  current = BOOKS.filter(b =>
-    b.title.toLowerCase().includes(q) ||
-    (b.author||"").toLowerCase().includes(q) ||
-    (b.tags||[]).join(" ").toLowerCase().includes(q)
-  );
-  index = 0;
-  latestTitle.textContent = q ? `Hasil Pencarian` : `Post Terbaru`;
-  renderLatest();
+searchClear.addEventListener('click', () => {
+  searchInput.value = '';
+  searchClear.classList.remove('visible');
+  applyFilter('', activeCategory());
+  searchInput.focus();
 });
 
-/* ===========================
-   RENDER LIST
-=========================== */
-async function renderList(el, items){
-  el.innerHTML = "";
-  for(const b of items){
-    const img = await cover(b);
-    const a = document.createElement("a");
-    a.href = `reader.html?path=${encodeURIComponent(b.path.replace(/\.\./g,""))}`;
-    a.className = "post-embed reveal";
-    a.innerHTML = `
-      <div class="post-thumb"><img src="${img}" alt=""></div>
-      <div class="post-info">
-        <div class="post-title">${b.title}</div>
-        <div class="post-meta">${b.author || "Unknown"}</div>
-        <div class="post-tags">
-          ${(b.tags||[]).slice(0,2).map(t=>`<span class="badge">${t}</span>`).join("")}
-        </div>
-      </div>`;
-    el.appendChild(a);
+/* ─── CATEGORY FILTER ─── */
+function activeCategory() {
+  const active = categoryEl.querySelector('.pill.active');
+  return active && !active.dataset.all ? active.dataset.cat : null;
+}
+
+function applyFilter(q, cat) {
+  current = BOOKS.filter(b => {
+    const matchQ = !q
+      || b.title.toLowerCase().includes(q)
+      || (b.author || '').toLowerCase().includes(q)
+      || (b.tags || []).join(' ').toLowerCase().includes(q);
+    const matchCat = !cat || (b.categories || []).includes(cat);
+    return matchQ && matchCat;
+  });
+  page = 0;
+  // Update label
+  if (q) {
+    sectionTitle.textContent = 'Hasil Pencarian';
+  } else if (cat) {
+    sectionTitle.textContent = cat;
+  } else {
+    sectionTitle.textContent = 'Koleksi';
   }
-  reveal();
+  renderGrid();
 }
 
-/* ===========================
-   TOP
-=========================== */
-function renderTop(){
-  const top = [...BOOKS]
-    .sort((a,b)=>(b.views||0)-(a.views||0))
-    .slice(0,3);
-  renderList(topListEl, top);
-}
+function renderCategories() {
+  const counts = {};
+  BOOKS.forEach(b => (b.categories || []).forEach(c => counts[c] = (counts[c] || 0) + 1));
 
-/* ===========================
-   LATEST + PAGINATION
-=========================== */
-function renderLatest(){
-  const slice = current.slice(index,index+LIMIT);
-  renderList(catalogEl, slice);
+  const existing = categoryEl.querySelector('[data-all]');
+  // clear all except "Semua" if it exists
+  categoryEl.innerHTML = '';
+  const all = document.createElement('button');
+  all.className = 'pill active';
+  all.dataset.all = '';
+  all.textContent = 'Semua';
+  categoryEl.appendChild(all);
 
-  const total = Math.max(1, Math.ceil(current.length / LIMIT));
-  indicator.textContent = `${index/LIMIT+1} / ${total}`;
+  Object.entries(counts)
+    .sort((a, b) => b[1] - a[1])
+    .forEach(([cat, count]) => {
+      const btn = document.createElement('button');
+      btn.className = 'pill';
+      btn.dataset.cat = cat;
+      btn.textContent = cat;
+      categoryEl.appendChild(btn);
+    });
 
-  prevBtn.disabled = index === 0;
-  nextBtn.disabled = index + LIMIT >= current.length;
-}
-
-prevBtn.onclick = ()=>{ index -= LIMIT; renderLatest(); }
-nextBtn.onclick = ()=>{ index += LIMIT; renderLatest(); }
-
-/* ===========================
-   CATEGORY
-=========================== */
-function renderCategories(){
-  const map = {};
-  BOOKS.forEach(b =>
-    (b.categories||[]).forEach(c => map[c]=(map[c]||0)+1)
-  );
-
-  categoryEl.innerHTML =
-    `<button class="cat-btn active" data-all>All</button>` +
-    Object.keys(map).map(c =>
-      `<button class="cat-btn" data-cat="${c}">${c}</button>`
-    ).join("");
-
-  categoryEl.querySelectorAll("button").forEach(btn=>{
-    btn.onclick = ()=>{
-      categoryEl.querySelectorAll(".cat-btn").forEach(b=>b.classList.remove("active"));
-      btn.classList.add("active");
-
-      if(btn.dataset.all !== undefined){
-        current = BOOKS;
-        latestTitle.textContent = "Post Terbaru";
-      }else{
-        current = BOOKS.filter(b => (b.categories||[]).includes(btn.dataset.cat));
-        latestTitle.textContent = btn.dataset.cat;
-      }
-
-      index = 0;
-      renderLatest();
-    };
+  categoryEl.addEventListener('click', e => {
+    const btn = e.target.closest('.pill');
+    if (!btn) return;
+    categoryEl.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    applyFilter(searchInput.value.trim().toLowerCase(), btn.dataset.all !== undefined ? null : btn.dataset.cat);
   });
 }
 
-/* ===========================
-   STRUCTURED DATA
-=========================== */
-function renderSchema(){
-  const el = document.getElementById("schema-books");
-  el.textContent = JSON.stringify({
-    "@context":"https://schema.org",
-    "@type":"ItemList",
-    "itemListElement": BOOKS.map((b,i)=>({
-      "@type":"ListItem",
-      "position": i+1,
-      "name": b.title
+/* ─── RENDER GRID ─── */
+async function renderGrid() {
+  const total = current.length;
+  const totalPages = Math.max(1, Math.ceil(total / PER_PAGE));
+  const slice = current.slice(page * PER_PAGE, (page + 1) * PER_PAGE);
+
+  // Update count
+  bookCountEl.textContent = total === BOOKS.length
+    ? `${total} buku`
+    : `${total} dari ${BOOKS.length}`;
+
+  // Empty state
+  emptyState.style.display = total === 0 ? '' : 'none';
+
+  // Pagination visibility
+  pagination.style.display = totalPages > 1 ? '' : 'none';
+  prevBtn.disabled = page === 0;
+  nextBtn.disabled = page >= totalPages - 1;
+  indicator.textContent = `${page + 1} / ${totalPages}`;
+
+  // Clear
+  catalogEl.innerHTML = '';
+
+  for (let i = 0; i < slice.length; i++) {
+    const b = slice[i];
+    const img = await getCover(b);
+    const a = document.createElement('a');
+    a.href = `reader.html?path=${encodeURIComponent(b.path)}`;
+    a.className = 'book-card';
+    a.style.animationDelay = `${i * 40}ms`;
+    a.innerHTML = `
+      <div class="book-cover">
+        <img src="${img}" alt="" loading="lazy">
+      </div>
+      <div class="book-info">
+        <div class="book-title">${escHtml(b.title)}</div>
+        <div class="book-author">${escHtml(b.author || 'Penulis tidak diketahui')}</div>
+        <div class="book-tags">
+          ${(b.tags || []).slice(0, 2).map(t => `<span class="tag">${escHtml(t)}</span>`).join('')}
+        </div>
+      </div>`;
+    catalogEl.appendChild(a);
+  }
+}
+
+prevBtn.onclick = () => { page--; renderGrid(); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+nextBtn.onclick = () => { page++; renderGrid(); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+
+/* ─── UTILS ─── */
+function escHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+/* ─── SCHEMA ─── */
+function renderSchema() {
+  document.getElementById('schema-books').textContent = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: BOOKS.map((b, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: b.title,
+      author: b.author
     }))
   });
 }
-
-
-/* ===========================
-   DAILY QUOTE
-=========================== */
-const QUOTES = [
-  { text:"Ilmu bukan untuk disimpan, tapi untuk dipertanggungjawabkan.", author:"Cak Nun" },
-  { text:"Yang paling mahal dari pengetahuan adalah kejujuran.", author:"—" },
-  { text:"Membaca adalah cara paling sunyi untuk memahami dunia.", author:"—" },
-  { text:"Arsip adalah ingatan yang diberi rumah.", author:"Pustaka" },
-  { text:"Yang tidak dicatat, akan dilupakan.", author:"—" }
-];
-
-function renderDailyQuote(){
-  const q = QUOTES[new Date().getDate() % QUOTES.length];
-  document.getElementById("quoteText").textContent = q.text;
-  document.getElementById("quoteAuthor").textContent = q.author || "";
-}
-
-renderDailyQuote();
