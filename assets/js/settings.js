@@ -1,11 +1,20 @@
-const select = document.getElementById("themeSelect");
-if (select) {
-  const saved = localStorage.getItem("theme") || "paper";
-  document.body.className = "theme-" + saved;
-  select.value = saved;
+/* ─── SETTINGS — Theme ─── */
+(() => {
+  const THEMES  = ['light', 'dark', 'sepia', 'paper'];
+  const saved   = localStorage.getItem('reader_theme') || 'paper';
+  const validTheme = THEMES.includes(saved) ? saved : 'paper';
 
-  select.onchange = e => {
-    document.body.className = "theme-" + e.target.value;
-    localStorage.setItem("theme", e.target.value);
-  };
-}
+  function applyTheme(t) {
+    document.body.className = `theme-${t}`;
+    localStorage.setItem('reader_theme', t);
+    document.querySelectorAll('.theme-chip').forEach(chip => {
+      chip.classList.toggle('active', chip.dataset.theme === t);
+    });
+  }
+
+  applyTheme(validTheme);
+
+  document.querySelectorAll('.theme-chip').forEach(chip => {
+    chip.addEventListener('click', () => applyTheme(chip.dataset.theme));
+  });
+})();
