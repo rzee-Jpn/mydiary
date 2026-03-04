@@ -3,89 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Pustaka — Private Archive</title>
-
-  <!-- SEO -->
   <meta name="description" content="Pustaka adalah arsip pengetahuan pribadi.">
-  <meta name="keywords" content="pustaka, arsip, buku, knowledge">
   <meta name="author" content="Zhie">
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/library.css">
-
-  <!-- WebSite Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Pustaka",
-    "url": "https://books.anglumea.com"
-  }
-  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Pustaka","url":"https://books.anglumea.com"}</script>
 </head>
-
 <body>
 
 <header class="lib-header">
-  <img src="img/logo.png" alt="Logo Pustaka">
-  <div class="title">
-    <h1>Pustaka</h1>
-    <small>Private Knowledge Archive</small>
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-glyph">❧</span>
+      <span class="brand-name">Pustaka</span>
+    </div>
+    <span class="brand-sub">Private Archive</span>
   </div>
 </header>
 
 <main>
 
-  <!-- SEARCH -->
-  <div class="search-bar">
-    <label for="bookSearch" class="sr-only">Cari arsip</label>
-    <input id="bookSearch" placeholder="Cari judul, penulis, atau tag…" autocomplete="off">
-  </div>
-  
-    <div class="daily-quote reveal" id="dailyQuote">
-  <p id="quoteText"></p>
-  <span id="quoteAuthor"></span>
-</div>
-
-  <!-- TOP -->
-  <section class="reveal">
-    <h2>Top Mingguan</h2>
-    <div id="topList" class="embed-list"></div>
-  </section>
-
-  <!-- LATEST -->
-  <section class="reveal">
-    <h2 id="latestTitle">Post Terbaru</h2>
-    <div id="catalog" class="embed-list"></div>
-
-    <div class="latest-nav">
-      <button id="latestPrev" aria-label="Sebelumnya" disabled>←</button>
-      <span id="latestIndicator"></span>
-      <button id="latestNext" aria-label="Berikutnya">→</button>
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Arsip Pengetahuan</p>
+      <h1 class="hero-title">Temukan sesuatu<br>untuk dibaca.</h1>
+      <div class="search-box">
+        <span class="search-lens">⌕</span>
+        <input id="bookSearch" class="search-input"
+          placeholder="Judul, penulis, atau topik…"
+          autocomplete="off" spellcheck="false">
+        <button class="search-clear" id="searchClear" aria-label="Hapus pencarian">✕</button>
+      </div>
+    </div>
+    <div class="hero-deco" aria-hidden="true">
+      <span>01</span><span>02</span><span>03</span><span>04</span>
     </div>
   </section>
 
-  <!-- CATEGORY -->
-  <section class="reveal">
-    <h2>Kategori</h2>
-    <div id="categoryList" class="category-list"></div>
+  <!-- CATEGORY PILLS -->
+  <div class="filter-bar">
+    <div class="filter-scroll" id="categoryList">
+      <button class="pill active" data-all>Semua</button>
+    </div>
+  </div>
+
+  <!-- BOOKS -->
+  <section class="books-section">
+    <div class="books-header">
+      <h2 class="books-label" id="sectionTitle">Koleksi</h2>
+      <span class="books-count" id="bookCount"></span>
+    </div>
+
+    <div id="catalog" class="book-grid"></div>
+
+    <div class="empty-state" id="emptyState" style="display:none">
+      <p class="empty-glyph">◎</p>
+      <p>Tidak ada buku yang cocok.</p>
+    </div>
+
+    <nav class="pagination" id="pagination" style="display:none">
+      <button id="latestPrev" class="pg-btn" disabled aria-label="Halaman sebelumnya">←</button>
+      <span id="latestIndicator" class="pg-indicator"></span>
+      <button id="latestNext" class="pg-btn" aria-label="Halaman berikutnya">→</button>
+    </nav>
   </section>
 
 </main>
 
-<!-- ItemList Schema (filled by JS) -->
-<script id="schema-books" type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "itemListElement": []
-}
-</script>
+<footer class="lib-footer">
+  <span class="footer-glyph">❧</span> Pustaka · Private Archive
+</footer>
 
+<script id="schema-books" type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","itemListElement":[]}</script>
 <script src="assets/js/library.js"></script>
 </body>
 </html>
