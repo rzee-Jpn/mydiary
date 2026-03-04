@@ -1,130 +1,101 @@
-/* =========================
-   SIDEBAR + UI CONTROLS
-========================= */
+/* ─── UI.JS — Sidebar, Font Size, Zen Mode ─── */
 
-const sidebar = document.getElementById("sidebar");
-const handle = document.getElementById("pullHandle");
-const closeBtn = document.getElementById("closeSidebar");
-const overlay = document.getElementById("sidebarOverlay");
+const sidebar        = document.getElementById('sidebar');
+const overlay        = document.getElementById('sidebarOverlay');
+const openBtn        = document.getElementById('openSidebarBtn');
+const closeBtn       = document.getElementById('closeSidebar');
+const reader         = document.getElementById('reader');
+const zoomIn         = document.getElementById('zoomIn');
+const zoomOut        = document.getElementById('zoomOut');
 
-const reader = document.getElementById("reader");
-const zoomIn = document.getElementById("zoomIn");
-const zoomOut = document.getElementById("zoomOut");
-
-const SIDEBAR_DURATION = 0.35;
-
-/* =========================
-   INIT
-========================= */
-gsap.set(sidebar, { x: "-100%" });
-gsap.set(overlay, { autoAlpha: 0 });
-gsap.set(handle, { autoAlpha: 1 });
-
-/* =========================
-   SIDEBAR OPEN
-========================= */
+/* ─── SIDEBAR (pure CSS transition, no GSAP needed) ─── */
 function openSidebar() {
-  gsap.to(sidebar, {
-    x: 0,
-    duration: SIDEBAR_DURATION,
-    ease: "power2.out"
-  });
-
-  gsap.to(overlay, {
-    autoAlpha: 1,
-    duration: 0.25,
-    pointerEvents: "auto"
-  });
-
-  gsap.to(handle, {
-    autoAlpha: 0,
-    duration: 0.2
-  });
+  sidebar.classList.add('open');
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
 }
 
-/* =========================
-   SIDEBAR CLOSE
-   (EXPOSED GLOBAL)
-========================= */
 function closeSidebar() {
-  gsap.to(sidebar, {
-    x: "-100%",
-    duration: SIDEBAR_DURATION,
-    ease: "power2.in"
-  });
-
-  gsap.to(overlay, {
-    autoAlpha: 0,
-    duration: 0.25,
-    pointerEvents: "none"
-  });
-
-  gsap.to(handle, {
-    autoAlpha: 1,
-    duration: 0.2,
-    delay: 0.15
-  });
+  sidebar.classList.remove('open');
+  overlay.classList.remove('open');
+  document.body.style.overflow = '';
 }
 
-/* ⬅️ PENTING: bikin global */
 window.closeSidebar = closeSidebar;
 
-/* =========================
-   EVENTS
-========================= */
-handle.addEventListener("click", openSidebar);
-closeBtn.addEventListener("click", closeSidebar);
-overlay.addEventListener("click", closeSidebar);
+openBtn?.addEventListener('click', openSidebar);
+closeBtn?.addEventListener('click', closeSidebar);
+overlay?.addEventListener('click', closeSidebar);
 
-/* =========================
-   FONT SIZE CONTROL
-========================= */
-let size = parseFloat(localStorage.getItem("fontSize")) || 1.05;
+// Keyboard: Escape closes sidebar
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeSidebar();
+});
 
-function applyFont() {
+/* ─── APPLY SIDEBAR OPEN STYLES via CSS class ─── */
+// Inject into sidebar.css behavior
+const sidebarStyle = document.createElement('style');
+sidebarStyle.textContent = `
+  #sidebar {
+    transform: translateX(100%);
+    transition: transform .32s cubic-bezier(.4,0,.2,1);
+  }
+  #sidebar.open {
+    transform: translateX(0);
+  }
+  #sidebarOverlay {
+    transition: opacity .25s, visibility .25s;
+  }
+  #sidebarOverlay.open {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+`;
+document.head.appendChild(sidebarStyle);
+
+/* ─── FONT SIZE ─── */
+let fontSize = parseFloat(localStorage.getItem('reader_fontSize')) || 1.05;
+
+function applyFontSize() {
   if (!reader) return;
-  reader.style.fontSize = size + "rem";
-  localStorage.setItem("fontSize", size);
+  reader.style.fontSize = fontSize + 'rem';
+  localStorage.setItem('reader_fontSize', fontSize);
 }
 
-zoomIn?.addEventListener("click", () => {
-  size = Math.min(size + 0.1, 1.8);
-  applyFont();
+zoomIn?.addEventListener('click', () => {
+  fontSize = Math.min(fontSize + 0.1, 1.8);
+  applyFontSize();
 });
 
-zoomOut?.addEventListener("click", () => {
-  size = Math.max(size - 0.1, 0.8);
-  applyFont();
+zoomOut?.addEventListener('click', () => {
+  fontSize = Math.max(fontSize - 0.1, 0.8);
+  applyFontSize();
 });
 
-applyFont();
+applyFontSize();
 
-/* ========================= ZEN MODE (DOUBLE TAP) ========================= */
+/* ─── ZEN MODE (double-tap) ─── */
 (() => {
   if (!reader) return;
-
-  const KEY = "reader_zen_mode";
   let lastTap = 0;
 
   function setZen(on) {
-    document.body.classList.toggle("zen-mode", on);
-    localStorage.setItem(KEY, on ? "1" : "0");
+    document.body.classList.toggle('zen-mode', on);
+    try { localStorage.setItem('reader_zen', on ? '1' : '0'); } catch { /* */ }
   }
 
-  // restore state
-  if (localStorage.getItem(KEY) === "1") {
-    setZen(true);
-  }
+  try {
+    if (localStorage.getItem('reader_zen') === '1') setZen(true);
+  } catch { /* */ }
 
-  reader.addEventListener("touchend", (e) => {
+  reader.addEventListener('touchend', e => {
     const now = Date.now();
     const delta = now - lastTap;
-
     if (delta > 80 && delta < 300) {
-      setZen(!document.body.classList.contains("zen-mode"));
+      setZen(!document.body.classList.contains('zen-mode'));
       e.preventDefault();
     }
-
     lastTap = now;
   });
 })();
