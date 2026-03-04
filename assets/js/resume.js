@@ -1,36 +1,41 @@
+/* ─── RESUME — Save & restore scroll per chapter ─── */
 (() => {
-  const reader = document.getElementById("reader");
+  const reader = document.getElementById('reader');
   if (!reader) return;
 
-  const params = new URLSearchParams(location.search);
-  const bookPath = params.get("path");
+  const bookPath = new URLSearchParams(location.search).get('path');
   if (!bookPath) return;
 
-  function key() {
-    const chapter = document
-      .querySelector("#tocList li.active")
-      ?.textContent || "chapter";
-    return `resume:${bookPath}:${chapter}`;
-  }
-
-  function restore() {
-    const y = localStorage.getItem(key());
-    if (y) {
-      requestAnimationFrame(() => {
-        window.scrollTo(0, parseInt(y, 10));
-      });
-    }
+  function scrollKey() {
+    const idx = typeof window.__getChapterIndex === 'function'
+      ? window.__getChapterIndex()
+      : 0;
+    return `resume_scroll:${bookPath}:${idx}`;
   }
 
   function save() {
-    localStorage.setItem(key(), window.scrollY);
+    try { localStorage.setItem(scrollKey(), window.scrollY); } catch { /* */ }
   }
 
-  window.addEventListener("scroll", () => {
-    window.requestIdleCallback(save);
+  function restore() {
+    try {
+      const y = parseInt(localStorage.getItem(scrollKey()), 10);
+      if (y > 0) requestAnimationFrame(() => window.scrollTo(0, y));
+    } catch { /* */ }
+  }
+
+  // Save on scroll (throttled) and before leaving
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestIdleCallback
+        ? window.requestIdleCallback(save)
+        : setTimeout(save, 200);
+      ticking = true;
+      setTimeout(() => { ticking = false; }, 200);
+    }
   });
 
-  window.addEventListener("beforeunload", save);
-
-  document.addEventListener("chapter:loaded", restore);
+  window.addEventListener('beforeunload', save);
+  document.addEventListener('chapter:loaded', restore);
 })();
