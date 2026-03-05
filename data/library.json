@@ -887,5 +887,32 @@
     "chapter_count": 72,
     "updated": "2026-03-04",
     "source": "Project Gutenberg"
+  },
+  {
+    "id": "adam-smith-64753",
+    "title": "ADAM SMITH",
+    "author": "Francis W. Hirst",
+    "path": "data/books/gutenberg/adam-smith-64753",
+    "chapter_count": 14,
+    "updated": "2026-03-05",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-principles-of-economics-40077",
+    "title": "THE PRINCIPLES OF ECONOMICS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-principles-of-economics-40077",
+    "chapter_count": 66,
+    "updated": "2026-03-05",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "illustrationsofpolitical-economy-71544",
+    "title": "ILLUSTRATIONSOFPOLITICAL ECONOMY.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/illustrationsofpolitical-economy-71544",
+    "chapter_count": 31,
+    "updated": "2026-03-05",
+    "source": "Project Gutenberg"
   }
 ]

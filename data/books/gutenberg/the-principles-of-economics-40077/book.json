@@ -1,0 +1,339 @@
+{
+  "id": "the-principles-of-economics-40077",
+  "title": "THE PRINCIPLES OF ECONOMICS",
+  "author": "Unknown",
+  "word_count": 197362,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofThe Principles of Economics, with Applications to Practical Problems",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "FRANK A. FETTER, PH.D.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "CONTENTS",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "PREFACE",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "THE NATURE AND PURPOSE OF POLITICAL ECONOMY",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "ECONOMIC MOTIVES",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "WEALTH AND WELFARE",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "THE NATURE OF DEMAND",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "EXCHANGE IN A MARKET",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "PSYCHIC INCOME",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "WEALTH AND ITS INDIRECT USES",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "THE RENTING CONTRACT",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "THE LAW OF DIMINISHING RETURNS",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "THE THEORY OF RENT: THE MARKET VALUE OF THE USUFRUCT",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "REPAIR, DEPRECIATION, AND DESTRUCTION OF WEALTH: RELATION TO ITS SALE\r\nAND RENT",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "INCREASE OF RENT-BEARERS AND OF RENTS",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "MONEY AS A TOOL IN EXCHANGE",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "THE MONEY ECONOMY AND THE CONCEPT OF CAPITAL",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "THE CAPITALIZATION OF ALL FORMS OF RENT",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "INTEREST ON MONEY LOANS",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "THE THEORY OF TIME-VALUE",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "RELATIVELY FIXED AND RELATIVELY INCREASABLE FORMS OF CAPITAL",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "SAVING AND PRODUCTION AS AFFECTED BY THE RATE OF INTEREST",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "THE VALUE OF HUMAN SERVICES",
+      "file": "chapters/ch24.html"
+    },
+    {
+      "id": "ch25",
+      "title": "LABOR AND CLASSES OF LABORERS",
+      "file": "chapters/ch25.html"
+    },
+    {
+      "id": "ch26",
+      "title": "THE SUPPLY OF LABOR",
+      "file": "chapters/ch26.html"
+    },
+    {
+      "id": "ch27",
+      "title": "CONDITIONS FOR EFFICIENT LABOR",
+      "file": "chapters/ch27.html"
+    },
+    {
+      "id": "ch28",
+      "title": "THE LAW OF WAGES",
+      "file": "chapters/ch28.html"
+    },
+    {
+      "id": "ch29",
+      "title": "THE RELATION OF LABOR TO VALUE",
+      "file": "chapters/ch29.html"
+    },
+    {
+      "id": "ch30",
+      "title": "THE WAGE SYSTEM AND ITS RESULTS",
+      "file": "chapters/ch30.html"
+    },
+    {
+      "id": "ch31",
+      "title": "MACHINERY AND LABOR",
+      "file": "chapters/ch31.html"
+    },
+    {
+      "id": "ch32",
+      "title": "TRADE-UNIONS",
+      "file": "chapters/ch32.html"
+    },
+    {
+      "id": "ch33",
+      "title": "PRODUCTION AND THE COMBINATION OF THE FACTORS",
+      "file": "chapters/ch33.html"
+    },
+    {
+      "id": "ch34",
+      "title": "BUSINESS ORGANIZATION AND THE ENTERPRISER'S FUNCTION",
+      "file": "chapters/ch34.html"
+    },
+    {
+      "id": "ch35",
+      "title": "COST OF PRODUCTION",
+      "file": "chapters/ch35.html"
+    },
+    {
+      "id": "ch36",
+      "title": "THE LAW OF PROFITS",
+      "file": "chapters/ch36.html"
+    },
+    {
+      "id": "ch37",
+      "title": "PROFIT-SHARING, PRODUCERS' AND CONSUMERS' COÖPERATION",
+      "file": "chapters/ch37.html"
+    },
+    {
+      "id": "ch38",
+      "title": "MONOPOLY PROFITS",
+      "file": "chapters/ch38.html"
+    },
+    {
+      "id": "ch39",
+      "title": "GROWTH OF TRUSTS AND COMBINATIONS IN THE UNITED STATES",
+      "file": "chapters/ch39.html"
+    },
+    {
+      "id": "ch40",
+      "title": "EFFECT OF TRUSTS ON PRICES",
+      "file": "chapters/ch40.html"
+    },
+    {
+      "id": "ch41",
+      "title": "GAMBLING, SPECULATION, AND PROMOTERS' PROFITS",
+      "file": "chapters/ch41.html"
+    },
+    {
+      "id": "ch42",
+      "title": "CRISES AND INDUSTRIAL DEPRESSIONS",
+      "file": "chapters/ch42.html"
+    },
+    {
+      "id": "ch43",
+      "title": "THE SOCIAL ASPECTS OF VALUE",
+      "file": "chapters/ch43.html"
+    },
+    {
+      "id": "ch44",
+      "title": "PRIVATE PROPERTY AND INHERITANCE",
+      "file": "chapters/ch44.html"
+    },
+    {
+      "id": "ch45",
+      "title": "INCOME AND SOCIAL SERVICE",
+      "file": "chapters/ch45.html"
+    },
+    {
+      "id": "ch46",
+      "title": "WASTE AND LUXURY",
+      "file": "chapters/ch46.html"
+    },
+    {
+      "id": "ch47",
+      "title": "REACTION OF CONSUMPTION ON PRODUCTION",
+      "file": "chapters/ch47.html"
+    },
+    {
+      "id": "ch48",
+      "title": "DISTRIBUTION OF THE SOCIAL INCOME",
+      "file": "chapters/ch48.html"
+    },
+    {
+      "id": "ch49",
+      "title": "SURVEY OF THE THEORY OF VALUE",
+      "file": "chapters/ch49.html"
+    },
+    {
+      "id": "ch50",
+      "title": "FREE COMPETITION AND STATE ACTION",
+      "file": "chapters/ch50.html"
+    },
+    {
+      "id": "ch51",
+      "title": "USE, COINAGE, AND VALUE OF MONEY",
+      "file": "chapters/ch51.html"
+    },
+    {
+      "id": "ch52",
+      "title": "TOKEN COINAGE AND GOVERNMENT PAPER MONEY",
+      "file": "chapters/ch52.html"
+    },
+    {
+      "id": "ch53",
+      "title": "THE STANDARD OF DEFERRED PAYMENTS",
+      "file": "chapters/ch53.html"
+    },
+    {
+      "id": "ch54",
+      "title": "BANKING AND CREDIT",
+      "file": "chapters/ch54.html"
+    },
+    {
+      "id": "ch55",
+      "title": "TAXATION IN ITS RELATION TO VALUE",
+      "file": "chapters/ch55.html"
+    },
+    {
+      "id": "ch56",
+      "title": "THE GENERAL THEORY OF INTERNATIONAL TRADE",
+      "file": "chapters/ch56.html"
+    },
+    {
+      "id": "ch57",
+      "title": "THE PROTECTIVE TARIFF",
+      "file": "chapters/ch57.html"
+    },
+    {
+      "id": "ch58",
+      "title": "OTHER PROTECTIVE SOCIAL AND LABOR LEGISLATION",
+      "file": "chapters/ch58.html"
+    },
+    {
+      "id": "ch59",
+      "title": "PUBLIC OWNERSHIP OF INDUSTRY",
+      "file": "chapters/ch59.html"
+    },
+    {
+      "id": "ch60",
+      "title": "RAILROADS AND INDUSTRY",
+      "file": "chapters/ch60.html"
+    },
+    {
+      "id": "ch61",
+      "title": "THE PUBLIC NATURE OF RAILROADS",
+      "file": "chapters/ch61.html"
+    },
+    {
+      "id": "ch62",
+      "title": "PUBLIC POLICY AS TO CONTROL OF INDUSTRY",
+      "file": "chapters/ch62.html"
+    },
+    {
+      "id": "ch63",
+      "title": "FUTURE TREND OF VALUES",
+      "file": "chapters/ch63.html"
+    },
+    {
+      "id": "ch64",
+      "title": "QUESTIONS AND CRITICAL NOTES",
+      "file": "chapters/ch64.html"
+    },
+    {
+      "id": "ch65",
+      "title": "INDEX",
+      "file": "chapters/ch65.html"
+    },
+    {
+      "id": "ch66",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch66.html"
+    }
+  ],
+  "updated": "2026-03-05"
+}
