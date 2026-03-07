@@ -923,5 +923,32 @@
     "chapter_count": 11,
     "updated": "2026-03-06",
     "source": "Project Gutenberg"
+  },
+  {
+    "id": "series-iibulletin-no-1georgetown-universityschool-offoreign-servicevenezuelaan-economic-report-presented-by-studentsof-the-school-of-foreign-serviceas-an-aid-to-the-foreign-tradeof-the-united-states-49073",
+    "title": "Series IIBulletin No. 1Georgetown UniversitySCHOOL OFFOREIGN SERVICEVENEZUELAAN ECONOMIC REPORT PRESENTED BY STUDENTSOF THE SCHOOL OF FOREIGN SERVICEAS AN AID TO THE FOREIGN TRADEOF THE UNITED STATES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/series-iibulletin-no-1georgetown-universityschool-offoreign-servicevenezuelaan-economic-report-presented-by-studentsof-the-school-of-foreign-serviceas-an-aid-to-the-foreign-tradeof-the-united-states-49073",
+    "chapter_count": 19,
+    "updated": "2026-03-07",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "unknown-71282",
+    "title": "Unknown",
+    "author": "Willem Adriaan Bonger (1876–1940)",
+    "path": "data/books/gutenberg/unknown-71282",
+    "chapter_count": 111,
+    "updated": "2026-03-07",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "chronicles-and-charactersof-thestock-exchange-70656",
+    "title": "CHRONICLES AND CHARACTERSOF THESTOCK EXCHANGE.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/chronicles-and-charactersof-thestock-exchange-70656",
+    "chapter_count": 30,
+    "updated": "2026-03-07",
+    "source": "Project Gutenberg"
   }
 ]
