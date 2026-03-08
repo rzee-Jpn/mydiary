@@ -912,7 +912,7 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/illustrationsofpolitical-economy-71544",
     "chapter_count": 31,
-    "updated": "2026-03-06",
+    "updated": "2026-03-08",
     "source": "Project Gutenberg"
   },
   {
@@ -939,7 +939,7 @@
     "author": "Willem Adriaan Bonger (1876–1940)",
     "path": "data/books/gutenberg/unknown-71282",
     "chapter_count": 111,
-    "updated": "2026-03-07",
+    "updated": "2026-03-08",
     "source": "Project Gutenberg"
   },
   {
@@ -949,6 +949,15 @@
     "path": "data/books/gutenberg/chronicles-and-charactersof-thestock-exchange-70656",
     "chapter_count": 30,
     "updated": "2026-03-07",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "women-and-economicsa-study-of-the-economic-relation-between-men-and-women-as-a-factor-in-social-evolution-57913",
+    "title": "WOMEN AND ECONOMICSA Study of the Economic Relation Between Men and Women as a Factor in Social Evolution",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/women-and-economicsa-study-of-the-economic-relation-between-men-and-women-as-a-factor-in-social-evolution-57913",
+    "chapter_count": 17,
+    "updated": "2026-03-08",
     "source": "Project Gutenberg"
   }
 ]
