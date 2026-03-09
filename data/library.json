@@ -930,7 +930,7 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/series-iibulletin-no-1georgetown-universityschool-offoreign-servicevenezuelaan-economic-report-presented-by-studentsof-the-school-of-foreign-serviceas-an-aid-to-the-foreign-tradeof-the-united-states-49073",
     "chapter_count": 19,
-    "updated": "2026-03-07",
+    "updated": "2026-03-09",
     "source": "Project Gutenberg"
   },
   {
@@ -939,7 +939,7 @@
     "author": "Willem Adriaan Bonger (1876–1940)",
     "path": "data/books/gutenberg/unknown-71282",
     "chapter_count": 111,
-    "updated": "2026-03-08",
+    "updated": "2026-03-09",
     "source": "Project Gutenberg"
   },
   {
@@ -958,6 +958,15 @@
     "path": "data/books/gutenberg/women-and-economicsa-study-of-the-economic-relation-between-men-and-women-as-a-factor-in-social-evolution-57913",
     "chapter_count": 17,
     "updated": "2026-03-08",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "religionand-therise-of-capitalism-71223",
+    "title": "RELIGIONAND THERISE OF CAPITALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/religionand-therise-of-capitalism-71223",
+    "chapter_count": 26,
+    "updated": "2026-03-09",
     "source": "Project Gutenberg"
   }
 ]
