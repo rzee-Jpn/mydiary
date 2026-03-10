@@ -968,5 +968,32 @@
     "chapter_count": 26,
     "updated": "2026-03-09",
     "source": "Project Gutenberg"
+  },
+  {
+    "id": "memoirs-ofextraordinary-popular-delusions-636",
+    "title": "MEMOIRS OFEXTRAORDINARY POPULAR DELUSIONS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/memoirs-ofextraordinary-popular-delusions-636",
+    "chapter_count": 17,
+    "updated": "2026-03-10",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-stock-exchange-from-within-60082",
+    "title": "THE STOCK EXCHANGE\r\nFROM WITHIN",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-stock-exchange-from-within-60082",
+    "chapter_count": 30,
+    "updated": "2026-03-10",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-collected-works-ofwilliam-hazlitt-61763",
+    "title": "THE COLLECTED WORKS OFWILLIAM HAZLITT",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-collected-works-ofwilliam-hazlitt-61763",
+    "chapter_count": 35,
+    "updated": "2026-03-10",
+    "source": "Project Gutenberg"
   }
 ]
