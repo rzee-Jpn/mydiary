@@ -966,7 +966,7 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/religionand-therise-of-capitalism-71223",
     "chapter_count": 26,
-    "updated": "2026-03-09",
+    "updated": "2026-03-11",
     "source": "Project Gutenberg"
   },
   {
@@ -984,7 +984,7 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/the-stock-exchange-from-within-60082",
     "chapter_count": 30,
-    "updated": "2026-03-10",
+    "updated": "2026-03-11",
     "source": "Project Gutenberg"
   },
   {
@@ -994,6 +994,15 @@
     "path": "data/books/gutenberg/the-collected-works-ofwilliam-hazlitt-61763",
     "chapter_count": 35,
     "updated": "2026-03-10",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "fabianessays-in-socialism-69088",
+    "title": "FABIANESSAYS IN SOCIALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/fabianessays-in-socialism-69088",
+    "chapter_count": 14,
+    "updated": "2026-03-11",
     "source": "Project Gutenberg"
   }
 ]
