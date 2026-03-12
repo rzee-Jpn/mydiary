@@ -948,7 +948,7 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/chronicles-and-charactersof-thestock-exchange-70656",
     "chapter_count": 30,
-    "updated": "2026-03-07",
+    "updated": "2026-03-12",
     "source": "Project Gutenberg"
   },
   {
@@ -1003,6 +1003,24 @@
     "path": "data/books/gutenberg/fabianessays-in-socialism-69088",
     "chapter_count": 14,
     "updated": "2026-03-11",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "blackwood-sedinburghmagazine-vol-lxix-january-june-1851-45694",
+    "title": "BLACKWOOD'SEdinburghMAGAZINE.VOL. LXIX.JANUARY-JUNE, 1851.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/blackwood-sedinburghmagazine-vol-lxix-january-june-1851-45694",
+    "chapter_count": 36,
+    "updated": "2026-03-12",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "a-report-on-washingtonterritory-40132",
+    "title": "A REPORT ON WASHINGTONTERRITORY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/a-report-on-washingtonterritory-40132",
+    "chapter_count": 41,
+    "updated": "2026-03-12",
     "source": "Project Gutenberg"
   }
 ]
