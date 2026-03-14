@@ -1,0 +1,54 @@
+{
+  "id": "deutsches-leben-der-gegenwart-16264",
+  "title": "DEUTSCHES LEBEN DER GEGENWART",
+  "author": "Unknown",
+  "word_count": 78682,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofDeutsches Leben der Gegenwart",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "VORWORT",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "DER ROMAN",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "DAS DRAMA",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "DIE LYRIK",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "DEUTSCHE MUSIK DER GEGENWARTVON PAUL BEKKER",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "DIE DEUTSCHE PHILOSOPHIE DER GEGENWARTVON MAX SCHELER",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "VORTRAG, GEHALTEN IN EINEM ZYKLUS GEMEINVERSTÄNDLICHER\r\nEINZELVORTRÄGE, VERANSTALTET VON DER UNIVERSITÄT MÜNCHEN, SOMMER\r\n1921",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "GEGENWARTSFRAGEN DES DEUTSCHEN WIRTSCHAFTSLEBENSVON\r\nUNIVERSITÄTSPROFESSOR DR. GOETZ BRIEFS (WÜRZBURG)",
+      "file": "chapters/ch09.html"
+    }
+  ],
+  "updated": "2026-03-14"
+}

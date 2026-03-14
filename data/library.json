@@ -1022,5 +1022,32 @@
     "chapter_count": 41,
     "updated": "2026-03-12",
     "source": "Project Gutenberg"
+  },
+  {
+    "id": "unpopular-review-15876",
+    "title": "Unpopular Review",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/unpopular-review-15876",
+    "chapter_count": 32,
+    "updated": "2026-03-14",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "fiat-money-inflation-in-france-6949",
+    "title": "FIAT MONEY INFLATION IN FRANCE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/fiat-money-inflation-in-france-6949",
+    "chapter_count": 9,
+    "updated": "2026-03-14",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "deutsches-leben-der-gegenwart-16264",
+    "title": "DEUTSCHES LEBEN DER GEGENWART",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/deutsches-leben-der-gegenwart-16264",
+    "chapter_count": 9,
+    "updated": "2026-03-14",
+    "source": "Project Gutenberg"
   }
 ]
