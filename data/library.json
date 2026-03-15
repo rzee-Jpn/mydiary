@@ -984,7 +984,7 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/the-stock-exchange-from-within-60082",
     "chapter_count": 30,
-    "updated": "2026-03-11",
+    "updated": "2026-03-15",
     "source": "Project Gutenberg"
   },
   {
@@ -1048,6 +1048,24 @@
     "path": "data/books/gutenberg/deutsches-leben-der-gegenwart-16264",
     "chapter_count": 9,
     "updated": "2026-03-14",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-economic-aspects-of-geology-27842",
+    "title": "THE ECONOMIC ASPECTS OF GEOLOGY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-economic-aspects-of-geology-27842",
+    "chapter_count": 257,
+    "updated": "2026-03-15",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "unknown-50245",
+    "title": "Unknown",
+    "author": "Emma Helen Blair (d. 1911) James Alexander Robertson (1873–1939)",
+    "path": "data/books/gutenberg/unknown-50245",
+    "chapter_count": 63,
+    "updated": "2026-03-15",
     "source": "Project Gutenberg"
   }
 ]
