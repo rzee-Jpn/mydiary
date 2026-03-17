@@ -1067,5 +1067,32 @@
     "chapter_count": 63,
     "updated": "2026-03-15",
     "source": "Project Gutenberg"
+  },
+  {
+    "id": "psychologyof-thestock-market-75570",
+    "title": "PSYCHOLOGYOF THESTOCK MARKET",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/psychologyof-thestock-market-75570",
+    "chapter_count": 12,
+    "updated": "2026-03-17",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-economist-27647",
+    "title": "The Economist:",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-economist-27647",
+    "chapter_count": 36,
+    "updated": "2026-03-17",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "manual-of-ship-subsidies-13718",
+    "title": "MANUAL OF SHIP SUBSIDIES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/manual-of-ship-subsidies-13718",
+    "chapter_count": 16,
+    "updated": "2026-03-17",
+    "source": "Project Gutenberg"
   }
 ]
