@@ -1083,7 +1083,7 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/the-economist-27647",
     "chapter_count": 36,
-    "updated": "2026-03-17",
+    "updated": "2026-03-18",
     "source": "Project Gutenberg"
   },
   {
@@ -1093,6 +1093,24 @@
     "path": "data/books/gutenberg/manual-of-ship-subsidies-13718",
     "chapter_count": 16,
     "updated": "2026-03-17",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "riches-and-poverty-64616",
+    "title": "RICHES AND POVERTY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/riches-and-poverty-64616",
+    "chapter_count": 27,
+    "updated": "2026-03-18",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "essays-on-mankind-and-political-arithmetic-5619",
+    "title": "ESSAYS ON MANKIND AND POLITICAL ARITHMETIC",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/essays-on-mankind-and-political-arithmetic-5619",
+    "chapter_count": 40,
+    "updated": "2026-03-18",
     "source": "Project Gutenberg"
   }
 ]
