@@ -1083,7 +1083,7 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/the-economist-27647",
     "chapter_count": 36,
-    "updated": "2026-03-18",
+    "updated": "2026-03-19",
     "source": "Project Gutenberg"
   },
   {
@@ -1111,6 +1111,15 @@
     "path": "data/books/gutenberg/essays-on-mankind-and-political-arithmetic-5619",
     "chapter_count": 40,
     "updated": "2026-03-18",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "indian-currencyand-finance-49166",
+    "title": "INDIAN CURRENCYAND FINANCE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/indian-currencyand-finance-49166",
+    "chapter_count": 13,
+    "updated": "2026-03-19",
     "source": "Project Gutenberg"
   }
 ]
