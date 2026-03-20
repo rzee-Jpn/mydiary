@@ -1083,7 +1083,7 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/the-economist-27647",
     "chapter_count": 36,
-    "updated": "2026-03-19",
+    "updated": "2026-03-20",
     "source": "Project Gutenberg"
   },
   {
@@ -1101,7 +1101,7 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/riches-and-poverty-64616",
     "chapter_count": 27,
-    "updated": "2026-03-18",
+    "updated": "2026-03-20",
     "source": "Project Gutenberg"
   },
   {
@@ -1120,6 +1120,15 @@
     "path": "data/books/gutenberg/indian-currencyand-finance-49166",
     "chapter_count": 13,
     "updated": "2026-03-19",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-intelligent-woman-s-guideto-socialism-and-capitalism-75859",
+    "title": "THE INTELLIGENT WOMAN’S GUIDETO SOCIALISM AND CAPITALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-intelligent-woman-s-guideto-socialism-and-capitalism-75859",
+    "chapter_count": 87,
+    "updated": "2026-03-20",
     "source": "Project Gutenberg"
   }
 ]
