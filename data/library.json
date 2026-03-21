@@ -1130,5 +1130,32 @@
     "chapter_count": 87,
     "updated": "2026-03-20",
     "source": "Project Gutenberg"
+  },
+  {
+    "id": "unknown-63132",
+    "title": "Unknown",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/unknown-63132",
+    "chapter_count": 12,
+    "updated": "2026-03-21",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "thepsychology-of-speculation-73647",
+    "title": "THEPSYCHOLOGY OF SPECULATION",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/thepsychology-of-speculation-73647",
+    "chapter_count": 26,
+    "updated": "2026-03-21",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "malthus-and-his-work-68099",
+    "title": "MALTHUS AND HIS WORK",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/malthus-and-his-work-68099",
+    "chapter_count": 17,
+    "updated": "2026-03-21",
+    "source": "Project Gutenberg"
   }
 ]
