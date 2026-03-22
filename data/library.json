@@ -1155,7 +1155,25 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/malthus-and-his-work-68099",
     "chapter_count": 17,
-    "updated": "2026-03-21",
+    "updated": "2026-03-22",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-heartof-therailroad-problemthe-history-of-railway-discrimination-in-the-united-states-the-chief-efforts-at-control-and-the-remedies-proposed-with-hints-from-other-countries-68664",
+    "title": "THE HEARTOF THERAILROAD PROBLEMTHE HISTORY OF RAILWAY DISCRIMINATION IN THE UNITED STATES, THE CHIEF EFFORTS AT CONTROL AND THE REMEDIES PROPOSED, WITH HINTS FROM OTHER COUNTRIES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-heartof-therailroad-problemthe-history-of-railway-discrimination-in-the-united-states-the-chief-efforts-at-control-and-the-remedies-proposed-with-hints-from-other-countries-68664",
+    "chapter_count": 50,
+    "updated": "2026-03-22",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "unknown-59456",
+    "title": "Unknown",
+    "author": "John Ruskin (1819–1900)",
+    "path": "data/books/gutenberg/unknown-59456",
+    "chapter_count": 19,
+    "updated": "2026-03-22",
     "source": "Project Gutenberg"
   }
 ]
