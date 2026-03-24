@@ -21,7 +21,7 @@ REQUEST_TIMEOUT = 20
 RETRY = 3
 SLEEP_BETWEEN_BOOKS = 2
 
-HEADERS = {"User-Agent": "Pustaka-LibraryEngine/4.0"}
+HEADERS = {"User-Agent": "Pustaka-LibraryEngine/4.1"}
 
 TODAY = datetime.now(UTC).strftime("%Y-%m-%d")
 
@@ -67,13 +67,19 @@ def safe_get(url):
     return None
 
 # ======================================================
-# STATE (ANTI DUPLICATE CORE)
+# STATE (ANTI DUPLICATE + AUTO MIGRATION)
 # ======================================================
 
 def load_state():
-    return load_json(STATE_FILE, {
-        "seen_ids": []
-    })
+    state = load_json(STATE_FILE, {})
+
+    if not isinstance(state, dict):
+        state = {}
+
+    # auto migration dari versi lama
+    state.setdefault("seen_ids", [])
+
+    return state
 
 def save_state(s):
     save_json_atomic(STATE_FILE, s)
@@ -174,7 +180,7 @@ def update_library(entry):
             return
 
     data.append(entry)
-    data.sort(key=lambda x:x.get("created","1970"), reverse=True)
+    data.sort(key=lambda x:x.get("updated","1970"), reverse=True)
     save_json_atomic(LIBRARY_JSON, data)
 
 # ======================================================
@@ -191,7 +197,6 @@ def process_book(book_id):
         log("SKIP (bad html)", book_id)
         return False
 
-    # ✅ ID FIX (STABLE)
     engine_id = book_id
 
     book_dir = f"{DATA_DIR}/{engine_id}"
@@ -239,7 +244,7 @@ def process_book(book_id):
     return True
 
 # ======================================================
-# MAIN (ANTI DUPLICATE LOGIC)
+# MAIN
 # ======================================================
 
 def main():
@@ -252,10 +257,11 @@ def main():
     while page and processed < LIMIT_PER_RUN:
         books, next_page = get_books(page)
 
+        log("PAGE:", page, "| FOUND:", len(books))
+
         for url in books:
             book_id = get_book_id(url)
 
-            # ✅ SKIP kalau sudah pernah
             if book_id in seen:
                 continue
 
@@ -275,9 +281,10 @@ def main():
 
         page = next_page
 
-    # simpan state
     state["seen_ids"] = list(seen)
     save_state(state)
+
+    log("FINISH | NEW:", processed, "| TOTAL SEEN:", len(seen))
 
 # ======================================================
 
