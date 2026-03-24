@@ -1083,7 +1083,7 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/the-economist-27647",
     "chapter_count": 36,
-    "updated": "2026-03-23",
+    "updated": "2026-03-24",
     "source": "Project Gutenberg"
   },
   {
@@ -1146,7 +1146,7 @@
     "author": "Unknown",
     "path": "data/books/gutenberg/thepsychology-of-speculation-73647",
     "chapter_count": 26,
-    "updated": "2026-03-21",
+    "updated": "2026-03-24",
     "source": "Project Gutenberg"
   },
   {
@@ -1174,6 +1174,15 @@
     "path": "data/books/gutenberg/unknown-59456",
     "chapter_count": 19,
     "updated": "2026-03-22",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "theagricultural-andforest-products-ofbritish-west-africa-70973",
+    "title": "THEAGRICULTURAL ANDFOREST PRODUCTS OFBRITISH WEST AFRICA",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/theagricultural-andforest-products-ofbritish-west-africa-70973",
+    "chapter_count": 12,
+    "updated": "2026-03-24",
     "source": "Project Gutenberg"
   }
 ]
