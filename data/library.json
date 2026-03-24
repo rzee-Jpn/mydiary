@@ -1,5 +1,509 @@
 [
   {
+    "id": "the-economist-27647",
+    "title": "The Economist:",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-economist-27647",
+    "chapter_count": 36,
+    "updated": "2026-03-24",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "thepsychology-of-speculation-73647",
+    "title": "THEPSYCHOLOGY OF SPECULATION",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/thepsychology-of-speculation-73647",
+    "chapter_count": 26,
+    "updated": "2026-03-24",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "theagricultural-andforest-products-ofbritish-west-africa-70973",
+    "title": "THEAGRICULTURAL ANDFOREST PRODUCTS OFBRITISH WEST AFRICA",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/theagricultural-andforest-products-ofbritish-west-africa-70973",
+    "chapter_count": 12,
+    "updated": "2026-03-24",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "33170",
+    "title": "TheItching Palm",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/33170",
+    "chapter_count": 112,
+    "updated": "2026-03-24",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "3300",
+    "title": "An Inquiry into the Nature and Causes of the Wealth of Nations",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/3300",
+    "chapter_count": 54,
+    "updated": "2026-03-24",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "61",
+    "title": "The Communist Manifesto",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/61",
+    "chapter_count": 9,
+    "updated": "2026-03-24",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "malthus-and-his-work-68099",
+    "title": "MALTHUS AND HIS WORK",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/malthus-and-his-work-68099",
+    "chapter_count": 17,
+    "updated": "2026-03-22",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-heartof-therailroad-problemthe-history-of-railway-discrimination-in-the-united-states-the-chief-efforts-at-control-and-the-remedies-proposed-with-hints-from-other-countries-68664",
+    "title": "THE HEARTOF THERAILROAD PROBLEMTHE HISTORY OF RAILWAY DISCRIMINATION IN THE UNITED STATES, THE CHIEF EFFORTS AT CONTROL AND THE REMEDIES PROPOSED, WITH HINTS FROM OTHER COUNTRIES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-heartof-therailroad-problemthe-history-of-railway-discrimination-in-the-united-states-the-chief-efforts-at-control-and-the-remedies-proposed-with-hints-from-other-countries-68664",
+    "chapter_count": 50,
+    "updated": "2026-03-22",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "unknown-59456",
+    "title": "Unknown",
+    "author": "John Ruskin (1819–1900)",
+    "path": "data/books/gutenberg/unknown-59456",
+    "chapter_count": 19,
+    "updated": "2026-03-22",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "unknown-63132",
+    "title": "Unknown",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/unknown-63132",
+    "chapter_count": 12,
+    "updated": "2026-03-21",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "riches-and-poverty-64616",
+    "title": "RICHES AND POVERTY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/riches-and-poverty-64616",
+    "chapter_count": 27,
+    "updated": "2026-03-20",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-intelligent-woman-s-guideto-socialism-and-capitalism-75859",
+    "title": "THE INTELLIGENT WOMAN’S GUIDETO SOCIALISM AND CAPITALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-intelligent-woman-s-guideto-socialism-and-capitalism-75859",
+    "chapter_count": 87,
+    "updated": "2026-03-20",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "indian-currencyand-finance-49166",
+    "title": "INDIAN CURRENCYAND FINANCE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/indian-currencyand-finance-49166",
+    "chapter_count": 13,
+    "updated": "2026-03-19",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "essays-on-mankind-and-political-arithmetic-5619",
+    "title": "ESSAYS ON MANKIND AND POLITICAL ARITHMETIC",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/essays-on-mankind-and-political-arithmetic-5619",
+    "chapter_count": 40,
+    "updated": "2026-03-18",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "psychologyof-thestock-market-75570",
+    "title": "PSYCHOLOGYOF THESTOCK MARKET",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/psychologyof-thestock-market-75570",
+    "chapter_count": 12,
+    "updated": "2026-03-17",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "manual-of-ship-subsidies-13718",
+    "title": "MANUAL OF SHIP SUBSIDIES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/manual-of-ship-subsidies-13718",
+    "chapter_count": 16,
+    "updated": "2026-03-17",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-stock-exchange-from-within-60082",
+    "title": "THE STOCK EXCHANGE\r\nFROM WITHIN",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-stock-exchange-from-within-60082",
+    "chapter_count": 30,
+    "updated": "2026-03-15",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-economic-aspects-of-geology-27842",
+    "title": "THE ECONOMIC ASPECTS OF GEOLOGY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-economic-aspects-of-geology-27842",
+    "chapter_count": 257,
+    "updated": "2026-03-15",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "unknown-50245",
+    "title": "Unknown",
+    "author": "Emma Helen Blair (d. 1911) James Alexander Robertson (1873–1939)",
+    "path": "data/books/gutenberg/unknown-50245",
+    "chapter_count": 63,
+    "updated": "2026-03-15",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "unpopular-review-15876",
+    "title": "Unpopular Review",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/unpopular-review-15876",
+    "chapter_count": 32,
+    "updated": "2026-03-14",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "fiat-money-inflation-in-france-6949",
+    "title": "FIAT MONEY INFLATION IN FRANCE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/fiat-money-inflation-in-france-6949",
+    "chapter_count": 9,
+    "updated": "2026-03-14",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "deutsches-leben-der-gegenwart-16264",
+    "title": "DEUTSCHES LEBEN DER GEGENWART",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/deutsches-leben-der-gegenwart-16264",
+    "chapter_count": 9,
+    "updated": "2026-03-14",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "chronicles-and-charactersof-thestock-exchange-70656",
+    "title": "CHRONICLES AND CHARACTERSOF THESTOCK EXCHANGE.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/chronicles-and-charactersof-thestock-exchange-70656",
+    "chapter_count": 30,
+    "updated": "2026-03-12",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "blackwood-sedinburghmagazine-vol-lxix-january-june-1851-45694",
+    "title": "BLACKWOOD'SEdinburghMAGAZINE.VOL. LXIX.JANUARY-JUNE, 1851.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/blackwood-sedinburghmagazine-vol-lxix-january-june-1851-45694",
+    "chapter_count": 36,
+    "updated": "2026-03-12",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "a-report-on-washingtonterritory-40132",
+    "title": "A REPORT ON WASHINGTONTERRITORY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/a-report-on-washingtonterritory-40132",
+    "chapter_count": 41,
+    "updated": "2026-03-12",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "religionand-therise-of-capitalism-71223",
+    "title": "RELIGIONAND THERISE OF CAPITALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/religionand-therise-of-capitalism-71223",
+    "chapter_count": 26,
+    "updated": "2026-03-11",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "fabianessays-in-socialism-69088",
+    "title": "FABIANESSAYS IN SOCIALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/fabianessays-in-socialism-69088",
+    "chapter_count": 14,
+    "updated": "2026-03-11",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "memoirs-ofextraordinary-popular-delusions-636",
+    "title": "MEMOIRS OFEXTRAORDINARY POPULAR DELUSIONS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/memoirs-ofextraordinary-popular-delusions-636",
+    "chapter_count": 17,
+    "updated": "2026-03-10",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-collected-works-ofwilliam-hazlitt-61763",
+    "title": "THE COLLECTED WORKS OFWILLIAM HAZLITT",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-collected-works-ofwilliam-hazlitt-61763",
+    "chapter_count": 35,
+    "updated": "2026-03-10",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "series-iibulletin-no-1georgetown-universityschool-offoreign-servicevenezuelaan-economic-report-presented-by-studentsof-the-school-of-foreign-serviceas-an-aid-to-the-foreign-tradeof-the-united-states-49073",
+    "title": "Series IIBulletin No. 1Georgetown UniversitySCHOOL OFFOREIGN SERVICEVENEZUELAAN ECONOMIC REPORT PRESENTED BY STUDENTSOF THE SCHOOL OF FOREIGN SERVICEAS AN AID TO THE FOREIGN TRADEOF THE UNITED STATES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/series-iibulletin-no-1georgetown-universityschool-offoreign-servicevenezuelaan-economic-report-presented-by-studentsof-the-school-of-foreign-serviceas-an-aid-to-the-foreign-tradeof-the-united-states-49073",
+    "chapter_count": 19,
+    "updated": "2026-03-09",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "unknown-71282",
+    "title": "Unknown",
+    "author": "Willem Adriaan Bonger (1876–1940)",
+    "path": "data/books/gutenberg/unknown-71282",
+    "chapter_count": 111,
+    "updated": "2026-03-09",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "illustrationsofpolitical-economy-71544",
+    "title": "ILLUSTRATIONSOFPOLITICAL ECONOMY.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/illustrationsofpolitical-economy-71544",
+    "chapter_count": 31,
+    "updated": "2026-03-08",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "women-and-economicsa-study-of-the-economic-relation-between-men-and-women-as-a-factor-in-social-evolution-57913",
+    "title": "WOMEN AND ECONOMICSA Study of the Economic Relation Between Men and Women as a Factor in Social Evolution",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/women-and-economicsa-study-of-the-economic-relation-between-men-and-women-as-a-factor-in-social-evolution-57913",
+    "chapter_count": 17,
+    "updated": "2026-03-08",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-tariff-in-our-times-59763",
+    "title": "THE TARIFF IN OUR TIMES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-tariff-in-our-times-59763",
+    "chapter_count": 16,
+    "updated": "2026-03-06",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "principlesofpolitical-economy-41936",
+    "title": "PRINCIPLESOFPOLITICAL ECONOMY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/principlesofpolitical-economy-41936",
+    "chapter_count": 11,
+    "updated": "2026-03-06",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "adam-smith-64753",
+    "title": "ADAM SMITH",
+    "author": "Francis W. Hirst",
+    "path": "data/books/gutenberg/adam-smith-64753",
+    "chapter_count": 14,
+    "updated": "2026-03-05",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-principles-of-economics-40077",
+    "title": "THE PRINCIPLES OF ECONOMICS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-principles-of-economics-40077",
+    "chapter_count": 66,
+    "updated": "2026-03-05",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-republicof-costa-rica-70725",
+    "title": "THE REPUBLICOF COSTA RICA",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-republicof-costa-rica-70725",
+    "chapter_count": 23,
+    "updated": "2026-03-04",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-argentinein-thetwentieth-century-45261",
+    "title": "THE ARGENTINEIN THETWENTIETH CENTURY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-argentinein-thetwentieth-century-45261",
+    "chapter_count": 31,
+    "updated": "2026-03-04",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "aninquiryinto-theprinciples-of-political-oeconomy-being-anessay-on-the-scienceofdomestic-policy-in-free-nations-60411",
+    "title": "ANINQUIRYINTO THEPRINCIPLES OF POLITICAL OECONOMY:BEING ANESSAY ON THE SCIENCEOFDomestic Policy in Free Nations.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/aninquiryinto-theprinciples-of-political-oeconomy-being-anessay-on-the-scienceofdomestic-policy-in-free-nations-60411",
+    "chapter_count": 72,
+    "updated": "2026-03-04",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "a-history-ofeconomic-doctrines-57500",
+    "title": "A HISTORY OFECONOMIC DOCTRINES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/a-history-ofeconomic-doctrines-57500",
+    "chapter_count": 29,
+    "updated": "2026-03-02",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-scott-library-hume-s-pol-it-i-cal-dis-cours-es-by-da-vid-hume-ed-i-ted-with-an-in-tro-duc-tion-by-wil-liam-bell-rob-ert-son-59792",
+    "title": "The Scott Library: Hume’s Pol­it­i­cal Dis­cours­es,\r\nby Da­vid Hume. Ed­i­ted, with an In­tro­duc­tion by Wil­liam Bell\r\nRob­ert­son.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-scott-library-hume-s-pol-it-i-cal-dis-cours-es-by-da-vid-hume-ed-i-ted-with-an-in-tro-duc-tion-by-wil-liam-bell-rob-ert-son-59792",
+    "chapter_count": 41,
+    "updated": "2026-03-02",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "frenzied-finance-26330",
+    "title": "FRENZIED FINANCE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/frenzied-finance-26330",
+    "chapter_count": 88,
+    "updated": "2026-03-02",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "watson-s-magazine-67796",
+    "title": "WATSON’S MAGAZINE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/watson-s-magazine-67796",
+    "chapter_count": 56,
+    "updated": "2026-03-01",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-accumulation-of-capital-41405",
+    "title": "THE ACCUMULATION\r\nOF CAPITAL",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-accumulation-of-capital-41405",
+    "chapter_count": 51,
+    "updated": "2026-02-26",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "the-world-sgreatestbooks-25009",
+    "title": "THE WORLD'SGREATESTBOOKS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/the-world-sgreatestbooks-25009",
+    "chapter_count": 31,
+    "updated": "2026-02-25",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "political-and-commercialgeologyand-theworld-s-mineral-resources-71082",
+    "title": "POLITICAL AND COMMERCIALGEOLOGYAND THEWORLD’S MINERAL RESOURCES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/political-and-commercialgeologyand-theworld-s-mineral-resources-71082",
+    "chapter_count": 236,
+    "updated": "2026-02-24",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "socialism-38138",
+    "title": "SOCIALISM.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/socialism-38138",
+    "chapter_count": 3,
+    "updated": "2026-02-24",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "definition-realityin-thegeneral-theory-of-political-economy-15939",
+    "title": "Definition & Realityin theGeneral Theory of Political Economy",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/definition-realityin-thegeneral-theory-of-political-economy-15939",
+    "chapter_count": 75,
+    "updated": "2026-02-23",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "illustrationsofpolitical-economy-70716",
+    "title": "ILLUSTRATIONSOFPOLITICAL ECONOMY.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/illustrationsofpolitical-economy-70716",
+    "chapter_count": 35,
+    "updated": "2026-02-23",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "french-and-german-socialisminmodern-times-59815",
+    "title": "FRENCH AND GERMAN SOCIALISMINMODERN TIMES.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/french-and-german-socialisminmodern-times-59815",
+    "chapter_count": 21,
+    "updated": "2026-02-22",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "are-we-ruined-by-thegermans-31163",
+    "title": "ARE WE RUINED BY THEGERMANS?",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/are-we-ruined-by-thegermans-31163",
+    "chapter_count": 76,
+    "updated": "2026-02-22",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "railroadsrates-and-regulation-47831",
+    "title": "RAILROADSRATES AND REGULATION",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/railroadsrates-and-regulation-47831",
+    "chapter_count": 49,
+    "updated": "2026-02-21",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "gutenberg-24884",
+    "title": "COMMERCIALGEOGRAPHY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/gutenberg-24884",
+    "chapter_count": 40,
+    "updated": "2026-02-20",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "gutenberg-34463",
+    "title": "HOW TO INVESTMONEY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/gutenberg-34463",
+    "chapter_count": 14,
+    "updated": "2026-02-20",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "gutenberg-46545",
+    "title": "Cyclopedia",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/gutenberg-46545",
+    "chapter_count": 16,
+    "updated": "2026-02-20",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "die-frauenfrage",
     "title": "Die Frauenfrage",
     "author": "Unknown",
@@ -707,482 +1211,5 @@
     ],
     "status": "published",
     "visibility": "public"
-  },
-  {
-    "id": "gutenberg-24884",
-    "title": "COMMERCIALGEOGRAPHY",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/gutenberg-24884",
-    "chapter_count": 40,
-    "updated": "2026-02-20",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "gutenberg-34463",
-    "title": "HOW TO INVESTMONEY",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/gutenberg-34463",
-    "chapter_count": 14,
-    "updated": "2026-02-20",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "gutenberg-46545",
-    "title": "Cyclopedia",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/gutenberg-46545",
-    "chapter_count": 16,
-    "updated": "2026-02-20",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "railroadsrates-and-regulation-47831",
-    "title": "RAILROADSRATES AND REGULATION",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/railroadsrates-and-regulation-47831",
-    "chapter_count": 49,
-    "updated": "2026-02-21",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "french-and-german-socialisminmodern-times-59815",
-    "title": "FRENCH AND GERMAN SOCIALISMINMODERN TIMES.",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/french-and-german-socialisminmodern-times-59815",
-    "chapter_count": 21,
-    "updated": "2026-02-22",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "are-we-ruined-by-thegermans-31163",
-    "title": "ARE WE RUINED BY THEGERMANS?",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/are-we-ruined-by-thegermans-31163",
-    "chapter_count": 76,
-    "updated": "2026-02-22",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "political-and-commercialgeologyand-theworld-s-mineral-resources-71082",
-    "title": "POLITICAL AND COMMERCIALGEOLOGYAND THEWORLD’S MINERAL RESOURCES",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/political-and-commercialgeologyand-theworld-s-mineral-resources-71082",
-    "chapter_count": 236,
-    "updated": "2026-02-24",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "definition-realityin-thegeneral-theory-of-political-economy-15939",
-    "title": "Definition & Realityin theGeneral Theory of Political Economy",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/definition-realityin-thegeneral-theory-of-political-economy-15939",
-    "chapter_count": 75,
-    "updated": "2026-02-23",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "a-history-ofeconomic-doctrines-57500",
-    "title": "A HISTORY OFECONOMIC DOCTRINES",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/a-history-ofeconomic-doctrines-57500",
-    "chapter_count": 29,
-    "updated": "2026-03-02",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "illustrationsofpolitical-economy-70716",
-    "title": "ILLUSTRATIONSOFPOLITICAL ECONOMY.",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/illustrationsofpolitical-economy-70716",
-    "chapter_count": 35,
-    "updated": "2026-02-23",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "socialism-38138",
-    "title": "SOCIALISM.",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/socialism-38138",
-    "chapter_count": 3,
-    "updated": "2026-02-24",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "the-world-sgreatestbooks-25009",
-    "title": "THE WORLD'SGREATESTBOOKS",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/the-world-sgreatestbooks-25009",
-    "chapter_count": 31,
-    "updated": "2026-02-25",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "the-republicof-costa-rica-70725",
-    "title": "THE REPUBLICOF COSTA RICA",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/the-republicof-costa-rica-70725",
-    "chapter_count": 23,
-    "updated": "2026-03-04",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "the-accumulation-of-capital-41405",
-    "title": "THE ACCUMULATION\r\nOF CAPITAL",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/the-accumulation-of-capital-41405",
-    "chapter_count": 51,
-    "updated": "2026-02-26",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "watson-s-magazine-67796",
-    "title": "WATSON’S MAGAZINE",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/watson-s-magazine-67796",
-    "chapter_count": 56,
-    "updated": "2026-03-01",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "the-tariff-in-our-times-59763",
-    "title": "THE TARIFF IN OUR TIMES",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/the-tariff-in-our-times-59763",
-    "chapter_count": 16,
-    "updated": "2026-03-06",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "the-scott-library-hume-s-pol-it-i-cal-dis-cours-es-by-da-vid-hume-ed-i-ted-with-an-in-tro-duc-tion-by-wil-liam-bell-rob-ert-son-59792",
-    "title": "The Scott Library: Hume’s Pol­it­i­cal Dis­cours­es,\r\nby Da­vid Hume. Ed­i­ted, with an In­tro­duc­tion by Wil­liam Bell\r\nRob­ert­son.",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/the-scott-library-hume-s-pol-it-i-cal-dis-cours-es-by-da-vid-hume-ed-i-ted-with-an-in-tro-duc-tion-by-wil-liam-bell-rob-ert-son-59792",
-    "chapter_count": 41,
-    "updated": "2026-03-02",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "frenzied-finance-26330",
-    "title": "FRENZIED FINANCE",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/frenzied-finance-26330",
-    "chapter_count": 88,
-    "updated": "2026-03-02",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "the-argentinein-thetwentieth-century-45261",
-    "title": "THE ARGENTINEIN THETWENTIETH CENTURY",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/the-argentinein-thetwentieth-century-45261",
-    "chapter_count": 31,
-    "updated": "2026-03-04",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "aninquiryinto-theprinciples-of-political-oeconomy-being-anessay-on-the-scienceofdomestic-policy-in-free-nations-60411",
-    "title": "ANINQUIRYINTO THEPRINCIPLES OF POLITICAL OECONOMY:BEING ANESSAY ON THE SCIENCEOFDomestic Policy in Free Nations.",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/aninquiryinto-theprinciples-of-political-oeconomy-being-anessay-on-the-scienceofdomestic-policy-in-free-nations-60411",
-    "chapter_count": 72,
-    "updated": "2026-03-04",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "adam-smith-64753",
-    "title": "ADAM SMITH",
-    "author": "Francis W. Hirst",
-    "path": "data/books/gutenberg/adam-smith-64753",
-    "chapter_count": 14,
-    "updated": "2026-03-05",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "the-principles-of-economics-40077",
-    "title": "THE PRINCIPLES OF ECONOMICS",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/the-principles-of-economics-40077",
-    "chapter_count": 66,
-    "updated": "2026-03-05",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "illustrationsofpolitical-economy-71544",
-    "title": "ILLUSTRATIONSOFPOLITICAL ECONOMY.",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/illustrationsofpolitical-economy-71544",
-    "chapter_count": 31,
-    "updated": "2026-03-08",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "principlesofpolitical-economy-41936",
-    "title": "PRINCIPLESOFPOLITICAL ECONOMY",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/principlesofpolitical-economy-41936",
-    "chapter_count": 11,
-    "updated": "2026-03-06",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "series-iibulletin-no-1georgetown-universityschool-offoreign-servicevenezuelaan-economic-report-presented-by-studentsof-the-school-of-foreign-serviceas-an-aid-to-the-foreign-tradeof-the-united-states-49073",
-    "title": "Series IIBulletin No. 1Georgetown UniversitySCHOOL OFFOREIGN SERVICEVENEZUELAAN ECONOMIC REPORT PRESENTED BY STUDENTSOF THE SCHOOL OF FOREIGN SERVICEAS AN AID TO THE FOREIGN TRADEOF THE UNITED STATES",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/series-iibulletin-no-1georgetown-universityschool-offoreign-servicevenezuelaan-economic-report-presented-by-studentsof-the-school-of-foreign-serviceas-an-aid-to-the-foreign-tradeof-the-united-states-49073",
-    "chapter_count": 19,
-    "updated": "2026-03-09",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "unknown-71282",
-    "title": "Unknown",
-    "author": "Willem Adriaan Bonger (1876–1940)",
-    "path": "data/books/gutenberg/unknown-71282",
-    "chapter_count": 111,
-    "updated": "2026-03-09",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "chronicles-and-charactersof-thestock-exchange-70656",
-    "title": "CHRONICLES AND CHARACTERSOF THESTOCK EXCHANGE.",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/chronicles-and-charactersof-thestock-exchange-70656",
-    "chapter_count": 30,
-    "updated": "2026-03-12",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "women-and-economicsa-study-of-the-economic-relation-between-men-and-women-as-a-factor-in-social-evolution-57913",
-    "title": "WOMEN AND ECONOMICSA Study of the Economic Relation Between Men and Women as a Factor in Social Evolution",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/women-and-economicsa-study-of-the-economic-relation-between-men-and-women-as-a-factor-in-social-evolution-57913",
-    "chapter_count": 17,
-    "updated": "2026-03-08",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "religionand-therise-of-capitalism-71223",
-    "title": "RELIGIONAND THERISE OF CAPITALISM",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/religionand-therise-of-capitalism-71223",
-    "chapter_count": 26,
-    "updated": "2026-03-11",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "memoirs-ofextraordinary-popular-delusions-636",
-    "title": "MEMOIRS OFEXTRAORDINARY POPULAR DELUSIONS",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/memoirs-ofextraordinary-popular-delusions-636",
-    "chapter_count": 17,
-    "updated": "2026-03-10",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "the-stock-exchange-from-within-60082",
-    "title": "THE STOCK EXCHANGE\r\nFROM WITHIN",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/the-stock-exchange-from-within-60082",
-    "chapter_count": 30,
-    "updated": "2026-03-15",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "the-collected-works-ofwilliam-hazlitt-61763",
-    "title": "THE COLLECTED WORKS OFWILLIAM HAZLITT",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/the-collected-works-ofwilliam-hazlitt-61763",
-    "chapter_count": 35,
-    "updated": "2026-03-10",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "fabianessays-in-socialism-69088",
-    "title": "FABIANESSAYS IN SOCIALISM",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/fabianessays-in-socialism-69088",
-    "chapter_count": 14,
-    "updated": "2026-03-11",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "blackwood-sedinburghmagazine-vol-lxix-january-june-1851-45694",
-    "title": "BLACKWOOD'SEdinburghMAGAZINE.VOL. LXIX.JANUARY-JUNE, 1851.",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/blackwood-sedinburghmagazine-vol-lxix-january-june-1851-45694",
-    "chapter_count": 36,
-    "updated": "2026-03-12",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "a-report-on-washingtonterritory-40132",
-    "title": "A REPORT ON WASHINGTONTERRITORY",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/a-report-on-washingtonterritory-40132",
-    "chapter_count": 41,
-    "updated": "2026-03-12",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "unpopular-review-15876",
-    "title": "Unpopular Review",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/unpopular-review-15876",
-    "chapter_count": 32,
-    "updated": "2026-03-14",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "fiat-money-inflation-in-france-6949",
-    "title": "FIAT MONEY INFLATION IN FRANCE",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/fiat-money-inflation-in-france-6949",
-    "chapter_count": 9,
-    "updated": "2026-03-14",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "deutsches-leben-der-gegenwart-16264",
-    "title": "DEUTSCHES LEBEN DER GEGENWART",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/deutsches-leben-der-gegenwart-16264",
-    "chapter_count": 9,
-    "updated": "2026-03-14",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "the-economic-aspects-of-geology-27842",
-    "title": "THE ECONOMIC ASPECTS OF GEOLOGY",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/the-economic-aspects-of-geology-27842",
-    "chapter_count": 257,
-    "updated": "2026-03-15",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "unknown-50245",
-    "title": "Unknown",
-    "author": "Emma Helen Blair (d. 1911) James Alexander Robertson (1873–1939)",
-    "path": "data/books/gutenberg/unknown-50245",
-    "chapter_count": 63,
-    "updated": "2026-03-15",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "psychologyof-thestock-market-75570",
-    "title": "PSYCHOLOGYOF THESTOCK MARKET",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/psychologyof-thestock-market-75570",
-    "chapter_count": 12,
-    "updated": "2026-03-17",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "the-economist-27647",
-    "title": "The Economist:",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/the-economist-27647",
-    "chapter_count": 36,
-    "updated": "2026-03-24",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "manual-of-ship-subsidies-13718",
-    "title": "MANUAL OF SHIP SUBSIDIES",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/manual-of-ship-subsidies-13718",
-    "chapter_count": 16,
-    "updated": "2026-03-17",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "riches-and-poverty-64616",
-    "title": "RICHES AND POVERTY",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/riches-and-poverty-64616",
-    "chapter_count": 27,
-    "updated": "2026-03-20",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "essays-on-mankind-and-political-arithmetic-5619",
-    "title": "ESSAYS ON MANKIND AND POLITICAL ARITHMETIC",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/essays-on-mankind-and-political-arithmetic-5619",
-    "chapter_count": 40,
-    "updated": "2026-03-18",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "indian-currencyand-finance-49166",
-    "title": "INDIAN CURRENCYAND FINANCE",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/indian-currencyand-finance-49166",
-    "chapter_count": 13,
-    "updated": "2026-03-19",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "the-intelligent-woman-s-guideto-socialism-and-capitalism-75859",
-    "title": "THE INTELLIGENT WOMAN’S GUIDETO SOCIALISM AND CAPITALISM",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/the-intelligent-woman-s-guideto-socialism-and-capitalism-75859",
-    "chapter_count": 87,
-    "updated": "2026-03-20",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "unknown-63132",
-    "title": "Unknown",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/unknown-63132",
-    "chapter_count": 12,
-    "updated": "2026-03-21",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "thepsychology-of-speculation-73647",
-    "title": "THEPSYCHOLOGY OF SPECULATION",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/thepsychology-of-speculation-73647",
-    "chapter_count": 26,
-    "updated": "2026-03-24",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "malthus-and-his-work-68099",
-    "title": "MALTHUS AND HIS WORK",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/malthus-and-his-work-68099",
-    "chapter_count": 17,
-    "updated": "2026-03-22",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "the-heartof-therailroad-problemthe-history-of-railway-discrimination-in-the-united-states-the-chief-efforts-at-control-and-the-remedies-proposed-with-hints-from-other-countries-68664",
-    "title": "THE HEARTOF THERAILROAD PROBLEMTHE HISTORY OF RAILWAY DISCRIMINATION IN THE UNITED STATES, THE CHIEF EFFORTS AT CONTROL AND THE REMEDIES PROPOSED, WITH HINTS FROM OTHER COUNTRIES",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/the-heartof-therailroad-problemthe-history-of-railway-discrimination-in-the-united-states-the-chief-efforts-at-control-and-the-remedies-proposed-with-hints-from-other-countries-68664",
-    "chapter_count": 50,
-    "updated": "2026-03-22",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "unknown-59456",
-    "title": "Unknown",
-    "author": "John Ruskin (1819–1900)",
-    "path": "data/books/gutenberg/unknown-59456",
-    "chapter_count": 19,
-    "updated": "2026-03-22",
-    "source": "Project Gutenberg"
-  },
-  {
-    "id": "theagricultural-andforest-products-ofbritish-west-africa-70973",
-    "title": "THEAGRICULTURAL ANDFOREST PRODUCTS OFBRITISH WEST AFRICA",
-    "author": "Unknown",
-    "path": "data/books/gutenberg/theagricultural-andforest-products-ofbritish-west-africa-70973",
-    "chapter_count": 12,
-    "updated": "2026-03-24",
-    "source": "Project Gutenberg"
   }
 ]

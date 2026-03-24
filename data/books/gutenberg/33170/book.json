@@ -1,0 +1,569 @@
+{
+  "id": "33170",
+  "title": "TheItching Palm",
+  "author": "Unknown",
+  "word_count": 28573,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofThe Itching Palm: A Study of the Habit of Tipping in America",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "IFLUNKYISM IN AMERICA",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "[10]IION PERSONAL LIBERTY",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "TIPPING UN-AMERICAN",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "IF TIPPING IS UN-AMERICAN, SOME DAY, SOMEHOW, IT WILL BE UPROOTED LIKE\r\nAFRICAN SLAVERY",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "SHORT-LIVED LAWS",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "PERSONAL LIBERTY",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "[15]IIIBARBARY PIRATES",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "TRIBUTE",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "[19]IVPERSONNEL AND DISTRIBUTION",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "THE TIP-TAKING CLASSES",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "IN NEW YORK ALONE",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "[26]VTHE ECONOMICS OF TIPPING",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "THE WAITER",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "ECONOMIC WASTE",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "THE BARBER",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "THE HOTEL",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "THE CHAUFFEUR",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "[36]VITHE ETHICS OF TIPPING",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "THE PRICE OF PRIDE",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "THE TEST OF DEMOCRACY",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "TIPS DISLIKED BY RECIPIENTS",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "CONSCIENCE IS STIRRING",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "HUSH MONEY",
+      "file": "chapters/ch24.html"
+    },
+    {
+      "id": "ch25",
+      "title": "SPLITTING COMMISSIONS",
+      "file": "chapters/ch25.html"
+    },
+    {
+      "id": "ch26",
+      "title": "THE BIBLE AGAINST TIPS",
+      "file": "chapters/ch26.html"
+    },
+    {
+      "id": "ch27",
+      "title": "[47]VIITHE PSYCHOLOGY OF TIPPING",
+      "file": "chapters/ch27.html"
+    },
+    {
+      "id": "ch28",
+      "title": "CASTE AND CLASS",
+      "file": "chapters/ch28.html"
+    },
+    {
+      "id": "ch29",
+      "title": "NO SUPERIOR CLASS",
+      "file": "chapters/ch29.html"
+    },
+    {
+      "id": "ch30",
+      "title": "TIPPING AND SLAVERY",
+      "file": "chapters/ch30.html"
+    },
+    {
+      "id": "ch31",
+      "title": "FIRST INGREDIENT, GENEROSITY",
+      "file": "chapters/ch31.html"
+    },
+    {
+      "id": "ch32",
+      "title": "CLOAKROOM TACTICS",
+      "file": "chapters/ch32.html"
+    },
+    {
+      "id": "ch33",
+      "title": "SECOND INGREDIENT, PRIDE",
+      "file": "chapters/ch33.html"
+    },
+    {
+      "id": "ch34",
+      "title": "[55]THIRD INGREDIENT, FEAR",
+      "file": "chapters/ch34.html"
+    },
+    {
+      "id": "ch35",
+      "title": "THE REMEDY",
+      "file": "chapters/ch35.html"
+    },
+    {
+      "id": "ch36",
+      "title": "[58]VIIITHE LITERATURE OF TIPPING",
+      "file": "chapters/ch36.html"
+    },
+    {
+      "id": "ch37",
+      "title": "[59]HOTEL FEES",
+      "file": "chapters/ch37.html"
+    },
+    {
+      "id": "ch38",
+      "title": "TIP—OR BE INSULTED",
+      "file": "chapters/ch38.html"
+    },
+    {
+      "id": "ch39",
+      "title": "HOW THE BOOKS HELP",
+      "file": "chapters/ch39.html"
+    },
+    {
+      "id": "ch40",
+      "title": "IN PRIVATE HOUSES",
+      "file": "chapters/ch40.html"
+    },
+    {
+      "id": "ch41",
+      "title": "ON OCEAN VOYAGES",
+      "file": "chapters/ch41.html"
+    },
+    {
+      "id": "ch42",
+      "title": "THE \"RICH AMERICAN\" MYTH",
+      "file": "chapters/ch42.html"
+    },
+    {
+      "id": "ch43",
+      "title": "[68]IXTIPPING AND THE STAGE",
+      "file": "chapters/ch43.html"
+    },
+    {
+      "id": "ch44",
+      "title": "COMIC WOES",
+      "file": "chapters/ch44.html"
+    },
+    {
+      "id": "ch45",
+      "title": "TIPS IN THE MOVIES",
+      "file": "chapters/ch45.html"
+    },
+    {
+      "id": "ch46",
+      "title": "IMPRESSING THE YOUNG",
+      "file": "chapters/ch46.html"
+    },
+    {
+      "id": "ch47",
+      "title": "[73]XTHE EMPLOYEE VIEWPOINT",
+      "file": "chapters/ch47.html"
+    },
+    {
+      "id": "ch48",
+      "title": "THE SORE SPOT",
+      "file": "chapters/ch48.html"
+    },
+    {
+      "id": "ch49",
+      "title": "THE MARTYR",
+      "file": "chapters/ch49.html"
+    },
+    {
+      "id": "ch50",
+      "title": "BAGGAGEMEN",
+      "file": "chapters/ch50.html"
+    },
+    {
+      "id": "ch51",
+      "title": "[78]BOOTBLACKS",
+      "file": "chapters/ch51.html"
+    },
+    {
+      "id": "ch52",
+      "title": "BARBER SHOP PORTERS",
+      "file": "chapters/ch52.html"
+    },
+    {
+      "id": "ch53",
+      "title": "[81]DOOR MEN",
+      "file": "chapters/ch53.html"
+    },
+    {
+      "id": "ch54",
+      "title": "GUIDES",
+      "file": "chapters/ch54.html"
+    },
+    {
+      "id": "ch55",
+      "title": "HATBOYS",
+      "file": "chapters/ch55.html"
+    },
+    {
+      "id": "ch56",
+      "title": "JANITORS",
+      "file": "chapters/ch56.html"
+    },
+    {
+      "id": "ch57",
+      "title": "MANICURISTS",
+      "file": "chapters/ch57.html"
+    },
+    {
+      "id": "ch58",
+      "title": "MESSENGERS",
+      "file": "chapters/ch58.html"
+    },
+    {
+      "id": "ch59",
+      "title": "STENOGRAPHERS",
+      "file": "chapters/ch59.html"
+    },
+    {
+      "id": "ch60",
+      "title": "[88]XITHE EMPLOYER VIEWPOINT",
+      "file": "chapters/ch60.html"
+    },
+    {
+      "id": "ch61",
+      "title": "THREE KINDS OF EMPLOYERS",
+      "file": "chapters/ch61.html"
+    },
+    {
+      "id": "ch62",
+      "title": "SELLING THE TIP PRIVILEGE",
+      "file": "chapters/ch62.html"
+    },
+    {
+      "id": "ch63",
+      "title": "ARE YOU A BENEFACTOR?",
+      "file": "chapters/ch63.html"
+    },
+    {
+      "id": "ch64",
+      "title": "A REASONABLE SOLUTION",
+      "file": "chapters/ch64.html"
+    },
+    {
+      "id": "ch65",
+      "title": "[97]XIIONE STEP FORWARD",
+      "file": "chapters/ch65.html"
+    },
+    {
+      "id": "ch66",
+      "title": "A SOUND CODE",
+      "file": "chapters/ch66.html"
+    },
+    {
+      "id": "ch67",
+      "title": "FOR THE BENEFIT OF GUESTS",
+      "file": "chapters/ch67.html"
+    },
+    {
+      "id": "ch68",
+      "title": "NOT HOSPITALITY",
+      "file": "chapters/ch68.html"
+    },
+    {
+      "id": "ch69",
+      "title": "UP TO THE EMPLOYER",
+      "file": "chapters/ch69.html"
+    },
+    {
+      "id": "ch70",
+      "title": "THE FIRST STEP",
+      "file": "chapters/ch70.html"
+    },
+    {
+      "id": "ch71",
+      "title": "THE GUEST'S RIGHTS",
+      "file": "chapters/ch71.html"
+    },
+    {
+      "id": "ch72",
+      "title": "[105]XIIITHE SLEEPING-CAR PHASE",
+      "file": "chapters/ch72.html"
+    },
+    {
+      "id": "ch73",
+      "title": "WHAT THE PULLMAN MANAGER SAID",
+      "file": "chapters/ch73.html"
+    },
+    {
+      "id": "ch74",
+      "title": "WHAT THE PORTERS SAID",
+      "file": "chapters/ch74.html"
+    },
+    {
+      "id": "ch75",
+      "title": "SERVICE INCLUDED",
+      "file": "chapters/ch75.html"
+    },
+    {
+      "id": "ch76",
+      "title": "WHAT THE PRESS SAID",
+      "file": "chapters/ch76.html"
+    },
+    {
+      "id": "ch77",
+      "title": "[113]XIVTHE GOVERNMENT AND TIPPING",
+      "file": "chapters/ch77.html"
+    },
+    {
+      "id": "ch78",
+      "title": "FREE AND EQUAL",
+      "file": "chapters/ch78.html"
+    },
+    {
+      "id": "ch79",
+      "title": "EQUALITY AND UNIFORMITY",
+      "file": "chapters/ch79.html"
+    },
+    {
+      "id": "ch80",
+      "title": "MISGUIDED GENEROSITY",
+      "file": "chapters/ch80.html"
+    },
+    {
+      "id": "ch81",
+      "title": "[119]THE GOLDEN RULE",
+      "file": "chapters/ch81.html"
+    },
+    {
+      "id": "ch82",
+      "title": "GOVERNMENT HOTELS",
+      "file": "chapters/ch82.html"
+    },
+    {
+      "id": "ch83",
+      "title": "[122]XVLAWS AGAINST TIPPING",
+      "file": "chapters/ch83.html"
+    },
+    {
+      "id": "ch84",
+      "title": "CUSTOM ABOVE LAW",
+      "file": "chapters/ch84.html"
+    },
+    {
+      "id": "ch85",
+      "title": "THE IOWA LAW",
+      "file": "chapters/ch85.html"
+    },
+    {
+      "id": "ch86",
+      "title": "THE WISCONSIN BILL",
+      "file": "chapters/ch86.html"
+    },
+    {
+      "id": "ch87",
+      "title": "THE COURTS AND TIPPING",
+      "file": "chapters/ch87.html"
+    },
+    {
+      "id": "ch88",
+      "title": "THE SOUTH CAROLINA LAW",
+      "file": "chapters/ch88.html"
+    },
+    {
+      "id": "ch89",
+      "title": "THE IDEAL LAW",
+      "file": "chapters/ch89.html"
+    },
+    {
+      "id": "ch90",
+      "title": "THE NEBRASKA ACT",
+      "file": "chapters/ch90.html"
+    },
+    {
+      "id": "ch91",
+      "title": "THE TENNESSEE LAW",
+      "file": "chapters/ch91.html"
+    },
+    {
+      "id": "ch92",
+      "title": "THE ILLINOIS COMPROMISE",
+      "file": "chapters/ch92.html"
+    },
+    {
+      "id": "ch93",
+      "title": "LEGALIZED ROBBERY",
+      "file": "chapters/ch93.html"
+    },
+    {
+      "id": "ch94",
+      "title": "IN MASSACHUSETTS",
+      "file": "chapters/ch94.html"
+    },
+    {
+      "id": "ch95",
+      "title": "[144]XVISAMUEL GOMPERS ON TIPPING",
+      "file": "chapters/ch95.html"
+    },
+    {
+      "id": "ch96",
+      "title": "WAITERS AGAINST THE TIP CUSTOM",
+      "file": "chapters/ch96.html"
+    },
+    {
+      "id": "ch97",
+      "title": "A LABOR LEADER ON TIPS",
+      "file": "chapters/ch97.html"
+    },
+    {
+      "id": "ch98",
+      "title": "EUROPEAN TIPS",
+      "file": "chapters/ch98.html"
+    },
+    {
+      "id": "ch99",
+      "title": "NIP! NIP!",
+      "file": "chapters/ch99.html"
+    },
+    {
+      "id": "ch100",
+      "title": "\"BRIBE AND BE HAPPY\"",
+      "file": "chapters/ch100.html"
+    },
+    {
+      "id": "ch101",
+      "title": "BORDERS ON BLACKMAIL",
+      "file": "chapters/ch101.html"
+    },
+    {
+      "id": "ch102",
+      "title": "MORAL PIRATES",
+      "file": "chapters/ch102.html"
+    },
+    {
+      "id": "ch103",
+      "title": "TOO MANY SERVANTS",
+      "file": "chapters/ch103.html"
+    },
+    {
+      "id": "ch104",
+      "title": "A SORRY BUSINESS",
+      "file": "chapters/ch104.html"
+    },
+    {
+      "id": "ch105",
+      "title": "VANITY, ALL IS VANITY!",
+      "file": "chapters/ch105.html"
+    },
+    {
+      "id": "ch106",
+      "title": "[158]XVIITHE WAY OUT",
+      "file": "chapters/ch106.html"
+    },
+    {
+      "id": "ch107",
+      "title": "BETTER ORGANIZATION NEEDED",
+      "file": "chapters/ch107.html"
+    },
+    {
+      "id": "ch108",
+      "title": "NOT A WAR AGAINST PERSONS",
+      "file": "chapters/ch108.html"
+    },
+    {
+      "id": "ch109",
+      "title": "PUBLIC OPINION",
+      "file": "chapters/ch109.html"
+    },
+    {
+      "id": "ch110",
+      "title": "PROMOTING LEGISLATION",
+      "file": "chapters/ch110.html"
+    },
+    {
+      "id": "ch111",
+      "title": "TO PREVENT COMPLAINT",
+      "file": "chapters/ch111.html"
+    },
+    {
+      "id": "ch112",
+      "title": "[169]INDEX",
+      "file": "chapters/ch112.html"
+    }
+  ],
+  "updated": "2026-03-24"
+}

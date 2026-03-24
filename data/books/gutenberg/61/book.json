@@ -1,0 +1,54 @@
+{
+  "id": "61",
+  "title": "The Communist Manifesto",
+  "author": "Unknown",
+  "word_count": 11441,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofThe Communist Manifesto",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "by Karl Marx and Friedrich Engels",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "Contents",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "I.BOURGEOIS AND PROLETARIANS",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "II.PROLETARIANS AND COMMUNISTS",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "1. REACTIONARY SOCIALISM",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "2. CONSERVATIVE, OR BOURGEOIS, SOCIALISM",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "3. CRITICAL-UTOPIAN SOCIALISM AND COMMUNISM",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "IV.POSITION OF THE COMMUNISTS IN RELATION TO THE VARIOUS EXISTING OPPOSITION PARTIES",
+      "file": "chapters/ch09.html"
+    }
+  ],
+  "updated": "2026-03-24"
+}

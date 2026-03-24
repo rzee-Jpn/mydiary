@@ -1,5 +1,10 @@
 {
   "page": "https://www.gutenberg.org/ebooks/bookshelf/696?start_index=126",
   "index": 3,
-  "done": true
+  "done": true,
+  "seen_ids": [
+    "61",
+    "33170",
+    "3300"
+  ]
 }
