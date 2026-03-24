@@ -1,0 +1,1129 @@
+{
+  "id": "30107",
+  "title": "Contents",
+  "author": "Unknown",
+  "word_count": 197955,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofPrinciples of Political Economy",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "A Sketch Of The History Of Political Economy.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "Books For Consultation (From English, French, And German Authors).",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "Preliminary Remarks.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "§ 1. The Requisites of Production are Two: Labor, and\r\nAppropriate Natural Objects.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "§ 2. The Second Requisite\r\nof Production, Labor.",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "§ 3. Of Capital as a Requisite of Production.",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "§ 1. Definition of Productive and Unproductive Labor.",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "§ 2. Productive and Unproductive Consumption.",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "§ 3. Distinction Between Labor for the Supply of Productive\r\nConsumption and Labor for the Supply of Unproductive Consumption.",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "§ 1. Capital is Wealth Appropriated to Reproductive Employment.",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "§ 2. More Capital Devoted to Production than Actually Employed in it.",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "§ 3. Examination of Cases Illustrative of the Idea of Capital.",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "§ 1. Industry is Limited by Capital.",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "§ 2. Increase of Capital gives Increased Employment to Labor, Without\r\nAssignable Bounds.",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "§ 3. Capital is the result of Saving, and all Capital is Consumed.",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "§ 4. Capital is kept up by Perpetual Reproduction, as shown by the Recovery\r\nof Countries from Devastation.",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "§ 5. Effects of Defraying Government Expenditure by Loans.",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "§ 6. Demand for Commodities is not Demand for Labor.",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "§ 1. Fixed and Circulating Capital.",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "§ 2. Increase of Fixed Capital, when, at the Expense of Circulating, might be\r\nDetrimental to the Laborers.",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "§ 3. —This seldom, if ever, occurs.",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "§ 1. General Causes of Superior Productiveness.",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "§ 2. Combination and Division of Labor Increase Productiveness.",
+      "file": "chapters/ch24.html"
+    },
+    {
+      "id": "ch25",
+      "title": "§ 3. Advantages of Division of Labor.",
+      "file": "chapters/ch25.html"
+    },
+    {
+      "id": "ch26",
+      "title": "§ 4. Production on a Large and Production on a Small Scale.",
+      "file": "chapters/ch26.html"
+    },
+    {
+      "id": "ch27",
+      "title": "§ 1. The Law of the Increase of Production Depends on those of Three\r\nElements—Labor. Capital, and Land.",
+      "file": "chapters/ch27.html"
+    },
+    {
+      "id": "ch28",
+      "title": "§ 2. The Law of Population.",
+      "file": "chapters/ch28.html"
+    },
+    {
+      "id": "ch29",
+      "title": "§ 3. By what Checks the Increase of Population is Practically Limited.",
+      "file": "chapters/ch29.html"
+    },
+    {
+      "id": "ch30",
+      "title": "§ 1. Means for Saving in the Surplus above Necessaries.",
+      "file": "chapters/ch30.html"
+    },
+    {
+      "id": "ch31",
+      "title": "§ 2. Motive for Saving in the Surplus above Necessaries.",
+      "file": "chapters/ch31.html"
+    },
+    {
+      "id": "ch32",
+      "title": "§ 3. Examples of Deficiency in the Strength of this Desire.",
+      "file": "chapters/ch32.html"
+    },
+    {
+      "id": "ch33",
+      "title": "§ 4. Examples of Excess of this Desire.",
+      "file": "chapters/ch33.html"
+    },
+    {
+      "id": "ch34",
+      "title": "§ 1. The Law of Production from the Soil, a Law of Diminishing Return\r\nin Proportion to the Increased Application of Labor and Capital.",
+      "file": "chapters/ch34.html"
+    },
+    {
+      "id": "ch35",
+      "title": "§ 2. Antagonist Principle to the Law of Diminishing Return;\r\nthe Progress of Improvements in Production.",
+      "file": "chapters/ch35.html"
+    },
+    {
+      "id": "ch36",
+      "title": "§ 3. —In Railways.",
+      "file": "chapters/ch36.html"
+    },
+    {
+      "id": "ch37",
+      "title": "§ 4. —In Manufactures.",
+      "file": "chapters/ch37.html"
+    },
+    {
+      "id": "ch38",
+      "title": "§ 5. Law Holds True of Mining.",
+      "file": "chapters/ch38.html"
+    },
+    {
+      "id": "ch39",
+      "title": "§ 1. Remedies for Weakness of the Principle of Accumulation.",
+      "file": "chapters/ch39.html"
+    },
+    {
+      "id": "ch40",
+      "title": "§ 2. Even where the Desire to Accumulate is Strong,\r\nPopulation must be Kept within the Limits of Population from Land.",
+      "file": "chapters/ch40.html"
+    },
+    {
+      "id": "ch41",
+      "title": "§ 3. Necessity of Restraining Population not superseded by Free\r\nTrade in Food.",
+      "file": "chapters/ch41.html"
+    },
+    {
+      "id": "ch42",
+      "title": "§ 4. —Nor by Emigration.",
+      "file": "chapters/ch42.html"
+    },
+    {
+      "id": "ch43",
+      "title": "§ 1. Individual Property and its opponents.",
+      "file": "chapters/ch43.html"
+    },
+    {
+      "id": "ch44",
+      "title": "§ 2. The case for Communism against private property presented.",
+      "file": "chapters/ch44.html"
+    },
+    {
+      "id": "ch45",
+      "title": "§ 3. The Socialists who appeal to state-help.",
+      "file": "chapters/ch45.html"
+    },
+    {
+      "id": "ch46",
+      "title": "§ 4. Of various minor schemes, Communistic and Socialistic.",
+      "file": "chapters/ch46.html"
+    },
+    {
+      "id": "ch47",
+      "title": "§ 5.  The Socialist objections to the present order of Society examined.",
+      "file": "chapters/ch47.html"
+    },
+    {
+      "id": "ch48",
+      "title": "§ 6. Property in land different from property in Movables.",
+      "file": "chapters/ch48.html"
+    },
+    {
+      "id": "ch49",
+      "title": "§ 1. Of Competition and Custom.",
+      "file": "chapters/ch49.html"
+    },
+    {
+      "id": "ch50",
+      "title": "§ 2. The Wages-fund, and the Objections to it Considered.",
+      "file": "chapters/ch50.html"
+    },
+    {
+      "id": "ch51",
+      "title": "§ 3. Examination of some popular Opinions respecting Wages.",
+      "file": "chapters/ch51.html"
+    },
+    {
+      "id": "ch52",
+      "title": "§ 4. Certain rare Circumstances excepted, High Wages imply Restraints\r\non Population.",
+      "file": "chapters/ch52.html"
+    },
+    {
+      "id": "ch53",
+      "title": "§ 5. Due Restriction of Population the only Safeguard of a Laboring-Class.",
+      "file": "chapters/ch53.html"
+    },
+    {
+      "id": "ch54",
+      "title": "§ 1. A Legal or Customary Minimum of Wages, with a Guarantee of\r\nEmployment.",
+      "file": "chapters/ch54.html"
+    },
+    {
+      "id": "ch55",
+      "title": "§ 2. —Would Require as a Condition Legal Measures for Repression of\r\nPopulation.",
+      "file": "chapters/ch55.html"
+    },
+    {
+      "id": "ch56",
+      "title": "§ 3. Allowances in Aid of Wages and the Standard of Living.",
+      "file": "chapters/ch56.html"
+    },
+    {
+      "id": "ch57",
+      "title": "§ 4. Grounds for Expecting Improvement in Public Opinion on the Subject\r\nof Population.",
+      "file": "chapters/ch57.html"
+    },
+    {
+      "id": "ch58",
+      "title": "§ 5. Twofold means of Elevating the Habits of the Laboring-People; by Education,\r\nand by Foreign and Home Colonization.",
+      "file": "chapters/ch58.html"
+    },
+    {
+      "id": "ch59",
+      "title": "§ 1. Differences of Wages Arising from Different Degrees of Attractiveness in\r\nDifferent Employments.",
+      "file": "chapters/ch59.html"
+    },
+    {
+      "id": "ch60",
+      "title": "§ 2.  Differences arising from Natural Monopolies.",
+      "file": "chapters/ch60.html"
+    },
+    {
+      "id": "ch61",
+      "title": "§ 3.  Effect on Wages of the Competition of Persons having other Means of\r\nSupport.",
+      "file": "chapters/ch61.html"
+    },
+    {
+      "id": "ch62",
+      "title": "§ 4. Wages of Women, why Lower than those of Men.",
+      "file": "chapters/ch62.html"
+    },
+    {
+      "id": "ch63",
+      "title": "§ 5. Differences of Wages Arising from Laws, Combinations, or Customs.",
+      "file": "chapters/ch63.html"
+    },
+    {
+      "id": "ch64",
+      "title": "§ 1. Profits include Interest and Risk; but, correctly speaking, do not\r\ninclude Wages of Superintendence.",
+      "file": "chapters/ch64.html"
+    },
+    {
+      "id": "ch65",
+      "title": "§ 2. The Minimum of Profits; what produces Variations in the Amount\r\nof Profits.",
+      "file": "chapters/ch65.html"
+    },
+    {
+      "id": "ch66",
+      "title": "§ 3. General Tendency of Profits to an Equality.",
+      "file": "chapters/ch66.html"
+    },
+    {
+      "id": "ch67",
+      "title": "§ 4. The Cause of the Existence of any Profit; the Advances of Capitalists\r\nconsist of Wages of Labor.",
+      "file": "chapters/ch67.html"
+    },
+    {
+      "id": "ch68",
+      "title": "§ 5. The Rate of Profit depends on the Cost of Labor.",
+      "file": "chapters/ch68.html"
+    },
+    {
+      "id": "ch69",
+      "title": "§ 1. Rent the Effect of a Natural Monopoly.",
+      "file": "chapters/ch69.html"
+    },
+    {
+      "id": "ch70",
+      "title": "§ 2. No Land can pay Rent except Land of such Quality or Situation as exists in\r\nless Quantity than the Demand.",
+      "file": "chapters/ch70.html"
+    },
+    {
+      "id": "ch71",
+      "title": "§ 3. The Rent of Land is the Excess of its Return above the Return to the worst\r\nLand in Cultivation.",
+      "file": "chapters/ch71.html"
+    },
+    {
+      "id": "ch72",
+      "title": "§ 4. —Or to the Capital employed in the least advantageous\r\nCircumstances.",
+      "file": "chapters/ch72.html"
+    },
+    {
+      "id": "ch73",
+      "title": "§ 5. Opposing Views of the Law of Rent.",
+      "file": "chapters/ch73.html"
+    },
+    {
+      "id": "ch74",
+      "title": "§ 6. Rent does not enter into the Cost of Production of\r\nAgricultural Produce.",
+      "file": "chapters/ch74.html"
+    },
+    {
+      "id": "ch75",
+      "title": "§ 1. Definitions of Value in Use, Exchange Value, and Price.",
+      "file": "chapters/ch75.html"
+    },
+    {
+      "id": "ch76",
+      "title": "§ 2. Conditions of Value: Utility, Difficulty of Attainment,\r\nand Transferableness.",
+      "file": "chapters/ch76.html"
+    },
+    {
+      "id": "ch77",
+      "title": "§ 3. Commodities limited in Quantity by the law of Demand and Supply:\r\nGeneral working of this Law.",
+      "file": "chapters/ch77.html"
+    },
+    {
+      "id": "ch78",
+      "title": "§ 4. Miscellaneous Cases falling under this Law.",
+      "file": "chapters/ch78.html"
+    },
+    {
+      "id": "ch79",
+      "title": "§ 5. Commodities which are Susceptible of Indefinite Multiplication without\r\nIncrease of Cost. Law of their Value Cost of Production.",
+      "file": "chapters/ch79.html"
+    },
+    {
+      "id": "ch80",
+      "title": "§ 6. The Value of these Commodities confirm, in the long run, to their\r\nCost of Production through the operation of Demand and Supply.",
+      "file": "chapters/ch80.html"
+    },
+    {
+      "id": "ch81",
+      "title": "§ 1. Of Labor, the principal Element in Cost of Production.",
+      "file": "chapters/ch81.html"
+    },
+    {
+      "id": "ch82",
+      "title": "§ 2. Wages affect Values, only if different in different employments;“non-competing groups.”",
+      "file": "chapters/ch82.html"
+    },
+    {
+      "id": "ch83",
+      "title": "§ 3. Profits an element in Cost of Production.",
+      "file": "chapters/ch83.html"
+    },
+    {
+      "id": "ch84",
+      "title": "§ 4. Cost of Production properly represented by sacrifice, or cost, to the\r\nLaborer as well as to the Capitalist; the relation of this conception to the\r\nCost of Labor.",
+      "file": "chapters/ch84.html"
+    },
+    {
+      "id": "ch85",
+      "title": "§ 5. When profits vary from Employment to Employment, or are spread over\r\nunequal lengths of Time, they affect Values accordingly.",
+      "file": "chapters/ch85.html"
+    },
+    {
+      "id": "ch86",
+      "title": "§ 6. Occasional Elements in Cost of Production; taxes and ground-rent.",
+      "file": "chapters/ch86.html"
+    },
+    {
+      "id": "ch87",
+      "title": "§ 1. Commodities which are susceptible of indefinite Multiplication, but not\r\nwithout increase of Cost. Law of their Value, Cost of Production in the most\r\nunfavorable existing circumstances.",
+      "file": "chapters/ch87.html"
+    },
+    {
+      "id": "ch88",
+      "title": "§ 2. Such commodities, when Produced in circumstances more favorable, yield a\r\nRent equal to the difference of Cost.",
+      "file": "chapters/ch88.html"
+    },
+    {
+      "id": "ch89",
+      "title": "§ 3. Rent of Mines and Fisheries and ground-rent of Buildings, and cases of gain\r\nanalogous to Rent.",
+      "file": "chapters/ch89.html"
+    },
+    {
+      "id": "ch90",
+      "title": "§ 4.Résuméof the laws of value of each of the three\r\nclasses of commodities.",
+      "file": "chapters/ch90.html"
+    },
+    {
+      "id": "ch91",
+      "title": "§ 1. The three functions of Money—a Common Denominator of Value,\r\na Medium of Exchange, a“Standard of Value”.",
+      "file": "chapters/ch91.html"
+    },
+    {
+      "id": "ch92",
+      "title": "§ 2. Gold and Silver, why fitted for those purposes.",
+      "file": "chapters/ch92.html"
+    },
+    {
+      "id": "ch93",
+      "title": "§ 3. Money a mere contrivance for facilitating exchanges, which does not\r\naffect the laws of value.",
+      "file": "chapters/ch93.html"
+    },
+    {
+      "id": "ch94",
+      "title": "§ 1. Value of Money, an ambiguous expression.",
+      "file": "chapters/ch94.html"
+    },
+    {
+      "id": "ch95",
+      "title": "§ 2. The Value of Money depends on its quantity.",
+      "file": "chapters/ch95.html"
+    },
+    {
+      "id": "ch96",
+      "title": "§ 3. —Together with the Rapidity of Circulation.",
+      "file": "chapters/ch96.html"
+    },
+    {
+      "id": "ch97",
+      "title": "§ 4. Explanations and Limitations of this Principle.",
+      "file": "chapters/ch97.html"
+    },
+    {
+      "id": "ch98",
+      "title": "§ 1. The value of Money, in a state of Freedom, conforms to the value of the\r\nBullion contained in it.",
+      "file": "chapters/ch98.html"
+    },
+    {
+      "id": "ch99",
+      "title": "§ 2. —Which is determined by the cost of production.",
+      "file": "chapters/ch99.html"
+    },
+    {
+      "id": "ch100",
+      "title": "§ 3. This law, how related to the principle laid down in the preceding\r\nchapter.",
+      "file": "chapters/ch100.html"
+    },
+    {
+      "id": "ch101",
+      "title": "§ 1. Objections to a Double Standard.",
+      "file": "chapters/ch101.html"
+    },
+    {
+      "id": "ch102",
+      "title": "§ 2. The use of the two metals as money, and the management of Subsidiary\r\nCoins.",
+      "file": "chapters/ch102.html"
+    },
+    {
+      "id": "ch103",
+      "title": "§ 3. The experience of the United States with a double standard from\r\n1792 to 1883.",
+      "file": "chapters/ch103.html"
+    },
+    {
+      "id": "ch104",
+      "title": "§ 1. Credit not a creation but a Transfer of the means of Production.",
+      "file": "chapters/ch104.html"
+    },
+    {
+      "id": "ch105",
+      "title": "§ 2. In what manner it assists Production.",
+      "file": "chapters/ch105.html"
+    },
+    {
+      "id": "ch106",
+      "title": "§ 3. Function of Credit in economizing the use of Money.",
+      "file": "chapters/ch106.html"
+    },
+    {
+      "id": "ch107",
+      "title": "§ 4. Bills of Exchange.",
+      "file": "chapters/ch107.html"
+    },
+    {
+      "id": "ch108",
+      "title": "§ 5. Promissory Notes.",
+      "file": "chapters/ch108.html"
+    },
+    {
+      "id": "ch109",
+      "title": "§ 6. Deposits and Checks.",
+      "file": "chapters/ch109.html"
+    },
+    {
+      "id": "ch110",
+      "title": "§ 1. What acts on prices is Credit, in whatever shape given.",
+      "file": "chapters/ch110.html"
+    },
+    {
+      "id": "ch111",
+      "title": "§ 2. Credit a purchasing Power, similar to Money.",
+      "file": "chapters/ch111.html"
+    },
+    {
+      "id": "ch112",
+      "title": "§ 3. Great extensions and contractions of Credit. Phenomena of a\r\ncommercial crisis analyzed.",
+      "file": "chapters/ch112.html"
+    },
+    {
+      "id": "ch113",
+      "title": "§ 4. Influence of the different forms of Credit on Prices.",
+      "file": "chapters/ch113.html"
+    },
+    {
+      "id": "ch114",
+      "title": "§ 5. On what the use of Credit depends.",
+      "file": "chapters/ch114.html"
+    },
+    {
+      "id": "ch115",
+      "title": "§ 6. What is essential to the idea of Money?",
+      "file": "chapters/ch115.html"
+    },
+    {
+      "id": "ch116",
+      "title": "§ 1. What determines the value of an inconvertible paper money?",
+      "file": "chapters/ch116.html"
+    },
+    {
+      "id": "ch117",
+      "title": "§ 2. If regulated by the price of Bullion, as inconvertible Currency\r\nmight be safe, but not Expedient.",
+      "file": "chapters/ch117.html"
+    },
+    {
+      "id": "ch118",
+      "title": "§ 3. Examination of the doctrine that an inconvertible Current is safe,\r\nif representing actual Property.",
+      "file": "chapters/ch118.html"
+    },
+    {
+      "id": "ch119",
+      "title": "§ 4. Experiments with paper Money in the United States.",
+      "file": "chapters/ch119.html"
+    },
+    {
+      "id": "ch120",
+      "title": "§ 5. Examination of the gain arising from the increase and issue of paper\r\nCurrency.",
+      "file": "chapters/ch120.html"
+    },
+    {
+      "id": "ch121",
+      "title": "§ 6.Résuméof the subject of money.",
+      "file": "chapters/ch121.html"
+    },
+    {
+      "id": "ch122",
+      "title": "§ 1. The theory of a general Over-Supply of Commodities stated.",
+      "file": "chapters/ch122.html"
+    },
+    {
+      "id": "ch123",
+      "title": "§ 2. The supply of commodities in general can not exceed the power\r\nof Purchase.",
+      "file": "chapters/ch123.html"
+    },
+    {
+      "id": "ch124",
+      "title": "§ 3. There can never be a lack of Demand arising from lack of Desire to\r\nConsume.",
+      "file": "chapters/ch124.html"
+    },
+    {
+      "id": "ch125",
+      "title": "§ 4. Origin and Explanation of the notion of general Over-Supply.",
+      "file": "chapters/ch125.html"
+    },
+    {
+      "id": "ch126",
+      "title": "§ 1. Values of commodities which have a joint cost of production.",
+      "file": "chapters/ch126.html"
+    },
+    {
+      "id": "ch127",
+      "title": "§ 2. Values of the different kinds of agricultural produce.",
+      "file": "chapters/ch127.html"
+    },
+    {
+      "id": "ch128",
+      "title": "§ 1. Cost of Production not a regulator of international values.\r\nExtension of the word“international.”",
+      "file": "chapters/ch128.html"
+    },
+    {
+      "id": "ch129",
+      "title": "§ 2. Interchange of commodities between distance places determined by\r\ndifferences not in their absolute, but in the comparative, costs of\r\nproduction.",
+      "file": "chapters/ch129.html"
+    },
+    {
+      "id": "ch130",
+      "title": "§ 3. The direct benefits of commerce consist in increased Efficiency of\r\nthe productive powers of the World.",
+      "file": "chapters/ch130.html"
+    },
+    {
+      "id": "ch131",
+      "title": "§ 4. —Not in a Vent for exports, nor in the gains of Merchants.",
+      "file": "chapters/ch131.html"
+    },
+    {
+      "id": "ch132",
+      "title": "§ 5. Indirect benefits of Commerce, Economical and Moral; still\r\ngreater than the Direct.",
+      "file": "chapters/ch132.html"
+    },
+    {
+      "id": "ch133",
+      "title": "§ 1. The values of imported commodities depend on the Terms of\r\ninternational interchange.",
+      "file": "chapters/ch133.html"
+    },
+    {
+      "id": "ch134",
+      "title": "§ 2. The values of foreign commodities depend, not upon Cost of Production,\r\nbut upon Reciprocal Demand and Supply.",
+      "file": "chapters/ch134.html"
+    },
+    {
+      "id": "ch135",
+      "title": "§ 3. —As illustrated by trade in cloth and linen between England\r\nand Germany.",
+      "file": "chapters/ch135.html"
+    },
+    {
+      "id": "ch136",
+      "title": "§ 4. The conclusion states in the Equation of International Demand.",
+      "file": "chapters/ch136.html"
+    },
+    {
+      "id": "ch137",
+      "title": "§ 5. The cost to a country of its imports depends not only on the ratio of\r\nexchange, but on the efficiency of its labor.",
+      "file": "chapters/ch137.html"
+    },
+    {
+      "id": "ch138",
+      "title": "§ 1. Money imported on two modes; as a Commodity, and as a medium\r\nof Exchange.",
+      "file": "chapters/ch138.html"
+    },
+    {
+      "id": "ch139",
+      "title": "§ 2. As a commodity, it obeys the same laws of Value as other imported\r\nCommodities.",
+      "file": "chapters/ch139.html"
+    },
+    {
+      "id": "ch140",
+      "title": "§ 1. Money passes from country to country as a Medium of Exchange,\r\nthrough the Exchanges.",
+      "file": "chapters/ch140.html"
+    },
+    {
+      "id": "ch141",
+      "title": "§ 2. Distinction between Variations in the Exchanges which are self-adjusting\r\nand those which can only be rectified through Prices.",
+      "file": "chapters/ch141.html"
+    },
+    {
+      "id": "ch142",
+      "title": "§ 1. The substitution of money for barter makes no difference in exports\r\nand imports, nor in the Law of international Values.",
+      "file": "chapters/ch142.html"
+    },
+    {
+      "id": "ch143",
+      "title": "§ 2. The preceding Theorem further illustrated.",
+      "file": "chapters/ch143.html"
+    },
+    {
+      "id": "ch144",
+      "title": "§ 3. The precious metals, as money, are of the same Value, and distribute themselves\r\naccording to the same Law, with the precious metals as a Commodity.",
+      "file": "chapters/ch144.html"
+    },
+    {
+      "id": "ch145",
+      "title": "§ 4. International payments entering into the“financial account.”",
+      "file": "chapters/ch145.html"
+    },
+    {
+      "id": "ch146",
+      "title": "§ 1. Variations in the exchange, which originate in the Currency.",
+      "file": "chapters/ch146.html"
+    },
+    {
+      "id": "ch147",
+      "title": "§ 2. Effect of a sudden increase of a metallic Currency, or of the sudden\r\ncreation of Bank-Notes or other substitutes for Money.",
+      "file": "chapters/ch147.html"
+    },
+    {
+      "id": "ch148",
+      "title": "§ 3. Effect of the increase of an inconvertible paper Currency.\r\nReal and nominal exchange.",
+      "file": "chapters/ch148.html"
+    },
+    {
+      "id": "ch149",
+      "title": "§ 1. The Rate of Interest depends on the Demand and Supply of Loans.",
+      "file": "chapters/ch149.html"
+    },
+    {
+      "id": "ch150",
+      "title": "§ 2. Circumstances which Determine the Permanent Demand and Supply of Loans.",
+      "file": "chapters/ch150.html"
+    },
+    {
+      "id": "ch151",
+      "title": "§ 3. Circumstances which Determine the Fluctuations.",
+      "file": "chapters/ch151.html"
+    },
+    {
+      "id": "ch152",
+      "title": "§ 4. The Rate of Interest not really Connected with the value of Money,\r\nbut often confounded with it.",
+      "file": "chapters/ch152.html"
+    },
+    {
+      "id": "ch153",
+      "title": "§ 5. The Rate of Interest determines the price of land and of Securities.",
+      "file": "chapters/ch153.html"
+    },
+    {
+      "id": "ch154",
+      "title": "§ 1. Causes which enable one Country to undersell another.",
+      "file": "chapters/ch154.html"
+    },
+    {
+      "id": "ch155",
+      "title": "§ 2. High wages do not prevent one Country from underselling another.",
+      "file": "chapters/ch155.html"
+    },
+    {
+      "id": "ch156",
+      "title": "§ 3. Low wages enable a Country to undersell another, when Peculiar to certain\r\nbranches of Industry.",
+      "file": "chapters/ch156.html"
+    },
+    {
+      "id": "ch157",
+      "title": "§ 4. —But not when common to All.",
+      "file": "chapters/ch157.html"
+    },
+    {
+      "id": "ch158",
+      "title": "§ 5. Low profits as affecting the carrying Trade.",
+      "file": "chapters/ch158.html"
+    },
+    {
+      "id": "ch159",
+      "title": "§ 1. Exchange and money make no Difference in the law of Wages.",
+      "file": "chapters/ch159.html"
+    },
+    {
+      "id": "ch160",
+      "title": "§ 2. In the law of Rent.",
+      "file": "chapters/ch160.html"
+    },
+    {
+      "id": "ch161",
+      "title": "§ 3. —Nor in the law of Profits.",
+      "file": "chapters/ch161.html"
+    },
+    {
+      "id": "ch162",
+      "title": "§ 1. Tendency of the progress of society toward increased Command over the\r\npowers of Nature; increased Security, and increased Capacity of Co-Operation.",
+      "file": "chapters/ch162.html"
+    },
+    {
+      "id": "ch163",
+      "title": "§ 2. Tendency to a Decline of the Value and Cost of Production of all\r\nCommodities.",
+      "file": "chapters/ch163.html"
+    },
+    {
+      "id": "ch164",
+      "title": "§ 3. —except the products of Agriculture and Mining, which have a\r\ntendency to Rise.",
+      "file": "chapters/ch164.html"
+    },
+    {
+      "id": "ch165",
+      "title": "§ 4. —that tendency from time to time Counteracted by Improvements in\r\nProduction.",
+      "file": "chapters/ch165.html"
+    },
+    {
+      "id": "ch166",
+      "title": "§ 5. Effect of the Progress of Society in moderating fluctuations of Value.",
+      "file": "chapters/ch166.html"
+    },
+    {
+      "id": "ch167",
+      "title": "§ 1. Characteristic features of industrial Progress.",
+      "file": "chapters/ch167.html"
+    },
+    {
+      "id": "ch168",
+      "title": "§ 2. First two cases, Population and Capital increasing, the arts of\r\nproduction stationary.",
+      "file": "chapters/ch168.html"
+    },
+    {
+      "id": "ch169",
+      "title": "§ 3. The arts of production advancing, capital and population stationary.",
+      "file": "chapters/ch169.html"
+    },
+    {
+      "id": "ch170",
+      "title": "§ 4. Theoretical results, if all three Elements progressive.",
+      "file": "chapters/ch170.html"
+    },
+    {
+      "id": "ch171",
+      "title": "§ 5. Practical Results.",
+      "file": "chapters/ch171.html"
+    },
+    {
+      "id": "ch172",
+      "title": "§ 1. Different Theories as to the fall of Profits.",
+      "file": "chapters/ch172.html"
+    },
+    {
+      "id": "ch173",
+      "title": "§ 2. What determines the minimum rate of Profit?",
+      "file": "chapters/ch173.html"
+    },
+    {
+      "id": "ch174",
+      "title": "§ 3. In old and opulent countries, profits habitually near to the minimum.",
+      "file": "chapters/ch174.html"
+    },
+    {
+      "id": "ch175",
+      "title": "§ 4. —prevented from reaching it by commercial revulsions.",
+      "file": "chapters/ch175.html"
+    },
+    {
+      "id": "ch176",
+      "title": "§ 5. —by improvements in Production.",
+      "file": "chapters/ch176.html"
+    },
+    {
+      "id": "ch177",
+      "title": "§ 6. —by the importation of cheap Necessaries and Implements.",
+      "file": "chapters/ch177.html"
+    },
+    {
+      "id": "ch178",
+      "title": "§ 7. —by the emigration of Capital.",
+      "file": "chapters/ch178.html"
+    },
+    {
+      "id": "ch179",
+      "title": "§ 1. Abstraction of Capital not necessarily a national loss.",
+      "file": "chapters/ch179.html"
+    },
+    {
+      "id": "ch180",
+      "title": "§ 2. In opulent countries, the extension of machinery not detrimental but\r\nbeneficial to Laborers.",
+      "file": "chapters/ch180.html"
+    },
+    {
+      "id": "ch181",
+      "title": "§ 3. Stationary state of wealth and population dreaded by some writers, but\r\nnot in itself undesirable.",
+      "file": "chapters/ch181.html"
+    },
+    {
+      "id": "ch182",
+      "title": "§ 1. The possibility of improvement while Laborers remain merely receivers\r\nof Wages.",
+      "file": "chapters/ch182.html"
+    },
+    {
+      "id": "ch183",
+      "title": "§ 2.—through small holdings, by which the landlord's gain is shared.",
+      "file": "chapters/ch183.html"
+    },
+    {
+      "id": "ch184",
+      "title": "§ 3. —through co-operation, by which the manager's wages are shared.",
+      "file": "chapters/ch184.html"
+    },
+    {
+      "id": "ch185",
+      "title": "§ 4.  Distributive Co-operation.",
+      "file": "chapters/ch185.html"
+    },
+    {
+      "id": "ch186",
+      "title": "§ 5. Productive Co-Operation.",
+      "file": "chapters/ch186.html"
+    },
+    {
+      "id": "ch187",
+      "title": "§ 6. Industrial Partnership.",
+      "file": "chapters/ch187.html"
+    },
+    {
+      "id": "ch188",
+      "title": "§ 7. People's Banks.",
+      "file": "chapters/ch188.html"
+    },
+    {
+      "id": "ch189",
+      "title": "§ 1. Four fundamental rules of Taxation.",
+      "file": "chapters/ch189.html"
+    },
+    {
+      "id": "ch190",
+      "title": "§ 2. Grounds of the principle of Equality of Taxation.",
+      "file": "chapters/ch190.html"
+    },
+    {
+      "id": "ch191",
+      "title": "§ 3. Should the same percentage be levied on all amounts of Income?",
+      "file": "chapters/ch191.html"
+    },
+    {
+      "id": "ch192",
+      "title": "§ 4. Should the same percentage be levied on Perpetual and on Terminable\r\nIncomes?",
+      "file": "chapters/ch192.html"
+    },
+    {
+      "id": "ch193",
+      "title": "§ 5. The increase of the rent of land from natural causes a fit subject of\r\npeculiar Taxation.",
+      "file": "chapters/ch193.html"
+    },
+    {
+      "id": "ch194",
+      "title": "§ 6. Taxes falling on Capital not necessarily objectionable.",
+      "file": "chapters/ch194.html"
+    },
+    {
+      "id": "ch195",
+      "title": "§ 1. Direct taxes either on income or expenditure.",
+      "file": "chapters/ch195.html"
+    },
+    {
+      "id": "ch196",
+      "title": "§ 2. Taxes on rent.",
+      "file": "chapters/ch196.html"
+    },
+    {
+      "id": "ch197",
+      "title": "§ 3. —on profits.",
+      "file": "chapters/ch197.html"
+    },
+    {
+      "id": "ch198",
+      "title": "§ 4. —on Wages.",
+      "file": "chapters/ch198.html"
+    },
+    {
+      "id": "ch199",
+      "title": "§ 5. —on Income.",
+      "file": "chapters/ch199.html"
+    },
+    {
+      "id": "ch200",
+      "title": "§ 6. A House-Tax.",
+      "file": "chapters/ch200.html"
+    },
+    {
+      "id": "ch201",
+      "title": "§ 1. A Tax on all commodities would fall on Profits.",
+      "file": "chapters/ch201.html"
+    },
+    {
+      "id": "ch202",
+      "title": "§ 2. Taxes on particular commodities fall on the consumer.",
+      "file": "chapters/ch202.html"
+    },
+    {
+      "id": "ch203",
+      "title": "§ 3. Peculiar effects of taxes on Necessaries.",
+      "file": "chapters/ch203.html"
+    },
+    {
+      "id": "ch204",
+      "title": "§ 4. —how modified by the tendency of profits to a minimum.",
+      "file": "chapters/ch204.html"
+    },
+    {
+      "id": "ch205",
+      "title": "§ 5. Effects of discriminating Duties.",
+      "file": "chapters/ch205.html"
+    },
+    {
+      "id": "ch206",
+      "title": "§ 6. Effects produced on international Exchange by Duties on Exports\r\nand on Imports.",
+      "file": "chapters/ch206.html"
+    },
+    {
+      "id": "ch207",
+      "title": "§ 1. Arguments for and against direct Taxation.",
+      "file": "chapters/ch207.html"
+    },
+    {
+      "id": "ch208",
+      "title": "§ 2. What forms of indirect taxation are most eligible?",
+      "file": "chapters/ch208.html"
+    },
+    {
+      "id": "ch209",
+      "title": "§ 3. Practical rules for indirect taxation.",
+      "file": "chapters/ch209.html"
+    },
+    {
+      "id": "ch210",
+      "title": "§ 4. Taxation systems of the United States and other Countries.",
+      "file": "chapters/ch210.html"
+    },
+    {
+      "id": "ch211",
+      "title": "§ 5. ARésuméof the general principles of taxation.",
+      "file": "chapters/ch211.html"
+    },
+    {
+      "id": "ch212",
+      "title": "§ 1. Is it desirable to defray extraordinary public expenses by loans?",
+      "file": "chapters/ch212.html"
+    },
+    {
+      "id": "ch213",
+      "title": "§ 2. Not desirable to redeem a national Debt by a general Contribution.",
+      "file": "chapters/ch213.html"
+    },
+    {
+      "id": "ch214",
+      "title": "§ 3. In what cases desirable to maintain a surplus revenue for the redemption\r\nof Debt.",
+      "file": "chapters/ch214.html"
+    },
+    {
+      "id": "ch215",
+      "title": "§ 1. The doctrine of Protection to Native Industry.",
+      "file": "chapters/ch215.html"
+    },
+    {
+      "id": "ch216",
+      "title": "§ 2. —had its origin in the Mercantile System.",
+      "file": "chapters/ch216.html"
+    },
+    {
+      "id": "ch217",
+      "title": "§ 3. —supported by pleas of national subsistence and national\r\ndefense.",
+      "file": "chapters/ch217.html"
+    },
+    {
+      "id": "ch218",
+      "title": "§ 4. —on the ground of encouraging young industries; colonial policy.",
+      "file": "chapters/ch218.html"
+    },
+    {
+      "id": "ch219",
+      "title": "§ 5. —on the ground of high wages.",
+      "file": "chapters/ch219.html"
+    },
+    {
+      "id": "ch220",
+      "title": "§ 6. —on the ground of creating a diversity of industries.",
+      "file": "chapters/ch220.html"
+    },
+    {
+      "id": "ch221",
+      "title": "§ 7. —on the ground that it lowers prices.",
+      "file": "chapters/ch221.html"
+    },
+    {
+      "id": "ch222",
+      "title": "A Brief Bibliography Of The Tariffs Of The United States.",
+      "file": "chapters/ch222.html"
+    },
+    {
+      "id": "ch223",
+      "title": "A Brief Bibliography Of Bimetallism.",
+      "file": "chapters/ch223.html"
+    },
+    {
+      "id": "ch224",
+      "title": "A Brief Bibliography Of American Shipping.",
+      "file": "chapters/ch224.html"
+    }
+  ],
+  "updated": "2026-03-24"
+}
