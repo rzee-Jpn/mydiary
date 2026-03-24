@@ -21,7 +21,7 @@ REQUEST_TIMEOUT = 20
 RETRY = 3
 SLEEP_BETWEEN_BOOKS = 2
 
-HEADERS = {"User-Agent": "Pustaka-LibraryEngine/4.1"}
+HEADERS = {"User-Agent": "Pustaka-LibraryEngine/5.0"}
 
 TODAY = datetime.now(UTC).strftime("%Y-%m-%d")
 
@@ -76,7 +76,6 @@ def load_state():
     if not isinstance(state, dict):
         state = {}
 
-    # auto migration dari versi lama
     state.setdefault("seen_ids", [])
 
     return state
@@ -114,6 +113,37 @@ def get_html_url(book_id):
     return f"{BASE}/ebooks/{book_id}.html.images"
 
 # ======================================================
+# PARSER HELPERS (ROBUST)
+# ======================================================
+
+def extract_title(soup):
+    h1 = soup.find("h1")
+    if h1:
+        t = h1.get_text(strip=True)
+        if len(t) > 3:
+            return t
+
+    meta = soup.find("meta", property="og:title")
+    if meta:
+        return meta.get("content", "").strip()
+
+    if soup.title:
+        return soup.title.get_text(strip=True)
+
+    return "Unknown"
+
+def extract_author(soup):
+    meta = soup.find("meta", attrs={"name": "author"})
+    if meta:
+        return meta.get("content", "").strip()
+
+    a = soup.select_one(".author")
+    if a:
+        return a.get_text(strip=True)
+
+    return "Unknown"
+
+# ======================================================
 # PARSER
 # ======================================================
 
@@ -124,13 +154,8 @@ def parse_html_book(html_url):
 
     soup = BeautifulSoup(r.text, "html.parser")
 
-    title = soup.find("h1")
-    title = title.get_text(strip=True) if title else "Unknown"
-
-    author = "Unknown"
-    meta = soup.find("meta", attrs={"name":"author"})
-    if meta:
-        author = meta.get("content","Unknown")
+    title = extract_title(soup)
+    author = extract_author(soup)
 
     body = soup.find("body")
     if not body:
@@ -194,7 +219,7 @@ def process_book(book_id):
     )
 
     if not chapters:
-        log("SKIP (bad html)", book_id)
+        log("SKIP", book_id)
         return False
 
     engine_id = book_id
@@ -240,7 +265,7 @@ def process_book(book_id):
         "source": "Project Gutenberg"
     })
 
-    log("DONE", engine_id)
+    log("DONE", engine_id, "|", title)
     return True
 
 # ======================================================
@@ -284,7 +309,7 @@ def main():
     state["seen_ids"] = list(seen)
     save_state(state)
 
-    log("FINISH | NEW:", processed, "| TOTAL SEEN:", len(seen))
+    log("FINISH | NEW:", processed, "| TOTAL:", len(seen))
 
 # ======================================================
 
