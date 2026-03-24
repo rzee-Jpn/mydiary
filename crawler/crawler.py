@@ -21,7 +21,7 @@ REQUEST_TIMEOUT = 20
 RETRY = 3
 SLEEP_BETWEEN_BOOKS = 2
 
-HEADERS = {"User-Agent": "Pustaka-LibraryEngine/3.0"}
+HEADERS = {"User-Agent": "Pustaka-LibraryEngine/4.0"}
 
 TODAY = datetime.now(UTC).strftime("%Y-%m-%d")
 
@@ -67,13 +67,12 @@ def safe_get(url):
     return None
 
 # ======================================================
-# STATE
+# STATE (ANTI DUPLICATE CORE)
 # ======================================================
 
 def load_state():
     return load_json(STATE_FILE, {
-        "page": BOOKSHELF,
-        "index": 0
+        "seen_ids": []
     })
 
 def save_state(s):
@@ -168,16 +167,13 @@ def count_words(chapters):
 def update_library(entry):
     data = load_json(LIBRARY_JSON, [])
 
-    found = False
     for i,b in enumerate(data):
         if b["id"] == entry["id"]:
             data[i].update(entry)
-            found = True
-            break
+            save_json_atomic(LIBRARY_JSON, data)
+            return
 
-    if not found:
-        data.append(entry)
-
+    data.append(entry)
     data.sort(key=lambda x:x.get("created","1970"), reverse=True)
     save_json_atomic(LIBRARY_JSON, data)
 
@@ -185,25 +181,18 @@ def update_library(entry):
 # ENGINE
 # ======================================================
 
-def slugify(text):
-    return re.sub(r'[^a-z0-9]+', '-', text.lower()).strip('-')
+def process_book(book_id):
 
-
-def process_book(book_url):
-
-    book_id = get_book_id(book_url)
-
-    # ambil isi dulu supaya dapat title
     title, author, chapters = parse_html_book(
         get_html_url(book_id)
     )
 
     if not chapters:
         log("SKIP (bad html)", book_id)
-        return
+        return False
 
-    # ✅ ID BARU (judul + id)
-    engine_id = f"{slugify(title)}-{book_id}"
+    # ✅ ID FIX (STABLE)
+    engine_id = book_id
 
     book_dir = f"{DATA_DIR}/{engine_id}"
     chap_dir = f"{book_dir}/chapters"
@@ -215,7 +204,6 @@ def process_book(book_url):
         fname = f"ch{i:02d}.html"
         path = f"{chap_dir}/{fname}"
 
-        # self-heal
         if not os.path.exists(path):
             with open(path, "w", encoding="utf-8") as f:
                 f.write(f"<h2>{ch['title']}</h2>\n{ch['html']}")
@@ -248,33 +236,47 @@ def process_book(book_url):
     })
 
     log("DONE", engine_id)
+    return True
+
 # ======================================================
-# MAIN
+# MAIN (ANTI DUPLICATE LOGIC)
 # ======================================================
 
 def main():
     state = load_state()
-    books, next_page = get_books(state["page"])
+    seen = set(state["seen_ids"])
 
+    page = BOOKSHELF
     processed = 0
 
-    for url in books[state["index"]:]:
-        state["index"] += 1
+    while page and processed < LIMIT_PER_RUN:
+        books, next_page = get_books(page)
 
-        try:
-            process_book(url)
-            processed += 1
-            time.sleep(SLEEP_BETWEEN_BOOKS)
-        except Exception as e:
-            log("ERROR", e)
+        for url in books:
+            book_id = get_book_id(url)
 
-        if processed >= LIMIT_PER_RUN:
-            break
+            # ✅ SKIP kalau sudah pernah
+            if book_id in seen:
+                continue
 
-    if state["index"] >= len(books) and next_page:
-        state["page"] = next_page
-        state["index"] = 0
+            try:
+                ok = process_book(book_id)
+                seen.add(book_id)
 
+                if ok:
+                    processed += 1
+                    time.sleep(SLEEP_BETWEEN_BOOKS)
+
+            except Exception as e:
+                log("ERROR", e)
+
+            if processed >= LIMIT_PER_RUN:
+                break
+
+        page = next_page
+
+    # simpan state
+    state["seen_ids"] = list(seen)
     save_state(state)
 
 # ======================================================
