@@ -1,0 +1,834 @@
+{
+  "id": "27698",
+  "title": "Contents",
+  "author": "Unknown",
+  "word_count": 96172,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofPrinciples of Political Economy, Vol. 1",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "I.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "II.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "III.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "IV.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "V.",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "VI.",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "VII.",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "VIII.",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "IX.",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "X.",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "XI.",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "XII.",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "XIII.",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "XIV.",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "XV.",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "Goods—Wants.",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "Goods.—Economic Goods.",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "Goods.—The Three Classes Of Goods.",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "Of Value.—Value In Use.",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "Value.—Value In Exchange.",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "Value.—Alleged Contradiction Between Value In\r\nUse And Value In Exchange.",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "Resources Or Means (Vermögen).",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "Valuation Of Resources.",
+      "file": "chapters/ch24.html"
+    },
+    {
+      "id": "ch25",
+      "title": "Wealth.",
+      "file": "chapters/ch25.html"
+    },
+    {
+      "id": "ch26",
+      "title": "Wealth.—Signs Of National Wealth.",
+      "file": "chapters/ch26.html"
+    },
+    {
+      "id": "ch27",
+      "title": "Of Economy (Husbandry).",
+      "file": "chapters/ch27.html"
+    },
+    {
+      "id": "ch28",
+      "title": "Economy.—Grades Of Economy.",
+      "file": "chapters/ch28.html"
+    },
+    {
+      "id": "ch29",
+      "title": "Political Economy.—The Economic Organism.",
+      "file": "chapters/ch29.html"
+    },
+    {
+      "id": "ch30",
+      "title": "Origin Of A Nation's Economy.",
+      "file": "chapters/ch30.html"
+    },
+    {
+      "id": "ch31",
+      "title": "Diseases Of The Social Organism.",
+      "file": "chapters/ch31.html"
+    },
+    {
+      "id": "ch32",
+      "title": "Political Or National Economy.",
+      "file": "chapters/ch32.html"
+    },
+    {
+      "id": "ch33",
+      "title": "Sciences Relating To National Life.—The Science\r\nOf Public Economy.—The Science Of Finance.",
+      "file": "chapters/ch33.html"
+    },
+    {
+      "id": "ch34",
+      "title": "Sciences Relating To National Life.—Statistics.",
+      "file": "chapters/ch34.html"
+    },
+    {
+      "id": "ch35",
+      "title": "Private Economy—Cameralistic Science.",
+      "file": "chapters/ch35.html"
+    },
+    {
+      "id": "ch36",
+      "title": "Private Economy. (Continued.)",
+      "file": "chapters/ch36.html"
+    },
+    {
+      "id": "ch37",
+      "title": "What Political Economy Treats Of.",
+      "file": "chapters/ch37.html"
+    },
+    {
+      "id": "ch38",
+      "title": "Former Methods.",
+      "file": "chapters/ch38.html"
+    },
+    {
+      "id": "ch39",
+      "title": "The Idealistic Method.",
+      "file": "chapters/ch39.html"
+    },
+    {
+      "id": "ch40",
+      "title": "The Idealistic Method. (Continued.)",
+      "file": "chapters/ch40.html"
+    },
+    {
+      "id": "ch41",
+      "title": "The Idealistic Method. (Continued.)",
+      "file": "chapters/ch41.html"
+    },
+    {
+      "id": "ch42",
+      "title": "The Historical Method—The Anatomy And Physiology\r\nOf Public Economy.",
+      "file": "chapters/ch42.html"
+    },
+    {
+      "id": "ch43",
+      "title": "Advantages Of The Historical Or Physiological\r\nMethod.",
+      "file": "chapters/ch43.html"
+    },
+    {
+      "id": "ch44",
+      "title": "Advantages Of The Historical Method.\r\n(Continued.)",
+      "file": "chapters/ch44.html"
+    },
+    {
+      "id": "ch45",
+      "title": "The Practical Character Of The Historical\r\nMethod In Political Economy.",
+      "file": "chapters/ch45.html"
+    },
+    {
+      "id": "ch46",
+      "title": "Meaning Of Production.",
+      "file": "chapters/ch46.html"
+    },
+    {
+      "id": "ch47",
+      "title": "The Factors Of Production.—External Nature.189",
+      "file": "chapters/ch47.html"
+    },
+    {
+      "id": "ch48",
+      "title": "External Nature.—The Sea.—Climate.",
+      "file": "chapters/ch48.html"
+    },
+    {
+      "id": "ch49",
+      "title": "External Nature.—Gifts Of Nature With Value In\r\nExchange.",
+      "file": "chapters/ch49.html"
+    },
+    {
+      "id": "ch50",
+      "title": "External Nature. (Continued.)",
+      "file": "chapters/ch50.html"
+    },
+    {
+      "id": "ch51",
+      "title": "External Nature.—Elements Of Agricultural Productiveness.",
+      "file": "chapters/ch51.html"
+    },
+    {
+      "id": "ch52",
+      "title": "External Nature.—Further Divisions Of Nature's\r\nGifts.",
+      "file": "chapters/ch52.html"
+    },
+    {
+      "id": "ch53",
+      "title": "External Nature.—The Geographical Character\r\nOf A Country.",
+      "file": "chapters/ch53.html"
+    },
+    {
+      "id": "ch54",
+      "title": "Of Labor.—Divisions Of Labor.",
+      "file": "chapters/ch54.html"
+    },
+    {
+      "id": "ch55",
+      "title": "Labor.—Taste For Labor.—Piece-Wages.",
+      "file": "chapters/ch55.html"
+    },
+    {
+      "id": "ch56",
+      "title": "Labor.—Labor-Power Of Individuals.",
+      "file": "chapters/ch56.html"
+    },
+    {
+      "id": "ch57",
+      "title": "Labor.—Effect Of The Esteem In Which It Is Held.",
+      "file": "chapters/ch57.html"
+    },
+    {
+      "id": "ch58",
+      "title": "Of Capital.—The Classes Of Goods Of Which A\r\nNation's Capital Is Made Up.",
+      "file": "chapters/ch58.html"
+    },
+    {
+      "id": "ch59",
+      "title": "Capital.—Productive Capital.",
+      "file": "chapters/ch59.html"
+    },
+    {
+      "id": "ch60",
+      "title": "Capital.—Fixed Capital, And Circulating Capital.",
+      "file": "chapters/ch60.html"
+    },
+    {
+      "id": "ch61",
+      "title": "Capital.—How It Originates.",
+      "file": "chapters/ch61.html"
+    },
+    {
+      "id": "ch62",
+      "title": "The Productive Coöperation Of The Three Factors.",
+      "file": "chapters/ch62.html"
+    },
+    {
+      "id": "ch63",
+      "title": "Productive Co-Operation Of The Three Factors.\r\nThe Three Great Periods Of A Nation's Economy.",
+      "file": "chapters/ch63.html"
+    },
+    {
+      "id": "ch64",
+      "title": "Critical History Of The Idea Of Productiveness.",
+      "file": "chapters/ch64.html"
+    },
+    {
+      "id": "ch65",
+      "title": "Critical History Of The Idea Of Productiveness.—The\r\nDoctrine Of The Physiocrates.",
+      "file": "chapters/ch65.html"
+    },
+    {
+      "id": "ch66",
+      "title": "The Same Subject Continued.",
+      "file": "chapters/ch66.html"
+    },
+    {
+      "id": "ch67",
+      "title": "The Same Subject Continued.",
+      "file": "chapters/ch67.html"
+    },
+    {
+      "id": "ch68",
+      "title": "Idea Of Productiveness.",
+      "file": "chapters/ch68.html"
+    },
+    {
+      "id": "ch69",
+      "title": "The Same Subject Continued.",
+      "file": "chapters/ch69.html"
+    },
+    {
+      "id": "ch70",
+      "title": "Importance Of A Due Proportion In The Different\r\nBranches Of Productiveness.",
+      "file": "chapters/ch70.html"
+    },
+    {
+      "id": "ch71",
+      "title": "The Degree Of Productiveness.",
+      "file": "chapters/ch71.html"
+    },
+    {
+      "id": "ch72",
+      "title": "Development Of The Division Of Labor.",
+      "file": "chapters/ch72.html"
+    },
+    {
+      "id": "ch73",
+      "title": "Development Of The Division Of Labor.—Its Extent\r\nAt Different Periods.",
+      "file": "chapters/ch73.html"
+    },
+    {
+      "id": "ch74",
+      "title": "Advantages Of The Division Of Labor.",
+      "file": "chapters/ch74.html"
+    },
+    {
+      "id": "ch75",
+      "title": "Conditions Of The Division Of Labor.",
+      "file": "chapters/ch75.html"
+    },
+    {
+      "id": "ch76",
+      "title": "Influence Of The Extent Of The Market On The Division\r\nOf Labor.",
+      "file": "chapters/ch76.html"
+    },
+    {
+      "id": "ch77",
+      "title": "The Division Of Labor—Means Of Increasing It.",
+      "file": "chapters/ch77.html"
+    },
+    {
+      "id": "ch78",
+      "title": "The Reverse, Or Dark Side Of The Division Of Labor.",
+      "file": "chapters/ch78.html"
+    },
+    {
+      "id": "ch79",
+      "title": "Dark Side Of The Division Of Labor.—Its Gain And\r\nLoss.",
+      "file": "chapters/ch79.html"
+    },
+    {
+      "id": "ch80",
+      "title": "The Co-Operation Of Labor.",
+      "file": "chapters/ch80.html"
+    },
+    {
+      "id": "ch81",
+      "title": "The Principle Of Stability, Or Of The Continuity\r\nOf Work.",
+      "file": "chapters/ch81.html"
+    },
+    {
+      "id": "ch82",
+      "title": "Advantage Of Large Enterprises.",
+      "file": "chapters/ch82.html"
+    },
+    {
+      "id": "ch83",
+      "title": "The Origin Of Slavery.",
+      "file": "chapters/ch83.html"
+    },
+    {
+      "id": "ch84",
+      "title": "The Same Subject Continued.",
+      "file": "chapters/ch84.html"
+    },
+    {
+      "id": "ch85",
+      "title": "Origin Of Slavery.—Want Of Freedom.",
+      "file": "chapters/ch85.html"
+    },
+    {
+      "id": "ch86",
+      "title": "Emancipation.",
+      "file": "chapters/ch86.html"
+    },
+    {
+      "id": "ch87",
+      "title": "Disadvantages Of Slavery.",
+      "file": "chapters/ch87.html"
+    },
+    {
+      "id": "ch88",
+      "title": "Effect Of An Advance In Civilization On Slavery.",
+      "file": "chapters/ch88.html"
+    },
+    {
+      "id": "ch89",
+      "title": "The Same Subject Continued.",
+      "file": "chapters/ch89.html"
+    },
+    {
+      "id": "ch90",
+      "title": "The Same Subject Continued.",
+      "file": "chapters/ch90.html"
+    },
+    {
+      "id": "ch91",
+      "title": "The Same Subject Continued.",
+      "file": "chapters/ch91.html"
+    },
+    {
+      "id": "ch92",
+      "title": "The Domestic Servant System.",
+      "file": "chapters/ch92.html"
+    },
+    {
+      "id": "ch93",
+      "title": "Capital.—Importance Of Private Property.",
+      "file": "chapters/ch93.html"
+    },
+    {
+      "id": "ch94",
+      "title": "Socialism And Communism.",
+      "file": "chapters/ch94.html"
+    },
+    {
+      "id": "ch95",
+      "title": "Socialism And Communism. (Continued.)",
+      "file": "chapters/ch95.html"
+    },
+    {
+      "id": "ch96",
+      "title": "Socialism And Communism. (Continued.)",
+      "file": "chapters/ch96.html"
+    },
+    {
+      "id": "ch97",
+      "title": "Community Of Goods.",
+      "file": "chapters/ch97.html"
+    },
+    {
+      "id": "ch98",
+      "title": "The Organization Of Labor.",
+      "file": "chapters/ch98.html"
+    },
+    {
+      "id": "ch99",
+      "title": "The Organization Of Labor. (Continued.)",
+      "file": "chapters/ch99.html"
+    },
+    {
+      "id": "ch100",
+      "title": "The Organization Of Labor. (Continued.)",
+      "file": "chapters/ch100.html"
+    },
+    {
+      "id": "ch101",
+      "title": "The Right Of Inheritance.",
+      "file": "chapters/ch101.html"
+    },
+    {
+      "id": "ch102",
+      "title": "Economic Utility Of The Right Of Inheritance.",
+      "file": "chapters/ch102.html"
+    },
+    {
+      "id": "ch103",
+      "title": "Landed Property.",
+      "file": "chapters/ch103.html"
+    },
+    {
+      "id": "ch104",
+      "title": "Landed Property. (Continued.)",
+      "file": "chapters/ch104.html"
+    },
+    {
+      "id": "ch105",
+      "title": "Credit In General.",
+      "file": "chapters/ch105.html"
+    },
+    {
+      "id": "ch106",
+      "title": "Credit—Effects Of Credit.",
+      "file": "chapters/ch106.html"
+    },
+    {
+      "id": "ch107",
+      "title": "Debtor Laws.",
+      "file": "chapters/ch107.html"
+    },
+    {
+      "id": "ch108",
+      "title": "History Of Credit Laws.",
+      "file": "chapters/ch108.html"
+    },
+    {
+      "id": "ch109",
+      "title": "Means Of Promoting Credit.",
+      "file": "chapters/ch109.html"
+    },
+    {
+      "id": "ch110",
+      "title": "Letters Of Respite (Specialmoratorien).",
+      "file": "chapters/ch110.html"
+    },
+    {
+      "id": "ch111",
+      "title": "Meaning Of The Circulation Of Goods.",
+      "file": "chapters/ch111.html"
+    },
+    {
+      "id": "ch112",
+      "title": "Rapidity Of Circulation.",
+      "file": "chapters/ch112.html"
+    },
+    {
+      "id": "ch113",
+      "title": "Freedom Of Competition.",
+      "file": "chapters/ch113.html"
+    },
+    {
+      "id": "ch114",
+      "title": "How Goods Are Paid For.—The Rent For Goods.",
+      "file": "chapters/ch114.html"
+    },
+    {
+      "id": "ch115",
+      "title": "Freedom Of Competition And International Trade.",
+      "file": "chapters/ch115.html"
+    },
+    {
+      "id": "ch116",
+      "title": "Prices In General.",
+      "file": "chapters/ch116.html"
+    },
+    {
+      "id": "ch117",
+      "title": "Effect Of The Struggle Of Opposing Interests On\r\nPrice.",
+      "file": "chapters/ch117.html"
+    },
+    {
+      "id": "ch118",
+      "title": "Demand.",
+      "file": "chapters/ch118.html"
+    },
+    {
+      "id": "ch119",
+      "title": "Demand.—Indispensable Goods.",
+      "file": "chapters/ch119.html"
+    },
+    {
+      "id": "ch120",
+      "title": "Influence Of Purchaser's Solvability On Prices.",
+      "file": "chapters/ch120.html"
+    },
+    {
+      "id": "ch121",
+      "title": "Supply.",
+      "file": "chapters/ch121.html"
+    },
+    {
+      "id": "ch122",
+      "title": "The Cost Of Production.",
+      "file": "chapters/ch122.html"
+    },
+    {
+      "id": "ch123",
+      "title": "Equilibrium Of Prices.",
+      "file": "chapters/ch123.html"
+    },
+    {
+      "id": "ch124",
+      "title": "Effect Of A Rise Of Price Much Above Cost.",
+      "file": "chapters/ch124.html"
+    },
+    {
+      "id": "ch125",
+      "title": "Effect Of A Decline Of Price Below Cost.",
+      "file": "chapters/ch125.html"
+    },
+    {
+      "id": "ch126",
+      "title": "Different Cost Of Production Of The Same Goods.",
+      "file": "chapters/ch126.html"
+    },
+    {
+      "id": "ch127",
+      "title": "Different Cost Of Production Of The Same Goods. (Continued.)",
+      "file": "chapters/ch127.html"
+    },
+    {
+      "id": "ch128",
+      "title": "Exceptions.",
+      "file": "chapters/ch128.html"
+    },
+    {
+      "id": "ch129",
+      "title": "Exceptions. (Continued.)",
+      "file": "chapters/ch129.html"
+    },
+    {
+      "id": "ch130",
+      "title": "Prices Fixed By Government.",
+      "file": "chapters/ch130.html"
+    },
+    {
+      "id": "ch131",
+      "title": "Influence Of Growing Civilization On Prices.",
+      "file": "chapters/ch131.html"
+    },
+    {
+      "id": "ch132",
+      "title": "Instrument Of Exchange. Measure Of Value. Barter.",
+      "file": "chapters/ch132.html"
+    },
+    {
+      "id": "ch133",
+      "title": "Effect Of The Introduction Of Money.",
+      "file": "chapters/ch133.html"
+    },
+    {
+      "id": "ch134",
+      "title": "The Different Kinds Of Money.",
+      "file": "chapters/ch134.html"
+    },
+    {
+      "id": "ch135",
+      "title": "The Metals As Money.",
+      "file": "chapters/ch135.html"
+    },
+    {
+      "id": "ch136",
+      "title": "Money—The Precious Metals.",
+      "file": "chapters/ch136.html"
+    },
+    {
+      "id": "ch137",
+      "title": "Value In Use And Value In Exchange Of Money.",
+      "file": "chapters/ch137.html"
+    },
+    {
+      "id": "ch138",
+      "title": "Value In Exchange Of Money.",
+      "file": "chapters/ch138.html"
+    },
+    {
+      "id": "ch139",
+      "title": "The Quantity Of Money A Nation Needs.",
+      "file": "chapters/ch139.html"
+    },
+    {
+      "id": "ch140",
+      "title": "The Quantity Of Money A Nation Needs. (Continued.)",
+      "file": "chapters/ch140.html"
+    },
+    {
+      "id": "ch141",
+      "title": "Uniformity Of The Value In Exchange Of The\r\nPrecious Metals.",
+      "file": "chapters/ch141.html"
+    },
+    {
+      "id": "ch142",
+      "title": "Uniformity Of The Value In Exchange Of The\r\nPrecious Metals. (Continued.)",
+      "file": "chapters/ch142.html"
+    },
+    {
+      "id": "ch143",
+      "title": "Measure Of Prices,—Constant Measure.",
+      "file": "chapters/ch143.html"
+    },
+    {
+      "id": "ch144",
+      "title": "Value In Exchange Estimated In Labor.",
+      "file": "chapters/ch144.html"
+    },
+    {
+      "id": "ch145",
+      "title": "The Precious Metals The Best Measure Of Prices.",
+      "file": "chapters/ch145.html"
+    },
+    {
+      "id": "ch146",
+      "title": "History Of The Prices Of The Chief Wants Of Life.",
+      "file": "chapters/ch146.html"
+    },
+    {
+      "id": "ch147",
+      "title": "History Of The Prices Of The Chief Wants Of Life. (Continued.)",
+      "file": "chapters/ch147.html"
+    },
+    {
+      "id": "ch148",
+      "title": "History Of The Prices Of The Chief Wants Of Life. (Continued.)",
+      "file": "chapters/ch148.html"
+    },
+    {
+      "id": "ch149",
+      "title": "History Of The Prices Of The Chief Wants Of Life. (Continued.)",
+      "file": "chapters/ch149.html"
+    },
+    {
+      "id": "ch150",
+      "title": "History Of The Prices Of The Chief Wants Of Life. (Continued.)",
+      "file": "chapters/ch150.html"
+    },
+    {
+      "id": "ch151",
+      "title": "History Of The Values Of The Precious Metals.—In\r\nAntiquity And In The Middle Ages.",
+      "file": "chapters/ch151.html"
+    },
+    {
+      "id": "ch152",
+      "title": "Effect On The Discovery Of American Mines Etc.\r\nOn The Value Of The Precious Metals.",
+      "file": "chapters/ch152.html"
+    },
+    {
+      "id": "ch153",
+      "title": "Revolution In Prices At The Beginning Of Modern History.",
+      "file": "chapters/ch153.html"
+    },
+    {
+      "id": "ch154",
+      "title": "Revolution In Prices.—Influence Of The Non-Monetary\r\nUse Of Gold And Silver.",
+      "file": "chapters/ch154.html"
+    },
+    {
+      "id": "ch155",
+      "title": "History Of Prices.—Californian And Australian\r\nDiscoveries.",
+      "file": "chapters/ch155.html"
+    },
+    {
+      "id": "ch156",
+      "title": "Revolution In Prices.—Its Influence On The National\r\nResources.",
+      "file": "chapters/ch156.html"
+    },
+    {
+      "id": "ch157",
+      "title": "Effect Of An Enhancement Of The Price Of The\r\nPrecious Metals.",
+      "file": "chapters/ch157.html"
+    },
+    {
+      "id": "ch158",
+      "title": "The Price Of Gold As Compared With That Of Silver.",
+      "file": "chapters/ch158.html"
+    },
+    {
+      "id": "ch159",
+      "title": "The Price Of Gold As Compared With That Of\r\nSilver. (Continued.)",
+      "file": "chapters/ch159.html"
+    },
+    {
+      "id": "ch160",
+      "title": "Paper Money And Money-Paper.",
+      "file": "chapters/ch160.html"
+    },
+    {
+      "id": "ch161",
+      "title": "Advantages And Disadvantages Of Paper Money.",
+      "file": "chapters/ch161.html"
+    },
+    {
+      "id": "ch162",
+      "title": "Kinds Of Redemption.",
+      "file": "chapters/ch162.html"
+    },
+    {
+      "id": "ch163",
+      "title": "Compulsory Circulation.",
+      "file": "chapters/ch163.html"
+    },
+    {
+      "id": "ch164",
+      "title": "Resumption Of Specie Payments.",
+      "file": "chapters/ch164.html"
+    },
+    {
+      "id": "ch165",
+      "title": "Paper Money—A Curse Or A Blessing?",
+      "file": "chapters/ch165.html"
+    }
+  ],
+  "updated": "2026-03-25"
+}
