@@ -1,5 +1,32 @@
 [
   {
+    "id": "833",
+    "title": "THE THEORY OF THE LEISURE CLASS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/833",
+    "chapter_count": 17,
+    "updated": "2026-03-26",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "22747",
+    "title": "Financial Crime and Corruption",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/22747",
+    "chapter_count": 59,
+    "updated": "2026-03-26",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "38535",
+    "title": "The Great Illusion",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/38535",
+    "chapter_count": 30,
+    "updated": "2026-03-26",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "24518",
     "title": "MEMOIRSOFEXTRAORDINARY\r\n          POPULAR DELUSIONSAND THEMadness of Crowds.",
     "author": "ByCHARLES MACKAY,LL.D.AUTHOR\r\n          OF “EGERIA,” “THE SALAMANDRINE,” ETC.",
