@@ -1,5 +1,32 @@
 [
   {
+    "id": "15776",
+    "title": "THE ECONOMICCONSEQUENCES OFTHE PEACE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/15776",
+    "chapter_count": 17,
+    "updated": "2026-03-27",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "38194",
+    "title": "WEALTH OF NATIONS.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/38194",
+    "chapter_count": 46,
+    "updated": "2026-03-27",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "66160",
+    "title": "THE ORIGIN OFMETALLIC CURRENCY ANDWEIGHT STANDARDS.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/66160",
+    "chapter_count": 44,
+    "updated": "2026-03-27",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "833",
     "title": "THE THEORY OF THE LEISURE CLASS",
     "author": "Unknown",
