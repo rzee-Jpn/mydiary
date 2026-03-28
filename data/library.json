@@ -1,5 +1,32 @@
 [
   {
+    "id": "57500",
+    "title": "A HISTORY OFECONOMIC DOCTRINES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/57500",
+    "chapter_count": 29,
+    "updated": "2026-03-28",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "46423",
+    "title": "A CONTRIBUTION TOTHE CRITIQUE OFPOLITICAL ECONOMY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/46423",
+    "chapter_count": 12,
+    "updated": "2026-03-28",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "55308",
+    "title": "THE WRITINGS OFHENRY GEORGE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/55308",
+    "chapter_count": 59,
+    "updated": "2026-03-28",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "15776",
     "title": "THE ECONOMICCONSEQUENCES OFTHE PEACE",
     "author": "Unknown",
