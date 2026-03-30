@@ -1,5 +1,32 @@
 [
   {
+    "id": "38655",
+    "title": "POLITICAL ECONOMY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/38655",
+    "chapter_count": 24,
+    "updated": "2026-03-30",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "55397",
+    "title": "RAILROADREORGANIZATION",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/55397",
+    "chapter_count": 16,
+    "updated": "2026-03-30",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "34011",
+    "title": "THE DEVELOPMENT OF\r\n                          RATES OF POSTAGE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/34011",
+    "chapter_count": 37,
+    "updated": "2026-03-30",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "57500",
     "title": "A HISTORY OFECONOMIC DOCTRINES",
     "author": "Unknown",
