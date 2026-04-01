@@ -1,5 +1,32 @@
 [
   {
+    "id": "71282",
+    "title": "Criminality and economic conditions",
+    "author": "Willem Adriaan Bonger (1876–1940)",
+    "path": "data/books/gutenberg/71282",
+    "chapter_count": 111,
+    "updated": "2026-04-01",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "24471",
+    "title": "TOBACCO:ITSHISTORY, VARIETIES, CULTURE,MANUFACTURE AND COMMERCE,",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/24471",
+    "chapter_count": 18,
+    "updated": "2026-04-01",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "17196",
+    "title": "Life of Adam Smith",
+    "author": "Margrate Douglass.\"",
+    "path": "data/books/gutenberg/17196",
+    "chapter_count": 68,
+    "updated": "2026-04-01",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "38655",
     "title": "POLITICAL ECONOMY",
     "author": "Unknown",
