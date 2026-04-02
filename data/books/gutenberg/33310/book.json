@@ -1,0 +1,24 @@
+{
+  "id": "33310",
+  "title": "POLITICAL ECONOMY,",
+  "author": "Unknown",
+  "word_count": 114553,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofOn The Principles of Political Economy, and Taxation",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "ByDAVID RICARDO, Esq.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "NEW PUBLICATIONS.",
+      "file": "chapters/ch03.html"
+    }
+  ],
+  "updated": "2026-04-02"
+}
