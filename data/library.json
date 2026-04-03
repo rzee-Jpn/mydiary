@@ -1,5 +1,32 @@
 [
   {
+    "id": "43211",
+    "title": "ENGLISHECONOMIC HISTORY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/43211",
+    "chapter_count": 23,
+    "updated": "2026-04-03",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "44213",
+    "title": "HARPER'S PICTORIAL LIBRARY OF THE WORLD WAR",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/44213",
+    "chapter_count": 451,
+    "updated": "2026-04-03",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "34823",
+    "title": "THEVALUE OF MONEY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/34823",
+    "chapter_count": 37,
+    "updated": "2026-04-03",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "71082",
     "title": "POLITICAL AND COMMERCIALGEOLOGYAND THEWORLD’S MINERAL RESOURCES",
     "author": "Unknown",
