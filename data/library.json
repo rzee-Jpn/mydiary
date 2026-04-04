@@ -1,5 +1,32 @@
 [
   {
+    "id": "41936",
+    "title": "PRINCIPLESOFPOLITICAL ECONOMY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/41936",
+    "chapter_count": 11,
+    "updated": "2026-04-04",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "46545",
+    "title": "Cyclopedia",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/46545",
+    "chapter_count": 16,
+    "updated": "2026-04-04",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "72488",
+    "title": "INDUSTRIAL AND COMMERCIALSOUTH AMERICA",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/72488",
+    "chapter_count": 63,
+    "updated": "2026-04-04",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "43211",
     "title": "ENGLISHECONOMIC HISTORY",
     "author": "Unknown",
