@@ -1,5 +1,32 @@
 [
   {
+    "id": "27842",
+    "title": "THE ECONOMIC ASPECTS OF GEOLOGY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/27842",
+    "chapter_count": 257,
+    "updated": "2026-04-05",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "45002",
+    "title": "HARMONIESOFPOLITICAL ECONOMY.BYFRÉDÉRIC BASTIAT.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/45002",
+    "chapter_count": 31,
+    "updated": "2026-04-05",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "41463",
+    "title": "INDUSTRIAL CUBA",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/41463",
+    "chapter_count": 44,
+    "updated": "2026-04-05",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "41936",
     "title": "PRINCIPLESOFPOLITICAL ECONOMY",
     "author": "Unknown",
