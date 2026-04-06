@@ -1,0 +1,1549 @@
+{
+  "id": "35120",
+  "title": "READINGS IN MONEY AND BANKING",
+  "author": "Unknown",
+  "word_count": 304381,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofReadings in Money and Banking",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "CHESTER ARTHUR PHILLIPS",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "PREFACE",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "TABLE OF CONTENTS",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "THE ORIGIN AND FUNCTIONS OF MONEY",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "THE EARLY HISTORY OF MONEY",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "Currency in the Hunting State",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "Currency in the Pastoral State",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "Articles of Ornament as Currency",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "Currency in the Agricultural State",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "Manufactured and Miscellaneous Articles as Currency",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "The Invention of Coining",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "QUALITIES OF THE MATERIAL OF MONEY",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "1.Utility and Value",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "2.Portability",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "3.Indestructibility",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "4.Homogeneity",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "5.Divisibility",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "6.Stability of Value",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "7.Cognisability",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "LEGAL TENDER[5]",
+      "file": "chapters/ch24.html"
+    },
+    {
+      "id": "ch25",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch25.html"
+    },
+    {
+      "id": "ch26",
+      "title": "The Greenback Issues",
+      "file": "chapters/ch26.html"
+    },
+    {
+      "id": "ch27",
+      "title": "The Fluctuating Premium on Gold",
+      "file": "chapters/ch27.html"
+    },
+    {
+      "id": "ch28",
+      "title": "The Effects of Greenbacks upon Wages",
+      "file": "chapters/ch28.html"
+    },
+    {
+      "id": "ch29",
+      "title": "Rent",
+      "file": "chapters/ch29.html"
+    },
+    {
+      "id": "ch30",
+      "title": "Interest and Loan Capital",
+      "file": "chapters/ch30.html"
+    },
+    {
+      "id": "ch31",
+      "title": "Profits",
+      "file": "chapters/ch31.html"
+    },
+    {
+      "id": "ch32",
+      "title": "The Production and Consumption of Wealth",
+      "file": "chapters/ch32.html"
+    },
+    {
+      "id": "ch33",
+      "title": "The Greenbacks and the Cost of the Civil War",
+      "file": "chapters/ch33.html"
+    },
+    {
+      "id": "ch34",
+      "title": "Contraction and Inflation of the Legal Tenders[9]",
+      "file": "chapters/ch34.html"
+    },
+    {
+      "id": "ch35",
+      "title": "Passage of the Resumption Act[10]",
+      "file": "chapters/ch35.html"
+    },
+    {
+      "id": "ch36",
+      "title": "The Struggle for Resumption[11]",
+      "file": "chapters/ch36.html"
+    },
+    {
+      "id": "ch37",
+      "title": "Arrangements for Resumption[12]",
+      "file": "chapters/ch37.html"
+    },
+    {
+      "id": "ch38",
+      "title": "Should the Greenbacks Be Retired?",
+      "file": "chapters/ch38.html"
+    },
+    {
+      "id": "ch39",
+      "title": "The Confederate Currency[14]",
+      "file": "chapters/ch39.html"
+    },
+    {
+      "id": "ch40",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch40.html"
+    },
+    {
+      "id": "ch41",
+      "title": "INTERNATIONAL BIMETALLISM",
+      "file": "chapters/ch41.html"
+    },
+    {
+      "id": "ch42",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch42.html"
+    },
+    {
+      "id": "ch43",
+      "title": "THE SILVER QUESTION IN THE UNITED STATES",
+      "file": "chapters/ch43.html"
+    },
+    {
+      "id": "ch44",
+      "title": "Agitation for Silver and the Passage of the Bland Bill",
+      "file": "chapters/ch44.html"
+    },
+    {
+      "id": "ch45",
+      "title": "Provisions of the Act of 1878",
+      "file": "chapters/ch45.html"
+    },
+    {
+      "id": "ch46",
+      "title": "Causes of the Act",
+      "file": "chapters/ch46.html"
+    },
+    {
+      "id": "ch47",
+      "title": "Wherein Peculiar",
+      "file": "chapters/ch47.html"
+    },
+    {
+      "id": "ch48",
+      "title": "Limited Circulation of the Silver Dollars",
+      "file": "chapters/ch48.html"
+    },
+    {
+      "id": "ch49",
+      "title": "Provisions of the Act of 1890",
+      "file": "chapters/ch49.html"
+    },
+    {
+      "id": "ch50",
+      "title": "The Argument for Silver",
+      "file": "chapters/ch50.html"
+    },
+    {
+      "id": "ch51",
+      "title": "The Repeal of the Sherman Silver Purchase Act and the Financial and\r\nEconomic Consequences of Silver Legislation",
+      "file": "chapters/ch51.html"
+    },
+    {
+      "id": "ch52",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch52.html"
+    },
+    {
+      "id": "ch53",
+      "title": "INDEX NUMBERS",
+      "file": "chapters/ch53.html"
+    },
+    {
+      "id": "ch54",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch54.html"
+    },
+    {
+      "id": "ch55",
+      "title": "BANKING OPERATIONS AND ACCOUNTS",
+      "file": "chapters/ch55.html"
+    },
+    {
+      "id": "ch56",
+      "title": "Statement of A Representative National Bank",
+      "file": "chapters/ch56.html"
+    },
+    {
+      "id": "ch57",
+      "title": "The Relation Between Loans and Deposits",
+      "file": "chapters/ch57.html"
+    },
+    {
+      "id": "ch58",
+      "title": "Relation Between Reserves and Demand Liabilities Again",
+      "file": "chapters/ch58.html"
+    },
+    {
+      "id": "ch59",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch59.html"
+    },
+    {
+      "id": "ch60",
+      "title": "THE USE OF CREDIT INSTRUMENTS IN PAYMENTS IN THE UNITED STATES",
+      "file": "chapters/ch60.html"
+    },
+    {
+      "id": "ch61",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch61.html"
+    },
+    {
+      "id": "ch62",
+      "title": "A SYMPOSIUM ON THE RELATION BETWEEN MONEY AND GENERAL PRICES",
+      "file": "chapters/ch62.html"
+    },
+    {
+      "id": "ch63",
+      "title": "Indirect Influences on Purchasing Power[52]",
+      "file": "chapters/ch63.html"
+    },
+    {
+      "id": "ch64",
+      "title": "[Summary]",
+      "file": "chapters/ch64.html"
+    },
+    {
+      "id": "ch65",
+      "title": "The Testimony of Ricardo",
+      "file": "chapters/ch65.html"
+    },
+    {
+      "id": "ch66",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch66.html"
+    },
+    {
+      "id": "ch67",
+      "title": "THE GOLD EXCHANGE STANDARD",
+      "file": "chapters/ch67.html"
+    },
+    {
+      "id": "ch68",
+      "title": "Objections To The Gold-Exchange Standard For The Straits Settlements\r\nAnswered",
+      "file": "chapters/ch68.html"
+    },
+    {
+      "id": "ch69",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch69.html"
+    },
+    {
+      "id": "ch70",
+      "title": "A PLAN FOR A COMPENSATED DOLLAR",
+      "file": "chapters/ch70.html"
+    },
+    {
+      "id": "ch71",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch71.html"
+    },
+    {
+      "id": "ch72",
+      "title": "England[89]",
+      "file": "chapters/ch72.html"
+    },
+    {
+      "id": "ch73",
+      "title": "Canada",
+      "file": "chapters/ch73.html"
+    },
+    {
+      "id": "ch74",
+      "title": "British Colonies",
+      "file": "chapters/ch74.html"
+    },
+    {
+      "id": "ch75",
+      "title": "Latin Union",
+      "file": "chapters/ch75.html"
+    },
+    {
+      "id": "ch76",
+      "title": "France",
+      "file": "chapters/ch76.html"
+    },
+    {
+      "id": "ch77",
+      "title": "Belgium",
+      "file": "chapters/ch77.html"
+    },
+    {
+      "id": "ch78",
+      "title": "Italy",
+      "file": "chapters/ch78.html"
+    },
+    {
+      "id": "ch79",
+      "title": "Switzerland",
+      "file": "chapters/ch79.html"
+    },
+    {
+      "id": "ch80",
+      "title": "Greece",
+      "file": "chapters/ch80.html"
+    },
+    {
+      "id": "ch81",
+      "title": "Spain",
+      "file": "chapters/ch81.html"
+    },
+    {
+      "id": "ch82",
+      "title": "Germany",
+      "file": "chapters/ch82.html"
+    },
+    {
+      "id": "ch83",
+      "title": "Austria-Hungary",
+      "file": "chapters/ch83.html"
+    },
+    {
+      "id": "ch84",
+      "title": "Portugal",
+      "file": "chapters/ch84.html"
+    },
+    {
+      "id": "ch85",
+      "title": "Netherlands",
+      "file": "chapters/ch85.html"
+    },
+    {
+      "id": "ch86",
+      "title": "Sweden—Norway—Denmark (Scandinavian Union)",
+      "file": "chapters/ch86.html"
+    },
+    {
+      "id": "ch87",
+      "title": "Russia",
+      "file": "chapters/ch87.html"
+    },
+    {
+      "id": "ch88",
+      "title": "Japan",
+      "file": "chapters/ch88.html"
+    },
+    {
+      "id": "ch89",
+      "title": "China",
+      "file": "chapters/ch89.html"
+    },
+    {
+      "id": "ch90",
+      "title": "Philippines",
+      "file": "chapters/ch90.html"
+    },
+    {
+      "id": "ch91",
+      "title": "Argentina",
+      "file": "chapters/ch91.html"
+    },
+    {
+      "id": "ch92",
+      "title": "Brazil",
+      "file": "chapters/ch92.html"
+    },
+    {
+      "id": "ch93",
+      "title": "Chili",
+      "file": "chapters/ch93.html"
+    },
+    {
+      "id": "ch94",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch94.html"
+    },
+    {
+      "id": "ch95",
+      "title": "THE NATURE AND FUNCTIONS OF TRUST COMPANIES",
+      "file": "chapters/ch95.html"
+    },
+    {
+      "id": "ch96",
+      "title": "The Advantages of a Trust Company as Trustee",
+      "file": "chapters/ch96.html"
+    },
+    {
+      "id": "ch97",
+      "title": "Banking",
+      "file": "chapters/ch97.html"
+    },
+    {
+      "id": "ch98",
+      "title": "Corporate Trusts",
+      "file": "chapters/ch98.html"
+    },
+    {
+      "id": "ch99",
+      "title": "Individual Trusts",
+      "file": "chapters/ch99.html"
+    },
+    {
+      "id": "ch100",
+      "title": "Other Functions",
+      "file": "chapters/ch100.html"
+    },
+    {
+      "id": "ch101",
+      "title": "Care of Securities and Valuables",
+      "file": "chapters/ch101.html"
+    },
+    {
+      "id": "ch102",
+      "title": "Insurance",
+      "file": "chapters/ch102.html"
+    },
+    {
+      "id": "ch103",
+      "title": "Compensation",
+      "file": "chapters/ch103.html"
+    },
+    {
+      "id": "ch104",
+      "title": "Government Regulation",
+      "file": "chapters/ch104.html"
+    },
+    {
+      "id": "ch105",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch105.html"
+    },
+    {
+      "id": "ch106",
+      "title": "SAVINGS BANKS",
+      "file": "chapters/ch106.html"
+    },
+    {
+      "id": "ch107",
+      "title": "Classification of Savings Banks",
+      "file": "chapters/ch107.html"
+    },
+    {
+      "id": "ch108",
+      "title": "Trustee Savings Banks",
+      "file": "chapters/ch108.html"
+    },
+    {
+      "id": "ch109",
+      "title": "Stock Savings Banks",
+      "file": "chapters/ch109.html"
+    },
+    {
+      "id": "ch110",
+      "title": "Guaranty Savings Banks",
+      "file": "chapters/ch110.html"
+    },
+    {
+      "id": "ch111",
+      "title": "Municipal Savings Banks",
+      "file": "chapters/ch111.html"
+    },
+    {
+      "id": "ch112",
+      "title": "People's Banks",
+      "file": "chapters/ch112.html"
+    },
+    {
+      "id": "ch113",
+      "title": "The Localization of Savings Banks in the United States",
+      "file": "chapters/ch113.html"
+    },
+    {
+      "id": "ch114",
+      "title": "Postal Savings Banks",
+      "file": "chapters/ch114.html"
+    },
+    {
+      "id": "ch115",
+      "title": "American Postal Savings Banks",
+      "file": "chapters/ch115.html"
+    },
+    {
+      "id": "ch116",
+      "title": "\"Postal Savings Behind the Scenes\"",
+      "file": "chapters/ch116.html"
+    },
+    {
+      "id": "ch117",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch117.html"
+    },
+    {
+      "id": "ch118",
+      "title": "DOMESTIC EXCHANGE",
+      "file": "chapters/ch118.html"
+    },
+    {
+      "id": "ch119",
+      "title": "Exchange Relations Between Chicago and New York",
+      "file": "chapters/ch119.html"
+    },
+    {
+      "id": "ch120",
+      "title": "Exchange Relations Between St. Louis and New York",
+      "file": "chapters/ch120.html"
+    },
+    {
+      "id": "ch121",
+      "title": "Domestic Exchange in San Francisco on New York City",
+      "file": "chapters/ch121.html"
+    },
+    {
+      "id": "ch122",
+      "title": "Currency Movements Between New England and the Eastern States",
+      "file": "chapters/ch122.html"
+    },
+    {
+      "id": "ch123",
+      "title": "The Domestic Exchanges During the Crisis of 1907[102]",
+      "file": "chapters/ch123.html"
+    },
+    {
+      "id": "ch124",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch124.html"
+    },
+    {
+      "id": "ch125",
+      "title": "The Nature of Foreign Exchange",
+      "file": "chapters/ch125.html"
+    },
+    {
+      "id": "ch126",
+      "title": "\"Favourable\" and \"Unfavourable\" Exchanges",
+      "file": "chapters/ch126.html"
+    },
+    {
+      "id": "ch127",
+      "title": "The Origin and Supply of Foreign Exchange",
+      "file": "chapters/ch127.html"
+    },
+    {
+      "id": "ch128",
+      "title": "The Sources of the Demand for Foreign Exchange[106]",
+      "file": "chapters/ch128.html"
+    },
+    {
+      "id": "ch129",
+      "title": "Methods of Financing Imports and Exports[107]",
+      "file": "chapters/ch129.html"
+    },
+    {
+      "id": "ch130",
+      "title": "Credit Risks of Drafts Drawn on Buyers Abroad",
+      "file": "chapters/ch130.html"
+    },
+    {
+      "id": "ch131",
+      "title": "England Draws Few Bills, But Accepts Many—The Reason and the Result",
+      "file": "chapters/ch131.html"
+    },
+    {
+      "id": "ch132",
+      "title": "The Recent Rise of the American Acceptance Market",
+      "file": "chapters/ch132.html"
+    },
+    {
+      "id": "ch133",
+      "title": "The Economies and Advantages of \"Dollar Credits\"[113]",
+      "file": "chapters/ch133.html"
+    },
+    {
+      "id": "ch134",
+      "title": "The New York Foreign Exchange Market[114]",
+      "file": "chapters/ch134.html"
+    },
+    {
+      "id": "ch135",
+      "title": "New York City Practically Absorbs by Purchase All American Foreign\r\nExchange",
+      "file": "chapters/ch135.html"
+    },
+    {
+      "id": "ch136",
+      "title": "How Money Is Made in Foreign Exchange—The Operations of the Foreign\r\nDepartment",
+      "file": "chapters/ch136.html"
+    },
+    {
+      "id": "ch137",
+      "title": "Gold Movements",
+      "file": "chapters/ch137.html"
+    },
+    {
+      "id": "ch138",
+      "title": "The Silver Exchanges",
+      "file": "chapters/ch138.html"
+    },
+    {
+      "id": "ch139",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch139.html"
+    },
+    {
+      "id": "ch140",
+      "title": "CLEARING HOUSES",
+      "file": "chapters/ch140.html"
+    },
+    {
+      "id": "ch141",
+      "title": "I.In the United States",
+      "file": "chapters/ch141.html"
+    },
+    {
+      "id": "ch142",
+      "title": "II.Clearing Houses in England",
+      "file": "chapters/ch142.html"
+    },
+    {
+      "id": "ch143",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch143.html"
+    },
+    {
+      "id": "ch144",
+      "title": "STATE BANKS AND TRUST COMPANIES SINCE THE PASSAGE OF THE NATIONAL BANK\r\nACT",
+      "file": "chapters/ch144.html"
+    },
+    {
+      "id": "ch145",
+      "title": "The Evolution of the Trust Company",
+      "file": "chapters/ch145.html"
+    },
+    {
+      "id": "ch146",
+      "title": "Incorporation",
+      "file": "chapters/ch146.html"
+    },
+    {
+      "id": "ch147",
+      "title": "Capital and Surplus Requirements",
+      "file": "chapters/ch147.html"
+    },
+    {
+      "id": "ch148",
+      "title": "Liability of Stockholders",
+      "file": "chapters/ch148.html"
+    },
+    {
+      "id": "ch149",
+      "title": "Restrictions on Loans and Discounts",
+      "file": "chapters/ch149.html"
+    },
+    {
+      "id": "ch150",
+      "title": "Reserves",
+      "file": "chapters/ch150.html"
+    },
+    {
+      "id": "ch151",
+      "title": "Branch Banks",
+      "file": "chapters/ch151.html"
+    },
+    {
+      "id": "ch152",
+      "title": "Further Reason for the Lack of Branch Banks in the United States",
+      "file": "chapters/ch152.html"
+    },
+    {
+      "id": "ch153",
+      "title": "The New York State Bank Act of 1914[145]",
+      "file": "chapters/ch153.html"
+    },
+    {
+      "id": "ch154",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch154.html"
+    },
+    {
+      "id": "ch155",
+      "title": "THE CANADIAN BANKING SYSTEM",
+      "file": "chapters/ch155.html"
+    },
+    {
+      "id": "ch156",
+      "title": "The System Not New",
+      "file": "chapters/ch156.html"
+    },
+    {
+      "id": "ch157",
+      "title": "Other Financial Institutions",
+      "file": "chapters/ch157.html"
+    },
+    {
+      "id": "ch158",
+      "title": "The Essentials of the System",
+      "file": "chapters/ch158.html"
+    },
+    {
+      "id": "ch159",
+      "title": "Deposits",
+      "file": "chapters/ch159.html"
+    },
+    {
+      "id": "ch160",
+      "title": "No Bankers' Bank",
+      "file": "chapters/ch160.html"
+    },
+    {
+      "id": "ch161",
+      "title": "Amount of the Reserve Fixed by Each Bank",
+      "file": "chapters/ch161.html"
+    },
+    {
+      "id": "ch162",
+      "title": "Competition Is Not Lacking",
+      "file": "chapters/ch162.html"
+    },
+    {
+      "id": "ch163",
+      "title": "Banking in Different Provinces",
+      "file": "chapters/ch163.html"
+    },
+    {
+      "id": "ch164",
+      "title": "Large Use of Deposit Currency",
+      "file": "chapters/ch164.html"
+    },
+    {
+      "id": "ch165",
+      "title": "Banks Silent Partners in Industry",
+      "file": "chapters/ch165.html"
+    },
+    {
+      "id": "ch166",
+      "title": "A Customer's Line of Credit",
+      "file": "chapters/ch166.html"
+    },
+    {
+      "id": "ch167",
+      "title": "Loans to Farmers",
+      "file": "chapters/ch167.html"
+    },
+    {
+      "id": "ch168",
+      "title": "Call Loans in Canada and Elsewhere",
+      "file": "chapters/ch168.html"
+    },
+    {
+      "id": "ch169",
+      "title": "The Banks as Financial Institutions",
+      "file": "chapters/ch169.html"
+    },
+    {
+      "id": "ch170",
+      "title": "The Revision of the Bank Act, 1913[148]",
+      "file": "chapters/ch170.html"
+    },
+    {
+      "id": "ch171",
+      "title": "Comparative Figures of Condition of Canadian Banks[149]",
+      "file": "chapters/ch171.html"
+    },
+    {
+      "id": "ch172",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch172.html"
+    },
+    {
+      "id": "ch173",
+      "title": "Foundation and Growth of the Bank of England",
+      "file": "chapters/ch173.html"
+    },
+    {
+      "id": "ch174",
+      "title": "Peel's Act or the Bank Charter Act of 1844, and its Suspensions",
+      "file": "chapters/ch174.html"
+    },
+    {
+      "id": "ch175",
+      "title": "Account of the Liabilities and Assets of the Bank of England",
+      "file": "chapters/ch175.html"
+    },
+    {
+      "id": "ch176",
+      "title": "The Functions of the Bank of England",
+      "file": "chapters/ch176.html"
+    },
+    {
+      "id": "ch177",
+      "title": "The Joint-Stock Banks",
+      "file": "chapters/ch177.html"
+    },
+    {
+      "id": "ch178",
+      "title": "The Private Banks",
+      "file": "chapters/ch178.html"
+    },
+    {
+      "id": "ch179",
+      "title": "The Merchant Bankers and Accepting Houses",
+      "file": "chapters/ch179.html"
+    },
+    {
+      "id": "ch180",
+      "title": "The Discount Houses",
+      "file": "chapters/ch180.html"
+    },
+    {
+      "id": "ch181",
+      "title": "Interview with the Governor and Directors of the Bank of England",
+      "file": "chapters/ch181.html"
+    },
+    {
+      "id": "ch182",
+      "title": "Interview with Sir Felix Schuster, Governor of the Union of London and\r\nSmith's Bank Limited",
+      "file": "chapters/ch182.html"
+    },
+    {
+      "id": "ch183",
+      "title": "Interview with Mr. Charles Gow, General Manager of the London Joint\r\nStock Bank, Limited",
+      "file": "chapters/ch183.html"
+    },
+    {
+      "id": "ch184",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch184.html"
+    },
+    {
+      "id": "ch185",
+      "title": "THE SCOTCH BANKS",
+      "file": "chapters/ch185.html"
+    },
+    {
+      "id": "ch186",
+      "title": "Democracy of Scotch Banking",
+      "file": "chapters/ch186.html"
+    },
+    {
+      "id": "ch187",
+      "title": "Use of Notes as \"Till Money\" in Relation to the Establishment of\r\nBranches",
+      "file": "chapters/ch187.html"
+    },
+    {
+      "id": "ch188",
+      "title": "Evasion of Peel's Act",
+      "file": "chapters/ch188.html"
+    },
+    {
+      "id": "ch189",
+      "title": "Defects",
+      "file": "chapters/ch189.html"
+    },
+    {
+      "id": "ch190",
+      "title": "Bank of Scotland",
+      "file": "chapters/ch190.html"
+    },
+    {
+      "id": "ch191",
+      "title": "Royal Bank of Scotland",
+      "file": "chapters/ch191.html"
+    },
+    {
+      "id": "ch192",
+      "title": "Commercial Bank of Scotland (Limited)",
+      "file": "chapters/ch192.html"
+    },
+    {
+      "id": "ch193",
+      "title": "Union Bank of Scotland (Limited)",
+      "file": "chapters/ch193.html"
+    },
+    {
+      "id": "ch194",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch194.html"
+    },
+    {
+      "id": "ch195",
+      "title": "The Bank of France",
+      "file": "chapters/ch195.html"
+    },
+    {
+      "id": "ch196",
+      "title": "Place of the Bank of France in the Distribution of Credit",
+      "file": "chapters/ch196.html"
+    },
+    {
+      "id": "ch197",
+      "title": "Territorial Expansion of the Bank of France",
+      "file": "chapters/ch197.html"
+    },
+    {
+      "id": "ch198",
+      "title": "The Bank of France and Agricultural Credit",
+      "file": "chapters/ch198.html"
+    },
+    {
+      "id": "ch199",
+      "title": "The Bank of France",
+      "file": "chapters/ch199.html"
+    },
+    {
+      "id": "ch200",
+      "title": "The Crédit Lyonnais",
+      "file": "chapters/ch200.html"
+    },
+    {
+      "id": "ch201",
+      "title": "Comptoir d'Escompte",
+      "file": "chapters/ch201.html"
+    },
+    {
+      "id": "ch202",
+      "title": "Banque de Paris et des Pays-Bas",
+      "file": "chapters/ch202.html"
+    },
+    {
+      "id": "ch203",
+      "title": "Crédit Foncier de France",
+      "file": "chapters/ch203.html"
+    },
+    {
+      "id": "ch204",
+      "title": "Caisse des Dépôts et Consignations",
+      "file": "chapters/ch204.html"
+    },
+    {
+      "id": "ch205",
+      "title": "Crédit Agricole",
+      "file": "chapters/ch205.html"
+    },
+    {
+      "id": "ch206",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch206.html"
+    },
+    {
+      "id": "ch207",
+      "title": "Banking Arrangements in Germany",
+      "file": "chapters/ch207.html"
+    },
+    {
+      "id": "ch208",
+      "title": "General Sketch of Bank and Credit Organisation in Germany",
+      "file": "chapters/ch208.html"
+    },
+    {
+      "id": "ch209",
+      "title": "Interview with Herr Kleemann, Director of the Dresdner Bank",
+      "file": "chapters/ch209.html"
+    },
+    {
+      "id": "ch210",
+      "title": "The Reichsbank",
+      "file": "chapters/ch210.html"
+    },
+    {
+      "id": "ch211",
+      "title": "(Royal Sea-Trade Society)",
+      "file": "chapters/ch211.html"
+    },
+    {
+      "id": "ch212",
+      "title": "Deutsche Bank",
+      "file": "chapters/ch212.html"
+    },
+    {
+      "id": "ch213",
+      "title": "Dresdner Bank",
+      "file": "chapters/ch213.html"
+    },
+    {
+      "id": "ch214",
+      "title": "Bank des Berliner Kassen-Vereins",
+      "file": "chapters/ch214.html"
+    },
+    {
+      "id": "ch215",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch215.html"
+    },
+    {
+      "id": "ch216",
+      "title": "BANKING IN SOUTH AMERICA",
+      "file": "chapters/ch216.html"
+    },
+    {
+      "id": "ch217",
+      "title": "Our Growing Surplus for Foreign Investment",
+      "file": "chapters/ch217.html"
+    },
+    {
+      "id": "ch218",
+      "title": "Greater Lending Power of Banks",
+      "file": "chapters/ch218.html"
+    },
+    {
+      "id": "ch219",
+      "title": "European War",
+      "file": "chapters/ch219.html"
+    },
+    {
+      "id": "ch220",
+      "title": "English Banks in South America",
+      "file": "chapters/ch220.html"
+    },
+    {
+      "id": "ch221",
+      "title": "German Banks in South America",
+      "file": "chapters/ch221.html"
+    },
+    {
+      "id": "ch222",
+      "title": "Other Banking Institutions",
+      "file": "chapters/ch222.html"
+    },
+    {
+      "id": "ch223",
+      "title": "Conditions of Commercial Banking",
+      "file": "chapters/ch223.html"
+    },
+    {
+      "id": "ch224",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch224.html"
+    },
+    {
+      "id": "ch225",
+      "title": "AGRICULTURAL CREDIT IN THE UNITED STATES",
+      "file": "chapters/ch225.html"
+    },
+    {
+      "id": "ch226",
+      "title": "Agricultural Credit Conditions in the United States",
+      "file": "chapters/ch226.html"
+    },
+    {
+      "id": "ch227",
+      "title": "Value of Farm Implements and Machinery in the U. S.[206]",
+      "file": "chapters/ch227.html"
+    },
+    {
+      "id": "ch228",
+      "title": "Farm Credit in a Northwestern State[225]",
+      "file": "chapters/ch228.html"
+    },
+    {
+      "id": "ch229",
+      "title": "Cattle Loan Banks[226]",
+      "file": "chapters/ch229.html"
+    },
+    {
+      "id": "ch230",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch230.html"
+    },
+    {
+      "id": "ch231",
+      "title": "Have We a Money Trust?",
+      "file": "chapters/ch231.html"
+    },
+    {
+      "id": "ch232",
+      "title": "The Borrower and the Money Trust",
+      "file": "chapters/ch232.html"
+    },
+    {
+      "id": "ch233",
+      "title": "The Banks and Railway Finance",
+      "file": "chapters/ch233.html"
+    },
+    {
+      "id": "ch234",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch234.html"
+    },
+    {
+      "id": "ch235",
+      "title": "The Nature of an Economic Crisis",
+      "file": "chapters/ch235.html"
+    },
+    {
+      "id": "ch236",
+      "title": "The Crisis of 1907 in the Light of History",
+      "file": "chapters/ch236.html"
+    },
+    {
+      "id": "ch237",
+      "title": "Current Theories of Crises",
+      "file": "chapters/ch237.html"
+    },
+    {
+      "id": "ch238",
+      "title": "Mitchell's Theory of Business Cycles",
+      "file": "chapters/ch238.html"
+    },
+    {
+      "id": "ch239",
+      "title": "Moore's \"Rainfall\" Theory",
+      "file": "chapters/ch239.html"
+    },
+    {
+      "id": "ch240",
+      "title": "Stringent Money and Financial Panics[247]",
+      "file": "chapters/ch240.html"
+    },
+    {
+      "id": "ch241",
+      "title": "How Banks Should Handle Panics",
+      "file": "chapters/ch241.html"
+    },
+    {
+      "id": "ch242",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch242.html"
+    },
+    {
+      "id": "ch243",
+      "title": "Conflicting Opinions",
+      "file": "chapters/ch243.html"
+    },
+    {
+      "id": "ch244",
+      "title": "Inflexibility of Ledger Balances",
+      "file": "chapters/ch244.html"
+    },
+    {
+      "id": "ch245",
+      "title": "The Parcellation of Reserves",
+      "file": "chapters/ch245.html"
+    },
+    {
+      "id": "ch246",
+      "title": "Redeposited or Overlapping Reserves",
+      "file": "chapters/ch246.html"
+    },
+    {
+      "id": "ch247",
+      "title": "The Perverse Elasticity of National Bank Notes",
+      "file": "chapters/ch247.html"
+    },
+    {
+      "id": "ch248",
+      "title": "National Bank Notes Unsound and Unsafe",
+      "file": "chapters/ch248.html"
+    },
+    {
+      "id": "ch249",
+      "title": "Speculation Involved in the Issue of Notes",
+      "file": "chapters/ch249.html"
+    },
+    {
+      "id": "ch250",
+      "title": "The Lack of Adjustment Between Bank Notes and Deposits",
+      "file": "chapters/ch250.html"
+    },
+    {
+      "id": "ch251",
+      "title": "The Commercial Paper Situation in the United States",
+      "file": "chapters/ch251.html"
+    },
+    {
+      "id": "ch252",
+      "title": "No System of Bank Acceptances and the Absence of an Open Discount Market",
+      "file": "chapters/ch252.html"
+    },
+    {
+      "id": "ch253",
+      "title": "Cash Stock Exchange Dealings",
+      "file": "chapters/ch253.html"
+    },
+    {
+      "id": "ch254",
+      "title": "No Power to Lend on Real Estate[278]",
+      "file": "chapters/ch254.html"
+    },
+    {
+      "id": "ch255",
+      "title": "The Independent Treasury as a Source of Weakness in Our Banking\r\nSystem[280]",
+      "file": "chapters/ch255.html"
+    },
+    {
+      "id": "ch256",
+      "title": "Lack of Central Control",
+      "file": "chapters/ch256.html"
+    },
+    {
+      "id": "ch257",
+      "title": "Absence of Regulation of Ratio of Deposits to Capital and Surplus",
+      "file": "chapters/ch257.html"
+    },
+    {
+      "id": "ch258",
+      "title": "Banking Abuses",
+      "file": "chapters/ch258.html"
+    },
+    {
+      "id": "ch259",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch259.html"
+    },
+    {
+      "id": "ch260",
+      "title": "The Federal Reserve Act[287]",
+      "file": "chapters/ch260.html"
+    },
+    {
+      "id": "ch261",
+      "title": "The Federal Reserve Act—an Experiment",
+      "file": "chapters/ch261.html"
+    },
+    {
+      "id": "ch262",
+      "title": "The Federal Reserve Act and Democracy in Banking",
+      "file": "chapters/ch262.html"
+    },
+    {
+      "id": "ch263",
+      "title": "The Elasticity of Note Issue Under the New Currency Law[299]",
+      "file": "chapters/ch263.html"
+    },
+    {
+      "id": "ch264",
+      "title": "Notes Printed and Issued",
+      "file": "chapters/ch264.html"
+    },
+    {
+      "id": "ch265",
+      "title": "Impounding Gold",
+      "file": "chapters/ch265.html"
+    },
+    {
+      "id": "ch266",
+      "title": "The Financial Policy of the Federal Reserve Banks[302]",
+      "file": "chapters/ch266.html"
+    },
+    {
+      "id": "ch267",
+      "title": "Relations of Federal Reserve Banks with Member Banks[303]",
+      "file": "chapters/ch267.html"
+    },
+    {
+      "id": "ch268",
+      "title": "Federal Reserve Banks and the Acceptance Market",
+      "file": "chapters/ch268.html"
+    },
+    {
+      "id": "ch269",
+      "title": "Clearings and Collections in Practice",
+      "file": "chapters/ch269.html"
+    },
+    {
+      "id": "ch270",
+      "title": "Branches and Agencies",
+      "file": "chapters/ch270.html"
+    },
+    {
+      "id": "ch271",
+      "title": "Proposed Amendments to Federal Reserve Act[311]",
+      "file": "chapters/ch271.html"
+    },
+    {
+      "id": "ch272",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch272.html"
+    },
+    {
+      "id": "ch273",
+      "title": "American Finance and the European War",
+      "file": "chapters/ch273.html"
+    },
+    {
+      "id": "ch274",
+      "title": "National Bank Failures and Suspensions—1914 Compared with 1893 and\r\n1907[317]",
+      "file": "chapters/ch274.html"
+    },
+    {
+      "id": "ch275",
+      "title": "The Effects of the War with Special Reference to the Central Banks of\r\nFrance, Germany, and England",
+      "file": "chapters/ch275.html"
+    },
+    {
+      "id": "ch276",
+      "title": "Darlehnskassen and Other Financial Novelties in Germany",
+      "file": "chapters/ch276.html"
+    },
+    {
+      "id": "ch277",
+      "title": "The War and the World's Financial Centre",
+      "file": "chapters/ch277.html"
+    },
+    {
+      "id": "ch278",
+      "title": "America's Chance of Holding World Purse-Strings[323]",
+      "file": "chapters/ch278.html"
+    },
+    {
+      "id": "ch279",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch279.html"
+    },
+    {
+      "id": "ch280",
+      "title": "AN APPROXIMATE FORMULA FOR DETERMINING THE VELOCITY OF THE CIRCULATION\r\nOF MONEY",
+      "file": "chapters/ch280.html"
+    },
+    {
+      "id": "ch281",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch281.html"
+    },
+    {
+      "id": "ch282",
+      "title": "SOME REGULATIONS OF THE FEDERAL RESERVE BOARD",
+      "file": "chapters/ch282.html"
+    },
+    {
+      "id": "ch283",
+      "title": "I",
+      "file": "chapters/ch283.html"
+    },
+    {
+      "id": "ch284",
+      "title": "II",
+      "file": "chapters/ch284.html"
+    },
+    {
+      "id": "ch285",
+      "title": "III",
+      "file": "chapters/ch285.html"
+    },
+    {
+      "id": "ch286",
+      "title": "IV",
+      "file": "chapters/ch286.html"
+    },
+    {
+      "id": "ch287",
+      "title": "V",
+      "file": "chapters/ch287.html"
+    },
+    {
+      "id": "ch288",
+      "title": "I",
+      "file": "chapters/ch288.html"
+    },
+    {
+      "id": "ch289",
+      "title": "II",
+      "file": "chapters/ch289.html"
+    },
+    {
+      "id": "ch290",
+      "title": "III",
+      "file": "chapters/ch290.html"
+    },
+    {
+      "id": "ch291",
+      "title": "IV",
+      "file": "chapters/ch291.html"
+    },
+    {
+      "id": "ch292",
+      "title": "V",
+      "file": "chapters/ch292.html"
+    },
+    {
+      "id": "ch293",
+      "title": "VI",
+      "file": "chapters/ch293.html"
+    },
+    {
+      "id": "ch294",
+      "title": "VII",
+      "file": "chapters/ch294.html"
+    },
+    {
+      "id": "ch295",
+      "title": "VIII",
+      "file": "chapters/ch295.html"
+    },
+    {
+      "id": "ch296",
+      "title": "IX",
+      "file": "chapters/ch296.html"
+    },
+    {
+      "id": "ch297",
+      "title": "X",
+      "file": "chapters/ch297.html"
+    },
+    {
+      "id": "ch298",
+      "title": "XI",
+      "file": "chapters/ch298.html"
+    },
+    {
+      "id": "ch299",
+      "title": "XII",
+      "file": "chapters/ch299.html"
+    },
+    {
+      "id": "ch300",
+      "title": "I",
+      "file": "chapters/ch300.html"
+    },
+    {
+      "id": "ch301",
+      "title": "II",
+      "file": "chapters/ch301.html"
+    },
+    {
+      "id": "ch302",
+      "title": "III",
+      "file": "chapters/ch302.html"
+    },
+    {
+      "id": "ch303",
+      "title": "IV",
+      "file": "chapters/ch303.html"
+    },
+    {
+      "id": "ch304",
+      "title": "V",
+      "file": "chapters/ch304.html"
+    },
+    {
+      "id": "ch305",
+      "title": "VI",
+      "file": "chapters/ch305.html"
+    },
+    {
+      "id": "ch306",
+      "title": "VII",
+      "file": "chapters/ch306.html"
+    },
+    {
+      "id": "ch307",
+      "title": "VIII",
+      "file": "chapters/ch307.html"
+    },
+    {
+      "id": "ch308",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch308.html"
+    }
+  ],
+  "updated": "2026-04-06"
+}

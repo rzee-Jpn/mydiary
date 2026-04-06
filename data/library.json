@@ -1,5 +1,32 @@
 [
   {
+    "id": "28284",
+    "title": "MODERN CAPITALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/28284",
+    "chapter_count": 23,
+    "updated": "2026-04-06",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "41405",
+    "title": "THE ACCUMULATION\r\nOF CAPITAL",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/41405",
+    "chapter_count": 51,
+    "updated": "2026-04-06",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "35120",
+    "title": "READINGS IN MONEY AND BANKING",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/35120",
+    "chapter_count": 308,
+    "updated": "2026-04-06",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "27842",
     "title": "THE ECONOMIC ASPECTS OF GEOLOGY",
     "author": "Unknown",
