@@ -1,5 +1,32 @@
 [
   {
+    "id": "25009",
+    "title": "THE WORLD'SGREATESTBOOKS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/25009",
+    "chapter_count": 31,
+    "updated": "2026-04-07",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "21623",
+    "title": "USURY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/21623",
+    "chapter_count": 42,
+    "updated": "2026-04-07",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "36345",
+    "title": "LETTERS OF RICARDO",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/36345",
+    "chapter_count": 97,
+    "updated": "2026-04-07",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "28284",
     "title": "MODERN CAPITALISM",
     "author": "Unknown",
