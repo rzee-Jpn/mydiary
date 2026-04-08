@@ -1,5 +1,32 @@
 [
   {
+    "id": "26330",
+    "title": "FRENZIED FINANCE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/26330",
+    "chapter_count": 88,
+    "updated": "2026-04-08",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "71223",
+    "title": "RELIGIONAND THERISE OF CAPITALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/71223",
+    "chapter_count": 26,
+    "updated": "2026-04-08",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "50245",
+    "title": "The Philippine Islands, 1493-1898, Volume 45, 1736&#10;Explorations by early navigators, descriptions of the islands and their peoples, their history and records of the Catholic missions, as related in contemporaneous books and manuscripts, showing the political, economic, commercial and religious conditions of those islands from their earliest relations with European nations to the close of the nineteenth century",
+    "author": "Emma Helen Blair (d. 1911) James Alexander Robertson (1873–1939)",
+    "path": "data/books/gutenberg/50245",
+    "chapter_count": 63,
+    "updated": "2026-04-08",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "25009",
     "title": "THE WORLD'SGREATESTBOOKS",
     "author": "Unknown",
