@@ -1,5 +1,32 @@
 [
   {
+    "id": "38381",
+    "title": "THE HISTORY OF CURRENCY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/38381",
+    "chapter_count": 27,
+    "updated": "2026-04-09",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "61763",
+    "title": "THE COLLECTED WORKS OFWILLIAM HAZLITT",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/61763",
+    "chapter_count": 35,
+    "updated": "2026-04-09",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "21837",
+    "title": "MONOPOLIES AND THE PEOPLEBYCHARLES WHITING BAKER, C. E.ASSOCIATE EDITOR OF \"THE ENGINEERING NEWS\"",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/21837",
+    "chapter_count": 21,
+    "updated": "2026-04-09",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "26330",
     "title": "FRENZIED FINANCE",
     "author": "Unknown",
