@@ -1,0 +1,319 @@
+{
+  "id": "70410",
+  "title": "AHISTORY OF COMMERCE",
+  "author": "Unknown",
+  "word_count": 215375,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofA history of commerce",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "PREFACE",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "CONTENTS",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "CHAPTER IGENERAL CONDITIONS",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "CHAPTER IIORIENTAL PERIOD",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "CHAPTER IIIGREEK PERIOD",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "CHAPTER IVROMAN PERIOD",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "CHAPTER VCONDITIONS ABOUT THE YEAR 1000",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "CHAPTER VITOWN TRADE",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "CHAPTER VIILAND TRADE",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "CHAPTER VIIIFAIRS",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "CHAPTER IXSEA TRADE",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "CHAPTER XTHE LEVANT TRADE",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "CHAPTER XICOMMERCE OF SOUTHERN EUROPE",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "CHAPTER XIICOMMERCE OF NORTHERN EUROPE",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "CHAPTER XIIIDEVELOPMENT OF THE MEDIEVAL ORGANIZATION OF COMMERCE",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "CHAPTER XIVCOMMERCE AND POLITICS IN THE LATER MIDDLE AGES",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "CHAPTER XVEXPLORATION AND DISCOVERY",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "CHAPTER XVIDEVELOPMENT OF THE ECONOMIC ORGANIZATION",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "CHAPTER XVIICREDIT AND CRISES",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "CHAPTER XVIIITHE MODERN STATE AND THE MERCANTILE SYSTEM",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "CHAPTER XIXSPAIN AND PORTUGAL",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "CHAPTER XXTHE NETHERLANDS",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "CHAPTER XXIENGLAND: SURVEY OF COMMERCIAL DEVELOPMENT",
+      "file": "chapters/ch24.html"
+    },
+    {
+      "id": "ch25",
+      "title": "CHAPTER XXIIENGLAND: EXPORTS",
+      "file": "chapters/ch25.html"
+    },
+    {
+      "id": "ch26",
+      "title": "CHAPTER XXIIIENGLAND: IMPORTS; SHIPPING; POLICY",
+      "file": "chapters/ch26.html"
+    },
+    {
+      "id": "ch27",
+      "title": "CHAPTER XXIVFRANCE: SURVEY OF COMMERCIAL DEVELOPMENT",
+      "file": "chapters/ch27.html"
+    },
+    {
+      "id": "ch28",
+      "title": "CHAPTER XXVFRANCE: POLICY",
+      "file": "chapters/ch28.html"
+    },
+    {
+      "id": "ch29",
+      "title": "CHAPTER XXVITHE GERMAN STATES",
+      "file": "chapters/ch29.html"
+    },
+    {
+      "id": "ch30",
+      "title": "CHAPTER XXVIIITALY AND MINOR STATES",
+      "file": "chapters/ch30.html"
+    },
+    {
+      "id": "ch31",
+      "title": "CHAPTER XXVIIICOMMERCE AND COAL",
+      "file": "chapters/ch31.html"
+    },
+    {
+      "id": "ch32",
+      "title": "CHAPTER XXIXMACHINERY AND MANUFACTURES",
+      "file": "chapters/ch32.html"
+    },
+    {
+      "id": "ch33",
+      "title": "CHAPTER XXXROADS AND RAILROADS",
+      "file": "chapters/ch33.html"
+    },
+    {
+      "id": "ch34",
+      "title": "CHAPTER XXXIMEANS OF NAVIGATION AND COMMUNICATION",
+      "file": "chapters/ch34.html"
+    },
+    {
+      "id": "ch35",
+      "title": "CHAPTER XXXIITHE WARES OF COMMERCE",
+      "file": "chapters/ch35.html"
+    },
+    {
+      "id": "ch36",
+      "title": "CHAPTER XXXIIITHE MODERN ORGANIZATION",
+      "file": "chapters/ch36.html"
+    },
+    {
+      "id": "ch37",
+      "title": "CHAPTER XXXIVCOMMERCIAL POLICY",
+      "file": "chapters/ch37.html"
+    },
+    {
+      "id": "ch38",
+      "title": "CHAPTER XXXVENGLAND: COMMERCIAL DEVELOPMENT, 1800-1850",
+      "file": "chapters/ch38.html"
+    },
+    {
+      "id": "ch39",
+      "title": "CHAPTER XXXVIENGLAND: REFORM OF COMMERCIAL POLICY",
+      "file": "chapters/ch39.html"
+    },
+    {
+      "id": "ch40",
+      "title": "CHAPTER XXXVIIENGLAND: COMMERCIAL DEVELOPMENT, 1850-1914",
+      "file": "chapters/ch40.html"
+    },
+    {
+      "id": "ch41",
+      "title": "CHAPTER XXXVIIIENGLAND: PRE-WAR PROBLEMS",
+      "file": "chapters/ch41.html"
+    },
+    {
+      "id": "ch42",
+      "title": "CHAPTER XXXIXTHE GERMAN STATES",
+      "file": "chapters/ch42.html"
+    },
+    {
+      "id": "ch43",
+      "title": "CHAPTER XLGERMANY UNDER THE EMPIRE",
+      "file": "chapters/ch43.html"
+    },
+    {
+      "id": "ch44",
+      "title": "CHAPTER XLIFRANCE",
+      "file": "chapters/ch44.html"
+    },
+    {
+      "id": "ch45",
+      "title": "CHAPTER XLIIMINOR STATES OF CENTRAL AND NORTHERN EUROPE",
+      "file": "chapters/ch45.html"
+    },
+    {
+      "id": "ch46",
+      "title": "CHAPTER XLIIISTATES OF SOUTHERN EUROPE",
+      "file": "chapters/ch46.html"
+    },
+    {
+      "id": "ch47",
+      "title": "CHAPTER XLIVEASTERN EUROPE",
+      "file": "chapters/ch47.html"
+    },
+    {
+      "id": "ch48",
+      "title": "CHAPTER XLVTHE ORGANIZATION OF PRODUCTION, 1789",
+      "file": "chapters/ch48.html"
+    },
+    {
+      "id": "ch49",
+      "title": "CHAPTER XLVIINTERNAL TRADE AND FOREIGN COMMERCE, 1789",
+      "file": "chapters/ch49.html"
+    },
+    {
+      "id": "ch50",
+      "title": "CHAPTER XLVIICOMMERCE AND POLICY, 1789-1815",
+      "file": "chapters/ch50.html"
+    },
+    {
+      "id": "ch51",
+      "title": "CHAPTER XLVIIINATIONAL EXPANSION, 1815-1860",
+      "file": "chapters/ch51.html"
+    },
+    {
+      "id": "ch52",
+      "title": "CHAPTER XLIXEXPORTS, 1815-1860",
+      "file": "chapters/ch52.html"
+    },
+    {
+      "id": "ch53",
+      "title": "CHAPTER LIMPORTS, POLICY, DIRECTION OF COMMERCE, 1815-1860",
+      "file": "chapters/ch53.html"
+    },
+    {
+      "id": "ch54",
+      "title": "CHAPTER LINATIONAL DEVELOPMENT, 1860-1914",
+      "file": "chapters/ch54.html"
+    },
+    {
+      "id": "ch55",
+      "title": "CHAPTER LIIEXPORTS, 1860-1914",
+      "file": "chapters/ch55.html"
+    },
+    {
+      "id": "ch56",
+      "title": "CHAPTER LIIIIMPORTS, POLICY, DIRECTION OF COMMERCE, 1860-1914",
+      "file": "chapters/ch56.html"
+    },
+    {
+      "id": "ch57",
+      "title": "CHAPTER LIVCOMMERCE AND THE WORLD WAR, 1914-1918",
+      "file": "chapters/ch57.html"
+    },
+    {
+      "id": "ch58",
+      "title": "CHAPTER LVTHE UNITED KINGDOM, 1914-1920",
+      "file": "chapters/ch58.html"
+    },
+    {
+      "id": "ch59",
+      "title": "CHAPTER LVIFRANCE AND THE PROBLEM OF REPARATIONS",
+      "file": "chapters/ch59.html"
+    },
+    {
+      "id": "ch60",
+      "title": "CHAPTER LVIICENTRAL AND EASTERN EUROPE, 1914-1920",
+      "file": "chapters/ch60.html"
+    },
+    {
+      "id": "ch61",
+      "title": "CHAPTER LVIIITHE UNITED STATES, 1914-1920",
+      "file": "chapters/ch61.html"
+    },
+    {
+      "id": "ch62",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch62.html"
+    }
+  ],
+  "updated": "2026-04-11"
+}

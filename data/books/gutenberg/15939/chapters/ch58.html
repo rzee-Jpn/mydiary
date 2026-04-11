@@ -1,0 +1,99 @@
+<h2>Program used in the analysis
+on exposed and sheltered sectors</h2>
+<p>This program uses the Applied General Equilibrium routine of
+the Economics Pack (Colignatus (1999)), which routine is based on work of Asahi
+Noguchi and Silvio Levy, see the chapter in Varian (1993). It is nice to show
+how simple modeling actually can be made.</p>
+<p><span style="font-size: 10pt;">Needs[“Economics`Pack`”]</span></p>
+<p><span style="font-size: 10pt;">ResetAll</span></p>
+<p><span style="font-size: 10pt;">Economics[“AGE`”]</span></p>
+<p><span style="font-size: 10pt;">SetFunction[withl, shel] = </span></p>
+<p><span style="font-size: 10pt;">                              
+{Function </span><img alt="" id="img_images_arrowright.gif_20" src="images/arrowright.gif"/><span style="font-size: 10pt;"> ( 0.4 (1-q) hs^0.334 + 0.6 (1-q) ms^0.334 + q
+ls^0.334)^3,</span></p>
+<p><span style="font-size: 10pt;">                              
+CoefficientList </span><img alt="" id="img_images_arrowright.gif_21" src="images/arrowright.gif"/><span style="font-size: 10pt;"> { q </span><img alt="" id="img_images_arrowright.gif_22" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 0.1}, Factors </span><img alt="" id="img_images_arrowright.gif_23" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {hs, ms, ls} }</span></p>
+<p><span style="font-size: 10pt;">SetFunction[withl, expo] = </span></p>
+<p><span style="font-size: 10pt;">                              
+{Function </span><img alt="" id="img_images_arrowright.gif_24" src="images/arrowright.gif"/></p>
+<p><span style="font-size: 10pt;">                              
+ (( (c he^(1-1/s2) +
+(1-c) me^(1-1/s2))^(1/(1-1/s2)) )^(1-1/s) * (1-d) + </span></p>
+<p><span style="font-size: 10pt;">                              
+     d * le^(1-1/s)
+)^(1/(1 - 1/s)),</span></p>
+<p><span style="font-size: 10pt;">                              
+CoefficientList </span><img alt="" id="img_images_arrowright.gif_25" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {c </span><img alt="" id="img_images_arrowright.gif_26" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 0.2, d </span><img alt="" id="img_images_arrowright.gif_27" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 0.01, s </span><img alt="" id="img_images_arrowright.gif_28" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 1.2, s2 </span><img alt="" id="img_images_arrowright.gif_29" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 0.4}, </span></p>
+<p><span style="font-size: 10pt;">                              
+Factors </span><img alt="" id="img_images_arrowright.gif_30" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {he, me, le} }</span></p>
+<p><span style="font-size: 10pt;">SetModel[NumberOfSectors </span><img alt="" id="img_images_arrowright.gif_31" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 2, NumberOfFactors </span><img alt="" id="img_images_arrowright.gif_32" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 3,
+Utility </span><img alt="" id="img_images_arrowright.gif_33" src="images/arrowright.gif"/><span style="font-size: 10pt;"> CES, </span></p>
+<p><span style="font-size: 10pt;">                              
+Production </span><img alt="" id="img_images_arrowright.gif_34" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {Sector[1] </span><img alt="" id="img_images_arrowright.gif_35" src="images/arrowright.gif"/><span style="font-size: 10pt;">
+SetFunction[withl, shel],</span></p>
+<p><span style="font-size: 10pt;">                                              
+          
+Sector[2] </span><img alt="" id="img_images_arrowright.gif_36" src="images/arrowright.gif"/><span style="font-size: 10pt;"> SetFunction[withl, expo] } ]</span></p>
+<p><span style="font-size: 10pt;">ownpars = {Utility </span><img alt="" id="img_images_arrowright.gif_37" src="images/arrowright.gif"/><span style="font-size: 10pt;">
+{Scale[Utility] </span><img alt="" id="img_images_arrowright.gif_38" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 1, RTS[Utility] </span><img alt="" id="img_images_arrowright.gif_39" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 1,
+S[Utility] </span><img alt="" id="img_images_arrowright.gif_40" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 0.6,</span></p>
+<p><span style="font-size: 10pt;">                                              
+FactorE[1]
+</span><img alt="" id="img_images_arrowright.gif_41" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 0.7, FactorE[2] </span><img alt="" id="img_images_arrowright.gif_42" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 0.3},</span></p>
+<p><span style="font-size: 10pt;">                              
+Production </span><img alt="" id="img_images_arrowright.gif_43" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {}, Resources </span><img alt="" id="img_images_arrowright.gif_44" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {15, 75,
+10}}</span></p>
+<p><span style="font-size: 10pt;">eq = Equilibrium[ownpars]</span></p>
+<p><span style="font-size: 10pt;">AllocationTable[Allocation[ownpars]]</span></p>
+<p><span style="font-size: 10pt;">shares = (FactorPrices /. eq) * (Resources /. ownpars)
+/ (YEq /. eq)</span></p>
+<p><span style="font-size: 10pt;">cpc23 = CPCDiagram[ownpars, AxesLabel </span><img alt="" id="img_images_arrowright.gif_45" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {“Sheltered”, “Exposed”}, </span></p>
+<p><span style="font-size: 10pt;">AspectRatio </span><img alt="" id="img_images_arrowright.gif_46" src="images/arrowright.gif"/><span style="font-size: 10pt;">
+Automatic]</span></p>
+<p><span style="font-size: 10pt;">ploteq1 = EdgeworthBowley[ownpars, Factor </span><img alt="" id="img_images_arrowright.gif_47" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {1, 2}, PlotPoints </span><img alt="" id="img_images_arrowright.gif_48" src="images/arrowright.gif"/><span style="font-size: 10pt;">
+50]</span></p>
+<p><span style="font-size: 10pt;">(*l = 0*)</span></p>
+<p><span style="font-size: 10pt;">SetFunction[withoutl, shel] = </span></p>
+<p><span style="font-size: 10pt;">                              
+{Function </span><img alt="" id="img_images_arrowright.gif_49" src="images/arrowright.gif"/><span style="font-size: 10pt;"> ( 0.4 (1-q) hs^0.334 + 0.6 (1-q) ms^0.334 + q
+ls^0.334)^3,</span></p>
+<p><span style="font-size: 10pt;">                              
+CoefficientList </span><img alt="" id="img_images_arrowright.gif_50" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {}, Factors </span><img alt="" id="img_images_arrowright.gif_51" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {hs, ms}
+} /. {ls </span><img alt="" id="img_images_arrowright.gif_52" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 0, q </span><img alt="" id="img_images_arrowright.gif_53" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 0.1}</span></p>
+<p><span style="font-size: 10pt;">SetFunction[withoutl, expo] = </span></p>
+<p><span style="font-size: 10pt;">                {Function </span><img alt="" id="img_images_arrowright.gif_54" src="images/arrowright.gif"/><span style="font-size: 10pt;"> (( (c he^(1-1/s2) + (1-c) me^(1-1/s2))^(1/(1-1/s2))
+)^(1-1/s) * (1-d) + </span></p>
+<p><span style="font-size: 10pt;">               
+d * le^(1-1/s) )^(1/(1 - 1/s)) /. {le </span><img alt="" id="img_images_arrowright.gif_55" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 0, s </span><img alt="" id="img_images_arrowright.gif_56" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 1.2, s2 </span><img alt="" id="img_images_arrowright.gif_57" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 0.4} // PowerExpand,</span></p>
+<p><span style="font-size: 10pt;">                              
+CoefficientList </span><img alt="" id="img_images_arrowright.gif_58" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {c </span><img alt="" id="img_images_arrowright.gif_59" src="images/arrowright.gif"/><span style="font-size: 10pt;"> .2, d </span><img alt="" id="img_images_arrowright.gif_60" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 0.01}, Factors </span><img alt="" id="img_images_arrowright.gif_61" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {he, me}}
+</span></p>
+<p><span style="font-size: 10pt;">SetModel[NumberOfSectors </span><img alt="" id="img_images_arrowright.gif_62" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 2, NumberOfFactors </span><img alt="" id="img_images_arrowright.gif_63" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 2,
+Utility </span><img alt="" id="img_images_arrowright.gif_64" src="images/arrowright.gif"/><span style="font-size: 10pt;"> CES, </span></p>
+<p><span style="font-size: 10pt;">                              
+Production </span><img alt="" id="img_images_arrowright.gif_65" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {Sector[1] </span><img alt="" id="img_images_arrowright.gif_66" src="images/arrowright.gif"/><span style="font-size: 10pt;">
+SetFunction[withoutl, shel],</span></p>
+<p><span style="font-size: 10pt;">                                              
+          
+Sector[2] </span><img alt="" id="img_images_arrowright.gif_67" src="images/arrowright.gif"/><span style="font-size: 10pt;"> SetFunction[withoutl, expo] } ]</span></p>
+<p><span style="font-size: 10pt;">pars22 =  {Utility </span><img alt="" id="img_images_arrowright.gif_68" src="images/arrowright.gif"/><span style="font-size: 10pt;">
+{Scale[Utility] </span><img alt="" id="img_images_arrowright.gif_69" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 1, RTS[Utility] </span><img alt="" id="img_images_arrowright.gif_70" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 1,
+S[Utility] </span><img alt="" id="img_images_arrowright.gif_71" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 0.6,</span></p>
+<p><span style="font-size: 10pt;">                                              
+FactorE[1]
+</span><img alt="" id="img_images_arrowright.gif_72" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 0.7, FactorE[2] </span><img alt="" id="img_images_arrowright.gif_73" src="images/arrowright.gif"/><span style="font-size: 10pt;"> 0.3},</span></p>
+<p><span style="font-size: 10pt;">                     Production </span><img alt="" id="img_images_arrowright.gif_74" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {}, Resources </span><img alt="" id="img_images_arrowright.gif_75" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {15, 75}}</span></p>
+<p><span style="font-size: 10pt;">eq22 = Equilibrium[pars22]</span></p>
+<p><span style="font-size: 10pt;">AllocationTable[Allocation[pars22]]</span></p>
+<p><span style="font-size: 10pt;">shares22 = (FactorPrices /. eq22) * (Resources /.
+pars22) / (YEq /. eq22)</span></p>
+<p><span style="font-size: 10pt;">cpc22 = CPCDiagram[pars22, AxesLabel </span><img alt="" id="img_images_arrowright.gif_76" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {“Sheltered”, “Exposed”}, </span></p>
+<p><span style="font-size: 10pt;">                                              
+AspectRatio
+</span><img alt="" id="img_images_arrowright.gif_77" src="images/arrowright.gif"/><span style="font-size: 10pt;"> Automatic]</span></p>
+<p><span style="font-size: 10pt;">ploteq4 = EdgeworthBowley[pars22, Factor </span><img alt="" id="img_images_arrowright.gif_78" src="images/arrowright.gif"/><span style="font-size: 10pt;"> {1, 2}, PlotPoints </span><img alt="" id="img_images_arrowright.gif_79" src="images/arrowright.gif"/><span style="font-size: 10pt;">
+50]</span></p>
+<p><span style="font-size: 10pt;">cpcfin = Show[cpc23, cpc22]</span></p>
+<p><span style="font-size: 10pt;">ebfin = Show[ploteq1, ploteq4, </span></p>
+<p><span style="font-size: 10pt;">FrameLabel </span><img alt="" id="img_images_arrowright.gif_80" src="images/arrowright.gif"/><span style="font-size: 10pt;">  {“Total
+high pr. labour”, “Total middle pr. labour”}]</span></p>
