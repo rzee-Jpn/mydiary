@@ -1,5 +1,32 @@
 [
   {
+    "id": "63433",
+    "title": "THEHARVEST OF THE SEA",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/63433",
+    "chapter_count": 22,
+    "updated": "2026-04-12",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "24884",
+    "title": "COMMERCIALGEOGRAPHY",
+    "author": "JACQUES W. REDWAY, F.R.G.S.",
+    "path": "data/books/gutenberg/24884",
+    "chapter_count": 40,
+    "updated": "2026-04-12",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "63132",
+    "title": "The Problem of the Rupee, Its Origin and Its Solution",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/63132",
+    "chapter_count": 12,
+    "updated": "2026-04-12",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "15939",
     "title": "Definition & Realityin theGeneral Theory of Political Economy",
     "author": "Unknown",
