@@ -1,5 +1,32 @@
 [
   {
+    "id": "40077",
+    "title": "THE PRINCIPLES OF ECONOMICS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/40077",
+    "chapter_count": 66,
+    "updated": "2026-04-14",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "76262",
+    "title": "BEER,ITS HISTORY AND ITS ECONOMIC VALUEAS ANATIONAL BEVERAGE.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/76262",
+    "chapter_count": 29,
+    "updated": "2026-04-14",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "57913",
+    "title": "WOMEN AND ECONOMICSA Study of the Economic Relation Between Men and Women as a Factor in Social Evolution",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/57913",
+    "chapter_count": 17,
+    "updated": "2026-04-14",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "17090",
     "title": "Random Reminiscences",
     "author": "Unknown",
