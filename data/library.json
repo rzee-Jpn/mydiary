@@ -1,5 +1,32 @@
 [
   {
+    "id": "22733",
+    "title": "SOCIALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/22733",
+    "chapter_count": 85,
+    "updated": "2026-04-15",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "75859",
+    "title": "THE INTELLIGENT WOMAN’S GUIDETO SOCIALISM AND CAPITALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/75859",
+    "chapter_count": 87,
+    "updated": "2026-04-15",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "58583",
+    "title": "INDEX OF THE PROJECT GUTENBERGWORKS OFJOHN STUART MILL",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/58583",
+    "chapter_count": 19,
+    "updated": "2026-04-15",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "40077",
     "title": "THE PRINCIPLES OF ECONOMICS",
     "author": "Unknown",
