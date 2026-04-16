@@ -1,0 +1,59 @@
+{
+  "id": "22865",
+  "title": "CRITICAL",
+  "author": "Unknown",
+  "word_count": 32059,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofCritical Miscellanies (Vol. 2 of 3), Essay 2: Turgot",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "Essay 2: Turgot",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "V.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "TURGOT.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "I.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "II.",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "III.",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "IV.",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "V.",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch10.html"
+    }
+  ],
+  "updated": "2026-04-16"
+}

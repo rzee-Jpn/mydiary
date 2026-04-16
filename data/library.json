@@ -1,5 +1,32 @@
 [
   {
+    "id": "22865",
+    "title": "CRITICAL",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/22865",
+    "chapter_count": 10,
+    "updated": "2026-04-16",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "66710",
+    "title": "ANINQUIRYINTO THEPRINCIPLES OF POLITICAL OECONOMY:",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/66710",
+    "chapter_count": 22,
+    "updated": "2026-04-16",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "26841",
+    "title": "SuccessfulStock Speculation",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/26841",
+    "chapter_count": 35,
+    "updated": "2026-04-16",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "22733",
     "title": "SOCIALISM",
     "author": "Unknown",
