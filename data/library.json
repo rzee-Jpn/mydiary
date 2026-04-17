@@ -1,5 +1,32 @@
 [
   {
+    "id": "60082",
+    "title": "THE STOCK EXCHANGE\r\nFROM WITHIN",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/60082",
+    "chapter_count": 30,
+    "updated": "2026-04-17",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "59792",
+    "title": "The Scott Library: Hume’s Pol­it­i­cal Dis­cours­es,\r\nby Da­vid Hume. Ed­i­ted, with an In­tro­duc­tion by Wil­liam Bell\r\nRob­ert­son.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/59792",
+    "chapter_count": 41,
+    "updated": "2026-04-17",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "37784",
+    "title": "The Rise of Cotton Mills in the South",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/37784",
+    "chapter_count": 10,
+    "updated": "2026-04-17",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "22865",
     "title": "CRITICAL",
     "author": "Unknown",
