@@ -1,0 +1,834 @@
+{
+  "id": "42759",
+  "title": "DISTRIBUTIVE JUSTICE",
+  "author": "Unknown",
+  "word_count": 136108,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofDistributive Justice: The Right and Wrong of Our Present Distribution of Wealth",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "PREFACE",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "THE ELEMENTS AND SCOPE OF THE PROBLEM",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "CHAPTER ITHE LANDOWNER'S SHARE OF THE NATIONAL PRODUCT",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "Economic Rent Always Goes to the Landowner",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "Economic Rent and Commercial Rent",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "The Cause of Economic Rent",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "CHAPTER IILANDOWNERSHIP IN HISTORY",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "No Private Ownership in Pre-Agricultural Conditions",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "How the Change Probably Took Place",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "Limited Character of Primitive Common Ownership",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "Private Ownership General in Historical Times",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "Conclusions from History",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "CHAPTER IIITHE ARGUMENTS AGAINST PRIVATE LANDOWNERSHIP",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "Arguments by Socialists",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "Henry George's Attack on the Title of First Occupancy",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "His Defence of the Title of Labour",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "The Right of All Men to the Bounty of the Earth",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "The Alleged Right of the Community to Land Values",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "CHAPTER IVPRIVATE OWNERSHIP THE BEST SYSTEM OF LAND\r\nTENURE",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "The Socialist Proposals Impracticable",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "Inferiority of the Single Tax System",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "CHAPTER VPRIVATE LANDOWNERSHIP A NATURAL RIGHT",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "Three Principal Kinds of Natural Rights",
+      "file": "chapters/ch24.html"
+    },
+    {
+      "id": "ch25",
+      "title": "Private Landownership Indirectly Necessary for Individual\r\nWelfare",
+      "file": "chapters/ch25.html"
+    },
+    {
+      "id": "ch26",
+      "title": "Excessive Interpretations of the Right of Private\r\nLandownership",
+      "file": "chapters/ch26.html"
+    },
+    {
+      "id": "ch27",
+      "title": "The Doctrine of the Fathers and Theologians",
+      "file": "chapters/ch27.html"
+    },
+    {
+      "id": "ch28",
+      "title": "The Teaching of Pope Leo XIII",
+      "file": "chapters/ch28.html"
+    },
+    {
+      "id": "ch29",
+      "title": "CHAPTER VILIMITATIONS ON THE LANDOWNER'S RIGHT TO RENT",
+      "file": "chapters/ch29.html"
+    },
+    {
+      "id": "ch30",
+      "title": "The Tenant's Right to a Decent Livelihood",
+      "file": "chapters/ch30.html"
+    },
+    {
+      "id": "ch31",
+      "title": "The Labourer's Claim Upon the Rent",
+      "file": "chapters/ch31.html"
+    },
+    {
+      "id": "ch32",
+      "title": "CHAPTER VIIDEFECTS OF THE EXISTING LAND SYSTEM",
+      "file": "chapters/ch32.html"
+    },
+    {
+      "id": "ch33",
+      "title": "Landownership and Monopoly",
+      "file": "chapters/ch33.html"
+    },
+    {
+      "id": "ch34",
+      "title": "Excessive Gains from Private Landownership",
+      "file": "chapters/ch34.html"
+    },
+    {
+      "id": "ch35",
+      "title": "Exclusion from the Land",
+      "file": "chapters/ch35.html"
+    },
+    {
+      "id": "ch36",
+      "title": "CHAPTER VIIIMETHODS OF REFORMING OUR LAND SYSTEM",
+      "file": "chapters/ch36.html"
+    },
+    {
+      "id": "ch37",
+      "title": "The Leasing System",
+      "file": "chapters/ch37.html"
+    },
+    {
+      "id": "ch38",
+      "title": "Public Agricultural Lands",
+      "file": "chapters/ch38.html"
+    },
+    {
+      "id": "ch39",
+      "title": "Public Ownership of Urban Land",
+      "file": "chapters/ch39.html"
+    },
+    {
+      "id": "ch40",
+      "title": "Appropriating Future Increases of Land Value",
+      "file": "chapters/ch40.html"
+    },
+    {
+      "id": "ch41",
+      "title": "Some Objections to the Increment Tax",
+      "file": "chapters/ch41.html"
+    },
+    {
+      "id": "ch42",
+      "title": "The Morality of the Proposal",
+      "file": "chapters/ch42.html"
+    },
+    {
+      "id": "ch43",
+      "title": "The German and British Increment Taxes",
+      "file": "chapters/ch43.html"
+    },
+    {
+      "id": "ch44",
+      "title": "Transferring Other Taxes to Land",
+      "file": "chapters/ch44.html"
+    },
+    {
+      "id": "ch45",
+      "title": "The Morality of the Plan",
+      "file": "chapters/ch45.html"
+    },
+    {
+      "id": "ch46",
+      "title": "Amount of Taxes Practically Transferable",
+      "file": "chapters/ch46.html"
+    },
+    {
+      "id": "ch47",
+      "title": "The Social Benefits of the Plan",
+      "file": "chapters/ch47.html"
+    },
+    {
+      "id": "ch48",
+      "title": "A Supertax on Large Holdings",
+      "file": "chapters/ch48.html"
+    },
+    {
+      "id": "ch49",
+      "title": "CHAPTER IXTHE NATURE AND THE RATE OF INTEREST",
+      "file": "chapters/ch49.html"
+    },
+    {
+      "id": "ch50",
+      "title": "Meaning of Capital and Capitalist",
+      "file": "chapters/ch50.html"
+    },
+    {
+      "id": "ch51",
+      "title": "Meaning of Interest",
+      "file": "chapters/ch51.html"
+    },
+    {
+      "id": "ch52",
+      "title": "The Rate of Interest",
+      "file": "chapters/ch52.html"
+    },
+    {
+      "id": "ch53",
+      "title": "CHAPTER XTHE ALLEGED RIGHT OF LABOUR TO THE ENTIRE PRODUCT\r\nOF INDUSTRY",
+      "file": "chapters/ch53.html"
+    },
+    {
+      "id": "ch54",
+      "title": "The Labour Theory of Value",
+      "file": "chapters/ch54.html"
+    },
+    {
+      "id": "ch55",
+      "title": "The Right of Productivity",
+      "file": "chapters/ch55.html"
+    },
+    {
+      "id": "ch56",
+      "title": "CHAPTER XITHE SOCIALIST SCHEME OF INDUSTRY",
+      "file": "chapters/ch56.html"
+    },
+    {
+      "id": "ch57",
+      "title": "Socialist Inconsistency",
+      "file": "chapters/ch57.html"
+    },
+    {
+      "id": "ch58",
+      "title": "Expropriating the Capitalists",
+      "file": "chapters/ch58.html"
+    },
+    {
+      "id": "ch59",
+      "title": "Inefficient Industrial Leadership",
+      "file": "chapters/ch59.html"
+    },
+    {
+      "id": "ch60",
+      "title": "Inefficient Labour",
+      "file": "chapters/ch60.html"
+    },
+    {
+      "id": "ch61",
+      "title": "Attempted Replies to Objections",
+      "file": "chapters/ch61.html"
+    },
+    {
+      "id": "ch62",
+      "title": "Restricting Individual Liberty",
+      "file": "chapters/ch62.html"
+    },
+    {
+      "id": "ch63",
+      "title": "CHAPTER XIIALLEGED INTRINSIC JUSTIFICATIONS OF INTEREST",
+      "file": "chapters/ch63.html"
+    },
+    {
+      "id": "ch64",
+      "title": "Attitude of the Church Toward Interest on Loans",
+      "file": "chapters/ch64.html"
+    },
+    {
+      "id": "ch65",
+      "title": "Interest on Productive Capital",
+      "file": "chapters/ch65.html"
+    },
+    {
+      "id": "ch66",
+      "title": "The Claims of Productivity",
+      "file": "chapters/ch66.html"
+    },
+    {
+      "id": "ch67",
+      "title": "The Claims of Service",
+      "file": "chapters/ch67.html"
+    },
+    {
+      "id": "ch68",
+      "title": "The Claims of Abstinence",
+      "file": "chapters/ch68.html"
+    },
+    {
+      "id": "ch69",
+      "title": "CHAPTER XIIISOCIAL AND PRESUMPTIVE JUSTIFICATIONS OF INTEREST",
+      "file": "chapters/ch69.html"
+    },
+    {
+      "id": "ch70",
+      "title": "Limitations of the Sacrifice Principle",
+      "file": "chapters/ch70.html"
+    },
+    {
+      "id": "ch71",
+      "title": "The Value of Capital in a No-Interest Régime",
+      "file": "chapters/ch71.html"
+    },
+    {
+      "id": "ch72",
+      "title": "Whether the Present Rate of Interest Is Necessary",
+      "file": "chapters/ch72.html"
+    },
+    {
+      "id": "ch73",
+      "title": "Whether at Least Two Per Cent. Is Necessary",
+      "file": "chapters/ch73.html"
+    },
+    {
+      "id": "ch74",
+      "title": "Whether Any Interest Is Necessary",
+      "file": "chapters/ch74.html"
+    },
+    {
+      "id": "ch75",
+      "title": "The State Is Justified in Permitting Interest",
+      "file": "chapters/ch75.html"
+    },
+    {
+      "id": "ch76",
+      "title": "Civil Authorisation not Sufficient for Individual\r\nJustification",
+      "file": "chapters/ch76.html"
+    },
+    {
+      "id": "ch77",
+      "title": "How the Interest-Taker Is Justified",
+      "file": "chapters/ch77.html"
+    },
+    {
+      "id": "ch78",
+      "title": "CHAPTER XIVCO-OPERATION AS A PARTIAL SOLVENT OF CAPITALISM",
+      "file": "chapters/ch78.html"
+    },
+    {
+      "id": "ch79",
+      "title": "Reducing the Rate of Interest",
+      "file": "chapters/ch79.html"
+    },
+    {
+      "id": "ch80",
+      "title": "Need for a Wider Distribution of Capital",
+      "file": "chapters/ch80.html"
+    },
+    {
+      "id": "ch81",
+      "title": "The Essence of Co-operative Enterprise",
+      "file": "chapters/ch81.html"
+    },
+    {
+      "id": "ch82",
+      "title": "Co-operative Credit Societies",
+      "file": "chapters/ch82.html"
+    },
+    {
+      "id": "ch83",
+      "title": "Co-operative Agricultural Societies",
+      "file": "chapters/ch83.html"
+    },
+    {
+      "id": "ch84",
+      "title": "Co-operative Mercantile Societies",
+      "file": "chapters/ch84.html"
+    },
+    {
+      "id": "ch85",
+      "title": "Co-operation in Production",
+      "file": "chapters/ch85.html"
+    },
+    {
+      "id": "ch86",
+      "title": "Advantages and Prospects of Co-operation",
+      "file": "chapters/ch86.html"
+    },
+    {
+      "id": "ch87",
+      "title": "CHAPTER XVTHE NATURE OF PROFITS",
+      "file": "chapters/ch87.html"
+    },
+    {
+      "id": "ch88",
+      "title": "The Functions and Rewards of the Business Man",
+      "file": "chapters/ch88.html"
+    },
+    {
+      "id": "ch89",
+      "title": "The Amount of Profits",
+      "file": "chapters/ch89.html"
+    },
+    {
+      "id": "ch90",
+      "title": "Profits in the Joint-Stock Company",
+      "file": "chapters/ch90.html"
+    },
+    {
+      "id": "ch91",
+      "title": "CHAPTER XVITHE PRINCIPAL CANONS OF DISTRIBUTIVE JUSTICE",
+      "file": "chapters/ch91.html"
+    },
+    {
+      "id": "ch92",
+      "title": "The Canon of Equality",
+      "file": "chapters/ch92.html"
+    },
+    {
+      "id": "ch93",
+      "title": "The Canon of Needs",
+      "file": "chapters/ch93.html"
+    },
+    {
+      "id": "ch94",
+      "title": "The Canon of Efforts and Sacrifice",
+      "file": "chapters/ch94.html"
+    },
+    {
+      "id": "ch95",
+      "title": "The Canon of Productivity",
+      "file": "chapters/ch95.html"
+    },
+    {
+      "id": "ch96",
+      "title": "The Canon of Scarcity",
+      "file": "chapters/ch96.html"
+    },
+    {
+      "id": "ch97",
+      "title": "The Canon of Human Welfare",
+      "file": "chapters/ch97.html"
+    },
+    {
+      "id": "ch98",
+      "title": "CHAPTER XVIIJUST PROFITS IN CONDITIONS OF COMPETITION",
+      "file": "chapters/ch98.html"
+    },
+    {
+      "id": "ch99",
+      "title": "The Question of Indefinitely Large Profits",
+      "file": "chapters/ch99.html"
+    },
+    {
+      "id": "ch100",
+      "title": "The Question of Minimum Profits",
+      "file": "chapters/ch100.html"
+    },
+    {
+      "id": "ch101",
+      "title": "The Question of Superfluous Business Men",
+      "file": "chapters/ch101.html"
+    },
+    {
+      "id": "ch102",
+      "title": "CHAPTER XVIIITHE MORAL ASPECT OF MONOPOLY",
+      "file": "chapters/ch102.html"
+    },
+    {
+      "id": "ch103",
+      "title": "Surplus and Excessive Profits",
+      "file": "chapters/ch103.html"
+    },
+    {
+      "id": "ch104",
+      "title": "The Question of Monopolistic Efficiency",
+      "file": "chapters/ch104.html"
+    },
+    {
+      "id": "ch105",
+      "title": "Discriminative Underselling",
+      "file": "chapters/ch105.html"
+    },
+    {
+      "id": "ch106",
+      "title": "Exclusive-Sales Contracts",
+      "file": "chapters/ch106.html"
+    },
+    {
+      "id": "ch107",
+      "title": "Discriminative Transportation Arrangements",
+      "file": "chapters/ch107.html"
+    },
+    {
+      "id": "ch108",
+      "title": "Natural Monopolies",
+      "file": "chapters/ch108.html"
+    },
+    {
+      "id": "ch109",
+      "title": "Methods of Preventing Monopolistic Injustice",
+      "file": "chapters/ch109.html"
+    },
+    {
+      "id": "ch110",
+      "title": "Legalised Price Agreements",
+      "file": "chapters/ch110.html"
+    },
+    {
+      "id": "ch111",
+      "title": "CHAPTER XIXTHE MORAL ASPECT OF STOCK WATERING",
+      "file": "chapters/ch111.html"
+    },
+    {
+      "id": "ch112",
+      "title": "Injurious Effects of Stockwatering",
+      "file": "chapters/ch112.html"
+    },
+    {
+      "id": "ch113",
+      "title": "The Moral Wrong",
+      "file": "chapters/ch113.html"
+    },
+    {
+      "id": "ch114",
+      "title": "The \"Innocent\" Investor",
+      "file": "chapters/ch114.html"
+    },
+    {
+      "id": "ch115",
+      "title": "Magnitude of Overcapitalisation",
+      "file": "chapters/ch115.html"
+    },
+    {
+      "id": "ch116",
+      "title": "CHAPTER XXTHE LEGAL LIMITATION OF FORTUNES",
+      "file": "chapters/ch116.html"
+    },
+    {
+      "id": "ch117",
+      "title": "The Method of Direct Limitation",
+      "file": "chapters/ch117.html"
+    },
+    {
+      "id": "ch118",
+      "title": "Limitation Through Progressive Taxation",
+      "file": "chapters/ch118.html"
+    },
+    {
+      "id": "ch119",
+      "title": "The Proper Rate of Income and Inheritance Taxes",
+      "file": "chapters/ch119.html"
+    },
+    {
+      "id": "ch120",
+      "title": "Effectiveness of Such Taxation",
+      "file": "chapters/ch120.html"
+    },
+    {
+      "id": "ch121",
+      "title": "CHAPTER XXITHE DUTY OF DISTRIBUTING SUPERFLUOUS WEALTH",
+      "file": "chapters/ch121.html"
+    },
+    {
+      "id": "ch122",
+      "title": "The Question of Distributing Some",
+      "file": "chapters/ch122.html"
+    },
+    {
+      "id": "ch123",
+      "title": "The Question of Distributing All",
+      "file": "chapters/ch123.html"
+    },
+    {
+      "id": "ch124",
+      "title": "Some Objections",
+      "file": "chapters/ch124.html"
+    },
+    {
+      "id": "ch125",
+      "title": "A False Conception of Welfare and Superfluous Goods",
+      "file": "chapters/ch125.html"
+    },
+    {
+      "id": "ch126",
+      "title": "The True Conception of Welfare",
+      "file": "chapters/ch126.html"
+    },
+    {
+      "id": "ch127",
+      "title": "CHAPTER XXIISOME UNACCEPTABLE THEORIES OF WAGE-JUSTICE",
+      "file": "chapters/ch127.html"
+    },
+    {
+      "id": "ch128",
+      "title": "I.The Prevailing-Rate Theory",
+      "file": "chapters/ch128.html"
+    },
+    {
+      "id": "ch129",
+      "title": "II.Exchange-Equivalence Theories",
+      "file": "chapters/ch129.html"
+    },
+    {
+      "id": "ch130",
+      "title": "III.Productivity Theories",
+      "file": "chapters/ch130.html"
+    },
+    {
+      "id": "ch131",
+      "title": "CHAPTER XXIIITHE MINIMUM OF JUSTICE: A LIVING WAGE",
+      "file": "chapters/ch131.html"
+    },
+    {
+      "id": "ch132",
+      "title": "The Principle of Needs",
+      "file": "chapters/ch132.html"
+    },
+    {
+      "id": "ch133",
+      "title": "Three Fundamental Principles",
+      "file": "chapters/ch133.html"
+    },
+    {
+      "id": "ch134",
+      "title": "The Right to a Decent Livelihood",
+      "file": "chapters/ch134.html"
+    },
+    {
+      "id": "ch135",
+      "title": "The Claim to a Decent Livelihood from a Present\r\nOccupation",
+      "file": "chapters/ch135.html"
+    },
+    {
+      "id": "ch136",
+      "title": "The Labourer's Right to a Living Wage",
+      "file": "chapters/ch136.html"
+    },
+    {
+      "id": "ch137",
+      "title": "When the Employer Is Unable to Pay a Living Wage",
+      "file": "chapters/ch137.html"
+    },
+    {
+      "id": "ch138",
+      "title": "An Objection and Some Difficulties",
+      "file": "chapters/ch138.html"
+    },
+    {
+      "id": "ch139",
+      "title": "The Family Living Wage",
+      "file": "chapters/ch139.html"
+    },
+    {
+      "id": "ch140",
+      "title": "Other Arguments in Favour of a Living Wage",
+      "file": "chapters/ch140.html"
+    },
+    {
+      "id": "ch141",
+      "title": "The Money Measure of a Living Wage",
+      "file": "chapters/ch141.html"
+    },
+    {
+      "id": "ch142",
+      "title": "CHAPTER XXIVTHE PROBLEM OF COMPLETE WAGE JUSTICE",
+      "file": "chapters/ch142.html"
+    },
+    {
+      "id": "ch143",
+      "title": "Comparative Claims of Different Labour Groups",
+      "file": "chapters/ch143.html"
+    },
+    {
+      "id": "ch144",
+      "title": "Wages Versus Profits",
+      "file": "chapters/ch144.html"
+    },
+    {
+      "id": "ch145",
+      "title": "Wages Versus Interest",
+      "file": "chapters/ch145.html"
+    },
+    {
+      "id": "ch146",
+      "title": "Wages Versus Prices",
+      "file": "chapters/ch146.html"
+    },
+    {
+      "id": "ch147",
+      "title": "Concluding Remarks",
+      "file": "chapters/ch147.html"
+    },
+    {
+      "id": "ch148",
+      "title": "CHAPTER XXVMETHODS OF INCREASING WAGES",
+      "file": "chapters/ch148.html"
+    },
+    {
+      "id": "ch149",
+      "title": "The Minimum Wage in Operation",
+      "file": "chapters/ch149.html"
+    },
+    {
+      "id": "ch150",
+      "title": "The Question of Constitutionality",
+      "file": "chapters/ch150.html"
+    },
+    {
+      "id": "ch151",
+      "title": "The Ethical and Political Aspects",
+      "file": "chapters/ch151.html"
+    },
+    {
+      "id": "ch152",
+      "title": "The Economic Aspect",
+      "file": "chapters/ch152.html"
+    },
+    {
+      "id": "ch153",
+      "title": "Opinions of Economists",
+      "file": "chapters/ch153.html"
+    },
+    {
+      "id": "ch154",
+      "title": "Other Legislative Proposals",
+      "file": "chapters/ch154.html"
+    },
+    {
+      "id": "ch155",
+      "title": "Labour Unions",
+      "file": "chapters/ch155.html"
+    },
+    {
+      "id": "ch156",
+      "title": "Organisation Versus Legislation",
+      "file": "chapters/ch156.html"
+    },
+    {
+      "id": "ch157",
+      "title": "Participation in Capital Ownership",
+      "file": "chapters/ch157.html"
+    },
+    {
+      "id": "ch158",
+      "title": "CHAPTER XXVISUMMARY AND CONCLUSION",
+      "file": "chapters/ch158.html"
+    },
+    {
+      "id": "ch159",
+      "title": "The Landowner and Rent",
+      "file": "chapters/ch159.html"
+    },
+    {
+      "id": "ch160",
+      "title": "The Capitalist and Interest",
+      "file": "chapters/ch160.html"
+    },
+    {
+      "id": "ch161",
+      "title": "The Business Man and Profits",
+      "file": "chapters/ch161.html"
+    },
+    {
+      "id": "ch162",
+      "title": "The Labourer and Wages",
+      "file": "chapters/ch162.html"
+    },
+    {
+      "id": "ch163",
+      "title": "Concluding Observations",
+      "file": "chapters/ch163.html"
+    },
+    {
+      "id": "ch164",
+      "title": "INDEX",
+      "file": "chapters/ch164.html"
+    },
+    {
+      "id": "ch165",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch165.html"
+    }
+  ],
+  "updated": "2026-04-18"
+}

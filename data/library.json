@@ -1,5 +1,32 @@
 [
   {
+    "id": "42759",
+    "title": "DISTRIBUTIVE JUSTICE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/42759",
+    "chapter_count": 165,
+    "updated": "2026-04-18",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "59763",
+    "title": "THE TARIFF IN OUR TIMES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/59763",
+    "chapter_count": 16,
+    "updated": "2026-04-18",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "43391",
+    "title": "APPLETONS'POPULAR SCIENCEMONTHLY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/43391",
+    "chapter_count": 22,
+    "updated": "2026-04-18",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "60082",
     "title": "THE STOCK EXCHANGE\r\nFROM WITHIN",
     "author": "Unknown",
