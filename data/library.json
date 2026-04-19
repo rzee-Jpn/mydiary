@@ -1,5 +1,32 @@
 [
   {
+    "id": "22502",
+    "title": "Economisti del cinque e seicento",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/22502",
+    "chapter_count": 118,
+    "updated": "2026-04-19",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "25909",
+    "title": "THE ARENA.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/25909",
+    "chapter_count": 23,
+    "updated": "2026-04-19",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "42583",
+    "title": "HISTORY OF SAVINGS BANKS.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/42583",
+    "chapter_count": 16,
+    "updated": "2026-04-19",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "42759",
     "title": "DISTRIBUTIVE JUSTICE",
     "author": "Unknown",

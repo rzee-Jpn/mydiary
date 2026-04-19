@@ -1,0 +1,599 @@
+{
+  "id": "22502",
+  "title": "Economisti del cinque e seicento",
+  "author": "Unknown",
+  "word_count": 134038,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofEconomisti del cinque e seicento",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "PROEMIO",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "CAPITOLO I",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "CAPITOLO II",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "CAPITOLO III",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "CAPITOLO IV",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "CAPITOLO V",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "CAPITOLO VI",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "CAPITOLO VII",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "CAPITOLO VIII",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "CAPITOLO IX",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "CAPITOLO X",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "CAPITOLO XI",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "CAPITOLO XII",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "CAPITOLO XIII",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "CAPITOLO XIV",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "CAPITOLO XV",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "CAPITOLO XVI",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "CAPITOLO XVII",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "CAPITOLO XVIII",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "CAPITOLO XIX",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "CAPITOLO XX",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "CAPITOLO XXI",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "CAPITOLO XXII",
+      "file": "chapters/ch24.html"
+    },
+    {
+      "id": "ch25",
+      "title": "CAPITOLO XXIII",
+      "file": "chapters/ch25.html"
+    },
+    {
+      "id": "ch26",
+      "title": "CAPITOLO XXIV",
+      "file": "chapters/ch26.html"
+    },
+    {
+      "id": "ch27",
+      "title": "CAPITOLO XXV",
+      "file": "chapters/ch27.html"
+    },
+    {
+      "id": "ch28",
+      "title": "CAPITOLO XXVI",
+      "file": "chapters/ch28.html"
+    },
+    {
+      "id": "ch29",
+      "title": "CAPITOLO XXVII",
+      "file": "chapters/ch29.html"
+    },
+    {
+      "id": "ch30",
+      "title": "CAPITOLO XXVIII",
+      "file": "chapters/ch30.html"
+    },
+    {
+      "id": "ch31",
+      "title": "CAPITOLO XXIX",
+      "file": "chapters/ch31.html"
+    },
+    {
+      "id": "ch32",
+      "title": "CAPITOLO XXX",
+      "file": "chapters/ch32.html"
+    },
+    {
+      "id": "ch33",
+      "title": "CAPITOLO XXXI",
+      "file": "chapters/ch33.html"
+    },
+    {
+      "id": "ch34",
+      "title": "CAPITOLO XXXII",
+      "file": "chapters/ch34.html"
+    },
+    {
+      "id": "ch35",
+      "title": "CAPITOLO XXXIII",
+      "file": "chapters/ch35.html"
+    },
+    {
+      "id": "ch36",
+      "title": "CAPITOLO XXXIV",
+      "file": "chapters/ch36.html"
+    },
+    {
+      "id": "ch37",
+      "title": "CAPITOLO XXXV",
+      "file": "chapters/ch37.html"
+    },
+    {
+      "id": "ch38",
+      "title": "CAPITOLO XXXVI",
+      "file": "chapters/ch38.html"
+    },
+    {
+      "id": "ch39",
+      "title": "CAPITOLO XXXVII",
+      "file": "chapters/ch39.html"
+    },
+    {
+      "id": "ch40",
+      "title": "CAPITOLO XXXVIII",
+      "file": "chapters/ch40.html"
+    },
+    {
+      "id": "ch41",
+      "title": "CAPITOLO XXXIX",
+      "file": "chapters/ch41.html"
+    },
+    {
+      "id": "ch42",
+      "title": "CAPITOLO XL",
+      "file": "chapters/ch42.html"
+    },
+    {
+      "id": "ch43",
+      "title": "CAPITOLO XLI",
+      "file": "chapters/ch43.html"
+    },
+    {
+      "id": "ch44",
+      "title": "CAPITOLO XLII",
+      "file": "chapters/ch44.html"
+    },
+    {
+      "id": "ch45",
+      "title": "CAPITOLO XLIII",
+      "file": "chapters/ch45.html"
+    },
+    {
+      "id": "ch46",
+      "title": "CAPITOLO XLIV",
+      "file": "chapters/ch46.html"
+    },
+    {
+      "id": "ch47",
+      "title": "CAPITOLO XLV",
+      "file": "chapters/ch47.html"
+    },
+    {
+      "id": "ch48",
+      "title": "CAPITOLO XLVI",
+      "file": "chapters/ch48.html"
+    },
+    {
+      "id": "ch49",
+      "title": "CAPITOLO XLVII",
+      "file": "chapters/ch49.html"
+    },
+    {
+      "id": "ch50",
+      "title": "NOTA",
+      "file": "chapters/ch50.html"
+    },
+    {
+      "id": "ch51",
+      "title": "TAVOLA",
+      "file": "chapters/ch51.html"
+    },
+    {
+      "id": "ch52",
+      "title": "I",
+      "file": "chapters/ch52.html"
+    },
+    {
+      "id": "ch53",
+      "title": "II",
+      "file": "chapters/ch53.html"
+    },
+    {
+      "id": "ch54",
+      "title": "III",
+      "file": "chapters/ch54.html"
+    },
+    {
+      "id": "ch55",
+      "title": "IV",
+      "file": "chapters/ch55.html"
+    },
+    {
+      "id": "ch56",
+      "title": "ALL'ILLUSTRISSIMO ED ECCELLENTISSIMO SIGNOR\r\n               IL SIGNOR DON PIETRO FERNANDEZ DE CASTRO\r\n  CONTE DE LEMOS, MARCHESE DI SARRIA, CONTE D'ANDRADA E DI VILLALVA,\r\n                DELL'ORDINE DELLA MILIZIA D'ALCANTARA,\r\n    COMMENDATOR DELLA ZARZA, DELLA CAMERA DI SUA MAESTÁ CATTOLICA\r\n                        E NEL REGNO DI NAPOLI\r\n          VICERÉ, LUOGOTENENTE E CAPITAN GENERALE, ECC.",
+      "file": "chapters/ch56.html"
+    },
+    {
+      "id": "ch57",
+      "title": "PROEMIO",
+      "file": "chapters/ch57.html"
+    },
+    {
+      "id": "ch58",
+      "title": "CAPITOLO I",
+      "file": "chapters/ch58.html"
+    },
+    {
+      "id": "ch59",
+      "title": "CAPITOLO II",
+      "file": "chapters/ch59.html"
+    },
+    {
+      "id": "ch60",
+      "title": "CAPITOLO III",
+      "file": "chapters/ch60.html"
+    },
+    {
+      "id": "ch61",
+      "title": "CAPITOLO IV",
+      "file": "chapters/ch61.html"
+    },
+    {
+      "id": "ch62",
+      "title": "CAPITOLO V",
+      "file": "chapters/ch62.html"
+    },
+    {
+      "id": "ch63",
+      "title": "CAPITOLO VI",
+      "file": "chapters/ch63.html"
+    },
+    {
+      "id": "ch64",
+      "title": "CAPITOLO VII",
+      "file": "chapters/ch64.html"
+    },
+    {
+      "id": "ch65",
+      "title": "CAPITOLO VIII",
+      "file": "chapters/ch65.html"
+    },
+    {
+      "id": "ch66",
+      "title": "CAPITOLO IX",
+      "file": "chapters/ch66.html"
+    },
+    {
+      "id": "ch67",
+      "title": "CAPITOLO X",
+      "file": "chapters/ch67.html"
+    },
+    {
+      "id": "ch68",
+      "title": "CAPITOLO XI",
+      "file": "chapters/ch68.html"
+    },
+    {
+      "id": "ch69",
+      "title": "CAPITOLO XII",
+      "file": "chapters/ch69.html"
+    },
+    {
+      "id": "ch70",
+      "title": "PROEMIO",
+      "file": "chapters/ch70.html"
+    },
+    {
+      "id": "ch71",
+      "title": "CAPITOLO I",
+      "file": "chapters/ch71.html"
+    },
+    {
+      "id": "ch72",
+      "title": "CAPITOLO II",
+      "file": "chapters/ch72.html"
+    },
+    {
+      "id": "ch73",
+      "title": "CAPITOLO III",
+      "file": "chapters/ch73.html"
+    },
+    {
+      "id": "ch74",
+      "title": "CAPITOLO IV",
+      "file": "chapters/ch74.html"
+    },
+    {
+      "id": "ch75",
+      "title": "CAPITOLO V",
+      "file": "chapters/ch75.html"
+    },
+    {
+      "id": "ch76",
+      "title": "CAPITOLO VI",
+      "file": "chapters/ch76.html"
+    },
+    {
+      "id": "ch77",
+      "title": "CAPITOLO VII",
+      "file": "chapters/ch77.html"
+    },
+    {
+      "id": "ch78",
+      "title": "CAPITOLO VIII",
+      "file": "chapters/ch78.html"
+    },
+    {
+      "id": "ch79",
+      "title": "CAPITOLO IX",
+      "file": "chapters/ch79.html"
+    },
+    {
+      "id": "ch80",
+      "title": "CAPITOLO X",
+      "file": "chapters/ch80.html"
+    },
+    {
+      "id": "ch81",
+      "title": "CAPITOLO XI",
+      "file": "chapters/ch81.html"
+    },
+    {
+      "id": "ch82",
+      "title": "CAPITOLO XII",
+      "file": "chapters/ch82.html"
+    },
+    {
+      "id": "ch83",
+      "title": "CONCLUSIONE DI QUESTA SECONDA PARTE",
+      "file": "chapters/ch83.html"
+    },
+    {
+      "id": "ch84",
+      "title": "PROEMIO",
+      "file": "chapters/ch84.html"
+    },
+    {
+      "id": "ch85",
+      "title": "CAPITOLO I",
+      "file": "chapters/ch85.html"
+    },
+    {
+      "id": "ch86",
+      "title": "CAPITOLO II",
+      "file": "chapters/ch86.html"
+    },
+    {
+      "id": "ch87",
+      "title": "CAPITOLO III",
+      "file": "chapters/ch87.html"
+    },
+    {
+      "id": "ch88",
+      "title": "CAPITOLO IV",
+      "file": "chapters/ch88.html"
+    },
+    {
+      "id": "ch89",
+      "title": "CAPITOLO V",
+      "file": "chapters/ch89.html"
+    },
+    {
+      "id": "ch90",
+      "title": "CAPITOLO VI",
+      "file": "chapters/ch90.html"
+    },
+    {
+      "id": "ch91",
+      "title": "CAPITOLO VII",
+      "file": "chapters/ch91.html"
+    },
+    {
+      "id": "ch92",
+      "title": "CAPITOLO VIII",
+      "file": "chapters/ch92.html"
+    },
+    {
+      "id": "ch93",
+      "title": "CAPITOLO ULTIMO",
+      "file": "chapters/ch93.html"
+    },
+    {
+      "id": "ch94",
+      "title": "CONCLUSIONE",
+      "file": "chapters/ch94.html"
+    },
+    {
+      "id": "ch95",
+      "title": "APPENDICE",
+      "file": "chapters/ch95.html"
+    },
+    {
+      "id": "ch96",
+      "title": "PROEMIO",
+      "file": "chapters/ch96.html"
+    },
+    {
+      "id": "ch97",
+      "title": "CAPITOLO I",
+      "file": "chapters/ch97.html"
+    },
+    {
+      "id": "ch98",
+      "title": "CAPITOLO II",
+      "file": "chapters/ch98.html"
+    },
+    {
+      "id": "ch99",
+      "title": "CAPITOLO III",
+      "file": "chapters/ch99.html"
+    },
+    {
+      "id": "ch100",
+      "title": "CAPITOLO IV",
+      "file": "chapters/ch100.html"
+    },
+    {
+      "id": "ch101",
+      "title": "CAPITOLO V",
+      "file": "chapters/ch101.html"
+    },
+    {
+      "id": "ch102",
+      "title": "CAPITOLO VI",
+      "file": "chapters/ch102.html"
+    },
+    {
+      "id": "ch103",
+      "title": "CAPITOLO VII",
+      "file": "chapters/ch103.html"
+    },
+    {
+      "id": "ch104",
+      "title": "CAPITOLO VIII",
+      "file": "chapters/ch104.html"
+    },
+    {
+      "id": "ch105",
+      "title": "CAPITOLO IX",
+      "file": "chapters/ch105.html"
+    },
+    {
+      "id": "ch106",
+      "title": "CAPITOLO X",
+      "file": "chapters/ch106.html"
+    },
+    {
+      "id": "ch107",
+      "title": "CAPITOLO XI",
+      "file": "chapters/ch107.html"
+    },
+    {
+      "id": "ch108",
+      "title": "CAPITOLO XII",
+      "file": "chapters/ch108.html"
+    },
+    {
+      "id": "ch109",
+      "title": "CAPITOLO XIII",
+      "file": "chapters/ch109.html"
+    },
+    {
+      "id": "ch110",
+      "title": "CAPITOLO XIV",
+      "file": "chapters/ch110.html"
+    },
+    {
+      "id": "ch111",
+      "title": "CAPITOLO XV",
+      "file": "chapters/ch111.html"
+    },
+    {
+      "id": "ch112",
+      "title": "CAPITOLO XVI",
+      "file": "chapters/ch112.html"
+    },
+    {
+      "id": "ch113",
+      "title": "CAPITOLO XVII",
+      "file": "chapters/ch113.html"
+    },
+    {
+      "id": "ch114",
+      "title": "CAPITOLO XVIII",
+      "file": "chapters/ch114.html"
+    },
+    {
+      "id": "ch115",
+      "title": "CAPITOLO XIX",
+      "file": "chapters/ch115.html"
+    },
+    {
+      "id": "ch116",
+      "title": "NOTE",
+      "file": "chapters/ch116.html"
+    },
+    {
+      "id": "ch117",
+      "title": "BIBLIOGRAFIA",
+      "file": "chapters/ch117.html"
+    },
+    {
+      "id": "ch118",
+      "title": "INDICE",
+      "file": "chapters/ch118.html"
+    }
+  ],
+  "updated": "2026-04-19"
+}
