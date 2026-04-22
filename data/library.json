@@ -1,5 +1,32 @@
 [
   {
+    "id": "40815",
+    "title": "PRICES OF BOOKSAN INQUIRY INTO THE CHANGES IN THE PRICEOF BOOKS WHICH HAVE OCCURRED INENGLAND AT DIFFERENT PERIODSBYHENRY B. WHEATLEY, F.S.A.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/40815",
+    "chapter_count": 32,
+    "updated": "2026-04-22",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "13718",
+    "title": "MANUAL OF SHIP SUBSIDIES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/13718",
+    "chapter_count": 16,
+    "updated": "2026-04-22",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "45261",
+    "title": "THE ARGENTINEIN THETWENTIETH CENTURY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/45261",
+    "chapter_count": 31,
+    "updated": "2026-04-22",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "69088",
     "title": "FABIANESSAYS IN SOCIALISM",
     "author": "Unknown",
