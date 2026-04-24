@@ -1,5 +1,32 @@
 [
   {
+    "id": "46424",
+    "title": "Cyclopedia",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/46424",
+    "chapter_count": 65,
+    "updated": "2026-04-24",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "46448",
+    "title": "Cyclopedia",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/46448",
+    "chapter_count": 60,
+    "updated": "2026-04-24",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "50581",
+    "title": "REMARKS\r\nON THE PRODUCTION OF\r\nTHE PRECIOUS METALS,\r\n&c.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/50581",
+    "chapter_count": 9,
+    "updated": "2026-04-24",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "65693",
     "title": "THEFORGOTTEN MANANDOTHER ESSAYS",
     "author": "Unknown",
