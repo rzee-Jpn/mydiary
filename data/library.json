@@ -1,5 +1,32 @@
 [
   {
+    "id": "41703",
+    "title": "WOMEN IN MODERN INDUSTRY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/41703",
+    "chapter_count": 16,
+    "updated": "2026-04-25",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "40132",
+    "title": "A REPORT ON WASHINGTONTERRITORY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/40132",
+    "chapter_count": 41,
+    "updated": "2026-04-25",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "33418",
+    "title": "Die Entwicklung des Berliner Flaschenbiergeschäfts",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/33418",
+    "chapter_count": 10,
+    "updated": "2026-04-25",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "46424",
     "title": "Cyclopedia",
     "author": "Unknown",
