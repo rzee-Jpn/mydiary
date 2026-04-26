@@ -1,5 +1,32 @@
 [
   {
+    "id": "1558",
+    "title": "THE PROFITS OF RELIGION",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/1558",
+    "chapter_count": 103,
+    "updated": "2026-04-26",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "49166",
+    "title": "INDIAN CURRENCYAND FINANCE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/49166",
+    "chapter_count": 13,
+    "updated": "2026-04-26",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "64616",
+    "title": "RICHES AND POVERTY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/64616",
+    "chapter_count": 27,
+    "updated": "2026-04-26",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "41703",
     "title": "WOMEN IN MODERN INDUSTRY",
     "author": "Unknown",
