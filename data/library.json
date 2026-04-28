@@ -1,5 +1,32 @@
 [
   {
+    "id": "38047",
+    "title": "SOCIAL VALUE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/38047",
+    "chapter_count": 48,
+    "updated": "2026-04-28",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "55862",
+    "title": "THE INDUSTRIAL\r\n HISTORY OF ENGLAND",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/55862",
+    "chapter_count": 32,
+    "updated": "2026-04-28",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "45188",
+    "title": "The InternationalDevelopment of China",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/45188",
+    "chapter_count": 71,
+    "updated": "2026-04-28",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "64353",
     "title": "Fields, FactoriesandWorkshops",
     "author": "Unknown",
