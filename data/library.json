@@ -1,5 +1,32 @@
 [
   {
+    "id": "15268",
+    "title": "JOHN STUART MILL:",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/15268",
+    "chapter_count": 15,
+    "updated": "2026-04-29",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "32158",
+    "title": "Contents",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/32158",
+    "chapter_count": 29,
+    "updated": "2026-04-29",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "40125",
+    "title": "THE RAILROAD PROBLEM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/40125",
+    "chapter_count": 14,
+    "updated": "2026-04-29",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "38047",
     "title": "SOCIAL VALUE",
     "author": "Unknown",
