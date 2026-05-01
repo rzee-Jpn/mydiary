@@ -1,5 +1,32 @@
 [
   {
+    "id": "4239",
+    "title": "An Essay on the Principle of Population",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/4239",
+    "chapter_count": 22,
+    "updated": "2026-05-01",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "38138",
+    "title": "SOCIALISM.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/38138",
+    "chapter_count": 3,
+    "updated": "2026-05-01",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "49073",
+    "title": "Series IIBulletin No. 1Georgetown UniversitySCHOOL OFFOREIGN SERVICEVENEZUELAAN ECONOMIC REPORT PRESENTED BY STUDENTSOF THE SCHOOL OF FOREIGN SERVICEAS AN AID TO THE FOREIGN TRADEOF THE UNITED STATES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/49073",
+    "chapter_count": 19,
+    "updated": "2026-05-01",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "59456",
     "title": "Fors Clavigera (Volume 1 of 8)&#10;Letters to the workmen and labourers of Great Britain",
     "author": "John Ruskin (1819–1900)",
