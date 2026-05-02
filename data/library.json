@@ -1,5 +1,32 @@
 [
   {
+    "id": "70716",
+    "title": "ILLUSTRATIONSOFPOLITICAL ECONOMY.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/70716",
+    "chapter_count": 35,
+    "updated": "2026-05-02",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "51298",
+    "title": "Paper No. 1190THE VALUATION OF PUBLIC SERVICE CORPORATION PROPERTY.[1]",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/51298",
+    "chapter_count": 30,
+    "updated": "2026-05-02",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "60411",
+    "title": "ANINQUIRYINTO THEPRINCIPLES OF POLITICAL OECONOMY:BEING ANESSAY ON THE SCIENCEOFDomestic Policy in Free Nations.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/60411",
+    "chapter_count": 72,
+    "updated": "2026-05-02",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "4239",
     "title": "An Essay on the Principle of Population",
     "author": "Unknown",
