@@ -1,5 +1,32 @@
 [
   {
+    "id": "636",
+    "title": "MEMOIRS OFEXTRAORDINARY POPULAR DELUSIONS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/636",
+    "chapter_count": 17,
+    "updated": "2026-05-03",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "4087",
+    "title": "ANEssay upon Projects.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/4087",
+    "chapter_count": 27,
+    "updated": "2026-05-03",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "89",
+    "title": "PREAMBLE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/89",
+    "chapter_count": 7,
+    "updated": "2026-05-03",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "70716",
     "title": "ILLUSTRATIONSOFPOLITICAL ECONOMY.",
     "author": "Unknown",

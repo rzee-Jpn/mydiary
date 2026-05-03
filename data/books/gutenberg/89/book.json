@@ -1,0 +1,44 @@
+{
+  "id": "89",
+  "title": "PREAMBLE",
+  "author": "Unknown",
+  "word_count": 116958,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofNorth American Free Trade Agreement, 1992 Oct. 7 Tariff Phasing Descriptions",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "ANNEXES I THROUGH VII",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "**  NORTH AMERICAN FREE TRADE AGREEMENT **",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "NAFTA PART ONE GENERAL PART",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "SECTION C - SCHEDULE OF THE UNITED STATES",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "ANNEX 704.3",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "CANADA",
+      "file": "chapters/ch07.html"
+    }
+  ],
+  "updated": "2026-05-03"
+}
