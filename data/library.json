@@ -1,5 +1,32 @@
 [
   {
+    "id": "67796",
+    "title": "WATSON’S MAGAZINE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/67796",
+    "chapter_count": 56,
+    "updated": "2026-05-04",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "14418",
+    "title": "CONTENTS.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/14418",
+    "chapter_count": 19,
+    "updated": "2026-05-04",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "43598",
+    "title": "THEFRUITS   OF   VICTORY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/43598",
+    "chapter_count": 39,
+    "updated": "2026-05-04",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "636",
     "title": "MEMOIRS OFEXTRAORDINARY POPULAR DELUSIONS",
     "author": "Unknown",
