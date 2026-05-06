@@ -1,5 +1,32 @@
 [
   {
+    "id": "75570",
+    "title": "PSYCHOLOGYOF THESTOCK MARKET",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/75570",
+    "chapter_count": 12,
+    "updated": "2026-05-06",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "67939",
+    "title": "EL CAPITAL",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/67939",
+    "chapter_count": 39,
+    "updated": "2026-05-06",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "70725",
+    "title": "THE REPUBLICOF COSTA RICA",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/70725",
+    "chapter_count": 23,
+    "updated": "2026-05-06",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "47831",
     "title": "RAILROADSRATES AND REGULATION",
     "author": "Unknown",
