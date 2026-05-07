@@ -1,5 +1,32 @@
 [
   {
+    "id": "16264",
+    "title": "DEUTSCHES LEBEN DER GEGENWART",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/16264",
+    "chapter_count": 9,
+    "updated": "2026-05-07",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "15962",
+    "title": "Essays on Political Economy.",
+    "author": "By the late M. Frederic Bastiat,",
+    "path": "data/books/gutenberg/15962",
+    "chapter_count": 24,
+    "updated": "2026-05-07",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "10612",
+    "title": "Supply and Demand",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/10612",
+    "chapter_count": 22,
+    "updated": "2026-05-07",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "75570",
     "title": "PSYCHOLOGYOF THESTOCK MARKET",
     "author": "Unknown",
