@@ -1,5 +1,32 @@
 [
   {
+    "id": "64753",
+    "title": "ADAM SMITH",
+    "author": "Francis W. Hirst",
+    "path": "data/books/gutenberg/64753",
+    "chapter_count": 14,
+    "updated": "2026-05-10",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "1179",
+    "title": "ON REVENUES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/1179",
+    "chapter_count": 4,
+    "updated": "2026-05-10",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "21502",
+    "title": "Fundamentals of Prosperity",
+    "author": "ROGER W. BABSON",
+    "path": "data/books/gutenberg/21502",
+    "chapter_count": 13,
+    "updated": "2026-05-10",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "6949",
     "title": "FIAT MONEY INFLATION IN FRANCE",
     "author": "Unknown",

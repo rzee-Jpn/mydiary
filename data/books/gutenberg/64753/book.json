@@ -1,0 +1,79 @@
+{
+  "id": "64753",
+  "title": "ADAM SMITH",
+  "author": "Francis W. Hirst",
+  "word_count": 66535,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofAdam Smith",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "PREFATORY NOTE",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "CHAPTER IEARLY YEARS",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "CHAPTER IITHE BEGINNING OF A CAREER",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "CHAPTER IIITHEOLOGY AND RELIGIOUS ESTABLISHMENTS",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "CHAPTER IVTHE THEORY OF MORAL SENTIMENTS",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "CHAPTER VIN THE GLASGOW CHAIR—THE LECTURES ON JUSTICE AND POLICE",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "CHAPTER VIGLASGOW AND ITS UNIVERSITY",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "CHAPTER VIITHE TOUR IN FRANCE, 1764-66",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "CHAPTER VIIIPOLITICS AND STUDY, 1766-76",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "CHAPTER IXTHEWEALTH OF NATIONSAND ITS CRITICS",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "CHAPTER XFREE TRADE",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "CHAPTER XILAST YEARS(1776-1790)",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "INDEX",
+      "file": "chapters/ch14.html"
+    }
+  ],
+  "updated": "2026-05-10"
+}
