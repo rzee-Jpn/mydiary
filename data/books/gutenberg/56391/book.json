@@ -1,0 +1,34 @@
+{
+  "id": "56391",
+  "title": "THE LITTLELONDON DIRECTORYOF 1677.",
+  "author": "Unknown",
+  "word_count": 4380,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofThe Little London Directory of 1677",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "INTRODUCTION.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "Preface.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "Advertisement.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "ACOLLECTIONOF THEMERCHANTS",
+      "file": "chapters/ch05.html"
+    }
+  ],
+  "updated": "2026-05-11"
+}

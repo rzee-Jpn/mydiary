@@ -1,5 +1,32 @@
 [
   {
+    "id": "56391",
+    "title": "THE LITTLELONDON DIRECTORYOF 1677.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/56391",
+    "chapter_count": 5,
+    "updated": "2026-05-11",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "33219",
+    "title": "ECONOMY.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/33219",
+    "chapter_count": 19,
+    "updated": "2026-05-11",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "71749",
+    "title": "HISTORYOF THEUNITED CO-OPERATIVE BAKING SOCIETY LTD.A FIFTY YEARS’ RECORD1869–1919",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/71749",
+    "chapter_count": 224,
+    "updated": "2026-05-11",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "64753",
     "title": "ADAM SMITH",
     "author": "Francis W. Hirst",
