@@ -1,5 +1,32 @@
 [
   {
+    "id": "12004",
+    "title": "ESSAYS ON SOME UNSETTLED QUESTIONS OF POLITICAL ECONOMY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/12004",
+    "chapter_count": 8,
+    "updated": "2026-05-12",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "57819",
+    "title": "OTHER PEOPLE’S MONEYAND HOW THE BANKERS USE IT",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/57819",
+    "chapter_count": 103,
+    "updated": "2026-05-12",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "76432",
+    "title": "2HISTORY AND CRITICISM OF THELABOR THEORY OF VALUE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/76432",
+    "chapter_count": 19,
+    "updated": "2026-05-12",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "56391",
     "title": "THE LITTLELONDON DIRECTORYOF 1677.",
     "author": "Unknown",
