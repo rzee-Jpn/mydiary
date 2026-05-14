@@ -1,5 +1,32 @@
 [
   {
+    "id": "50023",
+    "title": "THE ECONOMICSOF THERUSSIAN VILLAGE.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/50023",
+    "chapter_count": 34,
+    "updated": "2026-05-14",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "4359",
+    "title": "LOMBARD STREET",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/4359",
+    "chapter_count": 15,
+    "updated": "2026-05-14",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "27647",
+    "title": "The Economist:",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/27647",
+    "chapter_count": 36,
+    "updated": "2026-05-14",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "4238",
     "title": "Section II",
     "author": "Unknown",
