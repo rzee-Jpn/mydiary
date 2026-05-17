@@ -1,5 +1,32 @@
 [
   {
+    "id": "51676",
+    "title": "CyclopediaofCommerce, Accountancy, Business Administration",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/51676",
+    "chapter_count": 121,
+    "updated": "2026-05-17",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "15204",
+    "title": "WOMEN WAGE-EARNERS:",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/15204",
+    "chapter_count": 35,
+    "updated": "2026-05-17",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "15876",
+    "title": "Unpopular Review",
+    "author": "A.S. Johnson",
+    "path": "data/books/gutenberg/15876",
+    "chapter_count": 32,
+    "updated": "2026-05-17",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "59518",
     "title": "THE THEORYOFSTOCK EXCHANGE SPECULATION.",
     "author": "Unknown",
