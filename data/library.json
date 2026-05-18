@@ -1,5 +1,32 @@
 [
   {
+    "id": "76047",
+    "title": "Agricultural Prices",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/76047",
+    "chapter_count": 27,
+    "updated": "2026-05-18",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "63449",
+    "title": "The Story of the Bank of England&#10;(A History of English Banking, and a Sketch of the Money Market)",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/63449",
+    "chapter_count": 19,
+    "updated": "2026-05-18",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "71544",
+    "title": "ILLUSTRATIONSOFPOLITICAL ECONOMY.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/71544",
+    "chapter_count": 31,
+    "updated": "2026-05-18",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "51676",
     "title": "CyclopediaofCommerce, Accountancy, Business Administration",
     "author": "Unknown",
