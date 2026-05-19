@@ -1,0 +1,364 @@
+{
+  "id": "19755",
+  "title": "Gesammelte Abhandlungen III&#10;Vorträge, Reden und Schriften sozialpolitischen und verwandten Inhalts",
+  "author": "Unknown",
+  "word_count": 127777,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofGesammelte Abhandlungen III",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "III",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "Vorträge, Reden und Schriften\r\nsozialpolitischen und verwandten\r\nInhalts",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "Abhandlungen",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "Ernst Abbe.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "Sozialpolitische Schriften",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "Ernst Abbe.",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "Vorwort.",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "Fußnoten:",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "Welche soziale Forderungen soll die\r\nFreisinnige Volkspartei in ihr Programm\r\naufnehmen?",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "Anhang.",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "Fußnoten:",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "Gedächtnisrede zur Feier des 50jährigen\r\nBestehens der Optischen Werkstätte.",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "Fußnoten:",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "Über Gewinnbeteiligung der Arbeiter in der\r\nGroßindustrie.",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "Fußnoten:",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "Über die Grundlagen der Lohnregelung in\r\nder Optischen Werkstätte.",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "Anhang.",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "Fußnoten:",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "Zur Frage der Sonderbesteuerung des\r\nKonsum-Vereins.",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "Die rechtswidrige Beschränkung der\r\nVersammlungsfreiheit im Großherzogtum\r\nSachsen.",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "Gesetz über das Strafandrohungsrecht der Polizeibehörden.",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "Ministerialverordnung vom 15. Juli 1874.",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "Ministerialverordnung vom 21. April 1875.",
+      "file": "chapters/ch24.html"
+    },
+    {
+      "id": "ch25",
+      "title": "Fußnoten:",
+      "file": "chapters/ch25.html"
+    },
+    {
+      "id": "ch26",
+      "title": "Die volkswirtschaftliche Bedeutung der\r\nVerkürzung des industriellen Arbeitstages.",
+      "file": "chapters/ch26.html"
+    },
+    {
+      "id": "ch27",
+      "title": "1. Vortrag.",
+      "file": "chapters/ch27.html"
+    },
+    {
+      "id": "ch28",
+      "title": "2. Vortrag.",
+      "file": "chapters/ch28.html"
+    },
+    {
+      "id": "ch29",
+      "title": "Ergebnisse der Einführung der achtstündigen Arbeitszeit\r\nin der Optischen Werkstätte von Carl Zeiss, Jena.",
+      "file": "chapters/ch29.html"
+    },
+    {
+      "id": "ch30",
+      "title": "Bedingungsgleichung für das physiologische Gleichgewicht\r\nder industriellen Arbeitsleistung:",
+      "file": "chapters/ch30.html"
+    },
+    {
+      "id": "ch31",
+      "title": "Fußnoten:",
+      "file": "chapters/ch31.html"
+    },
+    {
+      "id": "ch32",
+      "title": "Über die Aufgaben des Arbeiterausschusses.",
+      "file": "chapters/ch32.html"
+    },
+    {
+      "id": "ch33",
+      "title": "Statut der Carl Zeiss-Stiftung zu Jena.",
+      "file": "chapters/ch33.html"
+    },
+    {
+      "id": "ch34",
+      "title": "Konstituierende Bestimmungen.",
+      "file": "chapters/ch34.html"
+    },
+    {
+      "id": "ch35",
+      "title": "Organe der Stiftung.",
+      "file": "chapters/ch35.html"
+    },
+    {
+      "id": "ch36",
+      "title": "Einrichtungen.",
+      "file": "chapters/ch36.html"
+    },
+    {
+      "id": "ch37",
+      "title": "Ordnung des Verfahrens.",
+      "file": "chapters/ch37.html"
+    },
+    {
+      "id": "ch38",
+      "title": "Verwaltungsvorschriften.",
+      "file": "chapters/ch38.html"
+    },
+    {
+      "id": "ch39",
+      "title": "Persönliche Verhältnisse der Vorstandsmitglieder.",
+      "file": "chapters/ch39.html"
+    },
+    {
+      "id": "ch40",
+      "title": "Schlußbestimmungen.",
+      "file": "chapters/ch40.html"
+    },
+    {
+      "id": "ch41",
+      "title": "Allgemeine Normen für die geschäftliche Tätigkeit der Stiftung.",
+      "file": "chapters/ch41.html"
+    },
+    {
+      "id": "ch42",
+      "title": "Substanz.",
+      "file": "chapters/ch42.html"
+    },
+    {
+      "id": "ch43",
+      "title": "Verwaltung.",
+      "file": "chapters/ch43.html"
+    },
+    {
+      "id": "ch44",
+      "title": "Persönliche Rechte.",
+      "file": "chapters/ch44.html"
+    },
+    {
+      "id": "ch45",
+      "title": "Wirtschaftliche Anrechte im Dienstverhältnis.",
+      "file": "chapters/ch45.html"
+    },
+    {
+      "id": "ch46",
+      "title": "Pensionsrechte.",
+      "file": "chapters/ch46.html"
+    },
+    {
+      "id": "ch47",
+      "title": "Auflösung des Dienstverhältnisses.",
+      "file": "chapters/ch47.html"
+    },
+    {
+      "id": "ch48",
+      "title": "Schlußbestimmungen.",
+      "file": "chapters/ch48.html"
+    },
+    {
+      "id": "ch49",
+      "title": "Regelung allgemeiner Interessen des Personals der Stiftungsbetriebe.",
+      "file": "chapters/ch49.html"
+    },
+    {
+      "id": "ch50",
+      "title": "Verwendung der Überschüsse.",
+      "file": "chapters/ch50.html"
+    },
+    {
+      "id": "ch51",
+      "title": "Rechnungslegung der Stiftungsverwaltung.",
+      "file": "chapters/ch51.html"
+    },
+    {
+      "id": "ch52",
+      "title": "Schlußbestimmungen.",
+      "file": "chapters/ch52.html"
+    },
+    {
+      "id": "ch53",
+      "title": "Ergänzungsstatut zum Statut der Carl Zeiss-Stiftung.",
+      "file": "chapters/ch53.html"
+    },
+    {
+      "id": "ch54",
+      "title": "Fußnoten:",
+      "file": "chapters/ch54.html"
+    },
+    {
+      "id": "ch55",
+      "title": "Motive und Erläuterungen zum Entwurf eines\r\nStatuts der Carl Zeiss-Stiftung[76].",
+      "file": "chapters/ch55.html"
+    },
+    {
+      "id": "ch56",
+      "title": "Konstituierende Bestimmungen.",
+      "file": "chapters/ch56.html"
+    },
+    {
+      "id": "ch57",
+      "title": "Organisation der geschäftlichen Aktion der Stiftung.",
+      "file": "chapters/ch57.html"
+    },
+    {
+      "id": "ch58",
+      "title": "Allgemeine Normen für die geschäftliche Tätigkeit der\r\nStiftung.",
+      "file": "chapters/ch58.html"
+    },
+    {
+      "id": "ch59",
+      "title": "Reservefonds.",
+      "file": "chapters/ch59.html"
+    },
+    {
+      "id": "ch60",
+      "title": "Arbeiter- und Angestelltenrecht der Carl Zeiss-Stiftung[81].",
+      "file": "chapters/ch60.html"
+    },
+    {
+      "id": "ch61",
+      "title": "Ordnung materieller Interessen der Arbeiter und Angestellten.",
+      "file": "chapters/ch61.html"
+    },
+    {
+      "id": "ch62",
+      "title": "Verwendung der Überschüsse.",
+      "file": "chapters/ch62.html"
+    },
+    {
+      "id": "ch63",
+      "title": "Rechnungslegung der Stiftung.",
+      "file": "chapters/ch63.html"
+    },
+    {
+      "id": "ch64",
+      "title": "Schlußbestimmungen.",
+      "file": "chapters/ch64.html"
+    },
+    {
+      "id": "ch65",
+      "title": "Fußnoten:",
+      "file": "chapters/ch65.html"
+    },
+    {
+      "id": "ch66",
+      "title": "Nachtrag zum zweiten Entwurf.",
+      "file": "chapters/ch66.html"
+    },
+    {
+      "id": "ch67",
+      "title": "Rechtsverhältnis der Angestellten und Arbeiter\r\nin den Stiftungsbetrieben[88].",
+      "file": "chapters/ch67.html"
+    },
+    {
+      "id": "ch68",
+      "title": "Schlußbemerkung.",
+      "file": "chapters/ch68.html"
+    },
+    {
+      "id": "ch69",
+      "title": "Fußnoten:",
+      "file": "chapters/ch69.html"
+    },
+    {
+      "id": "ch70",
+      "title": "Erläuterungen zu Titel I und II des Stiftungsstatuts\r\nvorn 26. Juli/16. August 1896[90].",
+      "file": "chapters/ch70.html"
+    },
+    {
+      "id": "ch71",
+      "title": "Fußnoten:",
+      "file": "chapters/ch71.html"
+    }
+  ],
+  "updated": "2026-05-19"
+}

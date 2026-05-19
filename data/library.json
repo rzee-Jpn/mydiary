@@ -1,5 +1,32 @@
 [
   {
+    "id": "20161",
+    "title": "SOPHISMS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/20161",
+    "chapter_count": 48,
+    "updated": "2026-05-19",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "19755",
+    "title": "Gesammelte Abhandlungen III&#10;Vorträge, Reden und Schriften sozialpolitischen und verwandten Inhalts",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/19755",
+    "chapter_count": 71,
+    "updated": "2026-05-19",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "52716",
+    "title": "The Business of Being a Housewife",
+    "author": "Mrs. Jean Prescott AdamsDirector of the Department of Food Economics",
+    "path": "data/books/gutenberg/52716",
+    "chapter_count": 112,
+    "updated": "2026-05-19",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "76047",
     "title": "Agricultural Prices",
     "author": "Unknown",
