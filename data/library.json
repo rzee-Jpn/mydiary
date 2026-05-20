@@ -1,5 +1,32 @@
 [
   {
+    "id": "444",
+    "title": "System of Economical Contradictions; Or, The Philosophy of Misery",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/444",
+    "chapter_count": 11,
+    "updated": "2026-05-20",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "5619",
+    "title": "ESSAYS ON MANKIND AND POLITICAL ARITHMETIC",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/5619",
+    "chapter_count": 40,
+    "updated": "2026-05-20",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "18603",
+    "title": "WHAT SOCIAL CLASSESOWE TO EACH OTHER",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/18603",
+    "chapter_count": 14,
+    "updated": "2026-05-20",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "20161",
     "title": "SOPHISMS",
     "author": "Unknown",
