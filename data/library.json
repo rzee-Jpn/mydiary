@@ -1,5 +1,32 @@
 [
   {
+    "id": "47437",
+    "title": "East-WestTrade Trends",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/47437",
+    "chapter_count": 78,
+    "updated": "2026-05-21",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "35390",
+    "title": "ŒUVRES COMPLÈTESDEFRÉDÉRIC BASTIAT",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/35390",
+    "chapter_count": 31,
+    "updated": "2026-05-21",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "67837",
+    "title": "MILLIONS FROM WASTE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/67837",
+    "chapter_count": 25,
+    "updated": "2026-05-21",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "444",
     "title": "System of Economical Contradictions; Or, The Philosophy of Misery",
     "author": "Unknown",
