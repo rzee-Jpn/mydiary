@@ -1,5 +1,32 @@
 [
   {
+    "id": "70656",
+    "title": "CHRONICLES AND CHARACTERSOF THESTOCK EXCHANGE.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/70656",
+    "chapter_count": 30,
+    "updated": "2026-05-22",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "60473",
+    "title": "Wealth against commonwealth",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/60473",
+    "chapter_count": 3,
+    "updated": "2026-05-22",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "12366",
+    "title": "THE COST OF SHELTER",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/12366",
+    "chapter_count": 16,
+    "updated": "2026-05-22",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "47437",
     "title": "East-WestTrade Trends",
     "author": "Unknown",
