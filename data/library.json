@@ -1,5 +1,32 @@
 [
   {
+    "id": "67876",
+    "title": "TOM WATSON’S MAGAZINE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/67876",
+    "chapter_count": 50,
+    "updated": "2026-05-24",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "24340",
+    "title": "THE COMMON SENSEOF SOCIALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/24340",
+    "chapter_count": 15,
+    "updated": "2026-05-24",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "47418",
+    "title": "BLACKWOOD'SEDINBURGH MAGAZINE.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/47418",
+    "chapter_count": 28,
+    "updated": "2026-05-24",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "72096",
     "title": "RECENT DISCUSSIONSON THEABOLITION OF PATENTS FOR INVENTIONSIN THEUNITED KINGDOM, FRANCE, GERMANY, AND THE NETHERLANDS.",
     "author": "Unknown",
