@@ -1,5 +1,32 @@
 [
   {
+    "id": "4336",
+    "title": "AN INQUIRY INTO THE NATURE AND PROGRESS OF RENT",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/4336",
+    "chapter_count": 5,
+    "updated": "2026-05-25",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "60378",
+    "title": "THELife and WritingsOFTHOMAS R. MALTHUS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/60378",
+    "chapter_count": 14,
+    "updated": "2026-05-25",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "10710",
+    "title": "Problems of Poverty",
+    "author": "John A. Hobson, M.A.",
+    "path": "data/books/gutenberg/10710",
+    "chapter_count": 23,
+    "updated": "2026-05-25",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "67876",
     "title": "TOM WATSON’S MAGAZINE",
     "author": "Unknown",

@@ -1,0 +1,34 @@
+{
+  "id": "4336",
+  "title": "AN INQUIRY INTO THE NATURE AND PROGRESS OF RENT",
+  "author": "Unknown",
+  "word_count": 13635,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofAn Inquiry into the Nature and Progress of Rent, and the Principles by Which It is Regulated",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "AND THE PRINCIPLES BY WHICH IT IS REGULATED.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "By The Rev. T. R. Malthus",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "Advertisement",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "FOOTNOTES:",
+      "file": "chapters/ch05.html"
+    }
+  ],
+  "updated": "2026-05-25"
+}
