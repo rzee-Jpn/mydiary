@@ -1,5 +1,32 @@
 [
   {
+    "id": "50380",
+    "title": "ANNALS,ANECDOTES AND LEGENDS:A ChronicleOFLIFE ASSURANCE.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/50380",
+    "chapter_count": 32,
+    "updated": "2026-05-26",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "46627",
+    "title": "ŒUVRES COMPLÈTESDEFRÉDÉRIC BASTIAT",
+    "author": "(Note de l'éditeur.)",
+    "path": "data/books/gutenberg/46627",
+    "chapter_count": 30,
+    "updated": "2026-05-26",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "28991",
+    "title": "THE NEXT STEP",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/28991",
+    "chapter_count": 14,
+    "updated": "2026-05-26",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "4336",
     "title": "AN INQUIRY INTO THE NATURE AND PROGRESS OF RENT",
     "author": "Unknown",
