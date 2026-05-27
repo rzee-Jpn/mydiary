@@ -1,5 +1,32 @@
 [
   {
+    "id": "20202",
+    "title": "WALNUT GROWINGINOREGON",
+    "author": "\"WM. M. REECE.\"",
+    "path": "data/books/gutenberg/20202",
+    "chapter_count": 40,
+    "updated": "2026-05-27",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "68099",
+    "title": "MALTHUS AND HIS WORK",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/68099",
+    "chapter_count": 17,
+    "updated": "2026-05-27",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "67860",
+    "title": "L’EMPIRE JAPONAISETSA VIE ÉCONOMIQUE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/67860",
+    "chapter_count": 22,
+    "updated": "2026-05-27",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "50380",
     "title": "ANNALS,ANECDOTES AND LEGENDS:A ChronicleOFLIFE ASSURANCE.",
     "author": "Unknown",
