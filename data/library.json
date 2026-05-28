@@ -1,5 +1,32 @@
 [
   {
+    "id": "22651",
+    "title": "THEUNSOLVED RIDDLE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/22651",
+    "chapter_count": 10,
+    "updated": "2026-05-28",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "46628",
+    "title": "ŒUVRES COMPLÈTESDEFRÉDÉRIC BASTIAT",
+    "author": "(Note de l'éditeur.)",
+    "path": "data/books/gutenberg/46628",
+    "chapter_count": 101,
+    "updated": "2026-05-28",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "39653",
+    "title": "HISTORICAL MATERIALISMAND THEECONOMICS OF KARL MARXByBENEDETTO CROCE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/39653",
+    "chapter_count": 10,
+    "updated": "2026-05-28",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "20202",
     "title": "WALNUT GROWINGINOREGON",
     "author": "\"WM. M. REECE.\"",

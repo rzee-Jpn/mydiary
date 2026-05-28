@@ -1,0 +1,514 @@
+{
+  "id": "46628",
+  "title": "ŒUVRES COMPLÈTESDEFRÉDÉRIC BASTIAT",
+  "author": "(Note de l'éditeur.)",
+  "word_count": 127395,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofŒuvres Complètes de Frédéric Bastiat, tome 7",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "(p. v)AVERTISSEMENT",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "1.—D'UNE PÉTITION EN FAVEUR DES RÉFUGIÉS POLONAIS[1].",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "2.—D'UN NOUVEAU COLLÉGE À FONDER À BAYONNE[2].",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "3.—RÉFLEXIONS SUR LA QUESTION DES DUELS.(Compte rendu)[3].",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "4.—LIBERTÉ DU COMMERCE[4].",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "5.—D'AUTRES QUESTIONS SOUMISES AUX CONSEILS GÉNÉRAUX DE\r\nL'AGRICULTURE, DES MANUFACTURES ET DU COMMERCE[5].",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "(p. 30)6.—PROJET DE LIGUE ANTI-PROTECTIONISTE[6].",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "(p. 34)7.—2eARTICLE[7].",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "8.—3eARTICLE[9].",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "(p. 43)9.—ASSOCIATION POUR LA LIBERTÉ DES ÉCHANGES[11].",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "(p. 47)10.—À M. LE RÉDACTEUR DUJOURNAL DE LILLE, ORGANE DES\r\nINTÉRÊTS DU NORD[12].",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "11.—THÉORIE DU BÉNÉFICE[13].",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "12.—À M. LE RÉDACTEUR DEL'ÉPOQUE[14].",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "13.—LE LIBRE ÉCHANGE EN ACTION[16].",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "14.—QU'EST-CE QUE LE COMMERCE[17]?",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "15.—À M. LE MINISTRE DE L'AGRICULTURE ET DU COMMERCE[18].",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "16.—À MONSIEUR LE RÉDACTEUR DUCOURRIER FRANÇAIS[19].",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "(p. 78)17.—RÉFORME POSTALE[20].",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "18.—DEUXIÈME ARTICLE[21].",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "19.—LIBERTÉ COMMERCIALE[24].",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "20.—PREMIÈRE LETTRE AU RÉDACTEUR DUJOURNAL DES DÉBATS[25].",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "21.—DEUXIÈME LETTRE AUJOURNAL DES DÉBATS[26], INSÉRÉE DANS LE\r\nNUMÉRO DU 11.",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "22.—DU CHEMIN DE FER DE BORDEAUX À BAYONNE[27].(Lettre adressée à une commission de la Chambre des députés.)",
+      "file": "chapters/ch24.html"
+    },
+    {
+      "id": "ch25",
+      "title": "23.—AUX MEMBRES DE L'ASSOCIATION POUR LA LIBERTÉ DES ÉCHANGES[28].",
+      "file": "chapters/ch25.html"
+    },
+    {
+      "id": "ch26",
+      "title": "(p. 114)24.—À M. TANNEGUY DUCHÂTEL, MINISTRE DE L'INTÉRIEUR[31].",
+      "file": "chapters/ch26.html"
+    },
+    {
+      "id": "ch27",
+      "title": "25.—LA LOGIQUE DUMONITEUR INDUSTRIEL[32].",
+      "file": "chapters/ch27.html"
+    },
+    {
+      "id": "ch28",
+      "title": "26.—TOAST PORTÉ AU BANQUET OFFERT À COBDEN PAR LES LIBRE-ÉCHANGISTES\r\nDE PARIS[33].",
+      "file": "chapters/ch28.html"
+    },
+    {
+      "id": "ch29",
+      "title": "(p. 125)27.—LA LOI DES CÉRÉALES ET LE SALAIRE DES OUVRIERS[34].",
+      "file": "chapters/ch29.html"
+    },
+    {
+      "id": "ch30",
+      "title": "28.—LETTRE AUMONITEUR INDUSTRIEL[35].",
+      "file": "chapters/ch30.html"
+    },
+    {
+      "id": "ch31",
+      "title": "(p. 131)29.—AUX NÉGOCIANTS DU HAVRE.Trois lettres en faveur du libre-échange, écrites et publiées au\r\n     Havre, pendant le séjour de l'auteur.I[36]",
+      "file": "chapters/ch31.html"
+    },
+    {
+      "id": "ch32",
+      "title": "30.—II[37]",
+      "file": "chapters/ch32.html"
+    },
+    {
+      "id": "ch33",
+      "title": "31.—III[38]",
+      "file": "chapters/ch33.html"
+    },
+    {
+      "id": "ch34",
+      "title": "32.—À M. LE RÉDACTEUR EN CHEF DELA PRESSE[39].",
+      "file": "chapters/ch34.html"
+    },
+    {
+      "id": "ch35",
+      "title": "(p. 148)33.—À M. LE RÉDACTEUR EN CHEF DELA PRESSE[42].",
+      "file": "chapters/ch35.html"
+    },
+    {
+      "id": "ch36",
+      "title": "34.—À M. LE RÉDACTEUR EN CHEF DUNATIONAL[44].",
+      "file": "chapters/ch36.html"
+    },
+    {
+      "id": "ch37",
+      "title": "35.—À M. LE RÉDACTEUR EN CHEF DUNATIONAL[45].",
+      "file": "chapters/ch37.html"
+    },
+    {
+      "id": "ch38",
+      "title": "(p. 167)36.—LE ROI LIBRE-ÉCHANGISTE[46].",
+      "file": "chapters/ch38.html"
+    },
+    {
+      "id": "ch39",
+      "title": "(p. 170)37.—DISCOURS À LA SALLE DUPHOT[48].",
+      "file": "chapters/ch39.html"
+    },
+    {
+      "id": "ch40",
+      "title": "38.—PROJET DE DISCOURS LIBRE-ÉCHANGISTE À PRONONCER À BAYONNE[49].",
+      "file": "chapters/ch40.html"
+    },
+    {
+      "id": "ch41",
+      "title": "39.—À MM. LES MEMBRES DU CONSEIL GÉNÉRAL DE LA SEINE[52].",
+      "file": "chapters/ch41.html"
+    },
+    {
+      "id": "ch42",
+      "title": "(p. 199)40.—CONSEIL GÉNÉRAL DE LA NIÈVRE[53].",
+      "file": "chapters/ch42.html"
+    },
+    {
+      "id": "ch43",
+      "title": "(p. 207)41.",
+      "file": "chapters/ch43.html"
+    },
+    {
+      "id": "ch44",
+      "title": "42.SOUS LA RÉPUBLIQUE[56]",
+      "file": "chapters/ch44.html"
+    },
+    {
+      "id": "ch45",
+      "title": "43.",
+      "file": "chapters/ch45.html"
+    },
+    {
+      "id": "ch46",
+      "title": "44.",
+      "file": "chapters/ch46.html"
+    },
+    {
+      "id": "ch47",
+      "title": "(p. 215)45.",
+      "file": "chapters/ch47.html"
+    },
+    {
+      "id": "ch48",
+      "title": "(p. 218)46.",
+      "file": "chapters/ch48.html"
+    },
+    {
+      "id": "ch49",
+      "title": "47.",
+      "file": "chapters/ch49.html"
+    },
+    {
+      "id": "ch50",
+      "title": "48.—LES ROIS DOIVENT DÉSARMER[61].",
+      "file": "chapters/ch50.html"
+    },
+    {
+      "id": "ch51",
+      "title": "(p. 223)49.—LES SOUS-PRÉFECTURES[62].",
+      "file": "chapters/ch51.html"
+    },
+    {
+      "id": "ch52",
+      "title": "50.",
+      "file": "chapters/ch52.html"
+    },
+    {
+      "id": "ch53",
+      "title": "51.—LA PRESSE PARISIENNE[64].",
+      "file": "chapters/ch53.html"
+    },
+    {
+      "id": "ch54",
+      "title": "52.—PÉTITION D'UN ÉCONOMISTE[66].",
+      "file": "chapters/ch54.html"
+    },
+    {
+      "id": "ch55",
+      "title": "(p. 231)53.—LIBERTÉ D'ENSEIGNEMENT[68].",
+      "file": "chapters/ch55.html"
+    },
+    {
+      "id": "ch56",
+      "title": "54.—CURÉE DES PLACES[69].",
+      "file": "chapters/ch56.html"
+    },
+    {
+      "id": "ch57",
+      "title": "55.—ENTRAVES ET TAXES[70].",
+      "file": "chapters/ch57.html"
+    },
+    {
+      "id": "ch58",
+      "title": "56.—LA LIBERTÉ[71].",
+      "file": "chapters/ch58.html"
+    },
+    {
+      "id": "ch59",
+      "title": "(p. 237)57.—LAISSEZ FAIRE[72].",
+      "file": "chapters/ch59.html"
+    },
+    {
+      "id": "ch60",
+      "title": "58.—L'ASSEMBLÉE NATIONALE[72].",
+      "file": "chapters/ch60.html"
+    },
+    {
+      "id": "ch61",
+      "title": "59.—L'ÉTAT.[73]",
+      "file": "chapters/ch61.html"
+    },
+    {
+      "id": "ch62",
+      "title": "60.—PRENDRE CINQ ET RENDRE QUATRE CE N'EST PAS DONNER[75].",
+      "file": "chapters/ch62.html"
+    },
+    {
+      "id": "ch63",
+      "title": "61.—UNE MYSTIFICATION[76].",
+      "file": "chapters/ch63.html"
+    },
+    {
+      "id": "ch64",
+      "title": "62.—FUNESTE GRADATION[77].",
+      "file": "chapters/ch64.html"
+    },
+    {
+      "id": "ch65",
+      "title": "63.—AUX CITOYENS LAMARTINE ET LEDRU-ROLLIN[78].",
+      "file": "chapters/ch65.html"
+    },
+    {
+      "id": "ch66",
+      "title": "64.—LE CAPITAL[79].",
+      "file": "chapters/ch66.html"
+    },
+    {
+      "id": "ch67",
+      "title": "65.—PROFESSION DE FOI D'AVRIL 1849.",
+      "file": "chapters/ch67.html"
+    },
+    {
+      "id": "ch68",
+      "title": "(p. 263)66.—RAPPORT PRÉSENTÉ AU CONSEIL GÉNÉRAL DES LANDES, SESSION\r\nDE 1849, SUR LA QUESTION DES COMMUNAUX.",
+      "file": "chapters/ch68.html"
+    },
+    {
+      "id": "ch69",
+      "title": "67.—SOPHISMES ÉLECTORAUX.",
+      "file": "chapters/ch69.html"
+    },
+    {
+      "id": "ch70",
+      "title": "68.—LES ÉLECTIONS.",
+      "file": "chapters/ch70.html"
+    },
+    {
+      "id": "ch71",
+      "title": "(p. 289)69.",
+      "file": "chapters/ch71.html"
+    },
+    {
+      "id": "ch72",
+      "title": "70.—RÉFORME PARLEMENTAIRE[84].",
+      "file": "chapters/ch72.html"
+    },
+    {
+      "id": "ch73",
+      "title": "(p. 298)71.—LETTRE À M. ***, EN RÉPONSE À LA SIENNE DU 12\r\nJANVIER[85].",
+      "file": "chapters/ch73.html"
+    },
+    {
+      "id": "ch74",
+      "title": "(p. 300)72.",
+      "file": "chapters/ch74.html"
+    },
+    {
+      "id": "ch75",
+      "title": "73.—PROJET DE PRÉFACE POUR LES HARMONIES[88].",
+      "file": "chapters/ch75.html"
+    },
+    {
+      "id": "ch76",
+      "title": "74.—ANGLOMANIE, ANGLOPHOBIE[89].",
+      "file": "chapters/ch76.html"
+    },
+    {
+      "id": "ch77",
+      "title": "75.—LE PROFIT DE L'UN EST LE DOMMAGE DE L'AUTRE[93].",
+      "file": "chapters/ch77.html"
+    },
+    {
+      "id": "ch78",
+      "title": "76.—INDIVIDUALISME ET FRATERNITÉ.",
+      "file": "chapters/ch78.html"
+    },
+    {
+      "id": "ch79",
+      "title": "77.—BARATARIA[97].",
+      "file": "chapters/ch79.html"
+    },
+    {
+      "id": "ch80",
+      "title": "DON QUICHOTTE À SANCHO.",
+      "file": "chapters/ch80.html"
+    },
+    {
+      "id": "ch81",
+      "title": "RÉPONSE DE SANCHO.",
+      "file": "chapters/ch81.html"
+    },
+    {
+      "id": "ch82",
+      "title": "78.—LETTRE À UN ECCLÉSIASTIQUE[99].",
+      "file": "chapters/ch82.html"
+    },
+    {
+      "id": "ch83",
+      "title": "(p. 355)79[101].",
+      "file": "chapters/ch83.html"
+    },
+    {
+      "id": "ch84",
+      "title": "80.—DE LA SÉPARATION DU TEMPOREL ET DU SPIRITUEL.(Ébauche inédite)[102].",
+      "file": "chapters/ch84.html"
+    },
+    {
+      "id": "ch85",
+      "title": "81.",
+      "file": "chapters/ch85.html"
+    },
+    {
+      "id": "ch86",
+      "title": "82.—LES TROIS CONSEILS[104].",
+      "file": "chapters/ch86.html"
+    },
+    {
+      "id": "ch87",
+      "title": "À M. LAURENCE.",
+      "file": "chapters/ch87.html"
+    },
+    {
+      "id": "ch88",
+      "title": "À M. CH. DUNOYER, MEMBRE DE L'INSTITUT.",
+      "file": "chapters/ch88.html"
+    },
+    {
+      "id": "ch89",
+      "title": "(p. 373)M. AL. DE LAMARTINE[106].",
+      "file": "chapters/ch89.html"
+    },
+    {
+      "id": "ch90",
+      "title": "À M. PAULTON[107].",
+      "file": "chapters/ch90.html"
+    },
+    {
+      "id": "ch91",
+      "title": "À M. HORACE SAY.",
+      "file": "chapters/ch91.html"
+    },
+    {
+      "id": "ch92",
+      "title": "À M. DOMENGER À MUGRON.",
+      "file": "chapters/ch92.html"
+    },
+    {
+      "id": "ch93",
+      "title": "À M. GEORGE WILSON, PRÉSIDENT DE L'ANTI-CORN LAWS LEAGUE[114].",
+      "file": "chapters/ch93.html"
+    },
+    {
+      "id": "ch94",
+      "title": "À M. LE COMTE ARRIVABENE[115].",
+      "file": "chapters/ch94.html"
+    },
+    {
+      "id": "ch95",
+      "title": "À MADAME SCHWABE.",
+      "file": "chapters/ch95.html"
+    },
+    {
+      "id": "ch96",
+      "title": "À M. SCHWABE.",
+      "file": "chapters/ch96.html"
+    },
+    {
+      "id": "ch97",
+      "title": "À MADAME SCHWABE.",
+      "file": "chapters/ch97.html"
+    },
+    {
+      "id": "ch98",
+      "title": "À M. ET À MADAME CHEUVREUX (Extrait).",
+      "file": "chapters/ch98.html"
+    },
+    {
+      "id": "ch99",
+      "title": "À M. PAILLOTTET.",
+      "file": "chapters/ch99.html"
+    },
+    {
+      "id": "ch100",
+      "title": "(p. 445)TABLE DES MATIÈRESDU SEPTIÈME VOLUME.",
+      "file": "chapters/ch100.html"
+    },
+    {
+      "id": "ch101",
+      "title": "Notes",
+      "file": "chapters/ch101.html"
+    }
+  ],
+  "updated": "2026-05-28"
+}
