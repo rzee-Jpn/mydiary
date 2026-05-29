@@ -1,5 +1,32 @@
 [
   {
+    "id": "3611",
+    "title": "Second Shetland Truck System Report",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/3611",
+    "chapter_count": 3,
+    "updated": "2026-05-29",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "13045",
+    "title": "War-Time Financial Problems",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/13045",
+    "chapter_count": 24,
+    "updated": "2026-05-29",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "8436",
+    "title": "SPECULATIONS FROM POLITICAL ECONOMY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/8436",
+    "chapter_count": 12,
+    "updated": "2026-05-29",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "22651",
     "title": "THEUNSOLVED RIDDLE",
     "author": "Unknown",
