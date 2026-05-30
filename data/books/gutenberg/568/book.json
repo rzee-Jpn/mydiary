@@ -1,0 +1,34 @@
+{
+  "id": "568",
+  "title": "THE COMPLETE WORKS OF BRANN THE ICONOCLAST",
+  "author": "Unknown",
+  "word_count": 99685,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofThe Complete Works of Brann, the Iconoclast — Volume 10",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "DOLCE FAR NIENTE AND DOLLARS.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "MONDE AND DEMI MONDE.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "PILLS AND POLITICS.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "A COUPLE OF UNCLEAN COYOTES.",
+      "file": "chapters/ch05.html"
+    }
+  ],
+  "updated": "2026-05-30"
+}

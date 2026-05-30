@@ -1,0 +1,234 @@
+{
+  "id": "46626",
+  "title": "ŒUVRES COMPLÈTESDEFRÉDÉRIC BASTIAT",
+  "author": "(Chateaubriand.Mémoires d'outre tombe.)",
+  "word_count": 167646,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofŒuvres Complètes de Frédéric Bastiat, tome 5",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "(p. 1)SPOLIATION ET LOI[1].",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "(p. 16)GUERREAUX CHAIRES D'ÉCONOMIE POLITIQUE[10].",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "(p. 23)CAPITAL ET RENTE[14].INTRODUCTION.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "(p. 28)CAPITAL ET RENTE.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "(p. 64)MAUDIT ARGENT[25].",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "PREMIÈRE LETTRE[33].F. C. CHEVÉ.L'un des rédacteurs de laVoix du Peuple,",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "DEUXIÈME LETTRE.F. BASTIAT,Au rédacteur de laVoix du Peuple.",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "TROISIÈME LETTRE.P. J. PROUDHON À F. BASTIAT.",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "QUATRIÈME LETTRE.F. BASTIAT À P. J. PROUDHON.",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "(p. 146)CINQUIÈME LETTRE.P. J. PROUDHON À F. BASTIAT.",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "SIXIÈME LETTRE.F. BASTIAT À P. J. PROUDHON.",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "(p. 168)SEPTIÈME LETTRE.P. J. PROUDHON À F. BASTIAT.",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "(p. 191)HUITIÈME LETTRE.F. BASTIAT À P. J. PROUDHON.",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "(p. 205)NEUVIÈME LETTRE.P. J. PROUDHON À F. BASTIAT.",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "DIXIÈME LETTRE.F. BASTIAT À P. J. PROUDHON.",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "(p. 238)ONZIÈME LETTRE.P. J. PROUDHON À F. BASTIAT.",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "(p. 272)DOUZIÈME LETTRE.F. BASTIAT À P. J. PROUDHON.",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "(p. 290)TREIZIÈME LETTRE.P. J. PROUDHON À F. BASTIAT.",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "QUATORZIÈME LETTRE.F. BASTIAT À P. J. PROUDHON.",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "(p. 336)CE QU'ON VOITETCE QU'ON NE VOIT PAS[50].",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "I. La Vitre cassée.",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "II. Le licenciement.",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "III. L'Impôt.",
+      "file": "chapters/ch24.html"
+    },
+    {
+      "id": "ch25",
+      "title": "IV. Théâtres, Beaux-arts.",
+      "file": "chapters/ch25.html"
+    },
+    {
+      "id": "ch26",
+      "title": "V. Travaux publics.",
+      "file": "chapters/ch26.html"
+    },
+    {
+      "id": "ch27",
+      "title": "VI. Les intermédiaires.",
+      "file": "chapters/ch27.html"
+    },
+    {
+      "id": "ch28",
+      "title": "VII. Restriction.",
+      "file": "chapters/ch28.html"
+    },
+    {
+      "id": "ch29",
+      "title": "VIII. Les Machines.",
+      "file": "chapters/ch29.html"
+    },
+    {
+      "id": "ch30",
+      "title": "IX. Crédit.",
+      "file": "chapters/ch30.html"
+    },
+    {
+      "id": "ch31",
+      "title": "(p. 379)X. L'Algérie.",
+      "file": "chapters/ch31.html"
+    },
+    {
+      "id": "ch32",
+      "title": "XI. Épargne et Luxe.",
+      "file": "chapters/ch32.html"
+    },
+    {
+      "id": "ch33",
+      "title": "XII. Droit au Travail, Droit au Profit.",
+      "file": "chapters/ch33.html"
+    },
+    {
+      "id": "ch34",
+      "title": "(p. 393)ABONDANCE[61].",
+      "file": "chapters/ch34.html"
+    },
+    {
+      "id": "ch35",
+      "title": "(p. 402)BALANCE DU COMMERCE[63].",
+      "file": "chapters/ch35.html"
+    },
+    {
+      "id": "ch36",
+      "title": "(p. 407)PAIX ET LIBERTÉ, OU LE BUDGET RÉPUBLICAIN[64].",
+      "file": "chapters/ch36.html"
+    },
+    {
+      "id": "ch37",
+      "title": "Conséquences de la réduction sur l'impôt du sel.(Journal des Débats, 1erjanvier 1849.)",
+      "file": "chapters/ch37.html"
+    },
+    {
+      "id": "ch38",
+      "title": "(p. 468)DISCOURSSUR L'IMPÔT DES BOISSONS[76].",
+      "file": "chapters/ch38.html"
+    },
+    {
+      "id": "ch39",
+      "title": "(p. 494)DISCOURSSUR LA RÉPRESSION DES COALITIONS INDUSTRIELLES[78].",
+      "file": "chapters/ch39.html"
+    },
+    {
+      "id": "ch40",
+      "title": "(p. 513)RÉFLEXIONSSUR L'AMENDEMENT DE M. MORTIMER-TERNAUX[79].",
+      "file": "chapters/ch40.html"
+    },
+    {
+      "id": "ch41",
+      "title": "(p. 518)INCOMPATIBILITÉSPARLEMENTAIRES[80].",
+      "file": "chapters/ch41.html"
+    },
+    {
+      "id": "ch42",
+      "title": "§ I. Les électeurs peuvent-ils se faire représenter par des\r\nfonctionnaires?",
+      "file": "chapters/ch42.html"
+    },
+    {
+      "id": "ch43",
+      "title": "§ II.—Les représentants peuvent-ils devenir fonctionnaires?",
+      "file": "chapters/ch43.html"
+    },
+    {
+      "id": "ch44",
+      "title": "(p. 563)TABLE DES MATIÈRESDU CINQUIÈME VOLUME.",
+      "file": "chapters/ch44.html"
+    },
+    {
+      "id": "ch45",
+      "title": "Notes",
+      "file": "chapters/ch45.html"
+    }
+  ],
+  "updated": "2026-05-30"
+}

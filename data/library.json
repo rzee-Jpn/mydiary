@@ -1,5 +1,32 @@
 [
   {
+    "id": "29443",
+    "title": "THE NEW YORKSTOCK EXCHANGE INTHE CRISIS OF 1914",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/29443",
+    "chapter_count": 10,
+    "updated": "2026-05-30",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "46626",
+    "title": "ŒUVRES COMPLÈTESDEFRÉDÉRIC BASTIAT",
+    "author": "(Chateaubriand.Mémoires d'outre tombe.)",
+    "path": "data/books/gutenberg/46626",
+    "chapter_count": 45,
+    "updated": "2026-05-30",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "568",
+    "title": "THE COMPLETE WORKS OF BRANN THE ICONOCLAST",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/568",
+    "chapter_count": 5,
+    "updated": "2026-05-30",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "3611",
     "title": "Second Shetland Truck System Report",
     "author": "Unknown",
