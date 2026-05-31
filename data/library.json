@@ -1,5 +1,32 @@
 [
   {
+    "id": "53447",
+    "title": "THEFISHING INDUSTRY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/53447",
+    "chapter_count": 18,
+    "updated": "2026-05-31",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "39095",
+    "title": "THE PEOPLE.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/39095",
+    "chapter_count": 41,
+    "updated": "2026-05-31",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "12217",
+    "title": "MODERN ECONOMIC PROBLEMS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/12217",
+    "chapter_count": 34,
+    "updated": "2026-05-31",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "29443",
     "title": "THE NEW YORKSTOCK EXCHANGE INTHE CRISIS OF 1914",
     "author": "Unknown",
