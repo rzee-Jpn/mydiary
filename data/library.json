@@ -1,5 +1,32 @@
 [
   {
+    "id": "16106",
+    "title": "What Is Free Trade?",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/16106",
+    "chapter_count": 28,
+    "updated": "2026-06-02",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "46625",
+    "title": "ŒUVRES COMPLÈTESDEFRÉDÉRIC BASTIAT",
+    "author": "V. Considérant,Représentant du peuple.",
+    "path": "data/books/gutenberg/46625",
+    "chapter_count": 12,
+    "updated": "2026-06-02",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "4543",
+    "title": "The Querist",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/4543",
+    "chapter_count": 4,
+    "updated": "2026-06-02",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "34379",
     "title": "THETHEORY AND POLICYOFLABOUR PROTECTIONBYDR. A. SCHÄFFLE",
     "author": "Unknown",

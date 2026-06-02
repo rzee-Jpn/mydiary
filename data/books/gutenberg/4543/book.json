@@ -1,0 +1,29 @@
+{
+  "id": "4543",
+  "title": "The Querist",
+  "author": "Unknown",
+  "word_count": 27543,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofThe Querist",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "Part I",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "Part II",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "Part III",
+      "file": "chapters/ch04.html"
+    }
+  ],
+  "updated": "2026-06-02"
+}

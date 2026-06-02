@@ -1,0 +1,69 @@
+{
+  "id": "46625",
+  "title": "ŒUVRES COMPLÈTESDEFRÉDÉRIC BASTIAT",
+  "author": "V. Considérant,Représentant du peuple.",
+  "word_count": 162900,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofŒuvres Complètes de Frédéric Bastiat, tome 4",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "PREMIÈRE SÉRIE[1].(6eédition.)",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "(p. 127)SOPHISMES ÉCONOMIQUESDEUXIÈME SÉRIE[33].(2eédition.)",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "(p. 275)PROPRIÉTÉ ET LOI[64].",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "(p. 298)JUSTICE ET FRATERNITÉ[69].",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "(p. 327)L'ÉTAT[76].",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "(p. 342)LA LOI[79].",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "(p. 394)PROPRIÉTÉ ET SPOLIATION.",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "(p. 442)BACCALAURÉATET SOCIALISME",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "(p. 504)PROTECTIONISMEET COMMUNISME.",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "(p. 547)TABLE DES MATIÈRESDU QUATRIÈME VOLUME.",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "Notes",
+      "file": "chapters/ch12.html"
+    }
+  ],
+  "updated": "2026-06-02"
+}
