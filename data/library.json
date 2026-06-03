@@ -1,5 +1,32 @@
 [
   {
+    "id": "29048",
+    "title": "The Fabric of Civilization&#10;A Short Survey of the Cotton Industry in the United States",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/29048",
+    "chapter_count": 10,
+    "updated": "2026-06-03",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "72923",
+    "title": "ILLUSTRATIONSOFPOLITICAL ECONOMY.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/72923",
+    "chapter_count": 26,
+    "updated": "2026-06-03",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "70973",
+    "title": "THEAGRICULTURAL ANDFOREST PRODUCTS OFBRITISH WEST AFRICA",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/70973",
+    "chapter_count": 12,
+    "updated": "2026-06-03",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "16106",
     "title": "What Is Free Trade?",
     "author": "Unknown",
