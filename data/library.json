@@ -1,5 +1,32 @@
 [
   {
+    "id": "39003",
+    "title": "HON. JOHN P. JONES,",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/39003",
+    "chapter_count": 5,
+    "updated": "2026-06-04",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "53018",
+    "title": "MEN AND THINGS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/53018",
+    "chapter_count": 22,
+    "updated": "2026-06-04",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "54721",
+    "title": "TheFOOD QUESTION",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/54721",
+    "chapter_count": 17,
+    "updated": "2026-06-04",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "29048",
     "title": "The Fabric of Civilization&#10;A Short Survey of the Cotton Industry in the United States",
     "author": "Unknown",
