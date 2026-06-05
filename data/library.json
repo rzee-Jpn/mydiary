@@ -1,5 +1,32 @@
 [
   {
+    "id": "73475",
+    "title": "The Basic Factsof Economics",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/73475",
+    "chapter_count": 22,
+    "updated": "2026-06-05",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "31933",
+    "title": "LANDMARKS OFSCIENTIFIC SOCIALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/31933",
+    "chapter_count": 11,
+    "updated": "2026-06-05",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "9486",
+    "title": "ATLANTIC MONTHLY.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/9486",
+    "chapter_count": 21,
+    "updated": "2026-06-05",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "39003",
     "title": "HON. JOHN P. JONES,",
     "author": "Unknown",
