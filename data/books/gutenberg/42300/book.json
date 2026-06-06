@@ -1,0 +1,379 @@
+{
+  "id": "42300",
+  "title": "ŒUVRES COMPLÈTESDEFRÉDÉRIC BASTIAT",
+  "author": "«FrédéricBastiat,«Rédacteur en chef duLibre-Échange.»",
+  "word_count": 141665,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofŒuvres Complètes de Frédéric Bastiat, tome 2",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "1.—DÉCLARATION.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "2.—LIBRE-ÉCHANGE.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "3.—BORNES QUE S'IMPOSE L'ASSOCIATION POUR LA LIBERTÉ DES ÉCHANGES.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "(p. 12)4.—SUR LES GÉNÉRALITÉS.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "5.—D'UN PLAN DE CAMPAGNE PROPOSÉ À L'ASSOCIATION DU LIBRE-ÉCHANGE.",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "(p. 22)6.—RÉFLEXIONS SUR L'ANNÉE 1846.",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "7.—DE L'INFLUENCE DU RÉGIME PROTECTEUR SUR LA SITUATION DE L'AGRICULTURE\r\nEN FRANCE.",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "8.—INANITÉ DE LA PROTECTION DE L'AGRICULTURE.",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "9.—L'ÉCHELLE MOBILE.",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "(p. 48)10.—L'ÉCHELLE MOBILE ET SES EFFETS.",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "(p. 58)11.—À QUOI SE RÉDUIT L'INVASION.",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "12.—SUBSISTANCES.",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "13.—DE LA LIBRE INTRODUCTION DU BÉTAIL ÉTRANGER.",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "(p. 72)14.—SUR LA DÉFENSE D'EXPORTER LES CÉRÉALES.",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "15.—HAUSSE DES ALIMENTS, BAISSE DES SALAIRES.",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "(p. 81)16.—LA TRIBUNE ET LA PRESSE, À PROPOS DU TRAITÉ BELGE.",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "17.—LE PARTI DÉMOCRATIQUE ET LE LIBRE-ÉCHANGE.",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "18.—DÉMOCRATIE ET LIBRE-ÉCHANGE.",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "19.—LE NATIONAL.",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "20.—LE MONDE RENVERSÉ.",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "(p. 112)21.—SUR L'EXPORTATION DU NUMÉRAIRE.",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "22.—DU COMMUNISME.",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "23.—RÉPONSE AU JOURNAL L'ATELIER.",
+      "file": "chapters/ch24.html"
+    },
+    {
+      "id": "ch25",
+      "title": "24.—RÉPONSE À DIVERS.",
+      "file": "chapters/ch25.html"
+    },
+    {
+      "id": "ch26",
+      "title": "(p. 134)25.—À MONSIEUR F. BASTIAT, RÉDACTEUR EN CHEF DU LIBRE-ÉCHANGE.",
+      "file": "chapters/ch26.html"
+    },
+    {
+      "id": "ch27",
+      "title": "26.—LA LIGUE ANGLAISE ET LA LIGUE ALLEMANDE.",
+      "file": "chapters/ch27.html"
+    },
+    {
+      "id": "ch28",
+      "title": "27.—ORGANISATION ET LIBERTÉ.",
+      "file": "chapters/ch28.html"
+    },
+    {
+      "id": "ch29",
+      "title": "28.—RÉPONSE À LA PRESSE SUR LA NATURE DES ÉCHANGES.",
+      "file": "chapters/ch29.html"
+    },
+    {
+      "id": "ch30",
+      "title": "29.—L'EMPEREUR DE RUSSIE.",
+      "file": "chapters/ch30.html"
+    },
+    {
+      "id": "ch31",
+      "title": "30.—LA LIBERTÉ A DONNÉ DU PAIN AU PEUPLE ANGLAIS.",
+      "file": "chapters/ch31.html"
+    },
+    {
+      "id": "ch32",
+      "title": "31.—INFLUENCE DU LIBRE-ÉCHANGE SUR LES RELATIONS DES PEUPLES.",
+      "file": "chapters/ch32.html"
+    },
+    {
+      "id": "ch33",
+      "title": "32.—L'ANGLETERRE ET LE LIBRE-ÉCHANGE.",
+      "file": "chapters/ch33.html"
+    },
+    {
+      "id": "ch34",
+      "title": "(p. 186)33.—CURIEUX PHÉNOMÈNE ÉCONOMIQUE.",
+      "file": "chapters/ch34.html"
+    },
+    {
+      "id": "ch35",
+      "title": "34.—LES ARMEMENTS EN ANGLETERRE.",
+      "file": "chapters/ch35.html"
+    },
+    {
+      "id": "ch36",
+      "title": "35.—ENCORE LES ARMEMENTS EN ANGLETERRE.",
+      "file": "chapters/ch36.html"
+    },
+    {
+      "id": "ch37",
+      "title": "36.—SUR L'INSCRIPTION MARITIME.",
+      "file": "chapters/ch37.html"
+    },
+    {
+      "id": "ch38",
+      "title": "37.—LA TAXE UNIQUE EN ANGLETERRE.",
+      "file": "chapters/ch38.html"
+    },
+    {
+      "id": "ch39",
+      "title": "38.—M. DE NOAILLES À LA CHAMBRE DES PAIRS.",
+      "file": "chapters/ch39.html"
+    },
+    {
+      "id": "ch40",
+      "title": "39.—PARESSE ET RESTRICTION.",
+      "file": "chapters/ch40.html"
+    },
+    {
+      "id": "ch41",
+      "title": "(p. 222)40.—DEUX MODES D'ÉGALISATION DE TAXES.",
+      "file": "chapters/ch41.html"
+    },
+    {
+      "id": "ch42",
+      "title": "41.—L'IMPÔT DU SEL.",
+      "file": "chapters/ch42.html"
+    },
+    {
+      "id": "ch43",
+      "title": "(p. 229)42.—DISCOURS À BORDEAUX.",
+      "file": "chapters/ch43.html"
+    },
+    {
+      "id": "ch44",
+      "title": "43.—SECOND DISCOURS[53].",
+      "file": "chapters/ch44.html"
+    },
+    {
+      "id": "ch45",
+      "title": "44.—TROISIÈME DISCOURS.",
+      "file": "chapters/ch45.html"
+    },
+    {
+      "id": "ch46",
+      "title": "(p. 260)45.—QUATRIÈME DISCOURS.",
+      "file": "chapters/ch46.html"
+    },
+    {
+      "id": "ch47",
+      "title": "46.—CINQUIÈME DISCOURS.",
+      "file": "chapters/ch47.html"
+    },
+    {
+      "id": "ch48",
+      "title": "47.—SIXIÈME DISCOURS, À MARSEILLE.",
+      "file": "chapters/ch48.html"
+    },
+    {
+      "id": "ch49",
+      "title": "48.—SEPTIÈME DISCOURS, À PARIS, SALLE MONTESQUIEU.",
+      "file": "chapters/ch49.html"
+    },
+    {
+      "id": "ch50",
+      "title": "49.—DISCOURS AU CERCLE DE LA LIBRAIRIE[76].",
+      "file": "chapters/ch50.html"
+    },
+    {
+      "id": "ch51",
+      "title": "(p. 340)LETTRE.",
+      "file": "chapters/ch51.html"
+    },
+    {
+      "id": "ch52",
+      "title": "(p. 343)50.—DE LA MODÉRATION",
+      "file": "chapters/ch52.html"
+    },
+    {
+      "id": "ch53",
+      "title": "51.—PEUPLE ET BOURGEOISIE.",
+      "file": "chapters/ch53.html"
+    },
+    {
+      "id": "ch54",
+      "title": "52.—L'ÉCONOMIE POLITIQUE DES GÉNÉRAUX.",
+      "file": "chapters/ch54.html"
+    },
+    {
+      "id": "ch55",
+      "title": "53.—RECETTES PROTECTIONNISTES.",
+      "file": "chapters/ch55.html"
+    },
+    {
+      "id": "ch56",
+      "title": "54.—DEUX PRINCIPES.",
+      "file": "chapters/ch56.html"
+    },
+    {
+      "id": "ch57",
+      "title": "55.—LA LOGIQUE DE M. CUNIN-GRIDAINE.",
+      "file": "chapters/ch57.html"
+    },
+    {
+      "id": "ch58",
+      "title": "56.—LES HOMMES SPÉCIAUX.",
+      "file": "chapters/ch58.html"
+    },
+    {
+      "id": "ch59",
+      "title": "57.—UN PROFIT CONTRE DEUX PERTES.",
+      "file": "chapters/ch59.html"
+    },
+    {
+      "id": "ch60",
+      "title": "58.—DEUX PERTES CONTRE UN PROFIT.",
+      "file": "chapters/ch60.html"
+    },
+    {
+      "id": "ch61",
+      "title": "(p. 392)59.—LA PEUR D'UN MOT.",
+      "file": "chapters/ch61.html"
+    },
+    {
+      "id": "ch62",
+      "title": "60.—MIDI À QUATORZE HEURES.",
+      "file": "chapters/ch62.html"
+    },
+    {
+      "id": "ch63",
+      "title": "61.—LE PETIT MANUEL DU CONSOMMATEUR OU DE TOUT LE MONDE.",
+      "file": "chapters/ch63.html"
+    },
+    {
+      "id": "ch64",
+      "title": "62.—REMONTRANCE.",
+      "file": "chapters/ch64.html"
+    },
+    {
+      "id": "ch65",
+      "title": "63.—LE MAIRE D'ÉNIOS.",
+      "file": "chapters/ch65.html"
+    },
+    {
+      "id": "ch66",
+      "title": "64.—ASSOCIATION ESPAGNOLE POUR LA DÉFENSE DU TRAVAIL NATIONAL.",
+      "file": "chapters/ch66.html"
+    },
+    {
+      "id": "ch67",
+      "title": "65.—L'INDISCRET.",
+      "file": "chapters/ch67.html"
+    },
+    {
+      "id": "ch68",
+      "title": "66.—LE SUCRE ANTÉDILUVIEN.",
+      "file": "chapters/ch68.html"
+    },
+    {
+      "id": "ch69",
+      "title": "(p. 452)67.—MONITA SECRETA.",
+      "file": "chapters/ch69.html"
+    },
+    {
+      "id": "ch70",
+      "title": "(p. 459)68.—PETITES AFFICHES DE JACQUES BONHOMME[108].",
+      "file": "chapters/ch70.html"
+    },
+    {
+      "id": "ch71",
+      "title": "(p. 462)69.—CIRCULAIRES D'UN MINISTÈRE INTROUVABLE.",
+      "file": "chapters/ch71.html"
+    },
+    {
+      "id": "ch72",
+      "title": "(p. 466)70.—FUNESTES ILLUSIONS.",
+      "file": "chapters/ch72.html"
+    },
+    {
+      "id": "ch73",
+      "title": "(p. 483)TABLE DES MATIÈRESDU DEUXIÈME VOLUME.",
+      "file": "chapters/ch73.html"
+    },
+    {
+      "id": "ch74",
+      "title": "Notes",
+      "file": "chapters/ch74.html"
+    }
+  ],
+  "updated": "2026-06-06"
+}

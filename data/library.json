@@ -1,5 +1,32 @@
 [
   {
+    "id": "14870",
+    "title": "Rebuilding Britain",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/14870",
+    "chapter_count": 25,
+    "updated": "2026-06-06",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "42300",
+    "title": "ŒUVRES COMPLÈTESDEFRÉDÉRIC BASTIAT",
+    "author": "«FrédéricBastiat,«Rédacteur en chef duLibre-Échange.»",
+    "path": "data/books/gutenberg/42300",
+    "chapter_count": 74,
+    "updated": "2026-06-06",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "29383",
+    "title": "THE HAWAIIAN ISLANDS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/29383",
+    "chapter_count": 105,
+    "updated": "2026-06-06",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "73475",
     "title": "The Basic Factsof Economics",
     "author": "Unknown",
