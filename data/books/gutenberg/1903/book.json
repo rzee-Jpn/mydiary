@@ -1,0 +1,84 @@
+{
+  "id": "1903",
+  "title": "EVERYBODY'S GUIDE\r\nTO\r\nMONEY MATTERS.",
+  "author": "Unknown",
+  "word_count": 37208,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofEverybody's Guide to Money Matters",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "PREFACE.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "CONTENTS.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "CHAPTER II.\r\nTHE BANK ACCOUNT.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "CHAPTER III.\r\nLONDON BANKS AND BANKING.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "CHAPTER IV.\r\nINVESTMENTS.",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "CHAPTER V.\r\nBRITISH GOVERNMENT FUNDS.",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "CHAPTER VI.\r\nGOVERNMENT ANNUITIES.",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "CHAPTER VII.\r\nLOANS TO CORPORATIONS AND COUNTIES OF\r\nTHE UNITED KINGDOM.",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "CHAPTER VIII.\r\nTHE STOCK EXCHANGE.",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "CHAPTER IX.\r\nLIFE INSURANCE.",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "CHAPTER X.\r\nBUILDING SOCIETIES.",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "CHAPTER XI.\r\nTHE POST OFFICE SAVINGS BANK.",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "TABLE OF INTEREST ON INVESTMENTS.\r\nShowing how the rate of interest actually received varies\r\naccording to the amount paid for the Stock.",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "EXAMPLES OF BUSINESS COMMUNICATIONS.",
+      "file": "chapters/ch15.html"
+    }
+  ],
+  "updated": "2026-06-07"
+}

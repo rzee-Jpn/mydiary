@@ -1,5 +1,32 @@
 [
   {
+    "id": "1903",
+    "title": "EVERYBODY'S GUIDE\r\nTO\r\nMONEY MATTERS.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/1903",
+    "chapter_count": 15,
+    "updated": "2026-06-07",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "59042",
+    "title": "The Stock Exchange",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/59042",
+    "chapter_count": 20,
+    "updated": "2026-06-07",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "53052",
+    "title": "OUR BENEVOLENTFEUDALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/53052",
+    "chapter_count": 59,
+    "updated": "2026-06-07",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "14870",
     "title": "Rebuilding Britain",
     "author": "Unknown",
