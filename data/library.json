@@ -1,5 +1,32 @@
 [
   {
+    "id": "68755",
+    "title": "YOUR PAY ENVELOPE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/68755",
+    "chapter_count": 20,
+    "updated": "2026-06-08",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "5624",
+    "title": "THE INHUMANITY OF SOCIALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/5624",
+    "chapter_count": 6,
+    "updated": "2026-06-08",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "28704",
+    "title": "FREE SHIPS.THE RESTORATIONOFTHE AMERICAN CARRYING TRADE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/28704",
+    "chapter_count": 5,
+    "updated": "2026-06-08",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "1903",
     "title": "EVERYBODY'S GUIDE\r\nTO\r\nMONEY MATTERS.",
     "author": "Unknown",
