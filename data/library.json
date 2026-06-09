@@ -1,5 +1,32 @@
 [
   {
+    "id": "58204",
+    "title": "A History of Greek Economic Thought",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/58204",
+    "chapter_count": 44,
+    "updated": "2026-06-09",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "13488",
+    "title": "TO THE REV. MICHAEL CRONIN, M.A., D.D.\r\nUNIVERSITY COLLEGE, DUBLIN",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/13488",
+    "chapter_count": 14,
+    "updated": "2026-06-09",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "11090",
+    "title": "Industrial Progress",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/11090",
+    "chapter_count": 54,
+    "updated": "2026-06-09",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "68755",
     "title": "YOUR PAY ENVELOPE",
     "author": "Unknown",
