@@ -1,5 +1,32 @@
 [
   {
+    "id": "17294",
+    "title": "ESSAYS\r\nIN\r\nLIBERALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/17294",
+    "chapter_count": 98,
+    "updated": "2026-06-10",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "60436",
+    "title": "BANKS AND THEIRCUSTOMERS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/60436",
+    "chapter_count": 39,
+    "updated": "2026-06-10",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "73958",
+    "title": "THOUGHTSON THEMECHANISMOFSOCIETIES.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/73958",
+    "chapter_count": 63,
+    "updated": "2026-06-10",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "58204",
     "title": "A History of Greek Economic Thought",
     "author": "Unknown",
