@@ -1,5 +1,32 @@
 [
   {
+    "id": "22619",
+    "title": "International Copyright",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/22619",
+    "chapter_count": 4,
+    "updated": "2026-06-11",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "64287",
+    "title": "PROGRESS IN THE HOUSEHOLD",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/64287",
+    "chapter_count": 16,
+    "updated": "2026-06-11",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "51244",
+    "title": "THE LIVESTOCK\r\nPRODUCER AND\r\nARMOUR",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/51244",
+    "chapter_count": 20,
+    "updated": "2026-06-11",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "17294",
     "title": "ESSAYS\r\nIN\r\nLIBERALISM",
     "author": "Unknown",
