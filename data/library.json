@@ -1,5 +1,32 @@
 [
   {
+    "id": "12319",
+    "title": "The Atlantic Monthly, Volume 01, No. 04, February, 1858&#10;A Magazine of Literature, Art, and Politics",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/12319",
+    "chapter_count": 10,
+    "updated": "2026-06-12",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "47435",
+    "title": "BRITISH CANALS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/47435",
+    "chapter_count": 18,
+    "updated": "2026-06-12",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "61605",
+    "title": "THEMONEY MARKET",
+    "author": "“Bank of England,February 27th, 1797.",
+    "path": "data/books/gutenberg/61605",
+    "chapter_count": 19,
+    "updated": "2026-06-12",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "22619",
     "title": "International Copyright",
     "author": "Unknown",
