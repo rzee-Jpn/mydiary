@@ -1,5 +1,32 @@
 [
   {
+    "id": "46499",
+    "title": "HONEST MONEY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/46499",
+    "chapter_count": 32,
+    "updated": "2026-06-13",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "66518",
+    "title": "LABOURAND THEPOPULAR WELFARE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/66518",
+    "chapter_count": 28,
+    "updated": "2026-06-13",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "61588",
+    "title": "ATREATISEOFTaxes & Contributions.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/61588",
+    "chapter_count": 19,
+    "updated": "2026-06-13",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "12319",
     "title": "The Atlantic Monthly, Volume 01, No. 04, February, 1858&#10;A Magazine of Literature, Art, and Politics",
     "author": "Unknown",
