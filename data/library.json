@@ -1,5 +1,32 @@
 [
   {
+    "id": "6495",
+    "title": "HISTORY OF THE GREAT AMERICAN FORTUNES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/6495",
+    "chapter_count": 13,
+    "updated": "2026-06-14",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "69590",
+    "title": "SALTAND THESALT INDUSTRY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/69590",
+    "chapter_count": 14,
+    "updated": "2026-06-14",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "32027",
+    "title": "BANKING",
+    "author": "F. L. M.",
+    "path": "data/books/gutenberg/32027",
+    "chapter_count": 13,
+    "updated": "2026-06-14",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "46499",
     "title": "HONEST MONEY",
     "author": "Unknown",
