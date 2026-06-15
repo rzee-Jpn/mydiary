@@ -1,5 +1,32 @@
 [
   {
+    "id": "18380",
+    "title": "THE WAR AFTER THE WAR",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/18380",
+    "chapter_count": 14,
+    "updated": "2026-06-15",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "52460",
+    "title": "EMERSON ON SOUND MONEY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/52460",
+    "chapter_count": 32,
+    "updated": "2026-06-15",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "44144",
+    "title": "PROTECTION and COMMUNISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/44144",
+    "chapter_count": 5,
+    "updated": "2026-06-15",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "6495",
     "title": "HISTORY OF THE GREAT AMERICAN FORTUNES",
     "author": "Unknown",
