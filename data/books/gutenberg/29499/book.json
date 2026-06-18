@@ -1,0 +1,29 @@
+{
+  "id": "29499",
+  "title": "THE PAPER MONEYSOF EUROPE",
+  "author": "Unknown",
+  "word_count": 6641,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofThe Paper Moneys of Europe: Their Moral and Economic Significance",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "FRANCIS W. HIRST",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "THEIR MORAL AND ECONOMIC SIGNIFICANCE",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "APPENDIX",
+      "file": "chapters/ch04.html"
+    }
+  ],
+  "updated": "2026-06-18"
+}

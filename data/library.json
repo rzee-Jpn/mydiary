@@ -1,5 +1,32 @@
 [
   {
+    "id": "29499",
+    "title": "THE PAPER MONEYSOF EUROPE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/29499",
+    "chapter_count": 4,
+    "updated": "2026-06-18",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "75629",
+    "title": "ECONOMICS FOR HELEN",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/75629",
+    "chapter_count": 37,
+    "updated": "2026-06-18",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "41842",
+    "title": "EL ACEITEDE OLIVAS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/41842",
+    "chapter_count": 82,
+    "updated": "2026-06-18",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "58351",
     "title": "Solidarismus.Natürliche wirtschaftliche Erlösung des Menschen.",
     "author": "Unknown",
