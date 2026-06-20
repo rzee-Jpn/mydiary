@@ -1,5 +1,32 @@
 [
   {
+    "id": "29379",
+    "title": "The New YorkStock Exchange",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/29379",
+    "chapter_count": 3,
+    "updated": "2026-06-20",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "4335",
+    "title": "The Grounds of an Opinion on the Policy of Restricting the Importation of Foreign Corn&#10;Intended as an appendix to \"Observations on the corn laws\"",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/4335",
+    "chapter_count": 3,
+    "updated": "2026-06-20",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "43663",
+    "title": "A Simple ExplanationofModern Banking Customs",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/43663",
+    "chapter_count": 17,
+    "updated": "2026-06-20",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "44052",
     "title": "ProfitableStock ExchangeInvestmentsPRINCIPAL AND INTERESTGUARANTEED",
     "author": "Unknown",
