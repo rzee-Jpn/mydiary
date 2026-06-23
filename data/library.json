@@ -1,5 +1,32 @@
 [
   {
+    "id": "46977",
+    "title": "ARATIONAL WAGESSYSTEM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/46977",
+    "chapter_count": 48,
+    "updated": "2026-06-23",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "22617",
+    "title": "CHAMBERS' EDINBURGH JOURNAL",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/22617",
+    "chapter_count": 16,
+    "updated": "2026-06-23",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "58584",
+    "title": "INDEX OF THE PROJECT GUTENBERGWORKS OFFRÉDÉRIC\r\n      BASTIAT",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/58584",
+    "chapter_count": 16,
+    "updated": "2026-06-23",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "34187",
     "title": "A New Banking System&#10;The Needful Capital for Rebuilding the Burnt District",
     "author": "Unknown",
