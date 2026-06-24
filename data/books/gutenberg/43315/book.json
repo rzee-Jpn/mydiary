@@ -1,0 +1,234 @@
+{
+  "id": "43315",
+  "title": "ŒUVRES COMPLÈTESDEFRÉDÉRIC BASTIAT",
+  "author": "Unknown",
+  "word_count": 174038,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofŒuvres Complètes de Frédéric Bastiat, tome 3",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "(p. 1)INTRODUCTION",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "(p. 81)COBDEN ET LA LIGUEOUL'AGITATION ANGLAISE",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "MEETING HEBDOMADAIRE DE LA LIGUE.16 mars 1843.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "MEETING HEBDOMADAIRE DE LA LIGUE.30 mars 1843.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "MEETING HEBDOMADAIRE DE LA LIGUE.5 avril 1843.",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "MEETING HEBDOMADAIRE DE LA LIGUE13 avril 1843.",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "MEETING HEBDOMADAIRE DE LA LIGUE.26 avril 1843.",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "SEPTIÈME MEETING HEBDOMADAIRE DE LA LIGUE.5 mai 1843.",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "MEETING HEBDOMADAIRE DE LA LIGUE À LA SALLE DE L'OPÉRA.13 mai 1843.",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "GRAND MEETING À COVENT-GARDEN.Octobre 1843.",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "(p. 207)L'AGITATION EN ÉCOSSE",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "CARLISLE.Extrait duCarlisle Journal, 8 janvier 1844.",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "GLASGOW.BANQUET POUR LE SOUTIEN DES PRINCIPES DE LA LIBERTÉ COMMERCIALE.Extrait duGlasgow-Argus, 10 janvier 1844.",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "GRAND MEETING D'ÉDIMBOURG POUR LE SOUTIEN DE LA LIGUE.Extrait duScotchman, 11 janvier 1844.",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "(p. 214)PERTH.Extrait duPerthshire-Advertiser, 12 janvier 1844.",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "GREENOCK.Extrait duGreenock-Advertiser, 15 janvier 1844.",
+      "file": "chapters/ch17.html"
+    },
+    {
+      "id": "ch18",
+      "title": "(p. 219)ABERDEEN.Extrait de l'Aberdeen-Herald, 15 janvier 1844.",
+      "file": "chapters/ch18.html"
+    },
+    {
+      "id": "ch19",
+      "title": "DUNDEE.16 janvier 1844.",
+      "file": "chapters/ch19.html"
+    },
+    {
+      "id": "ch20",
+      "title": "PAISLEY.Extrait duGlasgow-Argus, 16 janvier 1844.",
+      "file": "chapters/ch20.html"
+    },
+    {
+      "id": "ch21",
+      "title": "AYR.Extrait del'Ayr-Advertiser.",
+      "file": "chapters/ch21.html"
+    },
+    {
+      "id": "ch22",
+      "title": "MONTROSE.Extrait duMontrose-Review, 16 janvier 1844.",
+      "file": "chapters/ch22.html"
+    },
+    {
+      "id": "ch23",
+      "title": "FORFAR.",
+      "file": "chapters/ch23.html"
+    },
+    {
+      "id": "ch24",
+      "title": "KILMARNOCK.",
+      "file": "chapters/ch24.html"
+    },
+    {
+      "id": "ch25",
+      "title": "(p. 222)CUPAR.Extrait duFife-Sentinel, 18 janvier 1844.",
+      "file": "chapters/ch25.html"
+    },
+    {
+      "id": "ch26",
+      "title": "LEITH.Extrait duCaledonian-Mercury, 19 janvier 1844.",
+      "file": "chapters/ch26.html"
+    },
+    {
+      "id": "ch27",
+      "title": "DUMFRIES.Extrait duDumfries-Courrier, 17 janvier 1844.",
+      "file": "chapters/ch27.html"
+    },
+    {
+      "id": "ch28",
+      "title": "GRAND MEETING DE COVENT-GARDEN.25 janvier 1844.",
+      "file": "chapters/ch28.html"
+    },
+    {
+      "id": "ch29",
+      "title": "(p. 236)SECOND MEETING AU THÉÂTRE DE COVENT-GARDEN.1erfévrier 1844.",
+      "file": "chapters/ch29.html"
+    },
+    {
+      "id": "ch30",
+      "title": "WAKEFIELD.Extrait duMorning-Chronicle, 31 janvier 1844.",
+      "file": "chapters/ch30.html"
+    },
+    {
+      "id": "ch31",
+      "title": "MEETING HEBDOMADAIRE DE LA LIGUE.15 février 1844.",
+      "file": "chapters/ch31.html"
+    },
+    {
+      "id": "ch32",
+      "title": "MEETING HEBDOMADAIRE DE LA LIGUE AU THÉÂTRE DE COVENT-GARDEN.21 février 1844.",
+      "file": "chapters/ch32.html"
+    },
+    {
+      "id": "ch33",
+      "title": "LES FREE-TRADERS ET LES CHARTISTES À NORTHAMPTON.",
+      "file": "chapters/ch33.html"
+    },
+    {
+      "id": "ch34",
+      "title": "DÉMONSTRATION EN FAVEUR DE LA LIBERTÉ COMMERCIALE À WALSALL.Présentation d'une coupe à M. John B. Smith.",
+      "file": "chapters/ch34.html"
+    },
+    {
+      "id": "ch35",
+      "title": "GRAND MEETING DE LA LIGUE AU THÉÂTRE DE COVENT-GARDEN.11 décembre 1844.",
+      "file": "chapters/ch35.html"
+    },
+    {
+      "id": "ch36",
+      "title": "MEETING GÉNÉRAL DE LA LIGUE À MANCHESTER.22 janvier 1845.",
+      "file": "chapters/ch36.html"
+    },
+    {
+      "id": "ch37",
+      "title": "(p. 430)INTERROGATOIREDEJACQUES DEACON HUME, ESQ.,Ancien secrétaire duBoard of tradeSUR LA LOI DES CÉRÉALES,DEVANT LE COMITÉ DE LA CHAMBRE DES COMMUNES CHARGÉ DE PRÉPARER LE PROJET\r\nRELATIF AUX DROITS D'IMPORTATION POUR 1839.",
+      "file": "chapters/ch37.html"
+    },
+    {
+      "id": "ch38",
+      "title": "(p. 437)APPENDICEFIN DE LA PREMIÈRE CAMPAGNE DE LA LIGUE ANGLAISE.",
+      "file": "chapters/ch38.html"
+    },
+    {
+      "id": "ch39",
+      "title": "(p. 449)SECONDE CAMPAGNEDE LA LIGUE(Libre-Échange, nodu 7 novembre 1847.)",
+      "file": "chapters/ch39.html"
+    },
+    {
+      "id": "ch40",
+      "title": "(p. 459)DEUX ANGLETERRE(Libre-Échangedu 6 février 1848.)",
+      "file": "chapters/ch40.html"
+    },
+    {
+      "id": "ch41",
+      "title": "(p. 463)GRAND MEETING À MANCHESTER",
+      "file": "chapters/ch41.html"
+    },
+    {
+      "id": "ch42",
+      "title": "(p. 497)RÉFORME COLONIALEEN ANGLETERREDISCOURS PRONONCÉ AU MEETING DE BRADFORD, PAR M. COBDEN.(Journal des Économistes, nodu 15 février 1850.)",
+      "file": "chapters/ch42.html"
+    },
+    {
+      "id": "ch43",
+      "title": "PLAN DE LORD JOHN RUSSELL(Journal des Économistes, nodu 15 avril 1850.)",
+      "file": "chapters/ch43.html"
+    },
+    {
+      "id": "ch44",
+      "title": "(p. 519)TABLE DES MATIÈRESDU TROISIÈME VOLUME",
+      "file": "chapters/ch44.html"
+    },
+    {
+      "id": "ch45",
+      "title": "Notes",
+      "file": "chapters/ch45.html"
+    }
+  ],
+  "updated": "2026-06-24"
+}

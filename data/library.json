@@ -1,5 +1,32 @@
 [
   {
+    "id": "4334",
+    "title": "Observations on the Effects of the Corn Laws, and of a Rise or Fall in the Price of Corn on the Agriculture and General Wealth of the Country",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/4334",
+    "chapter_count": 3,
+    "updated": "2026-06-24",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "61483",
+    "title": "DEFINITIONSINPOLITICAL ECONOMY,PRECEDED BYAN INQUIRY INTO THE RULES WHICH OUGHT TO GUIDE POLITICAL ECONOMISTS IN THE DEFINITION AND USE OF THEIR TERMS;WITH REMARKSON THE DEVIATION FROM THESE RULES IN THEIR WRITINGS.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/61483",
+    "chapter_count": 72,
+    "updated": "2026-06-24",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "43315",
+    "title": "ŒUVRES COMPLÈTESDEFRÉDÉRIC BASTIAT",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/43315",
+    "chapter_count": 45,
+    "updated": "2026-06-24",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "46977",
     "title": "ARATIONAL WAGESSYSTEM",
     "author": "Unknown",
