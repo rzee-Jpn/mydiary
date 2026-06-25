@@ -1,5 +1,32 @@
 [
   {
+    "id": "64598",
+    "title": "COMMENTPLACER SA FORTUNE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/64598",
+    "chapter_count": 20,
+    "updated": "2026-06-25",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "63453",
+    "title": "JOHN LAW OF LAURISTON",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/63453",
+    "chapter_count": 17,
+    "updated": "2026-06-25",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "62318",
+    "title": "ESSAI\r\nSUR\r\nLE COMMERCE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/62318",
+    "chapter_count": 38,
+    "updated": "2026-06-25",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "4334",
     "title": "Observations on the Effects of the Corn Laws, and of a Rise or Fall in the Price of Corn on the Agriculture and General Wealth of the Country",
     "author": "Unknown",
