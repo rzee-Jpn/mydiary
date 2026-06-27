@@ -1,5 +1,32 @@
 [
   {
+    "id": "55120",
+    "title": "THEPAPER CURRENCY OF ENGLANDDispassionately Considered.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/55120",
+    "chapter_count": 4,
+    "updated": "2026-06-27",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "10808",
+    "title": "CONSUMERS' COOPERATIVE SOCIETIES IN NEW YORK STATE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/10808",
+    "chapter_count": 11,
+    "updated": "2026-06-27",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "72639",
+    "title": "ECONOMIC EFFECTSOFTHE WORLD WARONWOMEN AND CHILDRENIN GREAT BRITAIN",
+    "author": "David Kinley,Editor.",
+    "path": "data/books/gutenberg/72639",
+    "chapter_count": 98,
+    "updated": "2026-06-27",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "63441",
     "title": "History of TaxationinRhode Islandto the year 1790.",
     "author": "Unknown",
