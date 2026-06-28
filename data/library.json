@@ -1,5 +1,32 @@
 [
   {
+    "id": "69480",
+    "title": "THE TRUTH ABOUT SOCIALISM",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/69480",
+    "chapter_count": 17,
+    "updated": "2026-06-28",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "24868",
+    "title": "THE COST OF LIVING AMONGWAGE-EARNERS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/24868",
+    "chapter_count": 4,
+    "updated": "2026-06-28",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "36464",
+    "title": "THE MAIL PAY ON THEBURLINGTON RAILROAD",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/36464",
+    "chapter_count": 4,
+    "updated": "2026-06-28",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "55120",
     "title": "THEPAPER CURRENCY OF ENGLANDDispassionately Considered.",
     "author": "Unknown",
