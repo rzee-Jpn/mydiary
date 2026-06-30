@@ -1,0 +1,29 @@
+{
+  "id": "7361",
+  "title": "TO GOLDEN DAYS",
+  "author": "Unknown",
+  "word_count": 36415,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofA Brief History of Panics and Their Periodical Occurrence in the United States",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "A BRIEF HISTORY OF PANICS\r\nAND THEIR PERIODICAL OCCURRENCE IN THE UNITED STATES",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "TABLE NO. 2.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "TABLE NO. 3.",
+      "file": "chapters/ch04.html"
+    }
+  ],
+  "updated": "2026-06-30"
+}

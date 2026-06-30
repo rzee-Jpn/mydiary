@@ -1,0 +1,44 @@
+{
+  "id": "33946",
+  "title": "STIPTICK",
+  "author": "Unknown",
+  "word_count": 5387,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofA Stiptick for a Bleeding Nation",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "Printed forJ. Roberts, near theOxford-ArmsinWarwick-Lane. 1721.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "STIPTICK",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "Bleeding Nation.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "A Safe and SpeedyWayto RestorePublick Credit, and Pay theNationalDebts.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "To RestorePublick Credit, and PaytheNation'sDebts.",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "Transcriber's Notes:",
+      "file": "chapters/ch07.html"
+    }
+  ],
+  "updated": "2026-06-30"
+}
