@@ -1,5 +1,32 @@
 [
   {
+    "id": "70625",
+    "title": "DebtsHopeful and Desperate",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/70625",
+    "chapter_count": 29,
+    "updated": "2026-07-01",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "49835",
+    "title": "The Letters of Gracchus on the East India Question",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/49835",
+    "chapter_count": 16,
+    "updated": "2026-07-01",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "52996",
+    "title": "SELECTED ARTICLES\r\nON THE PARCELS POST",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/52996",
+    "chapter_count": 44,
+    "updated": "2026-07-01",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "66705",
     "title": "VALUATIONOFREAL ESTATEIN THETOWN OF ACTON.",
     "author": "Unknown",
