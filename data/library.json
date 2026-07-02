@@ -1,5 +1,32 @@
 [
   {
+    "id": "34095",
+    "title": "ΙΣΤΟΡΙΑΤΩΝΕΘΝΙΚΩΝ ΔΑΝΕΙΩΝ",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/34095",
+    "chapter_count": 9,
+    "updated": "2026-07-02",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "51558",
+    "title": "DIE ENTWICKLUNGdesGUTSHERRLICH-BÄUERLICHEN VERHÄLTNISSESIN GALIZIEN",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/51558",
+    "chapter_count": 29,
+    "updated": "2026-07-02",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "76470",
+    "title": "AN INTRODUCTIONTO THETHEORY OF VALUE",
+    "author": "WILLIAM SMART.",
+    "path": "data/books/gutenberg/76470",
+    "chapter_count": 19,
+    "updated": "2026-07-02",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "70625",
     "title": "DebtsHopeful and Desperate",
     "author": "Unknown",
