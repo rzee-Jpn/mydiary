@@ -1,0 +1,29 @@
+{
+  "id": "29252",
+  "title": "War Taxation",
+  "author": "Unknown",
+  "word_count": 8551,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofWar Taxation: Some Comments and Letters",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "Otto H. Kahn",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "I",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "II",
+      "file": "chapters/ch04.html"
+    }
+  ],
+  "updated": "2026-07-05"
+}

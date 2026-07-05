@@ -1,5 +1,32 @@
 [
   {
+    "id": "29252",
+    "title": "War Taxation",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/29252",
+    "chapter_count": 4,
+    "updated": "2026-07-05",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "41856",
+    "title": "MANUALOF REFERENCES AND EXERCISESIN ECONOMICS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/41856",
+    "chapter_count": 35,
+    "updated": "2026-07-05",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "65582",
+    "title": "CAUSES AND CONSEQUENCES",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/65582",
+    "chapter_count": 8,
+    "updated": "2026-07-05",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "2611",
     "title": "Confiscation; An Outline",
     "author": "Unknown",

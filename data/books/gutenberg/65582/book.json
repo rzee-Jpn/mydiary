@@ -1,0 +1,49 @@
+{
+  "id": "65582",
+  "title": "CAUSES AND CONSEQUENCES",
+  "author": "Unknown",
+  "word_count": 32343,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofCauses and Consequences",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "PREFACE",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "CONTENTS",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "IPOLITICS",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "IISOCIETY",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "IIIEDUCATION: FROEBEL",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "IVDEMOCRACY",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "VGOVERNMENT",
+      "file": "chapters/ch08.html"
+    }
+  ],
+  "updated": "2026-07-05"
+}
