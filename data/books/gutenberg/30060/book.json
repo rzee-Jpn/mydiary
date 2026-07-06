@@ -1,0 +1,29 @@
+{
+  "id": "30060",
+  "title": "Vasárnapi Könyv",
+  "author": "Unknown",
+  "word_count": 3780,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofVasárnapi Könyv. 1914. Első  félév 9. füzet",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "Az ipar és kereskedés kezdetei",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "A meleg források",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "Széchenyi István",
+      "file": "chapters/ch04.html"
+    }
+  ],
+  "updated": "2026-07-06"
+}
