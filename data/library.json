@@ -1,5 +1,32 @@
 [
   {
+    "id": "37024",
+    "title": "THE EXPRESS COMPANIESOF THE UNITED STATES",
+    "author": "Harry W. Laidler.",
+    "path": "data/books/gutenberg/37024",
+    "chapter_count": 37,
+    "updated": "2026-07-11",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "37098",
+    "title": "ΤΟ ΚΕΦΑΛΑΙΟΝ",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/37098",
+    "chapter_count": 19,
+    "updated": "2026-07-11",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "70784",
+    "title": "MONEYANDTRADECONSIDERED:",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/70784",
+    "chapter_count": 12,
+    "updated": "2026-07-11",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "75687",
     "title": "The Cycles ofSpeculation",
     "author": "Unknown",
