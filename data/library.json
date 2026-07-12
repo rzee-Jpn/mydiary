@@ -1,5 +1,32 @@
 [
   {
+    "id": "64373",
+    "title": "The Industrial RepublicA Study of the America of Ten Years Hence",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/64373",
+    "chapter_count": 11,
+    "updated": "2026-07-12",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "69596",
+    "title": "INSTRVCÇAMSOBRE A CVLTVRAdas Amoreiras, & criaçaõ dos Bichos da seda,",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/69596",
+    "chapter_count": 16,
+    "updated": "2026-07-12",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "35870",
+    "title": "LETTER",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/35870",
+    "chapter_count": 4,
+    "updated": "2026-07-12",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "37024",
     "title": "THE EXPRESS COMPANIESOF THE UNITED STATES",
     "author": "Harry W. Laidler.",

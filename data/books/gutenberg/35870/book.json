@@ -1,0 +1,29 @@
+{
+  "id": "35870",
+  "title": "LETTER",
+  "author": "Unknown",
+  "word_count": 2635,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofLetter to the Right Honourable Lord Viscount Melbourne on the Cause of the Higher Average Price of Grain in Britain than on the the Continent",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "By SIR GEORGE GRANT SUTTIE,",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "EDINBURGH:PUBLISHED BY WILLIAM BLACKWOOD AND SONS.1839.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "LETTER.",
+      "file": "chapters/ch04.html"
+    }
+  ],
+  "updated": "2026-07-12"
+}
