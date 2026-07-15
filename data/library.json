@@ -1,5 +1,32 @@
 [
   {
+    "id": "76102",
+    "title": "ILLUSTRATIONSOFPOLITICAL ECONOMY.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/76102",
+    "chapter_count": 14,
+    "updated": "2026-07-15",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "28575",
+    "title": "A Terminal MarketSystemNew York'sMost Urgent Need",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/28575",
+    "chapter_count": 12,
+    "updated": "2026-07-15",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "59362",
+    "title": "WEATHERCROPSANDMARKETS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/59362",
+    "chapter_count": 58,
+    "updated": "2026-07-15",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "22393",
     "title": "BASESPour servir aux Entreprises de ColonisationDANS LESTERRITOIRES NATIONAUXDE LARÉPUBLIQUE ARGENTINE",
     "author": "Auguste Brougnes",
