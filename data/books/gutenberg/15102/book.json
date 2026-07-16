@@ -1,0 +1,24 @@
+{
+  "id": "15102",
+  "title": "PROPOSALS",
+  "author": "Unknown",
+  "word_count": 8460,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofProposals for Building, in Every County, a Working-Alms-House or Hospital",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "HOSPITAL;",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "POSTSCRIPT",
+      "file": "chapters/ch03.html"
+    }
+  ],
+  "updated": "2026-07-16"
+}
