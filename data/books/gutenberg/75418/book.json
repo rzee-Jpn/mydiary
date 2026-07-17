@@ -1,0 +1,54 @@
+{
+  "id": "75418",
+  "title": "OUROBOROS",
+  "author": "Unknown",
+  "word_count": 18556,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofOuroboros; or, the mechanical extension of mankind",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "CONTENTS",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "ITHE QUEST SINCE ADAM",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "IITHE MACHINE AS IF",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "IIITHE LAW OF MACHINES",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "IVWHO MIND THEM OR STARVE",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "VTHE PARADOX OF SURPLUS",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "VIIN PERIL OF TRADE",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "VIIDIM VISTAS NEW",
+      "file": "chapters/ch09.html"
+    }
+  ],
+  "updated": "2026-07-17"
+}

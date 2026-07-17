@@ -1,5 +1,32 @@
 [
   {
+    "id": "76015",
+    "title": "PEPPERMINT.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/76015",
+    "chapter_count": 18,
+    "updated": "2026-07-17",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "75418",
+    "title": "OUROBOROS",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/75418",
+    "chapter_count": 9,
+    "updated": "2026-07-17",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "52499",
+    "title": "CUESTIONESPOLITICAS Y ECONOMICAS.PORPALEMON HUERGO.BUENOS AIRES.1855.",
+    "author": "(Constitucion del Estado de\r\nBuenos Aires.)",
+    "path": "data/books/gutenberg/52499",
+    "chapter_count": 18,
+    "updated": "2026-07-17",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "29881",
     "title": "THE MORALS OFECONOMICINTERNATIONALISM",
     "author": "Unknown",
