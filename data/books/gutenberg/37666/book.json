@@ -1,0 +1,29 @@
+{
+  "id": "37666",
+  "title": "REPORT",
+  "author": "Unknown",
+  "word_count": 6220,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofReport on the Cost of Living in Ireland, June 1922",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "PREFACE.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "REPORT",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "APPENDIX.",
+      "file": "chapters/ch04.html"
+    }
+  ],
+  "updated": "2026-07-18"
+}

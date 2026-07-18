@@ -1,5 +1,32 @@
 [
   {
+    "id": "47509",
+    "title": "AN ESSAY To the Restoring of our Decayed TRADE",
+    "author": "ByJOSEPH TREVERS.",
+    "path": "data/books/gutenberg/47509",
+    "chapter_count": 8,
+    "updated": "2026-07-18",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "19982",
+    "title": "PROJETPOUR LA COMPAGNIEDES  TRANSPORTS,POSTES ET MESSAGERIES.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/19982",
+    "chapter_count": 22,
+    "updated": "2026-07-18",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "37666",
+    "title": "REPORT",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/37666",
+    "chapter_count": 4,
+    "updated": "2026-07-18",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "76015",
     "title": "PEPPERMINT.",
     "author": "Unknown",
