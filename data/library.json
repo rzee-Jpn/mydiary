@@ -1,5 +1,32 @@
 [
   {
+    "id": "62050",
+    "title": "FOREIGN EXCHANGE",
+    "author": "Department of Commerce,Bureau of Foreign and Domestic Commerce,Washington, February 4, 1918.",
+    "path": "data/books/gutenberg/62050",
+    "chapter_count": 22,
+    "updated": "2026-07-19",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "58296",
+    "title": "L'ANATRA",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/58296",
+    "chapter_count": 23,
+    "updated": "2026-07-19",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "51894",
+    "title": "Stamp Taxes on Drafts, Checks\r\nand Promissory Notes[1]",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/51894",
+    "chapter_count": 5,
+    "updated": "2026-07-19",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "47509",
     "title": "AN ESSAY To the Restoring of our Decayed TRADE",
     "author": "ByJOSEPH TREVERS.",
