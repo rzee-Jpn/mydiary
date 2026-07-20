@@ -1,5 +1,32 @@
 [
   {
+    "id": "73948",
+    "title": "LESMANIEURS D’ARGENTA ROME",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/73948",
+    "chapter_count": 30,
+    "updated": "2026-07-20",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "21956",
+    "title": "REPORTof theKNARESBROUGH RAIL-WAYCOMMITTEE.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/21956",
+    "chapter_count": 23,
+    "updated": "2026-07-20",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "52547",
+    "title": "NORMALARBETSDAGEN",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/52547",
+    "chapter_count": 14,
+    "updated": "2026-07-20",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "62050",
     "title": "FOREIGN EXCHANGE",
     "author": "Department of Commerce,Bureau of Foreign and Domestic Commerce,Washington, February 4, 1918.",
