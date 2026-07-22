@@ -1,5 +1,32 @@
 [
   {
+    "id": "34726",
+    "title": "Vasárnapi Könyv",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/34726",
+    "chapter_count": 6,
+    "updated": "2026-07-22",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "70662",
+    "title": "CULTURA E OPULENCIADO BRAZIL,POR SUAS DROGAS E MINAS.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/70662",
+    "chapter_count": 78,
+    "updated": "2026-07-22",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "77029",
+    "title": "LE DROITA LAPARESSE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/77029",
+    "chapter_count": 5,
+    "updated": "2026-07-22",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "50459",
     "title": "Englands Wirtschaftskrieggegen Deutschland",
     "author": "Unknown",

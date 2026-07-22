@@ -1,0 +1,39 @@
+{
+  "id": "34726",
+  "title": "Vasárnapi Könyv",
+  "author": "Unknown",
+  "word_count": 4208,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofVasárnapi Könyv. 1914. Első félév 17. füzet",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "A\r\n  szövetkezés",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "A masszírozás",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "Sótermelés Afrikában",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "A\r\n  drótszövés",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "Kopernikusz\r\n  Miklós",
+      "file": "chapters/ch06.html"
+    }
+  ],
+  "updated": "2026-07-22"
+}
