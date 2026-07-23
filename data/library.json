@@ -1,5 +1,32 @@
 [
   {
+    "id": "30375",
+    "title": "The Weinstock Lectures on TheMorals of Trade",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/30375",
+    "chapter_count": 3,
+    "updated": "2026-07-23",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "65338",
+    "title": "CHAMBERS’S JOURNALOFPOPULARLITERATURE, SCIENCE, AND ART.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/65338",
+    "chapter_count": 12,
+    "updated": "2026-07-23",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "63344",
+    "title": "Paper Shell Pecans",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/63344",
+    "chapter_count": 98,
+    "updated": "2026-07-23",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "34726",
     "title": "Vasárnapi Könyv",
     "author": "Unknown",
