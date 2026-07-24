@@ -1,5 +1,32 @@
 [
   {
+    "id": "20942",
+    "title": "Vasárnapi Könyv",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/20942",
+    "chapter_count": 6,
+    "updated": "2026-07-24",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "24701",
+    "title": "O IDEAL MODERNO",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/24701",
+    "chapter_count": 13,
+    "updated": "2026-07-24",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "57020",
+    "title": "THEREGULATINGSilver Coin,Made Practicable and Easie,TO THEGOVERNMENTANDSUBJECT.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/57020",
+    "chapter_count": 33,
+    "updated": "2026-07-24",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "30375",
     "title": "The Weinstock Lectures on TheMorals of Trade",
     "author": "Unknown",
