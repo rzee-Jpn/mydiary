@@ -1,0 +1,34 @@
+{
+  "id": "30163",
+  "title": "Vasárnapi Könyv",
+  "author": "Unknown",
+  "word_count": 3857,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofVasárnapi Könyv. 1916. Első félév 20. füzet",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "A vaspénz",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "Az élesztő felhasználása",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "A világítótornyok",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "A keresztények üldözése",
+      "file": "chapters/ch05.html"
+    }
+  ],
+  "updated": "2026-07-25"
+}
