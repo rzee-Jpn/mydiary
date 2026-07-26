@@ -1,5 +1,32 @@
 [
   {
+    "id": "55493",
+    "title": "THE BRITISH JUGERNATH.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/55493",
+    "chapter_count": 55,
+    "updated": "2026-07-26",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "62353",
+    "title": "ESSAY",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/62353",
+    "chapter_count": 7,
+    "updated": "2026-07-26",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "62299",
+    "title": "POOR",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/62299",
+    "chapter_count": 6,
+    "updated": "2026-07-26",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "29905",
     "title": "VIRIBUS UNITIS.Wie könntedieEUROPÄISCHE CULTURnachBosnien verpflanzt werden?",
     "author": "Unknown",

@@ -1,0 +1,39 @@
+{
+  "id": "62299",
+  "title": "POOR",
+  "author": "Unknown",
+  "word_count": 41589,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofA Discourse on Trade, and Other Matters Relative to it",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "DISCOURSE",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "TRADE,",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "DISCOURSE",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "ESSAY",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "NATIONAL CREDIT.",
+      "file": "chapters/ch06.html"
+    }
+  ],
+  "updated": "2026-07-26"
+}

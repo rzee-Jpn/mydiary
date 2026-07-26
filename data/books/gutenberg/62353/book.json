@@ -1,0 +1,44 @@
+{
+  "id": "62353",
+  "title": "ESSAY",
+  "author": "Unknown",
+  "word_count": 41228,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofAn Essay Towards Regulating the Trade, and Employing the Poor of This Kingdom",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "KINGDOM.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "ERRATA.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "ESSAY",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "KINGDOM.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "ESSAY",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "NATIONAL CREDIT.",
+      "file": "chapters/ch07.html"
+    }
+  ],
+  "updated": "2026-07-26"
+}
