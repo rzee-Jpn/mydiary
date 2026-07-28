@@ -1,0 +1,49 @@
+{
+  "id": "23201",
+  "title": "Apontamentos sobre a via de communicação do rio Madeira",
+  "author": "Unknown",
+  "word_count": 19523,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofApontamentos sobre a via de communicação do rio Madeira",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "ADVERTENCIA.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "I.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "II.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "III.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "IV.",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "V.",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "VI.",
+      "file": "chapters/ch08.html"
+    }
+  ],
+  "updated": "2026-07-28"
+}

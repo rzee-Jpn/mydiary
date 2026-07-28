@@ -1,5 +1,32 @@
 [
   {
+    "id": "36319",
+    "title": "DE DROOGLEGGINGDER ZUIDERZEE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/36319",
+    "chapter_count": 13,
+    "updated": "2026-07-28",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "23201",
+    "title": "Apontamentos sobre a via de communicação do rio Madeira",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/23201",
+    "chapter_count": 8,
+    "updated": "2026-07-28",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "75054",
+    "title": "LEPIANTE UTILIdell’ERITREA",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/75054",
+    "chapter_count": 16,
+    "updated": "2026-07-28",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "32807",
     "title": "FREEHOLD LAND SOCIETIES:their history,present position,and claims.",
     "author": "Unknown",
