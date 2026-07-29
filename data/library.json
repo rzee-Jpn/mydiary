@@ -1,5 +1,32 @@
 [
   {
+    "id": "47081",
+    "title": "ZUR GESCHICHTEDERENGLISCHEN VOLKSWIRTHSCHAFTSLEHRE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/47081",
+    "chapter_count": 15,
+    "updated": "2026-07-29",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "28525",
+    "title": "Het GeldvanRobinson Crusoe",
+    "author": "David Ames Wells (1828–1898)",
+    "path": "data/books/gutenberg/28525",
+    "chapter_count": 18,
+    "updated": "2026-07-29",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "75730",
+    "title": "THE WAR AND OUR FINANCIAL FABRIC",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/75730",
+    "chapter_count": 31,
+    "updated": "2026-07-29",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "36319",
     "title": "DE DROOGLEGGINGDER ZUIDERZEE",
     "author": "Unknown",
