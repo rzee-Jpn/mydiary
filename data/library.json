@@ -1,5 +1,32 @@
 [
   {
+    "id": "70365",
+    "title": "CHAMBERS’S JOURNALOFPOPULARLITERATURE, SCIENCE, AND ART.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/70365",
+    "chapter_count": 11,
+    "updated": "2026-07-30",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "62983",
+    "title": "ONE THOUSAND DOLLARS A DAY.STUDIES IN PRACTICAL ECONOMICS.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/62983",
+    "chapter_count": 10,
+    "updated": "2026-07-30",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "64469",
+    "title": "WAGESIN1873.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/64469",
+    "chapter_count": 46,
+    "updated": "2026-07-30",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "47081",
     "title": "ZUR GESCHICHTEDERENGLISCHEN VOLKSWIRTHSCHAFTSLEHRE",
     "author": "Unknown",
