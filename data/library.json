@@ -1,5 +1,32 @@
 [
   {
+    "id": "76283",
+    "title": "A MARXIZMUS TÁRSADALOMELMÉLETE",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/76283",
+    "chapter_count": 11,
+    "updated": "2026-07-31",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "56655",
+    "title": "Guida per la costituzione e per l'impiantodi latterie sociali cooperative",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/56655",
+    "chapter_count": 36,
+    "updated": "2026-07-31",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "15761",
+    "title": "OM UTVANDRINGEN, DESS BETYDELSE OCH ORSAKER",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/15761",
+    "chapter_count": 5,
+    "updated": "2026-07-31",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "70365",
     "title": "CHAMBERS’S JOURNALOFPOPULARLITERATURE, SCIENCE, AND ART.",
     "author": "Unknown",
