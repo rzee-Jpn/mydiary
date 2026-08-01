@@ -1,0 +1,94 @@
+{
+  "id": "74013",
+  "title": "A VAGYON TUDOMÁNYA",
+  "author": "Unknown",
+  "word_count": 41168,
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "The Project Gutenberg eBook ofA vagyon tudománya",
+      "file": "chapters/ch01.html"
+    },
+    {
+      "id": "ch02",
+      "title": "I. FEJEZET.A vagyon jelentése.",
+      "file": "chapters/ch02.html"
+    },
+    {
+      "id": "ch03",
+      "title": "II. FEJEZET.Az üzem és az ipar.",
+      "file": "chapters/ch03.html"
+    },
+    {
+      "id": "ch04",
+      "title": "III. FEJEZET.A termelési rendszer.",
+      "file": "chapters/ch04.html"
+    },
+    {
+      "id": "ch05",
+      "title": "I. RÉSZ.",
+      "file": "chapters/ch05.html"
+    },
+    {
+      "id": "ch06",
+      "title": "II. RÉSZ.",
+      "file": "chapters/ch06.html"
+    },
+    {
+      "id": "ch07",
+      "title": "V. FEJEZET.Költségek és fölösleg.",
+      "file": "chapters/ch07.html"
+    },
+    {
+      "id": "ch08",
+      "title": "VI. FEJEZET.Az improduktiv fölösleg.",
+      "file": "chapters/ch08.html"
+    },
+    {
+      "id": "ch09",
+      "title": "FÜGGELÉK.Az improduktiv többlettel járó\r\ntársadalomgazdasági pazarlás.",
+      "file": "chapters/ch09.html"
+    },
+    {
+      "id": "ch10",
+      "title": "VII. FEJEZET.A munkabér.",
+      "file": "chapters/ch10.html"
+    },
+    {
+      "id": "ch11",
+      "title": "VIII. FEJEZET.A haszon.",
+      "file": "chapters/ch11.html"
+    },
+    {
+      "id": "ch12",
+      "title": "IX. FEJEZET.A forgalom és az árak.",
+      "file": "chapters/ch12.html"
+    },
+    {
+      "id": "ch13",
+      "title": "X. FEJEZET.Kereslet és kínálat.",
+      "file": "chapters/ch13.html"
+    },
+    {
+      "id": "ch14",
+      "title": "XI. FEJEZET.A külkereskedelem és az\r\nállamszocziálizmus.",
+      "file": "chapters/ch14.html"
+    },
+    {
+      "id": "ch15",
+      "title": "XII. FEJEZET.A külkereskedelem.",
+      "file": "chapters/ch15.html"
+    },
+    {
+      "id": "ch16",
+      "title": "XIII. FEJEZET.Emberi értékek.",
+      "file": "chapters/ch16.html"
+    },
+    {
+      "id": "ch17",
+      "title": "Lábjegyzetek.",
+      "file": "chapters/ch17.html"
+    }
+  ],
+  "updated": "2026-08-01"
+}

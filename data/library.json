@@ -1,5 +1,32 @@
 [
   {
+    "id": "74013",
+    "title": "A VAGYON TUDOMÁNYA",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/74013",
+    "chapter_count": 17,
+    "updated": "2026-08-01",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "54391",
+    "title": "SCHILDERUNGENDESTREIBENS IM LEBEN UND HANDELIN DENVEREINIGTEN STAATEN UND HAVANA.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/54391",
+    "chapter_count": 12,
+    "updated": "2026-08-01",
+    "source": "Project Gutenberg"
+  },
+  {
+    "id": "48243",
+    "title": "Oesterreich'sBetheiligung am Welthandel.",
+    "author": "Unknown",
+    "path": "data/books/gutenberg/48243",
+    "chapter_count": 8,
+    "updated": "2026-08-01",
+    "source": "Project Gutenberg"
+  },
+  {
     "id": "76283",
     "title": "A MARXIZMUS TÁRSADALOMELMÉLETE",
     "author": "Unknown",
